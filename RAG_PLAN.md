@@ -84,3 +84,13 @@ Status: agreed design, implementation in progress. Evaluation happens after inte
 | 7. Evaluation scripts and report | carebridge-rag | No |
 
 Every step that changes production is approved before it runs.
+
+Progress:
+
+- Steps 1 and 2 are done. The live gateway returns 768-dimension vectors for `carebridge-embed`.
+- Step 3 is done. Migrations `20260930000000_rag_documents.sql` and
+  `20260930000100_rag_documents_source_idx.sql` are applied. Tests with temporary rows confirmed
+  that signed-in users see only visible clean rows (even with the include flags set), `anon` has no
+  access, and the service role can include noise and hidden rows. A typo query without an
+  embedding only matches when trigram similarity is at least 0.6, so real queries rely on the
+  embedding for typo tolerance; step 7 measures this.
