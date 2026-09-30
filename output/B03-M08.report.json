@@ -1,0 +1,170 @@
+{
+  "slice": "B03-M08",
+  "files": [
+    "B03-M08.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 21,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-001352",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001354",
+      "errors": [],
+      "warnings": [
+        "length is 230 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-001355",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001359",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001361",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001362",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001363",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001366",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001367",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001370",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001372",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 208 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-001376",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001377",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001381",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001382",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001383",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001384",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001388",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001389",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001392",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001400",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

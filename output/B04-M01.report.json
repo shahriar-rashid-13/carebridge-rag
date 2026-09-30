@@ -1,0 +1,180 @@
+{
+  "slice": "B04-M01",
+  "files": [
+    "B04-M01.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 49,
+  "rows_failed": 1,
+  "rows_with_warnings": 22,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-001501",
+      "errors": [
+        "missing occupation \"construction worker\""
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-001502",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001507",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001511",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001513",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001514",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001518",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 3 seconds\"",
+        "length is 187 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-001524",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001525",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001528",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001531",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001532",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001535",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001536",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001538",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001539",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-001541",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001542",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001543",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001544",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001547",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001549",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-001550",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

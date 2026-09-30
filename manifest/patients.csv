@@ -1,0 +1,901 @@
+ref,name,gender,date_of_birth,comorbidity,occupation,visit_count
+PAT-000001,Mizanur Khan,male,1969-07-01,Essential hypertension,sales representative,1
+PAT-000002,Ibrahim Karim,male,1980-08-14,none,pharmacist,4
+PAT-000003,Sharmin Mahmud,female,1994-12-31,none,graphic designer,6
+PAT-000004,Kamal Howlader,male,1962-03-08,none,shopkeeper,2
+PAT-000005,Shafiq Talukder,male,1998-05-02,Hypothyroidism,CNG auto-rickshaw driver,2
+PAT-000006,Morium Majumder,female,1990-10-21,Type 2 diabetes mellitus,delivery rider,5
+PAT-000007,Rumana Islam,female,1946-09-07,none,tailor,2
+PAT-000008,Rashed Mollah,male,1995-01-23,none,garment factory worker,1
+PAT-000009,Lipi Sheikh,female,2002-01-26,Hypothyroidism,CNG auto-rickshaw driver,2
+PAT-000010,Sajjad Haque,male,1996-01-21,Essential hypertension,office cleaner,2
+PAT-000011,Mehedi Mollah,male,1963-05-14,none,shopkeeper,5
+PAT-000012,Hasina Uddin,female,1958-10-08,Bronchial asthma,farmer,2
+PAT-000013,Salma Mondal,female,1997-05-10,none,homemaker,6
+PAT-000014,Dilruba Akter,female,1979-02-13,none,office cleaner,4
+PAT-000015,Nusrat Sarkar,female,1948-04-29,none,farmer,2
+PAT-000016,Parvin Awal,female,1967-02-24,Bronchial asthma,garment merchandiser,2
+PAT-000017,Ayesha Mollah,female,1988-06-20,none,software developer,2
+PAT-000018,Rupa Karim,female,2000-04-18,Hypothyroidism,lawyer,2
+PAT-000019,Monir Rahman,male,2003-01-23,Bronchial asthma,restaurant cook,3
+PAT-000020,Shahidul Bhuiyan,male,1967-03-20,none,fisherman,5
+PAT-000021,Dilruba Rahman,female,2005-07-03,none,mobile phone repair technician,2
+PAT-000022,Fatema Miah,female,1981-10-16,Bronchial asthma,bank officer,3
+PAT-000023,Morium Ahmed,female,1967-03-13,none,hotel receptionist,4
+PAT-000024,Harun Siddique,male,1997-12-05,none,journalist,4
+PAT-000025,Sharmin Faruque,female,1998-03-12,Bronchial asthma,accountant,2
+PAT-000026,Taslima Haque,female,1958-10-03,none,shopkeeper,3
+PAT-000027,Imtiaz Majumder,male,1949-01-02,none,retired civil servant,2
+PAT-000028,Anwar Howlader,male,1976-01-23,none,hotel receptionist,3
+PAT-000029,Jamal Chowdhury,male,1962-11-17,none,nurse,5
+PAT-000030,Aminul Majumder,male,2002-05-21,Type 2 diabetes mellitus,hotel receptionist,2
+PAT-000031,Harun Khan,male,1961-10-16,Type 2 diabetes mellitus,tailor,4
+PAT-000032,Mousumi Kundu,female,1953-12-28,none,madrasa teacher,2
+PAT-000033,Kulsum Islam,female,1981-05-07,none,textile engineer,3
+PAT-000034,Selim Hasan,male,1985-04-28,none,software developer,1
+PAT-000035,Hossain Miah,male,1981-05-28,none,restaurant cook,4
+PAT-000036,Anika Kabir,female,1957-07-28,Type 2 diabetes mellitus,madrasa teacher,2
+PAT-000037,Babul Uddin,male,1960-06-08,Essential hypertension,tailor,1
+PAT-000038,Rupali Saha,female,1969-12-06,Type 2 diabetes mellitus,police constable,2
+PAT-000039,Rokeya Bhuiyan,female,1988-03-22,none,construction worker,2
+PAT-000040,Babul Mondal,male,1977-08-19,Bronchial asthma,nurse,5
+PAT-000041,Jamal Mondal,male,1953-03-01,Hypothyroidism,homemaker,3
+PAT-000042,Sultana Majumder,female,1990-02-04,none,call centre agent,3
+PAT-000043,Rabeya Uddin,female,1986-12-09,none,textile engineer,4
+PAT-000044,Rupa Haque,female,1945-07-17,Essential hypertension,shopkeeper,2
+PAT-000045,Sumaiya Mondal,female,1985-03-26,Hypothyroidism,rickshaw puller,5
+PAT-000046,Dilruba Bhuiyan,female,2006-03-15,none,garment factory worker,2
+PAT-000047,Anwar Uddin,male,1973-09-06,Hypothyroidism,nurse,2
+PAT-000048,Shafiq Majumder,male,1958-08-04,none,tailor,3
+PAT-000049,Arif Kabir,male,1981-08-29,Essential hypertension,construction worker,4
+PAT-000050,Rubel Sheikh,male,1983-07-24,none,beautician,2
+PAT-000051,Karim Howlader,male,1966-05-23,none,textile engineer,2
+PAT-000052,Jahid Miah,male,1985-05-17,none,call centre agent,4
+PAT-000053,Golam Kabir,male,1999-12-06,none,sales representative,2
+PAT-000054,Shahana Khatun,female,1954-03-16,none,retired civil servant,1
+PAT-000055,Taslima Howlader,female,2004-07-15,Bronchial asthma,construction worker,2
+PAT-000056,Nazmul Uddin,male,1963-09-24,none,bank officer,2
+PAT-000057,Sumitra Mitra,female,1993-08-27,none,graphic designer,7
+PAT-000058,Shikha Paul,female,2005-06-01,Essential hypertension,beautician,2
+PAT-000059,Afsana Bhuiyan,female,1958-07-11,Type 2 diabetes mellitus,homemaker,3
+PAT-000060,Mehedi Rahman,male,1958-11-11,Bronchial asthma,homemaker,4
+PAT-000061,Tania Karim,female,1948-01-20,none,tailor,2
+PAT-000062,Golam Mondal,male,1998-09-19,none,accountant,1
+PAT-000063,Jesmin Karim,female,1983-11-09,none,electrician,1
+PAT-000064,Bilkis Faruque,female,1961-07-03,Essential hypertension,retired civil servant,3
+PAT-000065,Karim Uddin,male,1945-01-31,none,retired civil servant,2
+PAT-000066,Mita Kundu,female,1987-01-24,Bronchial asthma,fisherman,5
+PAT-000067,Shirin Sarkar,female,1983-10-09,Essential hypertension,nurse,1
+PAT-000068,Babul Mollah,male,1946-07-13,none,farmer,2
+PAT-000069,Shafiq Kabir,male,1998-10-15,none,electrician,2
+PAT-000070,Fahim Miah,male,1976-09-12,none,rickshaw puller,4
+PAT-000071,Jannat Khatun,female,1979-11-01,none,fisherman,1
+PAT-000072,Mizanur Talukder,male,1973-03-07,none,beautician,3
+PAT-000073,Anika Mollah,female,1967-02-26,none,hotel receptionist,3
+PAT-000074,Afsana Islam,female,1974-09-02,none,bus driver,4
+PAT-000075,Harun Ahmed,male,1957-01-03,Essential hypertension,retired civil servant,5
+PAT-000076,Jannat Khan,female,1959-10-22,none,madrasa teacher,4
+PAT-000077,Sumaiya Patwary,female,1977-04-07,none,photographer,5
+PAT-000078,Lipi Sultana,female,1990-01-28,none,photographer,5
+PAT-000079,Mamun Alam,male,1961-08-29,Type 2 diabetes mellitus,farmer,1
+PAT-000080,Mamun Hasan,male,1961-08-15,Essential hypertension,shopkeeper,4
+PAT-000081,Hasan Howlader,male,1979-02-24,none,lawyer,6
+PAT-000082,Kakoli Das,female,1945-01-11,none,madrasa teacher,4
+PAT-000083,Fahim Haque,male,2002-08-02,none,bank officer,4
+PAT-000084,Rabeya Hossain,female,1966-07-01,none,police constable,4
+PAT-000085,Sabbir Patwary,male,1970-01-20,none,sales representative,3
+PAT-000086,Arif Mollah,male,1961-01-17,Type 2 diabetes mellitus,tailor,5
+PAT-000087,Harun Mollah,male,1958-05-31,Hypothyroidism,tailor,2
+PAT-000088,Lamia Siddique,female,1946-12-17,none,farmer,4
+PAT-000089,Anjali Dey,female,1996-06-21,none,CNG auto-rickshaw driver,2
+PAT-000090,Rashed Sheikh,male,2000-04-21,none,garment factory worker,3
+PAT-000091,Ibrahim Chowdhury,male,1960-01-11,Essential hypertension,homemaker,1
+PAT-000092,Kamal Chowdhury,male,1976-07-17,Bronchial asthma,cricket coach,4
+PAT-000093,Lipi Mollah,female,1992-07-20,none,graphic designer,2
+PAT-000094,Rafiq Uddin,male,1983-11-16,none,office cleaner,2
+PAT-000095,Farhan Kabir,male,1996-03-23,none,mobile phone repair technician,3
+PAT-000096,Rokeya Kabir,female,1968-08-17,none,nurse,2
+PAT-000097,Lamia Ahmed,female,1986-05-11,Type 2 diabetes mellitus,security guard,2
+PAT-000098,Shapla Patwary,female,1947-08-27,none,farmer,3
+PAT-000099,Babul Majumder,male,1978-08-07,none,beautician,3
+PAT-000100,Sadia Patwary,female,1994-09-22,Type 2 diabetes mellitus,farmer,4
+PAT-000101,Karim Mondal,male,1980-08-13,Hypothyroidism,shopkeeper,2
+PAT-000102,Shafiq Uddin,male,1949-03-08,Essential hypertension,tailor,3
+PAT-000103,Jamal Miah,male,1992-11-08,none,police constable,2
+PAT-000104,Ibrahim Uddin,male,1960-11-06,none,tailor,3
+PAT-000105,Kulsum Patwary,female,1958-07-11,none,shopkeeper,3
+PAT-000106,Nusrat Sheikh,female,1963-01-12,none,journalist,3
+PAT-000107,Rupa Sheikh,female,1958-11-06,none,madrasa teacher,4
+PAT-000108,Nayeem Hossain,male,1990-04-05,none,bus driver,4
+PAT-000109,Lipi Khatun,female,2000-12-03,none,security guard,4
+PAT-000110,Selim Sarkar,male,1950-06-01,Essential hypertension,retired civil servant,4
+PAT-000111,Lipi Alam,female,1982-08-24,none,journalist,2
+PAT-000112,Rupa Khan,female,1988-04-10,none,textile engineer,4
+PAT-000113,Uttam Ghosh,male,2000-03-14,none,nurse,3
+PAT-000114,Rakib Haque,male,1995-11-11,Hypothyroidism,bank officer,2
+PAT-000115,Kamal Haque,male,1967-02-12,Hypothyroidism,mobile phone repair technician,2
+PAT-000116,Rahima Islam,female,2000-03-12,Bronchial asthma,farmer,2
+PAT-000117,Rehana Mondal,female,1997-11-14,none,sales representative,4
+PAT-000118,Rubel Howlader,male,2006-07-20,none,homemaker,3
+PAT-000119,Golam Mahmud,male,1965-01-31,none,madrasa teacher,2
+PAT-000120,Dilruba Uddin,female,1988-01-22,none,software developer,2
+PAT-000121,Abdul Talukder,male,1973-03-11,Type 2 diabetes mellitus,textile engineer,5
+PAT-000122,Lipi Majumder,female,1998-05-03,Bronchial asthma,garment factory worker,4
+PAT-000123,Aminul Siddique,male,2002-04-07,none,bus driver,3
+PAT-000124,Tania Chowdhury,female,1987-02-27,none,ride-share driver,4
+PAT-000125,Nazmul Bhuiyan,male,1984-04-01,none,madrasa teacher,3
+PAT-000126,Shafiq Awal,male,1970-03-21,none,delivery rider,2
+PAT-000127,Shahana Chowdhury,female,1992-08-03,none,beautician,4
+PAT-000128,Sabina Kabir,female,1974-04-21,none,police constable,3
+PAT-000129,Abdul Faruque,male,1985-05-06,Hypothyroidism,homemaker,5
+PAT-000130,Sajjad Chowdhury,male,1954-09-18,none,retired civil servant,1
+PAT-000131,Mamun Miah,male,1947-07-21,Hypothyroidism,farmer,3
+PAT-000132,Rafiq Miah,male,1962-06-16,none,farmer,5
+PAT-000133,Gopal Mitra,male,1952-09-12,Bronchial asthma,farmer,2
+PAT-000134,Rubel Patwary,male,1962-06-24,Essential hypertension,farmer,3
+PAT-000135,Yusuf Mollah,male,1990-11-23,none,bank officer,1
+PAT-000136,Shyamal Datta,male,1973-06-21,none,office cleaner,2
+PAT-000137,Ayesha Sheikh,female,1994-03-26,Bronchial asthma,bank officer,6
+PAT-000138,Sajjad Kabir,male,2001-01-08,Type 2 diabetes mellitus,homemaker,4
+PAT-000139,Farhan Sheikh,male,1990-06-12,none,cricket coach,4
+PAT-000140,Karim Sarkar,male,1987-09-15,Type 2 diabetes mellitus,office cleaner,7
+PAT-000141,Abdul Miah,male,1997-04-05,none,ride-share driver,2
+PAT-000142,Farida Karim,female,1970-04-11,none,ride-share driver,5
+PAT-000143,Bilkis Siddique,female,1974-12-12,none,ride-share driver,1
+PAT-000144,Yusuf Faruque,male,1990-08-22,Bronchial asthma,office cleaner,2
+PAT-000145,Mehedi Hasan,male,2006-07-11,none,homemaker,2
+PAT-000146,Morium Alam,female,1963-08-10,Bronchial asthma,farmer,2
+PAT-000147,Nayeem Howlader,male,1971-05-23,Bronchial asthma,schoolteacher,2
+PAT-000148,Sadia Sultana,female,2001-07-17,Bronchial asthma,beautician,3
+PAT-000149,Jamal Khan,male,1980-10-31,none,bank officer,3
+PAT-000150,Rafiq Mondal,male,1972-12-11,Hypothyroidism,shopkeeper,2
+PAT-000151,Mizanur Chowdhury,male,1967-09-13,none,madrasa teacher,1
+PAT-000152,Sajjad Howlader,male,1954-05-01,Hypothyroidism,tailor,2
+PAT-000153,Monir Islam,male,1963-03-21,Hypothyroidism,office cleaner,3
+PAT-000154,Shapla Siddique,female,1978-12-01,Essential hypertension,construction worker,4
+PAT-000155,Golam Khan,male,1971-06-08,Hypothyroidism,sales representative,7
+PAT-000156,Priya Dey,female,2001-10-24,none,police constable,2
+PAT-000157,Rokeya Majumder,female,1980-10-30,none,software developer,1
+PAT-000158,Amit Paul,male,1990-07-28,Bronchial asthma,photographer,3
+PAT-000159,Rumana Bhuiyan,female,1961-06-02,none,shopkeeper,3
+PAT-000160,Monir Faruque,male,2005-05-24,Bronchial asthma,bus driver,2
+PAT-000161,Nargis Kabir,female,1968-02-01,Essential hypertension,bus driver,4
+PAT-000162,Farida Hasan,female,1974-04-20,none,photographer,2
+PAT-000163,Parvin Khan,female,1989-07-11,Type 2 diabetes mellitus,delivery rider,4
+PAT-000164,Nayeem Talukder,male,1990-03-14,none,sales representative,3
+PAT-000165,Rahim Hossain,male,1959-11-24,none,farmer,4
+PAT-000166,Nirmal Bose,male,1953-09-03,none,madrasa teacher,4
+PAT-000167,Sumaiya Sultana,female,1958-02-20,none,shopkeeper,2
+PAT-000168,Hossain Patwary,male,1954-11-20,none,shopkeeper,3
+PAT-000169,Dilruba Islam,female,1966-01-30,Hypothyroidism,schoolteacher,4
+PAT-000170,Rehana Uddin,female,1983-01-02,none,sales representative,2
+PAT-000171,Nargis Begum,female,1945-01-26,Type 2 diabetes mellitus,homemaker,2
+PAT-000172,Shahidul Sheikh,male,1991-06-25,none,ride-share driver,3
+PAT-000173,Rokeya Miah,female,2002-06-14,none,electrician,1
+PAT-000174,Nayeem Hasan,male,2000-12-18,Hypothyroidism,shopkeeper,1
+PAT-000175,Ayesha Sultana,female,2002-03-22,Bronchial asthma,nurse,5
+PAT-000176,Rashed Rahman,male,1965-03-18,none,schoolteacher,2
+PAT-000177,Subrata Ghosh,male,1986-02-22,Essential hypertension,architect,5
+PAT-000178,Mizanur Sheikh,male,1964-01-02,Essential hypertension,fisherman,3
+PAT-000179,Rabeya Haque,female,1960-05-28,Hypothyroidism,madrasa teacher,2
+PAT-000180,Imtiaz Islam,male,1967-04-17,none,CNG auto-rickshaw driver,2
+PAT-000181,Amit Sarkar,male,1945-08-21,none,madrasa teacher,0
+PAT-000182,Parvin Rahman,female,1989-08-25,Hypothyroidism,cricket coach,6
+PAT-000183,Sohel Siddique,male,1965-03-29,none,office cleaner,1
+PAT-000184,Kamal Kabir,male,2003-07-29,Bronchial asthma,garment factory worker,2
+PAT-000185,Nadia Miah,female,1947-05-22,none,homemaker,2
+PAT-000186,Jesmin Miah,female,1961-05-08,Essential hypertension,retired civil servant,3
+PAT-000187,Sohel Patwary,male,1995-02-13,none,textile engineer,2
+PAT-000188,Rabeya Chowdhury,female,1990-01-02,none,ride-share driver,2
+PAT-000189,Aminul Rahman,male,2001-11-04,none,garment factory worker,3
+PAT-000190,Fahim Ahmed,male,1952-10-24,Hypothyroidism,retired civil servant,2
+PAT-000191,Fatema Mollah,female,1960-05-01,none,shopkeeper,4
+PAT-000192,Sumaiya Haque,female,1985-07-13,none,hotel receptionist,3
+PAT-000193,Sadia Karim,female,2005-04-03,Type 2 diabetes mellitus,bank officer,5
+PAT-000194,Yusuf Bhuiyan,male,2003-02-08,Bronchial asthma,construction worker,5
+PAT-000195,Golam Rahman,male,1945-06-21,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000196,Hossain Awal,male,1959-08-06,none,farmer,3
+PAT-000197,Parvin Hasan,female,2001-12-06,Type 2 diabetes mellitus,security guard,6
+PAT-000198,Nasima Patwary,female,1957-12-09,Type 2 diabetes mellitus,homemaker,4
+PAT-000199,Jannat Mondal,female,1982-11-25,none,construction worker,4
+PAT-000200,Dilruba Haque,female,1950-02-11,none,madrasa teacher,2
+PAT-000201,Rumana Khan,female,1989-12-16,Type 2 diabetes mellitus,NGO field officer,4
+PAT-000202,Babul Haque,male,1992-09-03,none,beautician,2
+PAT-000203,Rashed Uddin,male,1954-01-21,Essential hypertension,shopkeeper,3
+PAT-000204,Mitu Patwary,female,1982-04-17,none,garment merchandiser,3
+PAT-000205,Fatema Patwary,female,1960-03-16,none,tailor,2
+PAT-000206,Dipak Biswas,male,1969-04-15,none,bus driver,2
+PAT-000207,Rupa Sarkar,female,1984-02-20,none,madrasa teacher,2
+PAT-000208,Bilkis Bhuiyan,female,1996-12-25,Hypothyroidism,homemaker,1
+PAT-000209,Shirin Mondal,female,1959-06-04,none,homemaker,3
+PAT-000210,Babul Patwary,male,1960-12-16,Hypothyroidism,shopkeeper,4
+PAT-000211,Kakoli Ghosh,female,1984-07-10,Bronchial asthma,nurse,3
+PAT-000212,Rokeya Islam,female,1952-06-18,Bronchial asthma,homemaker,4
+PAT-000213,Lamia Majumder,female,1998-04-09,none,police constable,2
+PAT-000214,Nazmul Sarkar,male,2005-07-23,Bronchial asthma,police constable,1
+PAT-000215,Masud Miah,male,1985-08-06,none,fisherman,4
+PAT-000216,Sohel Chowdhury,male,1985-07-25,none,pharmacist,1
+PAT-000217,Mamun Kabir,male,1961-10-02,none,tailor,4
+PAT-000218,Ibrahim Talukder,male,1965-01-12,none,shopkeeper,4
+PAT-000219,Tania Uddin,female,1987-09-25,none,schoolteacher,2
+PAT-000220,Sohel Mahmud,male,1999-09-30,none,NGO field officer,2
+PAT-000221,Mitu Siddique,female,1994-08-03,Hypothyroidism,fisherman,4
+PAT-000222,Ratan Dey,male,1991-01-31,none,call centre agent,1
+PAT-000223,Kakoli Dey,female,2000-01-21,none,hotel receptionist,6
+PAT-000224,Amit Roy,male,1953-10-17,none,farmer,2
+PAT-000225,Sanjay Mitra,male,1985-03-09,none,bank officer,3
+PAT-000226,Golam Hasan,male,1949-12-16,none,madrasa teacher,3
+PAT-000227,Monir Mahmud,male,1997-02-01,none,fisherman,3
+PAT-000228,Fatema Islam,female,2002-07-09,Type 2 diabetes mellitus,CNG auto-rickshaw driver,1
+PAT-000229,Harun Alam,male,1959-07-05,Bronchial asthma,farmer,4
+PAT-000230,Lipi Patwary,female,2004-04-11,Hypothyroidism,university student,4
+PAT-000231,Mitu Mondal,female,1993-11-03,none,office cleaner,2
+PAT-000232,Rumana Sarkar,female,1963-02-28,Type 2 diabetes mellitus,tailor,5
+PAT-000233,Tapan Mitra,male,1997-05-14,Hypothyroidism,bus driver,5
+PAT-000234,Rehana Sheikh,female,1952-05-15,Essential hypertension,farmer,4
+PAT-000235,Rafiq Sheikh,male,1997-06-09,Essential hypertension,office cleaner,3
+PAT-000236,Shahidul Kabir,male,1987-07-07,none,photographer,4
+PAT-000237,Nayeem Alam,male,1965-03-14,Bronchial asthma,construction worker,1
+PAT-000238,Rokeya Alam,female,1949-02-18,Type 2 diabetes mellitus,madrasa teacher,4
+PAT-000239,Hasina Majumder,female,1947-10-11,none,homemaker,3
+PAT-000240,Lamia Begum,female,1991-12-06,none,shopkeeper,2
+PAT-000241,Rupali Paul,female,1999-03-31,none,nurse,5
+PAT-000242,Nadia Patwary,female,2006-08-06,Type 2 diabetes mellitus,delivery rider,2
+PAT-000243,Fatema Ahmed,female,1956-12-19,none,retired civil servant,4
+PAT-000244,Sultana Akter,female,1966-11-02,none,tailor,2
+PAT-000245,Parvin Siddique,female,1975-05-14,none,architect,4
+PAT-000246,Samira Talukder,female,1945-11-13,Essential hypertension,retired civil servant,3
+PAT-000247,Laxmi Ghosh,female,2004-07-11,none,architect,3
+PAT-000248,Sultana Bhuiyan,female,1947-09-27,none,retired civil servant,4
+PAT-000249,Kakoli Bose,female,1977-10-20,Type 2 diabetes mellitus,farmer,2
+PAT-000250,Shakil Mondal,male,1987-08-15,Bronchial asthma,office cleaner,2
+PAT-000251,Shirin Awal,female,1981-01-06,none,bus driver,2
+PAT-000252,Hossain Sheikh,male,1954-03-24,none,farmer,5
+PAT-000253,Lamia Khatun,female,1973-08-13,none,CNG auto-rickshaw driver,4
+PAT-000254,Mitu Haque,female,1967-11-14,Essential hypertension,madrasa teacher,4
+PAT-000255,Nadia Mondal,female,1999-07-27,none,farmer,2
+PAT-000256,Tanvir Mahmud,male,1978-08-23,none,rickshaw puller,3
+PAT-000257,Aminul Khan,male,1970-08-15,Hypothyroidism,ride-share driver,3
+PAT-000258,Mizanur Miah,male,1966-04-09,Hypothyroidism,bus driver,4
+PAT-000259,Sohel Rahman,male,1964-12-06,none,fisherman,4
+PAT-000260,Tariq Kabir,male,1984-08-03,Essential hypertension,bus driver,3
+PAT-000261,Mizanur Siddique,male,1995-02-26,Type 2 diabetes mellitus,call centre agent,2
+PAT-000262,Aminul Talukder,male,1964-03-04,none,nurse,2
+PAT-000263,Taslima Bhuiyan,female,1973-08-05,none,madrasa teacher,4
+PAT-000264,Rakib Mondal,male,1973-10-29,none,bus driver,7
+PAT-000265,Ayesha Uddin,female,1964-06-13,none,accountant,3
+PAT-000266,Afsana Sheikh,female,1949-06-13,none,retired civil servant,2
+PAT-000267,Rabeya Mahmud,female,1998-06-01,none,construction worker,6
+PAT-000268,Parvin Akter,female,1947-04-19,none,tailor,4
+PAT-000269,Rumana Khatun,female,1948-05-09,Essential hypertension,madrasa teacher,7
+PAT-000270,Shapla Sheikh,female,2004-06-11,none,university student,2
+PAT-000271,Imtiaz Hossain,male,2002-09-05,Hypothyroidism,textile engineer,2
+PAT-000272,Mita Bose,female,1976-06-28,Type 2 diabetes mellitus,architect,1
+PAT-000273,Tania Sultana,female,1947-05-04,none,retired civil servant,4
+PAT-000274,Nayeem Chowdhury,male,2004-06-29,Bronchial asthma,textile engineer,5
+PAT-000275,Kamal Majumder,male,1978-02-16,none,ride-share driver,1
+PAT-000276,Ayesha Awal,female,1975-09-22,Essential hypertension,architect,7
+PAT-000277,Rafiq Khan,male,1952-02-14,none,homemaker,3
+PAT-000278,Sharmin Begum,female,1975-02-27,Type 2 diabetes mellitus,farmer,3
+PAT-000279,Sadia Khatun,female,2002-09-11,none,software developer,2
+PAT-000280,Rabeya Kabir,female,1947-06-28,Type 2 diabetes mellitus,madrasa teacher,3
+PAT-000281,Lipi Ahmed,female,1971-02-08,Type 2 diabetes mellitus,schoolteacher,4
+PAT-000282,Sabina Sarkar,female,1979-11-26,Type 2 diabetes mellitus,software developer,5
+PAT-000283,Mahiya Karim,female,1987-04-27,none,journalist,2
+PAT-000284,Rumana Karim,female,1979-07-01,Hypothyroidism,garment merchandiser,5
+PAT-000285,Tania Mondal,female,1987-02-22,Hypothyroidism,office cleaner,3
+PAT-000286,Masud Faruque,male,1985-01-12,none,software developer,4
+PAT-000287,Shahana Awal,female,1957-10-17,Hypothyroidism,madrasa teacher,2
+PAT-000288,Rabeya Bhuiyan,female,1962-09-04,none,madrasa teacher,3
+PAT-000289,Gopal Ghosh,male,1967-10-27,Bronchial asthma,shopkeeper,4
+PAT-000290,Kakoli Mitra,female,1982-10-05,none,garment factory worker,4
+PAT-000291,Farida Majumder,female,1978-04-23,Type 2 diabetes mellitus,software developer,4
+PAT-000292,Anwar Islam,male,1973-02-05,Hypothyroidism,lawyer,4
+PAT-000293,Ashraf Howlader,male,1963-06-03,none,NGO field officer,2
+PAT-000294,Farhan Hossain,male,1997-05-06,none,textile engineer,2
+PAT-000295,Salma Hossain,female,2000-06-24,Hypothyroidism,farmer,3
+PAT-000296,Ashraf Majumder,male,1988-05-19,none,police constable,3
+PAT-000297,Rina Biswas,female,1976-04-18,Type 2 diabetes mellitus,journalist,4
+PAT-000298,Sadia Siddique,female,1965-11-17,none,electrician,5
+PAT-000299,Shafiq Howlader,male,1968-11-14,none,homemaker,4
+PAT-000300,Sohel Sheikh,male,2004-06-08,Essential hypertension,madrasa teacher,2
+PAT-000301,Rafiq Awal,male,1976-07-23,none,sales representative,2
+PAT-000302,Karim Islam,male,1984-04-27,none,NGO field officer,2
+PAT-000303,Nayeem Sarkar,male,1968-08-22,none,restaurant cook,2
+PAT-000304,Rakib Uddin,male,1971-03-04,Hypothyroidism,office cleaner,1
+PAT-000305,Fahim Mollah,male,1983-03-06,Hypothyroidism,lawyer,6
+PAT-000306,Nargis Hasan,female,1975-05-06,none,sales representative,3
+PAT-000307,Shafiq Hossain,male,1957-03-10,Essential hypertension,homemaker,4
+PAT-000308,Parvin Chowdhury,female,2003-12-09,Bronchial asthma,police constable,3
+PAT-000309,Sajjad Islam,male,1959-12-07,none,farmer,1
+PAT-000310,Jannat Bhuiyan,female,1973-03-09,Essential hypertension,accountant,5
+PAT-000311,Farida Khan,female,1958-07-25,none,shopkeeper,2
+PAT-000312,Babul Khan,male,1950-06-30,Type 2 diabetes mellitus,madrasa teacher,2
+PAT-000313,Harun Hossain,male,1978-11-21,none,sales representative,5
+PAT-000314,Nirmal Paul,male,1972-12-11,none,office cleaner,3
+PAT-000315,Abdul Mondal,male,1958-08-13,Hypothyroidism,madrasa teacher,3
+PAT-000316,Shapla Majumder,female,1968-03-07,none,electrician,2
+PAT-000317,Jamal Mollah,male,1984-06-19,none,textile engineer,4
+PAT-000318,Karim Patwary,male,1953-08-29,none,tailor,4
+PAT-000319,Sanjay Sarkar,male,1947-11-21,none,shopkeeper,4
+PAT-000320,Lipi Bhuiyan,female,1998-06-01,Bronchial asthma,journalist,2
+PAT-000321,Rashed Miah,male,1966-01-07,none,madrasa teacher,2
+PAT-000322,Rupa Hossain,female,2001-03-18,none,garment merchandiser,5
+PAT-000323,Taslima Miah,female,1969-06-11,none,electrician,2
+PAT-000324,Sharmin Mondal,female,1965-06-24,none,bus driver,2
+PAT-000325,Jannat Mahmud,female,1947-08-05,none,farmer,4
+PAT-000326,Masud Sarkar,male,1994-11-27,Type 2 diabetes mellitus,cricket coach,2
+PAT-000327,Nayeem Faruque,male,1962-08-04,Type 2 diabetes mellitus,tailor,4
+PAT-000328,Mehedi Khan,male,1989-11-21,none,office cleaner,6
+PAT-000329,Nasima Sultana,female,1968-09-30,Type 2 diabetes mellitus,software developer,2
+PAT-000330,Rehana Islam,female,2000-04-09,none,rickshaw puller,3
+PAT-000331,Kamal Mahmud,male,1985-02-11,none,restaurant cook,2
+PAT-000332,Nusrat Howlader,female,1955-04-17,none,homemaker,4
+PAT-000333,Fatema Siddique,female,1954-01-10,Bronchial asthma,tailor,4
+PAT-000334,Dilruba Mondal,female,1985-02-26,Bronchial asthma,call centre agent,2
+PAT-000335,Shirin Mahmud,female,1984-01-25,Bronchial asthma,accountant,5
+PAT-000336,Shirin Majumder,female,2006-01-08,none,shopkeeper,2
+PAT-000337,Babul Chowdhury,male,1950-12-02,none,shopkeeper,3
+PAT-000338,Parvin Sarkar,female,1962-06-17,Essential hypertension,madrasa teacher,4
+PAT-000339,Rahim Siddique,male,1962-07-23,none,farmer,1
+PAT-000340,Jesmin Talukder,female,1951-07-21,Essential hypertension,homemaker,3
+PAT-000341,Sumaiya Sheikh,female,2006-08-31,none,garment factory worker,2
+PAT-000342,Shahidul Ahmed,male,1964-09-11,none,journalist,4
+PAT-000343,Sumaiya Akter,female,1972-06-21,none,hotel receptionist,2
+PAT-000344,Hasina Rahman,female,1969-05-23,Type 2 diabetes mellitus,software developer,2
+PAT-000345,Kulsum Sarkar,female,1982-04-24,Bronchial asthma,homemaker,3
+PAT-000346,Tahsin Siddique,female,1956-01-18,none,tailor,2
+PAT-000347,Amit Kundu,male,1969-01-11,none,photographer,4
+PAT-000348,Mizanur Ahmed,male,1954-07-24,Type 2 diabetes mellitus,shopkeeper,2
+PAT-000349,Morium Faruque,female,1962-03-12,none,retired civil servant,2
+PAT-000350,Babul Faruque,male,1960-03-19,none,madrasa teacher,4
+PAT-000351,Nasima Islam,female,1984-12-06,none,office cleaner,2
+PAT-000352,Hasina Haque,female,1950-08-01,Essential hypertension,madrasa teacher,2
+PAT-000353,Sultana Talukder,female,1954-05-10,none,farmer,4
+PAT-000354,Abdul Chowdhury,male,1996-03-24,Hypothyroidism,fisherman,5
+PAT-000355,Sajjad Mollah,male,1976-08-07,none,bus driver,3
+PAT-000356,Imtiaz Karim,male,1981-05-07,none,mobile phone repair technician,2
+PAT-000357,Ibrahim Hasan,male,1952-01-19,none,retired civil servant,3
+PAT-000358,Golam Siddique,male,2000-11-16,none,lawyer,1
+PAT-000359,Jahid Alam,male,1982-06-28,Essential hypertension,call centre agent,2
+PAT-000360,Hasina Awal,female,1952-09-24,Bronchial asthma,tailor,4
+PAT-000361,Masud Awal,male,1989-03-27,Hypothyroidism,software developer,2
+PAT-000362,Monir Mondal,male,1998-04-11,Essential hypertension,software developer,2
+PAT-000363,Tanvir Mollah,male,1978-09-02,none,office cleaner,4
+PAT-000364,Jesmin Mollah,female,1988-11-14,none,sales representative,4
+PAT-000365,Harun Hasan,male,2006-02-25,none,shopkeeper,3
+PAT-000366,Mousumi Mitra,female,1948-09-15,none,homemaker,3
+PAT-000367,Rubel Chowdhury,male,1954-07-03,none,madrasa teacher,2
+PAT-000368,Sabbir Khan,male,1981-05-03,none,sales representative,4
+PAT-000369,Nazmul Patwary,male,1961-07-29,none,madrasa teacher,3
+PAT-000370,Ayesha Karim,female,1969-08-24,none,electrician,2
+PAT-000371,Rabeya Miah,female,2000-01-05,Bronchial asthma,textile engineer,2
+PAT-000372,Shahana Mollah,female,1987-08-25,none,police constable,5
+PAT-000373,Hasan Faruque,male,1957-12-04,Bronchial asthma,retired civil servant,2
+PAT-000374,Shirin Sheikh,female,1988-08-26,none,lawyer,4
+PAT-000375,Tania Haque,female,1992-10-16,none,security guard,5
+PAT-000376,Golam Miah,male,2002-10-22,none,garment factory worker,4
+PAT-000377,Shafiq Patwary,male,1969-08-21,Hypothyroidism,journalist,2
+PAT-000378,Arif Haque,male,1996-10-07,none,rickshaw puller,4
+PAT-000379,Nargis Haque,female,1976-02-02,none,beautician,1
+PAT-000380,Yusuf Majumder,male,1979-06-21,Type 2 diabetes mellitus,software developer,2
+PAT-000381,Ashraf Islam,male,1997-09-27,none,architect,5
+PAT-000382,Rehana Miah,female,1991-08-04,none,construction worker,3
+PAT-000383,Rupali Dey,female,1970-02-24,none,accountant,1
+PAT-000384,Abdul Sheikh,male,2004-08-20,none,software developer,2
+PAT-000385,Nusrat Alam,female,1986-06-03,none,garment merchandiser,3
+PAT-000386,Rupa Akter,female,2000-08-30,none,pharmacist,3
+PAT-000387,Farida Alam,female,1948-01-28,none,shopkeeper,2
+PAT-000388,Mahiya Howlader,female,1985-07-03,none,graphic designer,3
+PAT-000389,Sumaiya Khan,female,1967-01-12,none,construction worker,4
+PAT-000390,Kamal Rahman,male,1973-08-19,none,textile engineer,2
+PAT-000391,Fatema Khatun,female,1945-02-12,Essential hypertension,tailor,2
+PAT-000392,Mitu Faruque,female,1987-01-25,none,mobile phone repair technician,3
+PAT-000393,Selim Sheikh,male,1964-06-29,Bronchial asthma,restaurant cook,2
+PAT-000394,Jahid Mahmud,male,2002-12-24,none,police constable,3
+PAT-000395,Nirmal Dey,male,1980-03-16,Bronchial asthma,sales representative,2
+PAT-000396,Gopal Paul,male,1950-08-11,Essential hypertension,tailor,3
+PAT-000397,Sabina Howlader,female,1949-10-17,none,retired civil servant,1
+PAT-000398,Farida Awal,female,1998-05-31,none,police constable,3
+PAT-000399,Rina Mitra,female,2000-11-26,none,lawyer,2
+PAT-000400,Sabbir Awal,male,1986-12-25,Type 2 diabetes mellitus,garment merchandiser,1
+PAT-000401,Nayeem Awal,male,1971-01-22,Essential hypertension,photographer,4
+PAT-000402,Salma Kabir,female,1959-04-11,Essential hypertension,homemaker,4
+PAT-000403,Kulsum Howlader,female,1973-12-11,none,hotel receptionist,3
+PAT-000404,Lipi Khan,female,1996-01-06,Bronchial asthma,photographer,3
+PAT-000405,Puja Kundu,female,1945-01-11,none,tailor,0
+PAT-000406,Sharmin Alam,female,1952-07-02,Type 2 diabetes mellitus,shopkeeper,1
+PAT-000407,Salma Siddique,female,1985-06-23,none,beautician,2
+PAT-000408,Farida Sheikh,female,1947-12-19,none,homemaker,2
+PAT-000409,Abdul Kabir,male,1956-07-19,none,farmer,2
+PAT-000410,Shyamal Sarkar,male,1964-04-18,none,photographer,3
+PAT-000411,Golam Uddin,male,1972-03-29,none,call centre agent,2
+PAT-000412,Kulsum Mahmud,female,1992-02-14,none,mobile phone repair technician,1
+PAT-000413,Mita Sarkar,female,1952-06-24,Essential hypertension,farmer,3
+PAT-000414,Sultana Khatun,female,1946-12-19,none,retired civil servant,4
+PAT-000415,Rashed Khan,male,1979-12-13,Hypothyroidism,nurse,5
+PAT-000416,Shahana Begum,female,1989-05-31,none,fisherman,4
+PAT-000417,Shahidul Majumder,male,1949-08-30,Hypothyroidism,madrasa teacher,3
+PAT-000418,Rehana Karim,female,1963-01-24,none,CNG auto-rickshaw driver,3
+PAT-000419,Sultana Mondal,female,1975-07-04,Bronchial asthma,architect,5
+PAT-000420,Babul Mahmud,male,1952-03-20,Hypothyroidism,shopkeeper,3
+PAT-000421,Taslima Awal,female,1969-09-11,Hypothyroidism,pharmacist,1
+PAT-000422,Babul Hasan,male,1978-08-08,none,delivery rider,2
+PAT-000423,Sultana Hasan,female,1997-11-22,none,construction worker,3
+PAT-000424,Farhan Majumder,male,1990-11-01,none,delivery rider,2
+PAT-000425,Afsana Howlader,female,1965-12-17,none,garment merchandiser,3
+PAT-000426,Sadia Akter,female,2002-10-08,none,construction worker,3
+PAT-000427,Babul Ahmed,male,1998-01-31,none,tailor,4
+PAT-000428,Rafiq Kabir,male,1974-12-13,none,fisherman,4
+PAT-000429,Nayeem Mollah,male,1976-04-05,none,security guard,4
+PAT-000430,Pradip Saha,male,1949-01-30,Bronchial asthma,shopkeeper,4
+PAT-000431,Farida Miah,female,1992-05-01,Bronchial asthma,construction worker,3
+PAT-000432,Anjali Datta,female,2004-10-23,none,textile engineer,3
+PAT-000433,Rahim Islam,male,1977-05-09,Hypothyroidism,photographer,2
+PAT-000434,Amit Bose,male,1994-08-25,Type 2 diabetes mellitus,sales representative,2
+PAT-000435,Rashed Kabir,male,1959-01-10,Type 2 diabetes mellitus,shopkeeper,4
+PAT-000436,Lipi Faruque,female,1951-10-11,none,retired civil servant,1
+PAT-000437,Sabbir Kabir,male,1990-01-14,Bronchial asthma,ride-share driver,3
+PAT-000438,Nargis Alam,female,1978-01-12,Bronchial asthma,tailor,4
+PAT-000439,Shahana Mahmud,female,1960-01-21,none,homemaker,6
+PAT-000440,Tahsin Patwary,female,1949-01-08,none,homemaker,4
+PAT-000441,Jamal Hossain,male,1959-05-03,Hypothyroidism,farmer,2
+PAT-000442,Mamun Islam,male,1964-09-15,none,bus driver,3
+PAT-000443,Aminul Sheikh,male,1990-12-16,Type 2 diabetes mellitus,accountant,5
+PAT-000444,Tanvir Khan,male,2001-09-16,none,sales representative,3
+PAT-000445,Tariq Hasan,male,1970-06-23,none,graphic designer,3
+PAT-000446,Kulsum Hossain,female,2004-12-12,none,electrician,4
+PAT-000447,Sumaiya Hasan,female,1981-03-28,none,garment merchandiser,6
+PAT-000448,Anika Alam,female,1955-01-15,none,madrasa teacher,4
+PAT-000449,Fahim Khan,male,1950-03-28,Hypothyroidism,retired civil servant,2
+PAT-000450,Sabina Siddique,female,1983-03-28,Essential hypertension,shopkeeper,3
+PAT-000451,Yusuf Sarkar,male,1956-04-26,none,madrasa teacher,1
+PAT-000452,Puja Bose,female,1975-02-26,none,garment merchandiser,2
+PAT-000453,Rupa Howlader,female,1968-04-17,none,nurse,4
+PAT-000454,Jesmin Howlader,female,1949-08-30,Essential hypertension,retired civil servant,2
+PAT-000455,Kulsum Hasan,female,2001-11-15,Type 2 diabetes mellitus,madrasa teacher,2
+PAT-000456,Imtiaz Mondal,male,2005-07-31,Bronchial asthma,hotel receptionist,4
+PAT-000457,Nasima Ahmed,female,1957-09-13,none,madrasa teacher,3
+PAT-000458,Kulsum Majumder,female,1950-06-01,Type 2 diabetes mellitus,madrasa teacher,4
+PAT-000459,Rubel Kabir,male,1956-11-22,none,madrasa teacher,4
+PAT-000460,Arif Islam,male,1948-09-06,none,retired civil servant,3
+PAT-000461,Shakil Haque,male,1954-03-14,Hypothyroidism,retired civil servant,2
+PAT-000462,Masud Khan,male,2003-02-22,none,farmer,3
+PAT-000463,Rashed Majumder,male,1997-05-19,none,schoolteacher,3
+PAT-000464,Samira Rahman,female,1948-01-03,none,farmer,3
+PAT-000465,Dipak Roy,male,1994-05-19,Type 2 diabetes mellitus,garment merchandiser,5
+PAT-000466,Shahidul Miah,male,1945-02-06,Hypothyroidism,madrasa teacher,4
+PAT-000467,Morium Sheikh,female,1946-08-25,Essential hypertension,homemaker,4
+PAT-000468,Anwar Ahmed,male,1984-07-18,none,bank officer,2
+PAT-000469,Aminul Miah,male,1959-06-11,none,homemaker,2
+PAT-000470,Jamal Siddique,male,2005-05-20,none,homemaker,2
+PAT-000471,Rokeya Karim,female,1978-07-01,none,electrician,2
+PAT-000472,Taslima Mondal,female,1969-06-20,Bronchial asthma,tailor,4
+PAT-000473,Mamun Faruque,male,1957-04-24,Type 2 diabetes mellitus,tailor,4
+PAT-000474,Sabina Uddin,female,1987-09-05,Essential hypertension,garment merchandiser,4
+PAT-000475,Farhan Bhuiyan,male,1965-10-23,none,farmer,2
+PAT-000476,Ashraf Haque,male,1950-05-14,none,retired civil servant,3
+PAT-000477,Nadia Sultana,female,1957-02-09,Bronchial asthma,madrasa teacher,4
+PAT-000478,Ashraf Mollah,male,1989-04-12,Essential hypertension,construction worker,5
+PAT-000479,Aminul Howlader,male,1970-01-11,none,garment merchandiser,4
+PAT-000480,Bikash Mitra,male,1995-03-06,none,construction worker,2
+PAT-000481,Sultana Mahmud,female,1979-06-16,none,accountant,3
+PAT-000482,Shahidul Mahmud,male,2002-01-12,none,beautician,2
+PAT-000483,Sabbir Mollah,male,2001-03-05,none,garment factory worker,4
+PAT-000484,Abdul Ahmed,male,1969-05-31,none,journalist,2
+PAT-000485,Farida Mondal,female,1969-04-09,none,fisherman,3
+PAT-000486,Nirmal Saha,male,1977-12-11,none,restaurant cook,3
+PAT-000487,Rupali Biswas,female,1972-01-10,Hypothyroidism,cricket coach,3
+PAT-000488,Salma Rahman,female,1980-07-30,none,police constable,4
+PAT-000489,Rubel Miah,male,1988-09-01,Hypothyroidism,office cleaner,6
+PAT-000490,Golam Hossain,male,1970-06-13,Bronchial asthma,garment factory worker,5
+PAT-000491,Selim Majumder,male,1959-10-15,Essential hypertension,homemaker,3
+PAT-000492,Mizanur Mollah,male,1972-07-01,Bronchial asthma,sales representative,3
+PAT-000493,Tahsin Awal,female,2004-12-02,Type 2 diabetes mellitus,restaurant cook,5
+PAT-000494,Rokeya Sarkar,female,1975-05-13,none,homemaker,5
+PAT-000495,Shakil Hasan,male,1951-11-10,none,tailor,4
+PAT-000496,Rafiq Bhuiyan,male,2005-05-10,none,shopkeeper,3
+PAT-000497,Amit Saha,male,1960-03-20,none,shopkeeper,2
+PAT-000498,Yusuf Alam,male,1993-05-11,Bronchial asthma,rickshaw puller,2
+PAT-000499,Rashed Faruque,male,1967-02-25,none,lawyer,2
+PAT-000500,Sohel Alam,male,1997-07-25,none,call centre agent,3
+PAT-000501,Jesmin Siddique,female,1985-10-26,none,farmer,4
+PAT-000502,Salma Patwary,female,2001-05-07,none,pharmacist,2
+PAT-000503,Nazmul Kabir,male,1978-06-26,Bronchial asthma,lawyer,3
+PAT-000504,Hossain Mondal,male,1959-03-22,none,retired civil servant,4
+PAT-000505,Nasima Talukder,female,1960-03-13,none,homemaker,4
+PAT-000506,Hasan Mollah,male,1946-07-01,none,retired civil servant,3
+PAT-000507,Sharmin Talukder,female,1975-12-08,none,software developer,3
+PAT-000508,Fahim Awal,male,1947-08-26,none,farmer,1
+PAT-000509,Jahid Siddique,male,1975-03-31,Essential hypertension,madrasa teacher,2
+PAT-000510,Rahim Talukder,male,1951-08-09,Type 2 diabetes mellitus,retired civil servant,3
+PAT-000511,Farida Mahmud,female,1951-11-16,Type 2 diabetes mellitus,madrasa teacher,4
+PAT-000512,Sabina Khan,female,1975-04-14,none,bus driver,3
+PAT-000513,Morium Hasan,female,1958-01-22,Essential hypertension,farmer,2
+PAT-000514,Rahim Khan,male,1971-01-24,Type 2 diabetes mellitus,homemaker,1
+PAT-000515,Selim Miah,male,1987-07-01,Essential hypertension,garment merchandiser,5
+PAT-000516,Mehedi Islam,male,1951-03-10,Hypothyroidism,farmer,3
+PAT-000517,Yusuf Awal,male,1992-07-22,none,construction worker,5
+PAT-000518,Masud Islam,male,1951-08-23,Hypothyroidism,homemaker,4
+PAT-000519,Shirin Siddique,female,1949-11-19,none,tailor,3
+PAT-000520,Tanvir Islam,male,1953-09-25,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000521,Tariq Miah,male,1967-01-08,Essential hypertension,NGO field officer,4
+PAT-000522,Tapan Kundu,male,2001-02-10,none,hotel receptionist,2
+PAT-000523,Mizanur Faruque,male,1952-10-16,none,farmer,4
+PAT-000524,Karim Faruque,male,2000-10-18,Essential hypertension,textile engineer,2
+PAT-000525,Mousumi Sarkar,female,1981-01-06,none,madrasa teacher,3
+PAT-000526,Nayeem Bhuiyan,male,1985-03-25,Hypothyroidism,textile engineer,2
+PAT-000527,Tanvir Siddique,male,1952-04-18,none,tailor,4
+PAT-000528,Nargis Talukder,female,1980-05-12,Type 2 diabetes mellitus,delivery rider,3
+PAT-000529,Mizanur Awal,male,1946-08-06,Bronchial asthma,shopkeeper,2
+PAT-000530,Uttam Das,male,1985-02-10,none,accountant,1
+PAT-000531,Rashed Karim,male,1969-10-23,none,ride-share driver,4
+PAT-000532,Rakib Bhuiyan,male,1975-05-15,none,schoolteacher,3
+PAT-000533,Jesmin Uddin,female,2001-04-12,none,garment merchandiser,1
+PAT-000534,Nazmul Talukder,male,1966-12-16,none,madrasa teacher,2
+PAT-000535,Lamia Hasan,female,1954-05-11,none,farmer,2
+PAT-000536,Nargis Siddique,female,1989-06-13,none,construction worker,2
+PAT-000537,Afsana Siddique,female,1996-07-01,none,police constable,3
+PAT-000538,Fatema Uddin,female,1974-02-10,Type 2 diabetes mellitus,tailor,3
+PAT-000539,Mahiya Patwary,female,1981-12-03,none,hotel receptionist,1
+PAT-000540,Mahiya Mollah,female,1948-08-20,none,tailor,1
+PAT-000541,Farhan Karim,male,1956-04-20,none,madrasa teacher,2
+PAT-000542,Tanvir Uddin,male,1961-02-15,Hypothyroidism,farmer,1
+PAT-000543,Nargis Uddin,female,1948-09-21,none,homemaker,4
+PAT-000544,Rashed Patwary,male,1995-12-21,none,fisherman,3
+PAT-000545,Yusuf Patwary,male,1994-12-14,Type 2 diabetes mellitus,police constable,4
+PAT-000546,Nasima Mollah,female,1981-11-17,none,security guard,2
+PAT-000547,Hasina Patwary,female,1971-05-06,none,shopkeeper,2
+PAT-000548,Shahidul Howlader,male,1998-02-20,Essential hypertension,electrician,4
+PAT-000549,Anika Mahmud,female,1959-03-05,Hypothyroidism,farmer,2
+PAT-000550,Sabina Majumder,female,1967-12-26,Hypothyroidism,textile engineer,4
+PAT-000551,Mehedi Mondal,male,1952-11-03,none,shopkeeper,5
+PAT-000552,Shafiq Alam,male,1975-12-13,none,garment factory worker,2
+PAT-000553,Nirmal Mitra,male,1998-03-17,none,farmer,2
+PAT-000554,Yusuf Siddique,male,1992-12-20,Type 2 diabetes mellitus,rickshaw puller,2
+PAT-000555,Mizanur Alam,male,1952-01-03,Hypothyroidism,farmer,5
+PAT-000556,Shapla Talukder,female,1977-03-13,Type 2 diabetes mellitus,accountant,2
+PAT-000557,Anwar Bhuiyan,male,1979-11-16,Essential hypertension,security guard,2
+PAT-000558,Arif Majumder,male,1964-05-05,none,madrasa teacher,3
+PAT-000559,Rumana Patwary,female,2005-02-25,Type 2 diabetes mellitus,office cleaner,2
+PAT-000560,Tanvir Sarkar,male,1988-04-04,none,farmer,2
+PAT-000561,Fahim Sheikh,male,1982-03-24,Hypothyroidism,ride-share driver,4
+PAT-000562,Hossain Howlader,male,1961-02-28,Type 2 diabetes mellitus,tailor,2
+PAT-000563,Shikha Kundu,female,1984-09-28,none,bank officer,2
+PAT-000564,Sultana Uddin,female,1963-10-02,Essential hypertension,beautician,2
+PAT-000565,Rubel Bhuiyan,male,1975-08-22,none,accountant,3
+PAT-000566,Monir Hossain,male,1998-05-20,Hypothyroidism,call centre agent,4
+PAT-000567,Anika Patwary,female,1965-03-06,none,hotel receptionist,5
+PAT-000568,Rumana Kabir,female,1974-12-20,none,software developer,2
+PAT-000569,Sumaiya Majumder,female,1984-03-31,Hypothyroidism,beautician,2
+PAT-000570,Farhan Alam,male,1980-11-02,Hypothyroidism,beautician,2
+PAT-000571,Rahim Rahman,male,2006-01-17,Hypothyroidism,garment factory worker,2
+PAT-000572,Subrata Datta,male,2001-02-20,none,ride-share driver,2
+PAT-000573,Ashraf Mahmud,male,1959-03-05,none,farmer,4
+PAT-000574,Jahid Ahmed,male,1999-07-09,none,mobile phone repair technician,3
+PAT-000575,Sumitra Biswas,female,1956-09-26,Essential hypertension,shopkeeper,4
+PAT-000576,Ibrahim Mahmud,male,1965-04-08,none,architect,1
+PAT-000577,Subrata Roy,male,1999-05-26,none,garment factory worker,3
+PAT-000578,Lipi Haque,female,1977-03-17,none,madrasa teacher,2
+PAT-000579,Puja Dey,female,1969-08-17,Hypothyroidism,accountant,4
+PAT-000580,Fatema Bhuiyan,female,1992-04-14,Essential hypertension,call centre agent,4
+PAT-000581,Hasan Hasan,male,2005-08-31,none,software developer,3
+PAT-000582,Jannat Hossain,female,1970-07-06,Type 2 diabetes mellitus,fisherman,7
+PAT-000583,Samira Hossain,female,1966-12-31,none,garment factory worker,2
+PAT-000584,Morium Howlader,female,1996-08-13,none,software developer,5
+PAT-000585,Sadia Miah,female,1968-08-30,Essential hypertension,CNG auto-rickshaw driver,5
+PAT-000586,Aminul Faruque,male,1989-11-09,Bronchial asthma,electrician,4
+PAT-000587,Rahim Sarkar,male,1979-08-06,none,police constable,2
+PAT-000588,Mizanur Majumder,male,1976-02-18,Essential hypertension,office cleaner,5
+PAT-000589,Tariq Awal,male,1983-06-17,Hypothyroidism,call centre agent,2
+PAT-000590,Nadia Chowdhury,female,1968-07-15,none,electrician,4
+PAT-000591,Jesmin Khan,female,1949-09-28,Bronchial asthma,shopkeeper,2
+PAT-000592,Salma Mollah,female,1950-09-08,Bronchial asthma,homemaker,1
+PAT-000593,Shikha Roy,female,1990-01-09,none,restaurant cook,1
+PAT-000594,Hasan Chowdhury,male,2002-10-03,none,lawyer,3
+PAT-000595,Farida Uddin,female,2000-06-15,none,schoolteacher,2
+PAT-000596,Morium Mondal,female,1992-01-20,none,journalist,3
+PAT-000597,Rahima Bhuiyan,female,1958-11-03,none,tailor,2
+PAT-000598,Mizanur Hossain,male,1960-12-02,none,tailor,4
+PAT-000599,Taslima Islam,female,1946-03-15,none,homemaker,4
+PAT-000600,Anjali Das,female,2004-05-11,none,police constable,5
+PAT-000601,Babul Awal,male,1987-10-07,none,textile engineer,2
+PAT-000602,Samira Alam,female,1957-05-29,none,tailor,6
+PAT-000603,Sultana Patwary,female,1969-02-01,none,call centre agent,4
+PAT-000604,Lamia Miah,female,1949-03-04,Bronchial asthma,tailor,5
+PAT-000605,Ayesha Hossain,female,1966-08-03,Type 2 diabetes mellitus,textile engineer,3
+PAT-000606,Rokeya Hasan,female,1967-02-05,Hypothyroidism,architect,4
+PAT-000607,Arif Alam,male,1952-10-12,none,farmer,3
+PAT-000608,Rahim Sheikh,male,1957-08-26,Type 2 diabetes mellitus,farmer,2
+PAT-000609,Rashed Mondal,male,1982-07-20,none,lawyer,2
+PAT-000610,Arif Sarkar,male,1994-12-15,Hypothyroidism,restaurant cook,2
+PAT-000611,Afsana Ahmed,female,1961-12-06,none,madrasa teacher,1
+PAT-000612,Rehana Talukder,female,1982-04-05,none,hotel receptionist,4
+PAT-000613,Jamal Patwary,male,1973-10-13,none,software developer,3
+PAT-000614,Rubel Faruque,male,1998-08-15,Type 2 diabetes mellitus,mobile phone repair technician,4
+PAT-000615,Shapla Mollah,female,1973-08-11,Bronchial asthma,shopkeeper,4
+PAT-000616,Jannat Siddique,female,1959-03-30,none,farmer,4
+PAT-000617,Jahid Rahman,male,1959-04-01,none,shopkeeper,3
+PAT-000618,Shahidul Mollah,male,1955-08-15,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000619,Shahidul Patwary,male,1947-09-13,Hypothyroidism,retired civil servant,2
+PAT-000620,Ibrahim Mondal,male,1947-08-23,Type 2 diabetes mellitus,farmer,2
+PAT-000621,Shikha Bose,female,1957-04-26,none,shopkeeper,4
+PAT-000622,Rehana Patwary,female,1995-05-01,none,police constable,3
+PAT-000623,Selim Karim,male,1993-01-16,none,tailor,2
+PAT-000624,Jamal Ahmed,male,1963-06-14,none,hotel receptionist,5
+PAT-000625,Yusuf Haque,male,1969-04-03,Essential hypertension,software developer,2
+PAT-000626,Sharmin Sultana,female,1967-01-29,Essential hypertension,architect,6
+PAT-000627,Sadia Uddin,female,1976-07-18,Type 2 diabetes mellitus,accountant,4
+PAT-000628,Golam Alam,male,1950-04-02,none,homemaker,4
+PAT-000629,Nadia Rahman,female,1954-11-15,none,retired civil servant,3
+PAT-000630,Rabeya Akter,female,1979-12-03,Bronchial asthma,security guard,2
+PAT-000631,Sohel Bhuiyan,male,1947-10-18,Hypothyroidism,shopkeeper,2
+PAT-000632,Shapla Rahman,female,1982-01-20,Type 2 diabetes mellitus,rickshaw puller,4
+PAT-000633,Shahidul Awal,male,2000-11-08,none,nurse,2
+PAT-000634,Samira Ahmed,female,1983-01-29,none,graphic designer,5
+PAT-000635,Sabbir Sarkar,male,1985-07-09,Type 2 diabetes mellitus,rickshaw puller,2
+PAT-000636,Kulsum Mondal,female,1965-11-29,none,accountant,1
+PAT-000637,Bilkis Alam,female,1994-12-05,none,schoolteacher,4
+PAT-000638,Sultana Haque,female,2005-06-06,none,shopkeeper,5
+PAT-000639,Jahid Awal,male,1961-06-13,Hypothyroidism,retired civil servant,5
+PAT-000640,Harun Haque,male,1954-12-11,none,retired civil servant,2
+PAT-000641,Anwar Miah,male,1960-02-04,none,farmer,1
+PAT-000642,Selim Bhuiyan,male,1954-04-16,Bronchial asthma,shopkeeper,2
+PAT-000643,Kamal Siddique,male,1948-12-27,Hypothyroidism,homemaker,4
+PAT-000644,Farida Siddique,female,1999-02-22,Essential hypertension,CNG auto-rickshaw driver,3
+PAT-000645,Fahim Uddin,male,2005-02-20,Type 2 diabetes mellitus,rickshaw puller,2
+PAT-000646,Karim Alam,male,1971-09-12,none,construction worker,3
+PAT-000647,Lipi Islam,female,2001-09-24,none,bank officer,3
+PAT-000648,Nazmul Mondal,male,1982-02-04,none,bank officer,2
+PAT-000649,Rakib Ahmed,male,1982-02-03,Hypothyroidism,delivery rider,5
+PAT-000650,Shahana Miah,female,1982-05-28,Hypothyroidism,madrasa teacher,2
+PAT-000651,Nusrat Ahmed,female,1966-10-26,none,architect,2
+PAT-000652,Aminul Hossain,male,2006-08-14,Bronchial asthma,homemaker,3
+PAT-000653,Rafiq Karim,male,1964-02-17,Essential hypertension,homemaker,3
+PAT-000654,Ratan Biswas,male,1953-08-20,none,homemaker,1
+PAT-000655,Ibrahim Majumder,male,1985-08-20,Type 2 diabetes mellitus,graphic designer,4
+PAT-000656,Rumana Mondal,female,1974-02-18,none,CNG auto-rickshaw driver,4
+PAT-000657,Harun Islam,male,1991-05-23,Type 2 diabetes mellitus,rickshaw puller,2
+PAT-000658,Mitu Sarkar,female,1946-05-24,none,retired civil servant,4
+PAT-000659,Arif Ahmed,male,1963-10-21,none,shopkeeper,3
+PAT-000660,Bikash Roy,male,1992-02-26,Type 2 diabetes mellitus,mobile phone repair technician,2
+PAT-000661,Hasan Patwary,male,2001-02-10,none,journalist,1
+PAT-000662,Afsana Khan,female,1955-05-28,none,shopkeeper,3
+PAT-000663,Sharmin Howlader,female,2005-06-09,none,bus driver,4
+PAT-000664,Pradip Sarkar,male,1965-01-21,none,office cleaner,5
+PAT-000665,Hossain Uddin,male,2002-04-02,Type 2 diabetes mellitus,madrasa teacher,3
+PAT-000666,Farhan Awal,male,1950-03-19,none,farmer,3
+PAT-000667,Imtiaz Bhuiyan,male,2000-08-26,Bronchial asthma,electrician,4
+PAT-000668,Sumaiya Uddin,female,1970-08-27,none,graphic designer,3
+PAT-000669,Rahim Faruque,male,1963-04-17,none,NGO field officer,2
+PAT-000670,Yusuf Chowdhury,male,1977-08-07,none,schoolteacher,5
+PAT-000671,Sraboni Kundu,female,1994-12-12,Hypothyroidism,fisherman,2
+PAT-000672,Anika Khatun,female,2004-02-08,Type 2 diabetes mellitus,architect,5
+PAT-000673,Rubel Uddin,male,1980-09-13,none,architect,3
+PAT-000674,Hasina Mahmud,female,1983-01-11,Bronchial asthma,call centre agent,2
+PAT-000675,Mahiya Begum,female,1977-08-26,none,electrician,4
+PAT-000676,Rupa Sultana,female,1982-03-27,Type 2 diabetes mellitus,hotel receptionist,2
+PAT-000677,Jahid Mollah,male,1954-10-14,none,retired civil servant,2
+PAT-000678,Golam Mollah,male,1969-06-04,none,mobile phone repair technician,1
+PAT-000679,Hasina Mondal,female,1997-07-09,Bronchial asthma,construction worker,4
+PAT-000680,Hossain Islam,male,1964-03-22,none,construction worker,4
+PAT-000681,Aminul Islam,male,1980-02-29,none,software developer,2
+PAT-000682,Fahim Mondal,male,1977-10-28,none,garment factory worker,1
+PAT-000683,Anika Akter,female,1961-08-10,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000684,Jesmin Mondal,female,1994-12-26,Type 2 diabetes mellitus,garment factory worker,2
+PAT-000685,Bilkis Sheikh,female,1961-07-31,none,madrasa teacher,2
+PAT-000686,Jannat Faruque,female,1985-06-03,none,farmer,4
+PAT-000687,Rakib Karim,male,1966-06-06,Hypothyroidism,electrician,5
+PAT-000688,Mizanur Patwary,male,1962-01-15,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000689,Dilruba Sheikh,female,2006-03-11,Hypothyroidism,shopkeeper,1
+PAT-000690,Selim Islam,male,1959-04-17,Essential hypertension,shopkeeper,1
+PAT-000691,Masud Bhuiyan,male,1958-04-15,Essential hypertension,farmer,2
+PAT-000692,Farida Bhuiyan,female,1994-05-28,Type 2 diabetes mellitus,construction worker,2
+PAT-000693,Rokeya Sheikh,female,1952-10-09,none,farmer,1
+PAT-000694,Nasima Miah,female,1949-04-22,Bronchial asthma,madrasa teacher,3
+PAT-000695,Mahiya Rahman,female,1961-11-27,Essential hypertension,tailor,5
+PAT-000696,Nadia Ahmed,female,1951-02-05,none,shopkeeper,4
+PAT-000697,Mahiya Majumder,female,1981-08-16,none,farmer,5
+PAT-000698,Ratan Saha,male,1973-04-20,Essential hypertension,journalist,4
+PAT-000699,Rabeya Ahmed,female,1988-07-18,none,accountant,4
+PAT-000700,Babul Sheikh,male,1974-06-26,Essential hypertension,office cleaner,3
+PAT-000701,Parvin Bhuiyan,female,1979-08-28,Bronchial asthma,sales representative,4
+PAT-000702,Mamun Siddique,male,2001-01-31,none,garment merchandiser,3
+PAT-000703,Jamal Howlader,male,2004-01-02,Essential hypertension,software developer,2
+PAT-000704,Yusuf Uddin,male,1978-11-23,Bronchial asthma,photographer,5
+PAT-000705,Tariq Siddique,male,1994-03-23,none,textile engineer,3
+PAT-000706,Rahima Mahmud,female,1962-06-24,none,tailor,3
+PAT-000707,Lamia Akter,female,1947-03-05,none,shopkeeper,7
+PAT-000708,Kamal Mollah,male,1984-06-12,Hypothyroidism,garment merchandiser,3
+PAT-000709,Arif Rahman,male,1957-04-22,none,homemaker,2
+PAT-000710,Taslima Sultana,female,1992-04-25,Hypothyroidism,fisherman,2
+PAT-000711,Shahana Faruque,female,1952-03-03,Bronchial asthma,tailor,2
+PAT-000712,Rokeya Haque,female,1967-05-23,none,schoolteacher,1
+PAT-000713,Shapla Uddin,female,1983-09-26,none,tailor,3
+PAT-000714,Rakib Mahmud,male,1949-05-30,none,tailor,4
+PAT-000715,Shakil Uddin,male,1952-04-26,Bronchial asthma,tailor,4
+PAT-000716,Babul Howlader,male,1981-08-10,none,textile engineer,1
+PAT-000717,Rumana Hossain,female,1987-03-12,none,police constable,2
+PAT-000718,Fatema Sarkar,female,1972-03-31,Bronchial asthma,hotel receptionist,5
+PAT-000719,Tapan Datta,male,1980-07-03,none,cricket coach,2
+PAT-000720,Ibrahim Bhuiyan,male,2006-04-30,Bronchial asthma,garment factory worker,4
+PAT-000721,Uttam Saha,male,1975-03-26,none,madrasa teacher,2
+PAT-000722,Aminul Karim,male,1992-01-13,Type 2 diabetes mellitus,nurse,1
+PAT-000723,Masud Mondal,male,1973-03-25,Essential hypertension,journalist,5
+PAT-000724,Nasima Khatun,female,1945-05-13,Bronchial asthma,farmer,0
+PAT-000725,Nusrat Haque,female,1945-03-22,none,tailor,2
+PAT-000726,Priya Datta,female,1998-09-17,none,security guard,6
+PAT-000727,Rashed Hossain,male,1975-06-07,none,shopkeeper,5
+PAT-000728,Rumana Hasan,female,2000-01-08,none,ride-share driver,3
+PAT-000729,Tanvir Hossain,male,1979-12-01,Type 2 diabetes mellitus,mobile phone repair technician,3
+PAT-000730,Shakil Rahman,male,1994-09-18,Hypothyroidism,ride-share driver,3
+PAT-000731,Rahim Alam,male,1977-01-20,Hypothyroidism,madrasa teacher,4
+PAT-000732,Nazmul Karim,male,1959-02-24,none,madrasa teacher,3
+PAT-000733,Rubel Sarkar,male,1962-04-02,Hypothyroidism,madrasa teacher,2
+PAT-000734,Afsana Talukder,female,1989-11-28,Hypothyroidism,graphic designer,2
+PAT-000735,Farhan Mollah,male,1963-11-23,none,ride-share driver,2
+PAT-000736,Sabina Haque,female,1989-08-03,Hypothyroidism,police constable,4
+PAT-000737,Nazmul Sheikh,male,1978-09-13,none,accountant,6
+PAT-000738,Tapan Roy,male,1984-02-03,none,nurse,2
+PAT-000739,Laxmi Saha,female,2002-06-17,none,shopkeeper,2
+PAT-000740,Sajjad Alam,male,1997-10-28,none,pharmacist,5
+PAT-000741,Mitu Awal,female,1978-07-19,Bronchial asthma,CNG auto-rickshaw driver,6
+PAT-000742,Sumaiya Mahmud,female,1955-08-24,Type 2 diabetes mellitus,shopkeeper,4
+PAT-000743,Nadia Awal,female,1988-12-27,Bronchial asthma,security guard,1
+PAT-000744,Imtiaz Siddique,male,1956-08-04,none,tailor,2
+PAT-000745,Tanvir Faruque,male,1990-07-11,none,textile engineer,2
+PAT-000746,Sabbir Hasan,male,1979-05-30,Hypothyroidism,journalist,2
+PAT-000747,Rumana Mollah,female,1950-12-01,none,farmer,1
+PAT-000748,Babul Siddique,male,1955-03-11,none,madrasa teacher,4
+PAT-000749,Rubel Majumder,male,1967-04-22,Essential hypertension,delivery rider,5
+PAT-000750,Ashraf Ahmed,male,1954-12-06,none,homemaker,3
+PAT-000751,Anwar Siddique,male,1985-05-05,Hypothyroidism,textile engineer,3
+PAT-000752,Sanjay Dey,male,1945-06-24,Hypothyroidism,shopkeeper,4
+PAT-000753,Yusuf Ahmed,male,1962-10-07,none,farmer,7
+PAT-000754,Anjali Roy,female,1973-05-24,none,hotel receptionist,1
+PAT-000755,Rupa Kabir,female,1960-06-02,Bronchial asthma,farmer,3
+PAT-000756,Samira Akter,female,1986-10-02,Type 2 diabetes mellitus,CNG auto-rickshaw driver,2
+PAT-000757,Tania Ahmed,female,1987-01-13,Essential hypertension,construction worker,2
+PAT-000758,Sabbir Talukder,male,1972-08-22,Bronchial asthma,rickshaw puller,3
+PAT-000759,Imtiaz Faruque,male,1987-04-06,none,farmer,4
+PAT-000760,Rahima Mondal,female,1962-06-23,none,madrasa teacher,2
+PAT-000761,Rubel Alam,male,1960-01-28,none,retired civil servant,4
+PAT-000762,Farhan Patwary,male,1998-05-06,Bronchial asthma,photographer,4
+PAT-000763,Shahana Ahmed,female,1990-02-16,none,bus driver,2
+PAT-000764,Imtiaz Haque,male,1965-04-03,none,tailor,4
+PAT-000765,Tariq Alam,male,1967-06-11,Essential hypertension,cricket coach,3
+PAT-000766,Shahidul Chowdhury,male,1983-07-29,none,restaurant cook,4
+PAT-000767,Sohel Hasan,male,1988-12-26,Bronchial asthma,journalist,2
+PAT-000768,Shakil Bhuiyan,male,1975-01-19,none,call centre agent,1
+PAT-000769,Jesmin Faruque,female,1994-01-04,none,bank officer,4
+PAT-000770,Rabeya Awal,female,1995-04-28,none,sales representative,4
+PAT-000771,Samira Mahmud,female,1947-05-20,Bronchial asthma,madrasa teacher,4
+PAT-000772,Rupa Talukder,female,1950-06-22,Hypothyroidism,tailor,2
+PAT-000773,Rafiq Mollah,male,1970-06-29,Hypothyroidism,accountant,1
+PAT-000774,Rafiq Rahman,male,1989-06-20,none,pharmacist,2
+PAT-000775,Nargis Khatun,female,1988-12-21,none,lawyer,3
+PAT-000776,Lipi Kabir,female,1982-05-03,Essential hypertension,homemaker,3
+PAT-000777,Salma Sarkar,female,1992-12-16,none,accountant,6
+PAT-000778,Tapan Paul,male,1970-02-28,none,bank officer,4
+PAT-000779,Shahana Majumder,female,1986-02-12,Bronchial asthma,photographer,3
+PAT-000780,Farhan Talukder,male,1962-03-18,none,shopkeeper,2
+PAT-000781,Nargis Faruque,female,1971-01-09,none,ride-share driver,5
+PAT-000782,Lamia Khan,female,1956-07-28,none,retired civil servant,6
+PAT-000783,Rahima Khatun,female,1947-01-03,Type 2 diabetes mellitus,retired civil servant,4
+PAT-000784,Nayeem Majumder,male,1948-09-11,none,tailor,4
+PAT-000785,Rumana Ahmed,female,1987-08-11,none,madrasa teacher,2
+PAT-000786,Rubel Siddique,male,1950-10-03,none,tailor,3
+PAT-000787,Mahiya Miah,female,1963-05-08,Bronchial asthma,garment merchandiser,5
+PAT-000788,Nasima Karim,female,1980-06-14,Bronchial asthma,software developer,4
+PAT-000789,Ashraf Siddique,male,1971-03-26,Hypothyroidism,textile engineer,2
+PAT-000790,Masud Ahmed,male,1987-03-20,none,farmer,2
+PAT-000791,Jannat Rahman,female,1982-08-12,none,bank officer,3
+PAT-000792,Farida Sultana,female,1964-01-11,Bronchial asthma,software developer,2
+PAT-000793,Masud Hossain,male,1985-11-25,none,restaurant cook,2
+PAT-000794,Aminul Chowdhury,male,1945-10-19,Type 2 diabetes mellitus,retired civil servant,0
+PAT-000795,Sanjay Roy,male,1958-07-28,none,retired civil servant,2
+PAT-000796,Sumitra Dey,female,1998-08-05,none,sales representative,7
+PAT-000797,Tahsin Rahman,female,1993-12-12,none,restaurant cook,5
+PAT-000798,Hasan Ahmed,male,1998-11-16,Essential hypertension,nurse,4
+PAT-000799,Ayesha Ahmed,female,1963-07-30,Bronchial asthma,hotel receptionist,2
+PAT-000800,Bikash Ghosh,male,1951-01-30,none,tailor,2
+PAT-000801,Rehana Ahmed,female,2004-11-16,Essential hypertension,bank officer,5
+PAT-000802,Shakil Sarkar,male,1949-11-25,none,shopkeeper,4
+PAT-000803,Yusuf Miah,male,1970-10-30,Essential hypertension,farmer,2
+PAT-000804,Tariq Talukder,male,1998-01-10,Essential hypertension,photographer,2
+PAT-000805,Fahim Faruque,male,2004-03-04,none,ride-share driver,2
+PAT-000806,Kamal Miah,male,1958-08-11,Essential hypertension,homemaker,2
+PAT-000807,Rehana Begum,female,2002-01-21,none,security guard,5
+PAT-000808,Mita Datta,female,1990-09-01,Hypothyroidism,madrasa teacher,5
+PAT-000809,Arif Karim,male,1993-01-30,none,homemaker,2
+PAT-000810,Nazmul Howlader,male,1968-11-16,Type 2 diabetes mellitus,journalist,4
+PAT-000811,Sabbir Miah,male,1963-10-24,Type 2 diabetes mellitus,software developer,2
+PAT-000812,Sabbir Majumder,male,1958-11-30,none,retired civil servant,2
+PAT-000813,Harun Majumder,male,1956-10-11,Bronchial asthma,madrasa teacher,2
+PAT-000814,Shahidul Faruque,male,1989-03-20,none,ride-share driver,3
+PAT-000815,Bilkis Mollah,female,1946-03-30,none,homemaker,2
+PAT-000816,Nusrat Faruque,female,1980-04-28,Bronchial asthma,police constable,5
+PAT-000817,Tahsin Faruque,female,1963-06-05,none,lawyer,3
+PAT-000818,Nazmul Awal,male,1983-08-25,none,graphic designer,2
+PAT-000819,Salma Uddin,female,1973-02-28,none,cricket coach,2
+PAT-000820,Kamal Awal,male,1988-07-07,Bronchial asthma,shopkeeper,2
+PAT-000821,Mousumi Biswas,female,1967-11-14,Type 2 diabetes mellitus,schoolteacher,3
+PAT-000822,Nadia Hossain,female,2004-05-05,none,farmer,4
+PAT-000823,Sabbir Haque,male,1986-06-28,Type 2 diabetes mellitus,garment merchandiser,2
+PAT-000824,Rakib Awal,male,1952-10-06,none,tailor,3
+PAT-000825,Ibrahim Hossain,male,2005-11-03,Hypothyroidism,shopkeeper,1
+PAT-000826,Lamia Awal,female,1954-05-02,none,homemaker,2
+PAT-000827,Jahid Hossain,male,1979-09-01,none,CNG auto-rickshaw driver,4
+PAT-000828,Parvin Ahmed,female,1972-06-07,none,mobile phone repair technician,2
+PAT-000829,Aminul Haque,male,1955-09-17,none,tailor,3
+PAT-000830,Shafiq Chowdhury,male,1955-12-06,none,tailor,3
+PAT-000831,Shakil Kabir,male,1978-05-04,none,police constable,2
+PAT-000832,Harun Sarkar,male,1964-10-08,Bronchial asthma,electrician,4
+PAT-000833,Tahsin Mollah,female,2004-02-10,Essential hypertension,office cleaner,4
+PAT-000834,Jahid Talukder,male,1953-06-25,none,tailor,2
+PAT-000835,Sohel Talukder,male,1987-10-27,none,NGO field officer,3
+PAT-000836,Rafiq Sarkar,male,1947-08-19,Bronchial asthma,tailor,4
+PAT-000837,Morium Mahmud,female,1976-04-15,Type 2 diabetes mellitus,homemaker,1
+PAT-000838,Mamun Chowdhury,male,2004-10-01,Essential hypertension,hotel receptionist,2
+PAT-000839,Shahana Talukder,female,1991-08-25,Essential hypertension,bank officer,5
+PAT-000840,Abdul Alam,male,1950-08-08,none,retired civil servant,3
+PAT-000841,Selim Mahmud,male,1986-04-01,none,software developer,1
+PAT-000842,Ibrahim Ahmed,male,1985-02-25,none,software developer,2
+PAT-000843,Bilkis Mahmud,female,1970-04-26,none,lawyer,2
+PAT-000844,Sumaiya Khatun,female,1945-08-12,Hypothyroidism,tailor,0
+PAT-000845,Shafiq Hasan,male,1952-12-21,none,homemaker,4
+PAT-000846,Jesmin Islam,female,1992-08-25,Essential hypertension,hotel receptionist,3
+PAT-000847,Uttam Paul,male,1997-11-06,none,schoolteacher,2
+PAT-000848,Jannat Uddin,female,1952-08-21,none,farmer,3
+PAT-000849,Nazmul Majumder,male,1994-04-01,Hypothyroidism,security guard,3
+PAT-000850,Sabina Mondal,female,1980-02-15,Essential hypertension,call centre agent,1
+PAT-000851,Jamal Hasan,male,1952-12-06,Bronchial asthma,shopkeeper,3
+PAT-000852,Shirin Sultana,female,1959-09-12,none,farmer,5
+PAT-000853,Rafiq Hasan,male,1973-03-09,Hypothyroidism,office cleaner,4
+PAT-000854,Hasan Sarkar,male,1965-03-03,none,bus driver,4
+PAT-000855,Samira Mollah,female,1958-08-20,Essential hypertension,madrasa teacher,2
+PAT-000856,Mita Mitra,female,1958-04-22,Hypothyroidism,shopkeeper,2
+PAT-000857,Nasima Mondal,female,1964-11-12,none,nurse,3
+PAT-000858,Tahsin Sarkar,female,1969-05-29,Essential hypertension,hotel receptionist,2
+PAT-000859,Babul Hossain,male,1946-12-12,none,farmer,4
+PAT-000860,Taslima Begum,female,1968-04-04,Hypothyroidism,photographer,2
+PAT-000861,Jahid Mondal,male,1989-12-04,none,graphic designer,2
+PAT-000862,Sumitra Saha,female,1986-06-20,none,software developer,3
+PAT-000863,Tanvir Bhuiyan,male,1994-06-04,none,restaurant cook,2
+PAT-000864,Jesmin Chowdhury,female,1984-08-28,none,textile engineer,4
+PAT-000865,Ayesha Islam,female,1986-01-28,none,beautician,6
+PAT-000866,Mehedi Siddique,male,1998-07-13,none,electrician,2
+PAT-000867,Parvin Faruque,female,1994-02-10,none,cricket coach,2
+PAT-000868,Bilkis Talukder,female,1961-10-28,none,madrasa teacher,4
+PAT-000869,Fatema Hasan,female,1965-05-10,none,shopkeeper,2
+PAT-000870,Rakib Majumder,male,1991-07-13,none,call centre agent,2
+PAT-000871,Mitu Khan,female,1993-07-07,Type 2 diabetes mellitus,madrasa teacher,2
+PAT-000872,Shirin Begum,female,1991-01-09,none,construction worker,4
+PAT-000873,Shirin Rahman,female,1951-02-07,Type 2 diabetes mellitus,madrasa teacher,2
+PAT-000874,Sraboni Ghosh,female,1981-10-23,Hypothyroidism,police constable,1
+PAT-000875,Salma Islam,female,1971-06-25,Hypothyroidism,rickshaw puller,4
+PAT-000876,Uttam Datta,male,1964-12-13,Type 2 diabetes mellitus,nurse,2
+PAT-000877,Salma Hasan,female,1991-07-20,none,CNG auto-rickshaw driver,2
+PAT-000878,Rashed Mahmud,male,1986-08-11,none,delivery rider,2
+PAT-000879,Tariq Rahman,male,1994-03-23,none,architect,2
+PAT-000880,Mehedi Alam,male,2005-11-12,none,garment factory worker,2
+PAT-000881,Ashraf Chowdhury,male,1980-05-22,none,call centre agent,4
+PAT-000882,Golam Karim,male,1993-11-24,none,madrasa teacher,2
+PAT-000883,Shahidul Alam,male,1964-01-08,Bronchial asthma,police constable,4
+PAT-000884,Sumaiya Siddique,female,1962-09-19,Hypothyroidism,retired civil servant,3
+PAT-000885,Ashraf Awal,male,1946-12-05,none,madrasa teacher,2
+PAT-000886,Selim Rahman,male,1959-07-13,Bronchial asthma,retired civil servant,2
+PAT-000887,Aminul Mollah,male,1971-09-08,Essential hypertension,NGO field officer,4
+PAT-000888,Nadia Sheikh,female,1989-10-28,none,accountant,3
+PAT-000889,Jesmin Awal,female,2005-08-09,none,architect,2
+PAT-000890,Rokeya Mondal,female,1985-12-19,Essential hypertension,lawyer,2
+PAT-000891,Nargis Islam,female,1949-06-19,none,shopkeeper,3
+PAT-000892,Jannat Awal,female,1954-08-04,none,madrasa teacher,4
+PAT-000893,Mita Saha,female,1960-07-05,Bronchial asthma,shopkeeper,3
+PAT-000894,Mehedi Karim,male,1991-05-31,Essential hypertension,garment factory worker,2
+PAT-000895,Sharmin Sheikh,female,1945-10-11,Hypothyroidism,madrasa teacher,0
+PAT-000896,Yusuf Rahman,male,1985-08-02,none,accountant,2
+PAT-000897,Hasan Rahman,male,1975-07-31,Type 2 diabetes mellitus,police constable,2
+PAT-000898,Abdul Rahman,male,1966-06-09,Essential hypertension,lawyer,1
+PAT-000899,Lipi Hasan,female,2006-02-11,none,university student,3
+PAT-000900,Shyamal Dey,male,1979-06-19,none,homemaker,3

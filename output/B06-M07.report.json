@@ -1,0 +1,190 @@
+{
+  "slice": "B06-M07",
+  "files": [
+    "B06-M07.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 25,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-000102",
+      "errors": [],
+      "warnings": [
+        "length is 41 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000108",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000111",
+      "errors": [],
+      "warnings": [
+        "length is 37 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000115",
+      "errors": [],
+      "warnings": [
+        "length is 47 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000117",
+      "errors": [],
+      "warnings": [
+        "length is 53 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000118",
+      "errors": [],
+      "warnings": [
+        "length is 50 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000121",
+      "errors": [],
+      "warnings": [
+        "length is 46 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000122",
+      "errors": [],
+      "warnings": [
+        "length is 50 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000125",
+      "errors": [],
+      "warnings": [
+        "length is 44 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000126",
+      "errors": [],
+      "warnings": [
+        "length is 37 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000127",
+      "errors": [],
+      "warnings": [
+        "length is 58 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000128",
+      "errors": [],
+      "warnings": [
+        "length is 41 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000130",
+      "errors": [],
+      "warnings": [
+        "length is 49 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000131",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000134",
+      "errors": [],
+      "warnings": [
+        "length is 58 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000136",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000137",
+      "errors": [],
+      "warnings": [
+        "length is 41 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000138",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000140",
+      "errors": [],
+      "warnings": [
+        "length is 46 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000141",
+      "errors": [],
+      "warnings": [
+        "length is 53 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000142",
+      "errors": [],
+      "warnings": [
+        "length is 42 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000145",
+      "errors": [],
+      "warnings": [
+        "length is 50 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000146",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000148",
+      "errors": [],
+      "warnings": [
+        "length is 37 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-000149",
+      "errors": [],
+      "warnings": [
+        "length is 56 words, target 60-120"
+      ]
+    }
+  ]
+}

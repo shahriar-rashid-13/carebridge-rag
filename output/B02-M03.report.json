@@ -1,0 +1,428 @@
+{
+  "slice": "B02-M03",
+  "files": [
+    "B02-M03.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 50,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-000601",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000602",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 18\"",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000603",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000604",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000605",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.5°F\"",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000606",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.6\"",
+        "length is 99 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000607",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000608",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 12 cm across\"",
+        "length is 108 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-000609",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"reduced sensation at 5 of 10 monofilament test sites\"",
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000610",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 5 seconds\"",
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000611",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 103.3°F\"",
+        "chief_complaint_hint copied word for word",
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000612",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 11\"",
+        "length is 106 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-000613",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.0°F\"",
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 90 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000614",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 31.0\"",
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000615",
+      "errors": [],
+      "warnings": [
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000616",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 12.6 mmol/L\"",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000617",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 90 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000618",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/9 in the right eye\"",
+        "length is 105 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-000619",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 9.4 mIU/L\"",
+        "length is 96 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000620",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000621",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 22\"",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000622",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\"",
+        "length is 119 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-000623",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 7.1 mmol/L\"",
+        "chief_complaint_hint copied word for word",
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000624",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 88%\"",
+        "chief_complaint_hint copied word for word",
+        "length is 98 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000625",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 11.7 mIU/L\"",
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000626",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 11 cm across\"",
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000627",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"lump about 8 mm on the right upper eyelid\"",
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000628",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\"",
+        "chief_complaint_hint copied word for word",
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000629",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 8/10\"",
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000630",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 94 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000631",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\"",
+        "chief_complaint_hint copied word for word",
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000632",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.1\"",
+        "chief_complaint_hint copied word for word",
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000633",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 10 cm across\"",
+        "chief_complaint_hint copied word for word",
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000634",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 3/10\"",
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000635",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 31.9\"",
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000636",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 113 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-000637",
+      "errors": [],
+      "warnings": [
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000638",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 14\"",
+        "chief_complaint_hint copied word for word",
+        "length is 90 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000639",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 12.8 mmol/L\"",
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000640",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 4.3 mmol/L\"",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000641",
+      "errors": [],
+      "warnings": [
+        "length is 101 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000642",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000643",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 18\"",
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000644",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000645",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.3°F\"",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000646",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 18\"",
+        "chief_complaint_hint copied word for word",
+        "length is 91 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000647",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"lump about 8 mm on the left upper eyelid\"",
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000648",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 95 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000649",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000650",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 9/10\"",
+        "chief_complaint_hint copied word for word",
+        "length is 107 words, target 120-220"
+      ]
+    }
+  ]
+}

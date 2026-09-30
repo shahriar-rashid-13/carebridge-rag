@@ -1,0 +1,24 @@
+FIX. Rewrite only these rows and return CSV with the header. Problems:
+- FAQ-000051: length is 13 words, expected 40-120
+- FAQ-000052: length is 12 words, expected 40-120
+- FAQ-000055: length is 18 words, expected 40-120
+- FAQ-000058: length is 19 words, expected 40-120
+- FAQ-000059: length is 17 words, expected 40-120
+- FAQ-000060: length is 17 words, expected 40-120
+- FAQ-000061: length is 15 words, expected 40-120
+- FAQ-000062: length is 14 words, expected 40-120
+- FAQ-000063: length is 19 words, expected 40-120
+- FAQ-000064: length is 14 words, expected 40-120
+- FAQ-000069: length is 17 words, expected 40-120
+
+{"record_type":"faq","doc_id":"FAQ-000051","group_id":null,"faq_intent":"FAQI-051","faq_topic":"Billing","question_hint":"can I pay by mobile banking","answer_facts":["mobile banking is accepted"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000052","group_id":null,"faq_intent":"FAQI-052","faq_topic":"Billing","question_hint":"can I pay by card","answer_facts":["card payment is accepted"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000055","group_id":null,"faq_intent":"FAQI-055","faq_topic":"Billing","question_hint":"why do consultation fees differ","answer_facts":["the consultation fee depends on the doctor","senior consultants charge more"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000058","group_id":null,"faq_intent":"FAQI-058","faq_topic":"Clinic info","question_hint":"what are your opening hours","answer_facts":["Saturday to Thursday, 9:00 AM to 5:00 PM"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000059","group_id":null,"faq_intent":"FAQI-059","faq_topic":"Clinic info","question_hint":"are you open on Friday","answer_facts":["the clinic is closed on Friday and public holidays"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000060","group_id":null,"faq_intent":"FAQI-060","faq_topic":"Clinic info","question_hint":"where is the clinic","answer_facts":["House 27, Road 9/A, Dhanmondi, Dhaka 1209"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000061","group_id":null,"faq_intent":"FAQI-061","faq_topic":"Clinic info","question_hint":"what is the clinic phone number","answer_facts":["+880 1711-000000"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000062","group_id":null,"faq_intent":"FAQI-062","faq_topic":"Clinic info","question_hint":"is there parking at the clinic","answer_facts":["only limited street parking is available"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000063","group_id":null,"faq_intent":"FAQI-063","faq_topic":"Clinic info","question_hint":"is the clinic wheelchair accessible","answer_facts":["there is a wheelchair ramp and a lift at the entrance"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000064","group_id":null,"faq_intent":"FAQI-064","faq_topic":"Clinic info","question_hint":"which languages do your staff speak","answer_facts":["reception staff speak Bangla and English"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000069","group_id":null,"faq_intent":"FAQI-069","faq_topic":"AI assistant","question_hint":"are my chats with the assistant private","answer_facts":["your chats are private to your account"],"length_words":"40-120"}

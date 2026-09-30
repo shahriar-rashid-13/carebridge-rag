@@ -1,0 +1,174 @@
+{
+  "slice": "B06-M01",
+  "files": [
+    "B06-M01.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 46,
+  "rows_failed": 4,
+  "rows_with_warnings": 20,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-002502",
+      "errors": [
+        "missing occupation \"construction worker\""
+      ],
+      "warnings": [
+        "length is 142 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002506",
+      "errors": [],
+      "warnings": [
+        "length is 145 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002510",
+      "errors": [
+        "missing occupation \"construction worker\""
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002513",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002515",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002517",
+      "errors": [],
+      "warnings": [
+        "length is 136 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002520",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002521",
+      "errors": [],
+      "warnings": [
+        "length is 142 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002524",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002527",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002530",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002532",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002535",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002536",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002537",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002538",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002542",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002543",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002545",
+      "errors": [
+        "missing occupation \"construction worker\""
+      ],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002546",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002548",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002550",
+      "errors": [
+        "missing occupation \"construction worker\""
+      ],
+      "warnings": []
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "slice": "B02-M01",
+  "files": [
+    "B02-M01.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 47,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-000501",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000502",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000504",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000505",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000506",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000507",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000508",
+      "errors": [],
+      "warnings": [
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000509",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000510",
+      "errors": [],
+      "warnings": [
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000512",
+      "errors": [],
+      "warnings": [
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000513",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000514",
+      "errors": [],
+      "warnings": [
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000515",
+      "errors": [],
+      "warnings": [
+        "length is 96 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000516",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000517",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000518",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000519",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000520",
+      "errors": [],
+      "warnings": [
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000521",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000522",
+      "errors": [],
+      "warnings": [
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000523",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000524",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000525",
+      "errors": [],
+      "warnings": [
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000526",
+      "errors": [],
+      "warnings": [
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000527",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000528",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 95 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000529",
+      "errors": [],
+      "warnings": [
+        "length is 94 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000530",
+      "errors": [],
+      "warnings": [
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000531",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000532",
+      "errors": [],
+      "warnings": [
+        "length is 100 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000533",
+      "errors": [],
+      "warnings": [
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000534",
+      "errors": [],
+      "warnings": [
+        "length is 94 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000535",
+      "errors": [],
+      "warnings": [
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000536",
+      "errors": [],
+      "warnings": [
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000537",
+      "errors": [],
+      "warnings": [
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000538",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000539",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000540",
+      "errors": [],
+      "warnings": [
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000541",
+      "errors": [],
+      "warnings": [
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000542",
+      "errors": [],
+      "warnings": [
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000543",
+      "errors": [],
+      "warnings": [
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000544",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000545",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000546",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000547",
+      "errors": [],
+      "warnings": [
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000549",
+      "errors": [],
+      "warnings": [
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-000550",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    }
+  ]
+}

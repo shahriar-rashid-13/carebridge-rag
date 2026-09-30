@@ -1,0 +1,20 @@
+FIX. Rewrite only these rows and return CSV with the header. Problems:
+- FAQ-000020: length is 17 words, expected 40-120
+- FAQ-000023: length is 13 words, expected 40-120
+- FAQ-000034: length is 19 words, expected 40-120
+- FAQ-000036: length is 17 words, expected 40-120
+- FAQ-000040: length is 14 words, expected 40-120
+- FAQ-000043: length is 16 words, expected 40-120
+- FAQ-000044: length is 15 words, expected 40-120
+- FAQ-000048: length is 14 words, expected 40-120
+- FAQ-000050: length is 15 words, expected 40-120
+
+{"record_type":"faq","doc_id":"FAQ-000020","group_id":null,"faq_intent":"FAQI-020","faq_topic":"Booking","question_hint":"what happens if I arrive late","answer_facts":["arriving more than 15 minutes late may require rescheduling"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000023","group_id":null,"faq_intent":"FAQI-023","faq_topic":"Cancel and reschedule","question_hint":"is there a cancellation fee","answer_facts":["there is no cancellation fee"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000034","group_id":null,"faq_intent":"FAQI-034","faq_topic":"Waitlist","question_hint":"how do I leave the waitlist","answer_facts":["you can leave the waitlist at any time from My Appointments"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000036","group_id":null,"faq_intent":"FAQI-036","faq_topic":"Notifications","question_hint":"where do I see my notifications","answer_facts":["notifications appear under the bell icon in the app"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000040","group_id":null,"faq_intent":"FAQI-040","faq_topic":"Prescriptions","question_hint":"where can I find my prescription","answer_facts":["open My Prescriptions in the app"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000043","group_id":null,"faq_intent":"FAQI-043","faq_topic":"Prescriptions","question_hint":"can one visit have more than one prescription","answer_facts":["each appointment has one prescription"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000044","group_id":null,"faq_intent":"FAQI-044","faq_topic":"Prescriptions","question_hint":"how do I get a refill","answer_facts":["book a follow-up appointment for a refill"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000048","group_id":null,"faq_intent":"FAQI-048","faq_topic":"Billing","question_hint":"when is my bill created","answer_facts":["reception creates the bill after your visit"],"length_words":"40-120"}
+{"record_type":"faq","doc_id":"FAQ-000050","group_id":null,"faq_intent":"FAQI-050","faq_topic":"Billing","question_hint":"which payment methods do you accept","answer_facts":["cash","card","mobile banking"],"length_words":"40-120"}

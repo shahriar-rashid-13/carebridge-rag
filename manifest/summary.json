@@ -1,0 +1,50 @@
+{
+  "generator_seed": 20260929,
+  "visit_notes": 2700,
+  "prescriptions": 2300,
+  "faq": 250,
+  "total_records": 5250,
+  "slices": 105,
+  "visits_by_specialization": {
+    "General Medicine": 225,
+    "Ophthalmology": 225,
+    "Gastroenterology": 225,
+    "Neurology": 225,
+    "Orthopedics": 225,
+    "ENT": 225,
+    "Endocrinology": 225,
+    "Cardiology": 225,
+    "Pulmonology": 225,
+    "Obstetrics and Gynecology": 225,
+    "Dermatology": 225,
+    "Psychiatry": 225
+  },
+  "visits_by_difficulty": {
+    "normal": 2160,
+    "long": 135,
+    "confusable": 189,
+    "rare_presentation": 216
+  },
+  "visits_by_plan": {
+    "prescription": 2300,
+    "lifestyle": 50,
+    "referral": 40,
+    "tests": 60,
+    "continue": 250
+  },
+  "patients_with_visits": 894,
+  "visits_per_patient_histogram": {
+    "0": 6,
+    "1": 74,
+    "2": 306,
+    "3": 193,
+    "4": 211,
+    "5": 79,
+    "6": 21,
+    "7": 10
+  },
+  "date_range": [
+    "2025-01-02",
+    "2026-09-19"
+  ]
+}

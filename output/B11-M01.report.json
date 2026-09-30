@@ -1,0 +1,358 @@
+{
+  "slice": "B11-M01",
+  "files": [
+    "B11-M01.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 41,
+  "rows_failed": 9,
+  "rows_with_warnings": 40,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "FAQ-000001",
+      "errors": [],
+      "warnings": [
+        "length is 32 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000002",
+      "errors": [],
+      "warnings": [
+        "length is 28 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000003",
+      "errors": [],
+      "warnings": [
+        "length is 30 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000004",
+      "errors": [],
+      "warnings": [
+        "length is 29 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000005",
+      "errors": [],
+      "warnings": [
+        "length is 36 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000006",
+      "errors": [],
+      "warnings": [
+        "length is 21 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000007",
+      "errors": [],
+      "warnings": [
+        "length is 22 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000008",
+      "errors": [],
+      "warnings": [
+        "length is 21 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000009",
+      "errors": [],
+      "warnings": [
+        "length is 36 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000010",
+      "errors": [],
+      "warnings": [
+        "length is 27 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000011",
+      "errors": [],
+      "warnings": [
+        "length is 32 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000012",
+      "errors": [],
+      "warnings": [
+        "length is 29 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000013",
+      "errors": [],
+      "warnings": [
+        "length is 24 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000014",
+      "errors": [],
+      "warnings": [
+        "length is 30 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000015",
+      "errors": [],
+      "warnings": [
+        "length is 22 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000016",
+      "errors": [],
+      "warnings": [
+        "length is 29 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000017",
+      "errors": [],
+      "warnings": [
+        "length is 24 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000018",
+      "errors": [],
+      "warnings": [
+        "length is 22 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000019",
+      "errors": [],
+      "warnings": [
+        "length is 20 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000020",
+      "errors": [
+        "length is 17 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000021",
+      "errors": [],
+      "warnings": [
+        "length is 25 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000022",
+      "errors": [],
+      "warnings": [
+        "length is 20 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000023",
+      "errors": [
+        "length is 13 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000024",
+      "errors": [],
+      "warnings": [
+        "length is 27 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000025",
+      "errors": [],
+      "warnings": [
+        "length is 39 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000026",
+      "errors": [],
+      "warnings": [
+        "length is 23 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000027",
+      "errors": [],
+      "warnings": [
+        "length is 24 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000028",
+      "errors": [],
+      "warnings": [
+        "length is 20 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000029",
+      "errors": [],
+      "warnings": [
+        "length is 34 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000030",
+      "errors": [],
+      "warnings": [
+        "length is 31 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000031",
+      "errors": [],
+      "warnings": [
+        "length is 26 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000033",
+      "errors": [],
+      "warnings": [
+        "length is 33 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000034",
+      "errors": [
+        "length is 19 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000035",
+      "errors": [],
+      "warnings": [
+        "length is 32 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000036",
+      "errors": [
+        "length is 17 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000037",
+      "errors": [],
+      "warnings": [
+        "length is 24 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000038",
+      "errors": [],
+      "warnings": [
+        "length is 24 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000039",
+      "errors": [],
+      "warnings": [
+        "length is 27 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000040",
+      "errors": [
+        "length is 14 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000041",
+      "errors": [],
+      "warnings": [
+        "length is 28 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000042",
+      "errors": [],
+      "warnings": [
+        "length is 27 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000043",
+      "errors": [
+        "length is 16 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000044",
+      "errors": [
+        "length is 15 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000045",
+      "errors": [],
+      "warnings": [
+        "length is 23 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000046",
+      "errors": [],
+      "warnings": [
+        "length is 22 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000047",
+      "errors": [],
+      "warnings": [
+        "length is 26 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000048",
+      "errors": [
+        "length is 14 words, expected 40-120"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "FAQ-000049",
+      "errors": [],
+      "warnings": [
+        "length is 22 words, target 40-120"
+      ]
+    },
+    {
+      "doc_id": "FAQ-000050",
+      "errors": [
+        "length is 15 words, expected 40-120"
+      ],
+      "warnings": []
+    }
+  ]
+}
