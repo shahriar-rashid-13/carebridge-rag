@@ -76,7 +76,7 @@ function readJsonl(file) {
     .map((line) => JSON.parse(line));
 }
 
-function readOutputRows(file, problems) {
+export function readOutputRows(file, problems) {
   const text = fs
     .readFileSync(file, "utf8")
     .replace(/^\uFEFF/, "")
@@ -96,7 +96,7 @@ function readOutputRows(file, problems) {
   return rows;
 }
 
-function outputFilesFor(slice) {
+export function outputFilesFor(slice) {
   const base = path.join(OUTPUT_DIR, `${slice}.csv`);
   if (!fs.existsSync(base)) return [];
   const fixes = fs
@@ -246,7 +246,7 @@ function loadOtherContent(skipSlice) {
   return others;
 }
 
-function validateSlice(slice) {
+export function validateSlice(slice) {
   const inputFile = path.join(INPUT_DIR, `${slice}.jsonl`);
   if (!fs.existsSync(inputFile)) throw new Error(`unknown slice ${slice}: ${inputFile} not found`);
   const files = outputFilesFor(slice);
@@ -373,4 +373,4 @@ function main() {
   process.exitCode = anyErrors ? 1 : 0;
 }
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

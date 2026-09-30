@@ -1,0 +1,236 @@
+{
+  "total_records": 5110,
+  "by_record_type": {
+    "faq": 230,
+    "prescription": 2300,
+    "visit_note": 2580
+  },
+  "by_generator": {
+    "llm": 4760,
+    "script": 350
+  },
+  "rag_visible": 4990,
+  "hidden_doctor_faq": 120,
+  "by_specialization": {
+    "null": 230,
+    "General Medicine": 409,
+    "Ophthalmology": 415,
+    "Gastroenterology": 400,
+    "Neurology": 401,
+    "Orthopedics": 420,
+    "ENT": 419,
+    "Endocrinology": 399,
+    "Cardiology": 406,
+    "Pulmonology": 412,
+    "Obstetrics and Gynecology": 395,
+    "Dermatology": 402,
+    "Psychiatry": 402
+  },
+  "excluded_count": 40,
+  "excluded": [
+    {
+      "doc_id": "VN-000112",
+      "slice": "B01-M03",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-000209",
+      "slice": "B01-M05",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-000464",
+      "slice": "B01-M10",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-000467",
+      "slice": "B01-M10",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001236",
+      "slice": "B03-M05",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001452",
+      "slice": "B03-M10",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001455",
+      "slice": "B03-M10",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001501",
+      "slice": "B04-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001716",
+      "slice": "B04-M05",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-001909",
+      "slice": "B04-M09",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002006",
+      "slice": "B05-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002311",
+      "slice": "B05-M07",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002442",
+      "slice": "B05-M09",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002502",
+      "slice": "B06-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002510",
+      "slice": "B06-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002545",
+      "slice": "B06-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002550",
+      "slice": "B06-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002560",
+      "slice": "B06-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002601",
+      "slice": "B06-M03",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-002699",
+      "slice": "B06-M04",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000020",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000023",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000034",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000036",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000040",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000043",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000044",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000048",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000050",
+      "slice": "B11-M01",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000051",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000052",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000055",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000058",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000059",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000060",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000061",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000062",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000063",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000064",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "FAQ-000069",
+      "slice": "B11-M02",
+      "reason": "validator errors"
+    }
+  ],
+  "skipped_slices": [
+    "B02-M02",
+    "B05-M02"
+  ]
+}
