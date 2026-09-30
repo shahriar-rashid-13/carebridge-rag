@@ -1,6 +1,7 @@
 # CareBridge RAG — Implementation Plan
 
-Status: agreed design, implementation in progress. Evaluation happens after integration works.
+Status: steps 1 to 5 are built and deployed; the upload (step 4) is partial and evaluation
+(step 7) has not started. See Progress at the end.
 
 ## 1. Embeddings
 
@@ -13,7 +14,7 @@ Status: agreed design, implementation in progress. Evaluation happens after inte
 
 ## 2. Storage
 
-- Supabase project database with the `pgvector` extension (installed, not yet enabled).
+- Supabase project database with the `pgvector` extension (enabled in schema `extensions`).
 - Migration lives in `carebridge-clinic-flow/supabase/migrations/`.
 - One table, `rag_documents`, one row per record (records are short, no chunking):
 
@@ -94,3 +95,14 @@ Progress:
   access, and the service role can include noise and hidden rows. A typo query without an
   embedding only matches when trigram similarity is at least 0.6, so real queries rely on the
   embedding for typo tolerance; step 7 measures this.
+- Step 4 is partial. `scripts/embed-upload.mjs` works and is resumable. 1,960 of 5,110 records are
+  embedded (all 230 FAQ rows, prescriptions `RX-000001` to `RX-001730`). The rest waits for Gemini
+  free-tier quota (about 1,000 embeddings per day per project).
+- Step 5 is done and deployed. `search_knowledge` (`carebridge-ai-v2/tools-knowledge.ts`) is
+  available to all roles, anonymises names in results, and falls back to keyword search if the
+  embedding call fails (migration `20260930000200_rag_keyword_fallback.sql`). Prompt rules for
+  grounding, anonymity, no doses, and 999 are in `index.ts`. Measured similarity: relevant
+  questions 0.70 to 0.84, off-topic about 0.44, so the 0.55 cutoff holds.
+- Step 6: the tool was checked against the live database; full manual testing in the app is still
+  open.
+- Step 7 has not started.
