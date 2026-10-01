@@ -1,0 +1,6992 @@
+{
+  "run_at": "2026-10-01T03:44:49.284Z",
+  "k": 5,
+  "embedding_model": "gemini-embedding-001 (768 dims) via LiteLLM carebridge-embed",
+  "search": "match_rag_documents: cosine >= 0.55 or trigram >= 0.6, fused with full text by reciprocal rank fusion",
+  "index": {
+    "clean": 1960,
+    "noise": 300
+  },
+  "noise_rows": {
+    "typo_duplicate": 100,
+    "junk": 100,
+    "off_topic": 100
+  },
+  "noisy_queries": [
+    {
+      "id": "N01",
+      "from": "M01",
+      "query": "qwe!! How can ### I sign up for a new CareBridge account?"
+    },
+    {
+      "id": "N02",
+      "from": "M02",
+      "query": "Is it poossible to ... log in using my Google plz accoun?t"
+    },
+    {
+      "id": "N03",
+      "from": "M03",
+      "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?"
+    },
+    {
+      "id": "N04",
+      "from": "M04",
+      "query": "What dors it mean when my ### appointment qwe!! sasy requeste?"
+    },
+    {
+      "id": "N05",
+      "from": "M05",
+      "query": "How do I cancel ... my xD booking?"
+    },
+    {
+      "id": "N06",
+      "from": "M06",
+      "query": "qwe!! Can I moev my appointment plz to anothher dayy?"
+    },
+    {
+      "id": "N07",
+      "from": "M07",
+      "query": "lol What happesn if I miss my lol appointmrnt?"
+    },
+    {
+      "id": "N08",
+      "from": "M08",
+      "query": "How qwe!! @@ des the clinic waitlist wrok?"
+    },
+    {
+      "id": "N09",
+      "from": "M09",
+      "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?"
+    },
+    {
+      "id": "N10",
+      "from": "M10",
+      "query": "Do ### I get a reminder before my ### visit?"
+    },
+    {
+      "id": "N11",
+      "from": "M11",
+      "query": "How can 1234 I pay my bil at the climic? ..."
+    },
+    {
+      "id": "N12",
+      "from": "M12",
+      "query": "Can I get my money asdf bakc if I paid in hmm?? advance?"
+    },
+    {
+      "id": "N13",
+      "from": "M13",
+      "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r"
+    },
+    {
+      "id": "N14",
+      "from": "M14",
+      "query": "Whhat should I do if xD hmm?? there is a medical emergency?"
+    },
+    {
+      "id": "N15",
+      "from": "M15",
+      "query": "How do I pepare for a caardiology xD viit? 1234"
+    },
+    {
+      "id": "N16",
+      "from": "M16",
+      "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta"
+    },
+    {
+      "id": "N17",
+      "from": "M17",
+      "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm"
+    },
+    {
+      "id": "N18",
+      "from": "M18",
+      "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?"
+    },
+    {
+      "id": "N19",
+      "from": "M19",
+      "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot"
+    },
+    {
+      "id": "N20",
+      "from": "M20",
+      "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light"
+    },
+    {
+      "id": "N21",
+      "from": "M21",
+      "query": "Painful periods with qwe!! bad cramps lol every month"
+    },
+    {
+      "id": "N22",
+      "from": "M22",
+      "query": "Swollen anke adter twisting it ... xD while playing football"
+    },
+    {
+      "id": "N23",
+      "from": "M23",
+      "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber"
+    },
+    {
+      "id": "N24",
+      "from": "M24",
+      "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd"
+    },
+    {
+      "id": "N25",
+      "from": "M25",
+      "query": "Burning when I pee and I ned ... to qwe!! go often"
+    },
+    {
+      "id": "N26",
+      "from": "M26",
+      "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?"
+    },
+    {
+      "id": "N27",
+      "from": "M27",
+      "query": "hmm?? Commmon treatment for dengue fecer zzkx"
+    },
+    {
+      "id": "N28",
+      "from": "M28",
+      "query": "Wat is prescribed plz for @@ hypothyroidism?"
+    },
+    {
+      "id": "N29",
+      "from": "M29",
+      "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing"
+    },
+    {
+      "id": "N30",
+      "from": "M30",
+      "query": "qwe!! What do doctors give for ... ion deficiency anaemia?"
+    }
+  ],
+  "summary": [
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "queries": 30,
+      "hit_rate": 1,
+      "mrr": 1,
+      "p_at_k": 0.4733333333333334,
+      "noise_share": 0,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "queries": 30,
+      "hit_rate": 1,
+      "mrr": 0.9666666666666667,
+      "p_at_k": 0.4133333333333334,
+      "noise_share": 0.34666666666666673,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "queries": 30,
+      "hit_rate": 0.8666666666666667,
+      "mrr": 0.85,
+      "p_at_k": 0.33333333333333337,
+      "noise_share": 0,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "queries": 30,
+      "hit_rate": 0.8333333333333334,
+      "mrr": 0.7722222222222223,
+      "p_at_k": 0.30666666666666675,
+      "noise_share": 0.30666666666666664,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "queries": 25,
+      "hit_rate": 0.96,
+      "mrr": 0.94,
+      "p_at_k": 0.5359999999999999,
+      "noise_share": 0,
+      "out_of_scope": 5,
+      "correct_empty": 5
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "queries": 25,
+      "hit_rate": 0.96,
+      "mrr": 0.94,
+      "p_at_k": 0.45599999999999985,
+      "noise_share": 0.3760000000000001,
+      "out_of_scope": 5,
+      "correct_empty": 3
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "queries": 25,
+      "hit_rate": 0.88,
+      "mrr": 0.82,
+      "p_at_k": 0.3759999999999998,
+      "noise_share": 0,
+      "out_of_scope": 5,
+      "correct_empty": 3
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "queries": 25,
+      "hit_rate": 0.88,
+      "mrr": 0.82,
+      "p_at_k": 0.3759999999999998,
+      "noise_share": 0.24800000000000005,
+      "out_of_scope": 5,
+      "correct_empty": 3
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "queries": 30,
+      "hit_rate": 0.9666666666666667,
+      "mrr": 0.9666666666666667,
+      "p_at_k": 0.45333333333333337,
+      "noise_share": 0,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "queries": 30,
+      "hit_rate": 0.4666666666666667,
+      "mrr": 0.3983333333333333,
+      "p_at_k": 0.13333333333333333,
+      "noise_share": 0.8333333333333336,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "queries": 30,
+      "hit_rate": 0.8333333333333334,
+      "mrr": 0.7677777777777777,
+      "p_at_k": 0.2800000000000001,
+      "noise_share": 0,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "queries": 30,
+      "hit_rate": 0.26666666666666666,
+      "mrr": 0.1861111111111111,
+      "p_at_k": 0.06666666666666667,
+      "noise_share": 0.8933333333333333,
+      "out_of_scope": 0,
+      "correct_empty": 0
+    }
+  ],
+  "details": [
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M01",
+      "query": "How can I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000007",
+        "FAQ-000006",
+        "FAQ-000017",
+        "FAQ-000009"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M02",
+      "query": "Is it possible to log in using my Google account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000002*",
+        "FAQ-000001",
+        "FAQ-000006",
+        "FAQ-000003",
+        "FAQ-000017"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M03",
+      "query": "What are the steps to book a doctor appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000009*",
+        "FAQ-000056",
+        "FAQ-000012",
+        "FAQ-000011",
+        "FAQ-000016"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M04",
+      "query": "What does it mean when my appointment says requested?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000021",
+        "FAQ-000022",
+        "FAQ-000009",
+        "FAQ-000014"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M05",
+      "query": "How do I cancel my booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000026",
+        "FAQ-000068",
+        "FAQ-000017"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M06",
+      "query": "Can I move my appointment to another day?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000024*",
+        "FAQ-000025*",
+        "FAQ-000026",
+        "FAQ-000021",
+        "FAQ-000022"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M07",
+      "query": "What happens if I miss my appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000021",
+        "FAQ-000026",
+        "FAQ-000022",
+        "FAQ-000014"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M08",
+      "query": "How does the clinic waitlist work?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000030*",
+        "FAQ-000029*",
+        "FAQ-000033",
+        "FAQ-000032",
+        "FAQ-000031"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M09",
+      "query": "How much time do I get to accept a waitlist slot offer?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000032*",
+        "FAQ-000039",
+        "FAQ-000033",
+        "FAQ-000031",
+        "FAQ-000029"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M10",
+      "query": "Do I get a reminder before my visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "FAQ-000038",
+        "FAQ-000014",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M11",
+      "query": "How can I pay my bill at the clinic?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000049*",
+        "FAQ-000054",
+        "FAQ-000005",
+        "FAQ-000053",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M12",
+      "query": "Can I get my money back if I paid in advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000057*",
+        "FAQ-000053",
+        "FAQ-000022",
+        "FAQ-000026",
+        "FAQ-000021"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M13",
+      "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000067*",
+        "FAQ-000011",
+        "FAQ-000046",
+        "FAQ-000088",
+        "FAQ-000089"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M14",
+      "query": "What should I do if there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000065*",
+        "FAQ-000047",
+        "FAQ-000078",
+        "FAQ-000077",
+        "FAQ-000011"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M15",
+      "query": "How do I prepare for a cardiology visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000240*",
+        "FAQ-000244",
+        "FAQ-000075",
+        "FAQ-000077",
+        "FAQ-000076"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M16",
+      "query": "I keep getting heartburn after eating and acid comes up my throat",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000083*",
+        "FAQ-000084",
+        "RX-000980*",
+        "RX-000589*",
+        "RX-001626*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M17",
+      "query": "Itchy red ring-shaped rash spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000093*",
+        "RX-000787*",
+        "FAQ-000107",
+        "RX-001207",
+        "FAQ-000110"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M18",
+      "query": "Wheezing and coughing at night, which specialist should I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000082",
+        "FAQ-000084",
+        "FAQ-000081",
+        "FAQ-000080"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M19",
+      "query": "I am very thirsty all the time and urinate a lot",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000087*",
+        "FAQ-000111",
+        "FAQ-000089",
+        "FAQ-000086",
+        "FAQ-000090"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M20",
+      "query": "One-sided throbbing headache with sensitivity to light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000099*",
+        "RX-000056*",
+        "RX-000083*",
+        "RX-000358*",
+        "RX-000236*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M21",
+      "query": "Painful periods with bad cramps every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000113*",
+        "RX-000629*",
+        "RX-001607*",
+        "RX-001523*",
+        "RX-001533*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M22",
+      "query": "Swollen ankle after twisting it while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000097*",
+        "RX-000170*",
+        "RX-000249*",
+        "RX-000111*",
+        "RX-000148*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M23",
+      "query": "Sore throat that hurts when I swallow, with fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000106*",
+        "FAQ-000071",
+        "FAQ-000073",
+        "RX-001267",
+        "FAQ-000072"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M24",
+      "query": "I can't fall asleep at night and wake up exhausted",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000117*",
+        "FAQ-000074",
+        "FAQ-000090"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M25",
+      "query": "Burning when I pee and I need to go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000111*",
+        "FAQ-000087",
+        "FAQ-000109",
+        "RX-001408*",
+        "RX-001691*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M26",
+      "query": "What medicines are usually prescribed for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001064*",
+        "RX-001718*",
+        "RX-001084*",
+        "RX-000937*",
+        "RX-001641*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M27",
+      "query": "Common treatment for dengue fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000398*",
+        "RX-001452*",
+        "RX-000107*",
+        "RX-001490*",
+        "RX-001491*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M28",
+      "query": "What is prescribed for hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000035*",
+        "RX-000146*",
+        "RX-000131*",
+        "RX-000372*",
+        "RX-000526*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M29",
+      "query": "Medicine for allergic rhinitis and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000683*",
+        "RX-000093*",
+        "RX-000132*",
+        "RX-000275*",
+        "RX-000028*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "M30",
+      "query": "What do doctors give for iron deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000902*",
+        "RX-000754*",
+        "RX-001029*",
+        "RX-000893*",
+        "RX-000907*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M01",
+      "query": "How can I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000007",
+        "NOISE-0001",
+        "FAQ-000006",
+        "NOISE-0061"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M02",
+      "query": "Is it possible to log in using my Google account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000002*",
+        "NOISE-0002",
+        "FAQ-000001",
+        "NOISE-0001",
+        "FAQ-000006"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M03",
+      "query": "What are the steps to book a doctor appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000009*",
+        "NOISE-0147",
+        "NOISE-0112",
+        "FAQ-000056",
+        "NOISE-0193"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M04",
+      "query": "What does it mean when my appointment says requested?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000021",
+        "FAQ-000022",
+        "FAQ-000009",
+        "NOISE-0005"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M05",
+      "query": "How do I cancel my booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000026",
+        "NOISE-0005",
+        "NOISE-0006"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M06",
+      "query": "Can I move my appointment to another day?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000024*",
+        "FAQ-000025*",
+        "NOISE-0007",
+        "FAQ-000026",
+        "NOISE-0062"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M07",
+      "query": "What happens if I miss my appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000026",
+        "FAQ-000021",
+        "NOISE-0062",
+        "FAQ-000022"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M08",
+      "query": "How does the clinic waitlist work?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000030*",
+        "NOISE-0155",
+        "FAQ-000029*",
+        "NOISE-0198",
+        "FAQ-000033"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M09",
+      "query": "How much time do I get to accept a waitlist slot offer?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000039",
+        "FAQ-000032*",
+        "NOISE-0013",
+        "NOISE-0033",
+        "FAQ-000033"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M10",
+      "query": "Do I get a reminder before my visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "NOISE-0034",
+        "FAQ-000038",
+        "NOISE-0038"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M11",
+      "query": "How can I pay my bill at the clinic?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0015",
+        "FAQ-000049*",
+        "NOISE-0198",
+        "NOISE-0177",
+        "NOISE-0115"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M12",
+      "query": "Can I get my money back if I paid in advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000057*",
+        "FAQ-000053",
+        "NOISE-0016",
+        "FAQ-000022",
+        "NOISE-0006"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M13",
+      "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000067*",
+        "NOISE-0017",
+        "FAQ-000011",
+        "FAQ-000097",
+        "FAQ-000106"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M14",
+      "query": "What should I do if there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000065*",
+        "FAQ-000047",
+        "FAQ-000078",
+        "FAQ-000077",
+        "FAQ-000079"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M15",
+      "query": "How do I prepare for a cardiology visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000240*",
+        "FAQ-000244",
+        "FAQ-000077",
+        "NOISE-0041",
+        "NOISE-0044"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M16",
+      "query": "I keep getting heartburn after eating and acid comes up my throat",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000083*",
+        "NOISE-0020",
+        "FAQ-000084",
+        "RX-000980*",
+        "RX-000589*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M17",
+      "query": "Itchy red ring-shaped rash spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000093*",
+        "NOISE-0021",
+        "NOISE-0130",
+        "RX-000787*",
+        "NOISE-0150"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M18",
+      "query": "Wheezing and coughing at night, which specialist should I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000082",
+        "NOISE-0116",
+        "NOISE-0140",
+        "FAQ-000084"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M19",
+      "query": "I am very thirsty all the time and urinate a lot",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000087*",
+        "NOISE-0023",
+        "FAQ-000111",
+        "NOISE-0029",
+        "FAQ-000089"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M20",
+      "query": "One-sided throbbing headache with sensitivity to light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000099*",
+        "NOISE-0024",
+        "NOISE-0165",
+        "NOISE-0141",
+        "NOISE-0133"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M21",
+      "query": "Painful periods with bad cramps every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000113*",
+        "NOISE-0025",
+        "RX-000629*",
+        "RX-001607*",
+        "RX-001523*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M22",
+      "query": "Swollen ankle after twisting it while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000097*",
+        "NOISE-0026",
+        "RX-000170*",
+        "RX-000249*",
+        "RX-000111*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M23",
+      "query": "Sore throat that hurts when I swallow, with fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000106*",
+        "NOISE-0168",
+        "NOISE-0153",
+        "NOISE-0186",
+        "NOISE-0027"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M24",
+      "query": "I can't fall asleep at night and wake up exhausted",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000117*",
+        "NOISE-0028",
+        "NOISE-0197",
+        "NOISE-0124",
+        "NOISE-0175"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M25",
+      "query": "Burning when I pee and I need to go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000111*",
+        "NOISE-0029",
+        "NOISE-0153",
+        "FAQ-000087",
+        "FAQ-000109"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M26",
+      "query": "What medicines are usually prescribed for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001718*",
+        "RX-001641*",
+        "RX-000961*",
+        "RX-001032*",
+        "RX-000058*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M27",
+      "query": "Common treatment for dengue fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000010*",
+        "RX-001452*",
+        "RX-001490*",
+        "RX-001491*",
+        "RX-000254*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M28",
+      "query": "What is prescribed for hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000035*",
+        "RX-000146*",
+        "RX-000131*",
+        "RX-000526*",
+        "RX-000372*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M29",
+      "query": "Medicine for allergic rhinitis and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000360*",
+        "RX-000019*",
+        "RX-000093*",
+        "RX-000132*",
+        "RX-000603*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "M30",
+      "query": "What do doctors give for iron deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001442*",
+        "RX-001693*",
+        "RX-000754*",
+        "RX-000113*",
+        "RX-000761*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M01",
+      "query": "How can I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000002",
+        "FAQ-000006",
+        "FAQ-000007",
+        "FAQ-000008"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M02",
+      "query": "Is it possible to log in using my Google account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000002*",
+        "FAQ-000001",
+        "FAQ-000006",
+        "RX-000570",
+        "RX-000543"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M03",
+      "query": "What are the steps to book a doctor appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000009*",
+        "FAQ-000026",
+        "FAQ-000118",
+        "FAQ-000106",
+        "FAQ-000108"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M04",
+      "query": "What does it mean when my appointment says requested?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000022",
+        "FAQ-000021",
+        "FAQ-000053",
+        "FAQ-000026"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M05",
+      "query": "How do I cancel my booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000009",
+        "FAQ-000022*",
+        "FAQ-000017",
+        "FAQ-000068"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M06",
+      "query": "Can I move my appointment to another day?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000497",
+        "RX-000261",
+        "RX-000174",
+        "RX-001434",
+        "RX-001385"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M07",
+      "query": "What happens if I miss my appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000021",
+        "FAQ-000022",
+        "FAQ-000026",
+        "FAQ-000035"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M08",
+      "query": "How does the clinic waitlist work?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000030*",
+        "FAQ-000033",
+        "FAQ-000029*",
+        "FAQ-000015",
+        "FAQ-000032"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M09",
+      "query": "How much time do I get to accept a waitlist slot offer?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000032*",
+        "FAQ-000033",
+        "FAQ-000039",
+        "FAQ-000029",
+        "FAQ-000031"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M10",
+      "query": "Do I get a reminder before my visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "FAQ-000038",
+        "FAQ-000075",
+        "FAQ-000094"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M11",
+      "query": "How can I pay my bill at the clinic?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000049*",
+        "FAQ-000053",
+        "FAQ-000005",
+        "FAQ-000054",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M12",
+      "query": "Can I get my money back if I paid in advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000053",
+        "FAQ-000057*",
+        "FAQ-000035",
+        "FAQ-000037",
+        "FAQ-000039"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M13",
+      "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000067*",
+        "FAQ-000011",
+        "FAQ-000088",
+        "FAQ-000089",
+        "FAQ-000114"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M14",
+      "query": "What should I do if there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000065*",
+        "FAQ-000067",
+        "FAQ-000011",
+        "FAQ-000047",
+        "FAQ-000071"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M15",
+      "query": "How do I prepare for a cardiology visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000240*",
+        "FAQ-000244",
+        "RX-001514",
+        "FAQ-000075",
+        "RX-001242"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M16",
+      "query": "I keep getting heartburn after eating and acid comes up my throat",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001211",
+        "RX-001523",
+        "RX-001533",
+        "FAQ-000094",
+        "RX-000785"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M17",
+      "query": "Itchy red ring-shaped rash spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000093*",
+        "RX-000787*",
+        "FAQ-000107",
+        "RX-001207",
+        "FAQ-000110"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M18",
+      "query": "Wheezing and coughing at night, which specialist should I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000005",
+        "FAQ-000082",
+        "RX-000378",
+        "FAQ-000084"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M19",
+      "query": "I am very thirsty all the time and urinate a lot",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001527",
+        "RX-000872",
+        "RX-000013",
+        "RX-000517",
+        "RX-000439"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M20",
+      "query": "One-sided throbbing headache with sensitivity to light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000099*",
+        "FAQ-000006",
+        "FAQ-000047",
+        "RX-000056*",
+        "RX-000083*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M21",
+      "query": "Painful periods with bad cramps every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000113*",
+        "RX-001598",
+        "RX-000862",
+        "RX-001631",
+        "RX-000311"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M22",
+      "query": "Swollen ankle after twisting it while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000097*",
+        "FAQ-000110",
+        "RX-000170*",
+        "RX-000111*",
+        "RX-000126*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M23",
+      "query": "Sore throat that hurts when I swallow, with fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000106*",
+        "RX-000700",
+        "RX-000707",
+        "RX-001267",
+        "RX-000718"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M24",
+      "query": "I can't fall asleep at night and wake up exhausted",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000117*",
+        "FAQ-000084",
+        "RX-000012",
+        "RX-000023",
+        "RX-000029"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M25",
+      "query": "Burning when I pee and I need to go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000111*",
+        "RX-001244",
+        "RX-000266",
+        "RX-001067",
+        "RX-000726"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M26",
+      "query": "What medicines are usually prescribed for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001158*",
+        "RX-000937*",
+        "RX-000749*",
+        "RX-001084*",
+        "RX-001064*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M27",
+      "query": "Common treatment for dengue fever",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001718",
+        "RX-001510",
+        "RX-001641",
+        "RX-000827",
+        "RX-000937"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M28",
+      "query": "What is prescribed for hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000011*",
+        "RX-000035*",
+        "RX-000131*",
+        "RX-000146*",
+        "RX-000198*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M29",
+      "query": "Medicine for allergic rhinitis and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000275*",
+        "RX-000028*",
+        "RX-000172*",
+        "RX-000278*",
+        "RX-001728*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "M30",
+      "query": "What do doctors give for iron deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000754*",
+        "RX-000761*",
+        "RX-000809*",
+        "RX-000850*",
+        "RX-000882*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M01",
+      "query": "How can I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000002",
+        "FAQ-000006",
+        "FAQ-000007",
+        "NOISE-0061"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M02",
+      "query": "Is it possible to log in using my Google account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000002*",
+        "NOISE-0002",
+        "FAQ-000001",
+        "NOISE-0001",
+        "NOISE-0160"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M03",
+      "query": "What are the steps to book a doctor appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.3333333333333333,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0185",
+        "NOISE-0112",
+        "FAQ-000009*",
+        "NOISE-0147",
+        "NOISE-0149"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M04",
+      "query": "What does it mean when my appointment says requested?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000021",
+        "FAQ-000022",
+        "FAQ-000053",
+        "FAQ-000026"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M05",
+      "query": "How do I cancel my booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000021*",
+        "NOISE-0112",
+        "FAQ-000022*",
+        "NOISE-0195",
+        "FAQ-000009"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M06",
+      "query": "Can I move my appointment to another day?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 1,
+      "top": [
+        "RX-001524",
+        "RX-001161",
+        "RX-000841",
+        "RX-000622",
+        "NOISE-0098"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M07",
+      "query": "What happens if I miss my appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000026",
+        "FAQ-000021",
+        "FAQ-000022",
+        "NOISE-0193"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M08",
+      "query": "How does the clinic waitlist work?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0155",
+        "NOISE-0181",
+        "NOISE-0144",
+        "NOISE-0198",
+        "NOISE-0143"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M09",
+      "query": "How much time do I get to accept a waitlist slot offer?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000032*",
+        "FAQ-000039",
+        "NOISE-0013",
+        "FAQ-000029",
+        "FAQ-000033"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M10",
+      "query": "Do I get a reminder before my visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000035*",
+        "NOISE-0112",
+        "NOISE-0034",
+        "FAQ-000037",
+        "FAQ-000038"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M11",
+      "query": "How can I pay my bill at the clinic?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0141",
+        "NOISE-0112",
+        "NOISE-0144",
+        "NOISE-0162",
+        "NOISE-0132"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M12",
+      "query": "Can I get my money back if I paid in advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000057*",
+        "FAQ-000053",
+        "NOISE-0206",
+        "NOISE-0266",
+        "NOISE-0226"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M13",
+      "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000067*",
+        "NOISE-0017",
+        "FAQ-000011",
+        "FAQ-000080",
+        "FAQ-000118"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M14",
+      "query": "What should I do if there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000065*",
+        "NOISE-0017",
+        "FAQ-000067",
+        "FAQ-000047",
+        "FAQ-000071"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M15",
+      "query": "How do I prepare for a cardiology visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000240*",
+        "RX-001526",
+        "FAQ-000077",
+        "FAQ-000078",
+        "FAQ-000244"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M16",
+      "query": "I keep getting heartburn after eating and acid comes up my throat",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 2,
+      "top": [
+        "NOISE-0109",
+        "RX-001211",
+        "NOISE-0138",
+        "RX-001523",
+        "RX-000136"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M17",
+      "query": "Itchy red ring-shaped rash spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000093*",
+        "NOISE-0021",
+        "NOISE-0110",
+        "NOISE-0175",
+        "RX-001207"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M18",
+      "query": "Wheezing and coughing at night, which specialist should I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000005",
+        "NOISE-0168",
+        "NOISE-0185",
+        "FAQ-000082"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M19",
+      "query": "I am very thirsty all the time and urinate a lot",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001550",
+        "RX-000246",
+        "RX-001349",
+        "RX-001182",
+        "RX-001352"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M20",
+      "query": "One-sided throbbing headache with sensitivity to light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0024",
+        "FAQ-000099*",
+        "NOISE-0165",
+        "NOISE-0112",
+        "NOISE-0172"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M21",
+      "query": "Painful periods with bad cramps every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000113*",
+        "RX-001244",
+        "RX-001037",
+        "RX-001631",
+        "RX-001051"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M22",
+      "query": "Swollen ankle after twisting it while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000097*",
+        "NOISE-0026",
+        "RX-000170*",
+        "RX-000111*",
+        "RX-000126*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M23",
+      "query": "Sore throat that hurts when I swallow, with fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000106*",
+        "NOISE-0168",
+        "NOISE-0152",
+        "RX-000718",
+        "NOISE-0138"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M24",
+      "query": "I can't fall asleep at night and wake up exhausted",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000117*",
+        "NOISE-0028",
+        "FAQ-000084",
+        "RX-000023",
+        "RX-000029"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M25",
+      "query": "Burning when I pee and I need to go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000111*",
+        "RX-000478",
+        "RX-000740",
+        "RX-001107",
+        "RX-000479"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M26",
+      "query": "What medicines are usually prescribed for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001158*",
+        "RX-001645*",
+        "RX-000959*",
+        "RX-000937*",
+        "RX-001718*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M27",
+      "query": "Common treatment for dengue fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.3333333333333333,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001718",
+        "RX-001510",
+        "RX-000010*",
+        "RX-001379",
+        "RX-001452*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M28",
+      "query": "What is prescribed for hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000011*",
+        "RX-000035*",
+        "RX-000131*",
+        "RX-000146*",
+        "RX-000198*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M29",
+      "query": "Medicine for allergic rhinitis and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000019*",
+        "RX-000275*",
+        "RX-000360*",
+        "RX-001721*",
+        "RX-000028*"
+      ]
+    },
+    {
+      "set": "matching",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "M30",
+      "query": "What do doctors give for iron deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001183*",
+        "RX-000537*",
+        "RX-001425*",
+        "RX-001442*",
+        "RX-000754*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E01",
+      "query": "refund",
+      "returned": 4,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000057*",
+        "FAQ-000026",
+        "FAQ-000045",
+        "FAQ-000022"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E02",
+      "query": "waitlist",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000030*",
+        "FAQ-000029*",
+        "FAQ-000016",
+        "FAQ-000033*",
+        "FAQ-000039*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E03",
+      "query": "SMS",
+      "returned": 1,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000038*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E04",
+      "query": "insomnia",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000197*",
+        "RX-000142*",
+        "RX-000097*",
+        "RX-000409*",
+        "RX-000498*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E05",
+      "query": "BPPV",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000620*",
+        "RX-000659*",
+        "RX-000527*",
+        "RX-000875*",
+        "RX-001483*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E06",
+      "query": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000102*",
+        "FAQ-000101",
+        "FAQ-000103",
+        "RX-000620*",
+        "FAQ-000109"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E07",
+      "query": "I booked an appointment last week through the app but I never received any notification or reminder, and now I am not sure if it was confirmed or not. How do I know whether it is confirmed and how long does that usually take?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035",
+        "FAQ-000014*",
+        "FAQ-000037*",
+        "FAQ-000009",
+        "FAQ-000038"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E08",
+      "query": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000053*",
+        "FAQ-000054*",
+        "FAQ-000057",
+        "FAQ-000010",
+        "FAQ-000049"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E09",
+      "query": "chest pain",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000605",
+        "RX-000077",
+        "RX-000712",
+        "RX-000174",
+        "RX-000063"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E10",
+      "query": "my eyes are red",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000107*",
+        "FAQ-000108*",
+        "FAQ-000109",
+        "FAQ-000110",
+        "FAQ-000073"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E11",
+      "query": "headache",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001723*",
+        "FAQ-000099*",
+        "RX-000004*",
+        "RX-000171*",
+        "RX-001197*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E12",
+      "query": "breathless",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000080*",
+        "FAQ-000118*",
+        "FAQ-000074*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E13",
+      "query": "Can I book for my mother and also cancel my own appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000026",
+        "FAQ-000017*",
+        "FAQ-000009"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E14",
+      "query": "fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000071*",
+        "FAQ-000072*",
+        "FAQ-000073*",
+        "RX-000001*",
+        "RX-000058*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E15",
+      "query": "low vitamin D and aching bones",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001061*",
+        "RX-001503*",
+        "FAQ-000090*",
+        "RX-000435*",
+        "RX-000048*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E16",
+      "query": "frozen shoulder, can't lift my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000098*",
+        "RX-001237*",
+        "FAQ-000095",
+        "RX-001593*",
+        "RX-000005*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E17",
+      "query": "painful lump on the edge of my eyelid",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000110*",
+        "FAQ-000099",
+        "RX-000471*",
+        "FAQ-000073",
+        "RX-001388*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E18",
+      "query": "irregular heartbeat with fluttering",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000078*",
+        "FAQ-000118",
+        "FAQ-000089",
+        "FAQ-000076",
+        "FAQ-000240"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E19",
+      "query": "thick white vaginal discharge with itching",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000114*",
+        "RX-001686*",
+        "RX-001223*",
+        "RX-000075*",
+        "RX-000079*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E20",
+      "query": "high cholesterol and family history of heart attack",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000077*",
+        "FAQ-000075",
+        "RX-000023*",
+        "RX-000211*",
+        "RX-001444*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E21",
+      "query": "Can the chatbot change the dose of my medicine?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000046*",
+        "FAQ-000067",
+        "RX-001178",
+        "FAQ-000047",
+        "RX-000177"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E22",
+      "query": "Who decides if someone becomes a doctor or receptionist in the app?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000007*",
+        "FAQ-000011",
+        "FAQ-000056",
+        "FAQ-000009",
+        "FAQ-000116"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E23",
+      "query": "Can I edit a visit that is already completed?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000026*",
+        "FAQ-000022",
+        "FAQ-000057",
+        "FAQ-000021",
+        "FAQ-000033"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E24",
+      "query": "Is there a way to delete my account permanently?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000008*",
+        "FAQ-000006",
+        "FAQ-000017",
+        "FAQ-000021",
+        "FAQ-000026"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E25",
+      "query": "Do you take patients without an appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000018*",
+        "FAQ-000028",
+        "FAQ-000033",
+        "FAQ-000057",
+        "FAQ-000049"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E26",
+      "query": "What is the capital of France?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E27",
+      "query": "Best cricket bat for beginners",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E28",
+      "query": "How do I change the oil in my car?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E29",
+      "query": "Write me a poem about the ocean",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "E30",
+      "query": "What is the bitcoin price today?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E01",
+      "query": "refund",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000057*",
+        "NOISE-0183",
+        "NOISE-0185",
+        "NOISE-0103",
+        "NOISE-0117"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E02",
+      "query": "waitlist",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000030*",
+        "FAQ-000029*",
+        "FAQ-000033*",
+        "FAQ-000039*",
+        "NOISE-0119"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E03",
+      "query": "SMS",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000038*",
+        "NOISE-0034",
+        "NOISE-0190",
+        "NOISE-0138",
+        "NOISE-0010"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E04",
+      "query": "insomnia",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000197*",
+        "RX-000142*",
+        "RX-000097*",
+        "RX-000409*",
+        "RX-000498*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E05",
+      "query": "BPPV",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000620*",
+        "RX-000659*",
+        "RX-000527*",
+        "RX-000875*",
+        "RX-001483*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E06",
+      "query": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000102*",
+        "FAQ-000103",
+        "NOISE-0035",
+        "RX-000620*",
+        "RX-001483*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E07",
+      "query": "I booked an appointment last week through the app but I never received any notification or reminder, and now I am not sure if it was confirmed or not. How do I know whether it is confirmed and how long does that usually take?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000014*",
+        "FAQ-000037*",
+        "FAQ-000035",
+        "FAQ-000009",
+        "FAQ-000038"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E08",
+      "query": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000053*",
+        "FAQ-000054*",
+        "NOISE-0040",
+        "NOISE-0115",
+        "NOISE-0039"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E09",
+      "query": "chest pain",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 3,
+      "top": [
+        "NOISE-0148",
+        "NOISE-0181",
+        "NOISE-0116",
+        "RX-000077",
+        "RX-000261"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E10",
+      "query": "my eyes are red",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000107*",
+        "NOISE-0043",
+        "FAQ-000108*",
+        "NOISE-0042",
+        "NOISE-0179"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E11",
+      "query": "headache",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000099*",
+        "NOISE-0165",
+        "RX-000083*",
+        "NOISE-0130",
+        "NOISE-0172"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E12",
+      "query": "breathless",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000118*",
+        "FAQ-000080*",
+        "NOISE-0047",
+        "FAQ-000074*",
+        "NOISE-0048"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E13",
+      "query": "Can I book for my mother and also cancel my own appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000026",
+        "NOISE-0062",
+        "FAQ-000017*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E14",
+      "query": "fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "NOISE-0153",
+        "FAQ-000072*",
+        "FAQ-000071*",
+        "RX-000001*",
+        "RX-000058*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E15",
+      "query": "low vitamin D and aching bones",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "RX-001635*",
+        "RX-001061*",
+        "RX-001503*",
+        "FAQ-000090*",
+        "NOISE-0054"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E16",
+      "query": "frozen shoulder, can't lift my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000098*",
+        "NOISE-0055",
+        "FAQ-000095",
+        "RX-001237*",
+        "NOISE-0069"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E17",
+      "query": "painful lump on the edge of my eyelid",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000110*",
+        "NOISE-0056",
+        "NOISE-0104",
+        "NOISE-0153",
+        "NOISE-0024"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E18",
+      "query": "irregular heartbeat with fluttering",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000078*",
+        "NOISE-0057",
+        "NOISE-0048",
+        "FAQ-000118",
+        "NOISE-0044"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E19",
+      "query": "thick white vaginal discharge with itching",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000114*",
+        "NOISE-0058",
+        "RX-001686*",
+        "NOISE-0094",
+        "RX-001223*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E20",
+      "query": "high cholesterol and family history of heart attack",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000077*",
+        "NOISE-0059",
+        "RX-000023*",
+        "RX-000211*",
+        "RX-001444*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E21",
+      "query": "Can the chatbot change the dose of my medicine?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000046*",
+        "NOISE-0060",
+        "RX-001178",
+        "RX-001661",
+        "FAQ-000067"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E22",
+      "query": "Who decides if someone becomes a doctor or receptionist in the app?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000007*",
+        "FAQ-000011",
+        "NOISE-0061",
+        "NOISE-0185",
+        "FAQ-000107"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E23",
+      "query": "Can I edit a visit that is already completed?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000026*",
+        "NOISE-0062",
+        "FAQ-000022",
+        "NOISE-0006",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E24",
+      "query": "Is there a way to delete my account permanently?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000008*",
+        "FAQ-000006",
+        "NOISE-0049",
+        "FAQ-000017",
+        "NOISE-0063"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E25",
+      "query": "Do you take patients without an appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000018*",
+        "NOISE-0064",
+        "FAQ-000028",
+        "FAQ-000033",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E26",
+      "query": "What is the capital of France?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E27",
+      "query": "Best cricket bat for beginners",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0281",
+        "NOISE-0241",
+        "NOISE-0291",
+        "NOISE-0261",
+        "NOISE-0231"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E28",
+      "query": "How do I change the oil in my car?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0273",
+        "NOISE-0263",
+        "NOISE-0293",
+        "NOISE-0253",
+        "NOISE-0243"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E29",
+      "query": "Write me a poem about the ocean",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "E30",
+      "query": "What is the bitcoin price today?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E01",
+      "query": "refund",
+      "returned": 1,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000057*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E02",
+      "query": "waitlist",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000029*",
+        "FAQ-000030*",
+        "FAQ-000033*",
+        "FAQ-000016",
+        "FAQ-000031*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E03",
+      "query": "SMS",
+      "returned": 1,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000038*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E04",
+      "query": "insomnia",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000026*",
+        "RX-000043*",
+        "RX-000087*",
+        "RX-000097*",
+        "RX-000142*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E05",
+      "query": "BPPV",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E06",
+      "query": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000102*",
+        "FAQ-000005",
+        "FAQ-000109",
+        "FAQ-000076",
+        "FAQ-000075"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E07",
+      "query": "I booked an appointment last week through the app but I never received any notification or reminder, and now I am not sure if it was confirmed or not. How do I know whether it is confirmed and how long does that usually take?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035",
+        "FAQ-000014*",
+        "FAQ-000009",
+        "FAQ-000037*",
+        "FAQ-000116"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E08",
+      "query": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000053*",
+        "FAQ-000054*",
+        "RX-001218",
+        "FAQ-000010",
+        "RX-001181"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E09",
+      "query": "chest pain",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000605",
+        "RX-000077",
+        "RX-000712",
+        "RX-000174",
+        "RX-000063"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E10",
+      "query": "my eyes are red",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000107*",
+        "RX-000738",
+        "RX-000737",
+        "FAQ-000108*",
+        "RX-000722"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E11",
+      "query": "headache",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001723*",
+        "RX-000056*",
+        "FAQ-000099*",
+        "RX-001197*",
+        "RX-001209*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E12",
+      "query": "breathless",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000074*",
+        "FAQ-000080*",
+        "FAQ-000118*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E13",
+      "query": "Can I book for my mother and also cancel my own appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000026",
+        "FAQ-000009",
+        "FAQ-000066"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E14",
+      "query": "fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000001*",
+        "RX-000058*",
+        "RX-001379*",
+        "FAQ-000071*",
+        "RX-000959*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E15",
+      "query": "low vitamin D and aching bones",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001503*",
+        "RX-001061*",
+        "RX-000048*",
+        "RX-000435*",
+        "RX-001635*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E16",
+      "query": "frozen shoulder, can't lift my arm",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000098*",
+        "FAQ-000095"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E17",
+      "query": "painful lump on the edge of my eyelid",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000110*",
+        "RX-000230",
+        "RX-001465",
+        "RX-001606",
+        "RX-000085"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E18",
+      "query": "irregular heartbeat with fluttering",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000078*",
+        "FAQ-000112"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E19",
+      "query": "thick white vaginal discharge with itching",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000114*",
+        "FAQ-000108"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E20",
+      "query": "high cholesterol and family history of heart attack",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000077*",
+        "FAQ-000118",
+        "FAQ-000006",
+        "FAQ-000075",
+        "FAQ-000089"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E21",
+      "query": "Can the chatbot change the dose of my medicine?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000046*",
+        "RX-001178",
+        "RX-000177",
+        "RX-001183",
+        "RX-001363"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E22",
+      "query": "Who decides if someone becomes a doctor or receptionist in the app?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000007*",
+        "FAQ-000115",
+        "FAQ-000116",
+        "FAQ-000117",
+        "FAQ-000118"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E23",
+      "query": "Can I edit a visit that is already completed?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001538",
+        "FAQ-000026*",
+        "RX-001168",
+        "RX-001184",
+        "RX-001226"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E24",
+      "query": "Is there a way to delete my account permanently?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000001",
+        "FAQ-000008*",
+        "FAQ-000006",
+        "FAQ-000017",
+        "FAQ-000003"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E25",
+      "query": "Do you take patients without an appointment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001053",
+        "RX-001637",
+        "RX-001361",
+        "RX-001305",
+        "RX-001358"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E26",
+      "query": "What is the capital of France?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E27",
+      "query": "Best cricket bat for beginners",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E28",
+      "query": "How do I change the oil in my car?",
+      "returned": 4,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000046",
+        "FAQ-000014",
+        "FAQ-000026",
+        "FAQ-000068"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E29",
+      "query": "Write me a poem about the ocean",
+      "returned": 1,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000041"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "E30",
+      "query": "What is the bitcoin price today?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E01",
+      "query": "refund",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000057*",
+        "NOISE-0183",
+        "NOISE-0185",
+        "NOISE-0167",
+        "NOISE-0199"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E02",
+      "query": "waitlist",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000030*",
+        "FAQ-000029*",
+        "FAQ-000033*",
+        "FAQ-000032*",
+        "FAQ-000039*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E03",
+      "query": "SMS",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000038*",
+        "NOISE-0034"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E04",
+      "query": "insomnia",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000026*",
+        "RX-000043*",
+        "RX-000087*",
+        "RX-000097*",
+        "RX-000142*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E05",
+      "query": "BPPV",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E06",
+      "query": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000102*",
+        "NOISE-0231",
+        "NOISE-0291",
+        "FAQ-000109",
+        "NOISE-0261"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E07",
+      "query": "I booked an appointment last week through the app but I never received any notification or reminder, and now I am not sure if it was confirmed or not. How do I know whether it is confirmed and how long does that usually take?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000014*",
+        "FAQ-000035",
+        "NOISE-0112",
+        "FAQ-000116",
+        "FAQ-000037*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E08",
+      "query": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000053*",
+        "NOISE-0154",
+        "FAQ-000054*",
+        "NOISE-0132",
+        "NOISE-0119"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E09",
+      "query": "chest pain",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 2,
+      "top": [
+        "NOISE-0148",
+        "NOISE-0181",
+        "RX-000077",
+        "RX-000261",
+        "RX-001616"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E10",
+      "query": "my eyes are red",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000107*",
+        "RX-000417",
+        "FAQ-000108*",
+        "RX-000122",
+        "RX-001016"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E11",
+      "query": "headache",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 1,
+      "top": [
+        "RX-000083*",
+        "RX-000184*",
+        "RX-000209*",
+        "RX-000236*",
+        "NOISE-0200"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E12",
+      "query": "breathless",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000074*",
+        "FAQ-000080*",
+        "FAQ-000118*",
+        "NOISE-0047",
+        "NOISE-0048"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E13",
+      "query": "Can I book for my mother and also cancel my own appointment?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000009",
+        "FAQ-000026",
+        "NOISE-0062"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E14",
+      "query": "fever",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000001*",
+        "RX-000058*",
+        "RX-000017*",
+        "RX-000281*",
+        "FAQ-000071*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E15",
+      "query": "low vitamin D and aching bones",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001635*",
+        "RX-001503*",
+        "RX-001061*",
+        "RX-000048*",
+        "RX-000435*"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E16",
+      "query": "frozen shoulder, can't lift my arm",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000098*",
+        "FAQ-000095",
+        "NOISE-0055"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E17",
+      "query": "painful lump on the edge of my eyelid",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000110*",
+        "NOISE-0056",
+        "NOISE-0104",
+        "RX-001643",
+        "NOISE-0106"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E18",
+      "query": "irregular heartbeat with fluttering",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000078*",
+        "NOISE-0057",
+        "FAQ-000112"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E19",
+      "query": "thick white vaginal discharge with itching",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000114*",
+        "NOISE-0058",
+        "FAQ-000108",
+        "NOISE-0042",
+        "NOISE-0043"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E20",
+      "query": "high cholesterol and family history of heart attack",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 1,
+      "top": [
+        "FAQ-000077*",
+        "NOISE-0059",
+        "FAQ-000118",
+        "FAQ-000006",
+        "FAQ-000089"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E21",
+      "query": "Can the chatbot change the dose of my medicine?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000046*",
+        "RX-001178",
+        "RX-001661",
+        "RX-001532",
+        "RX-001217"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E22",
+      "query": "Who decides if someone becomes a doctor or receptionist in the app?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "NOISE-0185",
+        "FAQ-000007*",
+        "FAQ-000107",
+        "NOISE-0055",
+        "FAQ-000011"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E23",
+      "query": "Can I edit a visit that is already completed?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001538",
+        "FAQ-000026*",
+        "RX-001168",
+        "RX-001184",
+        "RX-001226"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E24",
+      "query": "Is there a way to delete my account permanently?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000001",
+        "FAQ-000008*",
+        "NOISE-0174",
+        "NOISE-0160",
+        "FAQ-000006"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E25",
+      "query": "Do you take patients without an appointment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001431",
+        "RX-000924",
+        "RX-001403",
+        "RX-000811",
+        "RX-001321"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E26",
+      "query": "What is the capital of France?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E27",
+      "query": "Best cricket bat for beginners",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E28",
+      "query": "How do I change the oil in my car?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000046",
+        "NOISE-0263",
+        "NOISE-0273",
+        "NOISE-0293",
+        "NOISE-0243"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E29",
+      "query": "Write me a poem about the ocean",
+      "returned": 1,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000041"
+      ]
+    },
+    {
+      "set": "edge",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "E30",
+      "query": "What is the bitcoin price today?",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N01",
+      "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000007",
+        "FAQ-000006",
+        "FAQ-000002",
+        "FAQ-000008"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N02",
+      "query": "Is it poossible to ... log in using my Google plz accoun?t",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000002*",
+        "FAQ-000001",
+        "FAQ-000006",
+        "FAQ-000003",
+        "FAQ-000017"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N03",
+      "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000011",
+        "FAQ-000007",
+        "FAQ-000056",
+        "FAQ-000074",
+        "FAQ-000072"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N04",
+      "query": "What dors it mean when my ### appointment qwe!! sasy requeste?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000022",
+        "FAQ-000021",
+        "FAQ-000009",
+        "FAQ-000014"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N05",
+      "query": "How do I cancel ... my xD booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000022*",
+        "FAQ-000068",
+        "FAQ-000026",
+        "FAQ-000017"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N06",
+      "query": "qwe!! Can I moev my appointment plz to anothher dayy?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000024*",
+        "FAQ-000022",
+        "FAQ-000021",
+        "FAQ-000026",
+        "FAQ-000014"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N07",
+      "query": "lol What happesn if I miss my lol appointmrnt?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000027*",
+        "FAQ-000021",
+        "FAQ-000026",
+        "FAQ-000032"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N08",
+      "query": "How qwe!! @@ des the clinic waitlist wrok?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000029*",
+        "FAQ-000030*",
+        "FAQ-000033",
+        "FAQ-000032",
+        "FAQ-000039"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N09",
+      "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000032*",
+        "FAQ-000039",
+        "FAQ-000029",
+        "FAQ-000033",
+        "FAQ-000030"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N10",
+      "query": "Do ### I get a reminder before my ### visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "FAQ-000038",
+        "FAQ-000014",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N11",
+      "query": "How can 1234 I pay my bil at the climic? ...",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000049*",
+        "FAQ-000057",
+        "FAQ-000054",
+        "FAQ-000053",
+        "FAQ-000005"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N12",
+      "query": "Can I get my money asdf bakc if I paid in hmm?? advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000057*",
+        "FAQ-000053",
+        "FAQ-000022",
+        "FAQ-000070",
+        "FAQ-000026"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N13",
+      "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000067*",
+        "FAQ-000066",
+        "FAQ-000011",
+        "FAQ-000074",
+        "FAQ-000072"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N14",
+      "query": "Whhat should I do if xD hmm?? there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000065*",
+        "FAQ-000047",
+        "FAQ-000067",
+        "FAQ-000077",
+        "FAQ-000079"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N15",
+      "query": "How do I pepare for a caardiology xD viit? 1234",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000240*",
+        "FAQ-000242",
+        "FAQ-000245",
+        "FAQ-000241",
+        "FAQ-000244"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N16",
+      "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000083*",
+        "FAQ-000084",
+        "RX-000483*",
+        "RX-000589*",
+        "RX-001626*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N17",
+      "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000093*",
+        "RX-000787*",
+        "FAQ-000107",
+        "FAQ-000110",
+        "RX-000143*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N18",
+      "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000082",
+        "FAQ-000084",
+        "FAQ-000081",
+        "FAQ-000080"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N19",
+      "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000087*",
+        "FAQ-000111",
+        "FAQ-000089",
+        "FAQ-000090",
+        "FAQ-000088"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N20",
+      "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000099*",
+        "FAQ-000100",
+        "FAQ-000073",
+        "RX-001420",
+        "FAQ-000108"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N21",
+      "query": "Painful periods with qwe!! bad cramps lol every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000113*",
+        "RX-000180*",
+        "RX-001211*",
+        "RX-001523*",
+        "RX-001441*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N22",
+      "query": "Swollen anke adter twisting it ... xD while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.8,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000097*",
+        "RX-000373*",
+        "FAQ-000110",
+        "RX-000170*",
+        "RX-000249*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N23",
+      "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000106*",
+        "FAQ-000073",
+        "FAQ-000072",
+        "FAQ-000071",
+        "RX-000422*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N24",
+      "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd",
+      "returned": 3,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000117*",
+        "RX-001517*",
+        "RX-001047*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N25",
+      "query": "Burning when I pee and I ned ... to qwe!! go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000111*",
+        "FAQ-000087",
+        "FAQ-000109",
+        "FAQ-000114",
+        "RX-001408*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N26",
+      "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001032*",
+        "RX-001064*",
+        "RX-000001*",
+        "RX-001641*",
+        "RX-000661*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N27",
+      "query": "hmm?? Commmon treatment for dengue fecer zzkx",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000107*",
+        "RX-000089*",
+        "RX-000010*",
+        "RX-000398*",
+        "RX-000214*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N28",
+      "query": "Wat is prescribed plz for @@ hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000131*",
+        "RX-000035*",
+        "RX-000233*",
+        "RX-000526*",
+        "RX-000375*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N29",
+      "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000104*",
+        "RX-000132*",
+        "RX-000028*",
+        "RX-000232*",
+        "RX-000203*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "clean",
+      "id": "N30",
+      "query": "qwe!! What do doctors give for ... ion deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000113*",
+        "RX-001367*",
+        "RX-001029*",
+        "RX-000690*",
+        "RX-001442*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N01",
+      "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000001*",
+        "NOISE-0061",
+        "NOISE-0107",
+        "NOISE-0001",
+        "NOISE-0149"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N02",
+      "query": "Is it poossible to ... log in using my Google plz accoun?t",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000002*",
+        "NOISE-0002",
+        "NOISE-0001",
+        "NOISE-0049",
+        "FAQ-000001"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N03",
+      "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0147",
+        "NOISE-0135",
+        "NOISE-0138",
+        "NOISE-0048",
+        "NOISE-0112"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N04",
+      "query": "What dors it mean when my ### appointment qwe!! sasy requeste?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000013*",
+        "NOISE-0005",
+        "FAQ-000021",
+        "NOISE-0006",
+        "FAQ-000022"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N05",
+      "query": "How do I cancel ... my xD booking?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0112",
+        "NOISE-0062",
+        "NOISE-0199",
+        "NOISE-0155",
+        "NOISE-0157"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N06",
+      "query": "qwe!! Can I moev my appointment plz to anothher dayy?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0135",
+        "NOISE-0007",
+        "NOISE-0152",
+        "NOISE-0200",
+        "NOISE-0005"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N07",
+      "query": "lol What happesn if I miss my lol appointmrnt?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0159",
+        "NOISE-0184",
+        "NOISE-0135",
+        "NOISE-0166",
+        "NOISE-0162"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N08",
+      "query": "How qwe!! @@ des the clinic waitlist wrok?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0144",
+        "NOISE-0155",
+        "NOISE-0157",
+        "NOISE-0198",
+        "NOISE-0119"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N09",
+      "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000032*",
+        "NOISE-0138",
+        "FAQ-000039",
+        "NOISE-0189",
+        "NOISE-0033"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N10",
+      "query": "Do ### I get a reminder before my ### visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "NOISE-0034",
+        "NOISE-0014",
+        "NOISE-0038"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N11",
+      "query": "How can 1234 I pay my bil at the climic? ...",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0016",
+        "NOISE-0134",
+        "NOISE-0152",
+        "NOISE-0131",
+        "NOISE-0162"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N12",
+      "query": "Can I get my money asdf bakc if I paid in hmm?? advance?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0174",
+        "NOISE-0169",
+        "NOISE-0118",
+        "NOISE-0167",
+        "NOISE-0145"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N13",
+      "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000067*",
+        "NOISE-0017",
+        "NOISE-0199",
+        "NOISE-0149",
+        "NOISE-0112"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N14",
+      "query": "Whhat should I do if xD hmm?? there is a medical emergency?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0199",
+        "NOISE-0167",
+        "NOISE-0166",
+        "NOISE-0151",
+        "NOISE-0149"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N15",
+      "query": "How do I pepare for a caardiology xD viit? 1234",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0162",
+        "NOISE-0150",
+        "NOISE-0186",
+        "NOISE-0152",
+        "NOISE-0019"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N16",
+      "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0114",
+        "NOISE-0105",
+        "NOISE-0184",
+        "NOISE-0165",
+        "NOISE-0103"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N17",
+      "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000093*",
+        "NOISE-0021",
+        "NOISE-0130",
+        "NOISE-0150",
+        "NOISE-0180"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N18",
+      "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000079*",
+        "NOISE-0148",
+        "NOISE-0185",
+        "NOISE-0106",
+        "NOISE-0116"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N19",
+      "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0105",
+        "NOISE-0114",
+        "NOISE-0165",
+        "NOISE-0184",
+        "NOISE-0126"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N20",
+      "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0131",
+        "NOISE-0106",
+        "NOISE-0151",
+        "NOISE-0109",
+        "NOISE-0158"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N21",
+      "query": "Painful periods with qwe!! bad cramps lol every month",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0106",
+        "NOISE-0109",
+        "NOISE-0126",
+        "NOISE-0149",
+        "NOISE-0148"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N22",
+      "query": "Swollen anke adter twisting it ... xD while playing football",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0153",
+        "FAQ-000097*",
+        "NOISE-0156",
+        "NOISE-0140",
+        "NOISE-0104"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N23",
+      "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0199",
+        "NOISE-0140",
+        "NOISE-0135",
+        "NOISE-0166",
+        "NOISE-0153"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N24",
+      "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0174",
+        "NOISE-0165",
+        "NOISE-0130",
+        "NOISE-0102",
+        "NOISE-0126"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N25",
+      "query": "Burning when I pee and I ned ... to qwe!! go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000111*",
+        "NOISE-0148",
+        "NOISE-0142",
+        "NOISE-0149",
+        "NOISE-0180"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N26",
+      "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001064*",
+        "RX-001510*",
+        "RX-001032*",
+        "RX-000937*",
+        "RX-000001*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N27",
+      "query": "hmm?? Commmon treatment for dengue fecer zzkx",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.2,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0072",
+        "NOISE-0114",
+        "NOISE-0120",
+        "NOISE-0169",
+        "RX-000107*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N28",
+      "query": "Wat is prescribed plz for @@ hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.25,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "NOISE-0187",
+        "NOISE-0073",
+        "NOISE-0103",
+        "RX-001706*",
+        "RX-001530*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N29",
+      "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0079",
+        "NOISE-0030",
+        "NOISE-0148",
+        "NOISE-0120",
+        "NOISE-0196"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "hybrid",
+      "index": "with_noise",
+      "id": "N30",
+      "query": "qwe!! What do doctors give for ... ion deficiency anaemia?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 3,
+      "top": [
+        "RX-001367*",
+        "NOISE-0185",
+        "NOISE-0148",
+        "RX-001029*",
+        "NOISE-0142"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N01",
+      "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000001*",
+        "FAQ-000002",
+        "FAQ-000006",
+        "FAQ-000007",
+        "FAQ-000008"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N02",
+      "query": "Is it poossible to ... log in using my Google plz accoun?t",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000002*",
+        "RX-001552",
+        "RX-000484",
+        "RX-001654",
+        "RX-001250"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N03",
+      "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000011",
+        "FAQ-000056",
+        "FAQ-000117",
+        "FAQ-000118",
+        "FAQ-000042"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N04",
+      "query": "What dors it mean when my ### appointment qwe!! sasy requeste?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000013*",
+        "FAQ-000022",
+        "FAQ-000021",
+        "FAQ-000053",
+        "FAQ-000026"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N05",
+      "query": "How do I cancel ... my xD booking?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000021*",
+        "FAQ-000009",
+        "FAQ-000022*",
+        "FAQ-000017",
+        "FAQ-000068"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N06",
+      "query": "qwe!! Can I moev my appointment plz to anothher dayy?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.2,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000022",
+        "FAQ-000021",
+        "FAQ-000026",
+        "FAQ-000014",
+        "FAQ-000024*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N07",
+      "query": "lol What happesn if I miss my lol appointmrnt?",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000028*",
+        "FAQ-000113"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N08",
+      "query": "How qwe!! @@ des the clinic waitlist wrok?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000029*",
+        "FAQ-000033",
+        "FAQ-000030*",
+        "FAQ-000032",
+        "FAQ-000039"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N09",
+      "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000032*",
+        "FAQ-000029",
+        "FAQ-000039",
+        "FAQ-000033",
+        "FAQ-000030"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N10",
+      "query": "Do ### I get a reminder before my ### visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000035*",
+        "FAQ-000037",
+        "FAQ-000038",
+        "FAQ-000075",
+        "FAQ-000094"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N11",
+      "query": "How can 1234 I pay my bil at the climic? ...",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000049*",
+        "FAQ-000057"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N12",
+      "query": "Can I get my money asdf bakc if I paid in hmm?? advance?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000053",
+        "FAQ-000057*",
+        "FAQ-000035",
+        "FAQ-000037",
+        "FAQ-000039"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N13",
+      "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000067*",
+        "FAQ-000116",
+        "FAQ-000117",
+        "FAQ-000118",
+        "FAQ-000011"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N14",
+      "query": "Whhat should I do if xD hmm?? there is a medical emergency?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000065*",
+        "FAQ-000067",
+        "FAQ-000011",
+        "FAQ-000047",
+        "FAQ-000071"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N15",
+      "query": "How do I pepare for a caardiology xD viit? 1234",
+      "returned": 0,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": []
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N16",
+      "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000629",
+        "RX-000785",
+        "RX-001441",
+        "RX-000650",
+        "RX-001146"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N17",
+      "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.4,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000093*",
+        "RX-000787*",
+        "FAQ-000107",
+        "RX-001207",
+        "FAQ-000110"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N18",
+      "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000079*",
+        "FAQ-000005",
+        "FAQ-000082",
+        "RX-000378",
+        "FAQ-000084"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N19",
+      "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001527",
+        "RX-000872",
+        "RX-000013",
+        "RX-000517",
+        "RX-000439"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N20",
+      "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000099*",
+        "FAQ-000047",
+        "FAQ-000006",
+        "FAQ-000082",
+        "FAQ-000108"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N21",
+      "query": "Painful periods with qwe!! bad cramps lol every month",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000113*",
+        "RX-001598",
+        "RX-000862",
+        "RX-001631",
+        "RX-000311"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N22",
+      "query": "Swollen anke adter twisting it ... xD while playing football",
+      "returned": 2,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000097*",
+        "FAQ-000110"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N23",
+      "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber",
+      "returned": 1,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000106*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N24",
+      "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd",
+      "returned": 3,
+      "hit": 1,
+      "rr": 0.3333333333333333,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000075",
+        "FAQ-000084",
+        "FAQ-000117*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N25",
+      "query": "Burning when I pee and I ned ... to qwe!! go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000111*",
+        "FAQ-000083",
+        "FAQ-000087",
+        "FAQ-000094",
+        "FAQ-000101"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N26",
+      "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-001032*",
+        "RX-000001*",
+        "RX-001158*",
+        "RX-001064*",
+        "RX-000661*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N27",
+      "query": "hmm?? Commmon treatment for dengue fecer zzkx",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000010*",
+        "RX-000061*",
+        "RX-000089*",
+        "RX-000101*",
+        "RX-000107*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N28",
+      "query": "Wat is prescribed plz for @@ hypothyroidism?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 1,
+      "noise_in_top_k": 0,
+      "top": [
+        "RX-000011*",
+        "RX-000035*",
+        "RX-000131*",
+        "RX-000146*",
+        "RX-000198*"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N29",
+      "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000104*",
+        "RX-000019*",
+        "RX-000021",
+        "RX-000028*",
+        "RX-000040"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "clean",
+      "id": "N30",
+      "query": "qwe!! What do doctors give for ... ion deficiency anaemia?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 0,
+      "top": [
+        "FAQ-000056",
+        "FAQ-000011",
+        "FAQ-000096",
+        "FAQ-000007",
+        "FAQ-000105"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N01",
+      "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000001*",
+        "NOISE-0061",
+        "NOISE-0130",
+        "FAQ-000002",
+        "NOISE-0120"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N02",
+      "query": "Is it poossible to ... log in using my Google plz accoun?t",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000002*",
+        "NOISE-0187",
+        "NOISE-0155",
+        "NOISE-0002",
+        "NOISE-0152"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N03",
+      "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0167",
+        "NOISE-0185",
+        "NOISE-0147",
+        "NOISE-0151",
+        "NOISE-0169"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N04",
+      "query": "What dors it mean when my ### appointment qwe!! sasy requeste?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 3,
+      "top": [
+        "NOISE-0149",
+        "NOISE-0152",
+        "NOISE-0120",
+        "FAQ-000021",
+        "FAQ-000022"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N05",
+      "query": "How do I cancel ... my xD booking?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0104",
+        "NOISE-0112",
+        "NOISE-0166",
+        "NOISE-0156",
+        "NOISE-0187"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N06",
+      "query": "qwe!! Can I moev my appointment plz to anothher dayy?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0152",
+        "NOISE-0200",
+        "NOISE-0149",
+        "NOISE-0135",
+        "NOISE-0196"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N07",
+      "query": "lol What happesn if I miss my lol appointmrnt?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0170",
+        "NOISE-0159",
+        "NOISE-0166",
+        "NOISE-0184",
+        "NOISE-0162"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N08",
+      "query": "How qwe!! @@ des the clinic waitlist wrok?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0144",
+        "NOISE-0181",
+        "NOISE-0155",
+        "NOISE-0141",
+        "NOISE-0102"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N09",
+      "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.25,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0139",
+        "NOISE-0189",
+        "NOISE-0169",
+        "FAQ-000032*",
+        "NOISE-0165"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N10",
+      "query": "Do ### I get a reminder before my ### visit?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 2,
+      "top": [
+        "FAQ-000035*",
+        "NOISE-0112",
+        "NOISE-0034",
+        "FAQ-000037",
+        "FAQ-000038"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N11",
+      "query": "How can 1234 I pay my bil at the climic? ...",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0152",
+        "NOISE-0158",
+        "NOISE-0150",
+        "NOISE-0162",
+        "NOISE-0173"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N12",
+      "query": "Can I get my money asdf bakc if I paid in hmm?? advance?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0139",
+        "NOISE-0135",
+        "NOISE-0174",
+        "NOISE-0169",
+        "NOISE-0167"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N13",
+      "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0166",
+        "NOISE-0199",
+        "NOISE-0167",
+        "NOISE-0169",
+        "NOISE-0104"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N14",
+      "query": "Whhat should I do if xD hmm?? there is a medical emergency?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0166",
+        "NOISE-0167",
+        "NOISE-0199",
+        "NOISE-0169",
+        "NOISE-0152"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N15",
+      "query": "How do I pepare for a caardiology xD viit? 1234",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0152",
+        "NOISE-0104",
+        "NOISE-0187",
+        "NOISE-0158",
+        "NOISE-0166"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N16",
+      "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0114",
+        "NOISE-0122",
+        "NOISE-0138",
+        "NOISE-0155",
+        "NOISE-0123"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N17",
+      "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm",
+      "returned": 5,
+      "hit": 1,
+      "rr": 1,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "FAQ-000093*",
+        "NOISE-0130",
+        "NOISE-0021",
+        "NOISE-0104",
+        "NOISE-0144"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N18",
+      "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.3333333333333333,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 3,
+      "top": [
+        "FAQ-000005",
+        "NOISE-0185",
+        "FAQ-000079*",
+        "NOISE-0144",
+        "NOISE-0168"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N19",
+      "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0122",
+        "NOISE-0105",
+        "NOISE-0165",
+        "NOISE-0009",
+        "NOISE-0138"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N20",
+      "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0152",
+        "NOISE-0158",
+        "NOISE-0135",
+        "NOISE-0167",
+        "NOISE-0131"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N21",
+      "query": "Painful periods with qwe!! bad cramps lol every month",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0149",
+        "NOISE-0104",
+        "NOISE-0109",
+        "NOISE-0166",
+        "NOISE-0106"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N22",
+      "query": "Swollen anke adter twisting it ... xD while playing football",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0104",
+        "NOISE-0166",
+        "NOISE-0182",
+        "NOISE-0145",
+        "NOISE-0187"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N23",
+      "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0166",
+        "NOISE-0167",
+        "NOISE-0199",
+        "NOISE-0104",
+        "NOISE-0110"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N24",
+      "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0139",
+        "NOISE-0174",
+        "NOISE-0122",
+        "NOISE-0123",
+        "NOISE-0118"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N25",
+      "query": "Burning when I pee and I ned ... to qwe!! go often",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.2,
+      "noise_in_top_k": 4,
+      "top": [
+        "NOISE-0142",
+        "FAQ-000111*",
+        "NOISE-0131",
+        "NOISE-0196",
+        "NOISE-0148"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N26",
+      "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?",
+      "returned": 5,
+      "hit": 1,
+      "rr": 0.5,
+      "p_at_k": 0.6,
+      "noise_in_top_k": 2,
+      "top": [
+        "NOISE-0104",
+        "RX-000749*",
+        "RX-001510*",
+        "RX-001064*",
+        "NOISE-0152"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N27",
+      "query": "hmm?? Commmon treatment for dengue fecer zzkx",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0120",
+        "NOISE-0169",
+        "NOISE-0165",
+        "NOISE-0189",
+        "NOISE-0167"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N28",
+      "query": "Wat is prescribed plz for @@ hypothyroidism?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0187",
+        "NOISE-0103",
+        "NOISE-0135",
+        "NOISE-0155",
+        "NOISE-0152"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N29",
+      "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0148",
+        "NOISE-0120",
+        "NOISE-0196",
+        "NOISE-0144",
+        "NOISE-0149"
+      ]
+    },
+    {
+      "set": "noisy",
+      "mode": "keyword_only",
+      "index": "with_noise",
+      "id": "N30",
+      "query": "qwe!! What do doctors give for ... ion deficiency anaemia?",
+      "returned": 5,
+      "hit": 0,
+      "rr": 0,
+      "p_at_k": 0,
+      "noise_in_top_k": 5,
+      "top": [
+        "NOISE-0185",
+        "NOISE-0148",
+        "NOISE-0142",
+        "NOISE-0112",
+        "NOISE-0167"
+      ]
+    }
+  ]
+}

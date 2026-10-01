@@ -1,7 +1,6 @@
 # CareBridge RAG — Implementation Plan
 
-Status: steps 1 to 5 are built and deployed; the upload (step 4) is partial and evaluation
-(step 7) has not started. See Progress at the end.
+Status: steps 1 to 5 and 7 are done; the upload (step 4) is partial. See Progress at the end.
 
 ## 1. Embeddings
 
@@ -105,4 +104,7 @@ Progress:
   questions 0.70 to 0.84, off-topic about 0.44, so the 0.55 cutoff holds.
 - Step 6: the tool was checked against the live database; full manual testing in the app is still
   open.
-- Step 7 has not started.
+- Step 7 is done on the embedded subset (1,960 clean rows plus 300 noise rows). See
+  `eval/RAG_EVAL_REPORT.md`. Hybrid search on the clean index: hit rate 1.00 (matching), 0.96
+  (edge), 0.97 (noisy queries). With noise rows included, noisy queries fall to 0.47 because junk
+  query tokens match junk rows; matching and edge are unchanged.

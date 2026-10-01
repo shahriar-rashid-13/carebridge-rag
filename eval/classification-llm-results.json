@@ -1,0 +1,117 @@
+{
+  "run_at": "2026-10-01T03:39:35.911Z",
+  "model": "LiteLLM carebridge-agent (gemini/gemini-3.1-flash-lite, OpenRouter fallbacks), zero-shot, temperature 0",
+  "handwritten": {
+    "n": 48,
+    "accuracy": 0.8958333333333334,
+    "model_groups": {
+      "carebridge-agent": 3
+    },
+    "errors": [
+      {
+        "text": "Since I came back from the village I've had a fever that won't go away and I keep feeling sick to my stomach.",
+        "true": "General Medicine",
+        "predicted": "Gastroenterology"
+      },
+      {
+        "text": "I get tired doing nothing, my face looks pale and I'm out of breath just walking to the shop.",
+        "true": "General Medicine",
+        "predicted": "Cardiology"
+      },
+      {
+        "text": "I hardly go outside, my bones ache all the time and I feel weak.",
+        "true": "Endocrinology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "It stings when I urinate and I feel like I need to go all the time.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "My periods come every two or three months, I have acne and hair growing on my chin.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "Endocrinology"
+      }
+    ]
+  },
+  "held_out_stress_sample": {
+    "n": 120,
+    "accuracy": 0.8833333333333333,
+    "model_groups": {
+      "carebridge-agent": 8
+    },
+    "errors": [
+      {
+        "text": "The patient reoprts dull discomfort in the belly, a fevr that climbs a ltitle hgiher eevry day for over a week, and no apetite.",
+        "true": "General Medicine",
+        "predicted": "Gastroenterology"
+      },
+      {
+        "text": "She presented with no appette and a coated tongue.",
+        "true": "General Medicine",
+        "predicted": "Gastroenterology"
+      },
+      {
+        "text": "The patient says she had a high reading on a pharmacy machine and headaches on waking.",
+        "true": "Cardiology",
+        "predicted": "Endocrinology"
+      },
+      {
+        "text": "The patient reports brife spinning when turning in bed, dzziness when looking up, and nausea with the spinning.",
+        "true": "Neurology",
+        "predicted": "ENT"
+      },
+      {
+        "text": "The patient reports brife spinning when turning in bed, dizizness when looking up, and nausea with the spinning.",
+        "true": "Neurology",
+        "predicted": "ENT"
+      },
+      {
+        "text": "She presented with brief spinning when turning in bed and nausea with the spinning.",
+        "true": "Neurology",
+        "predicted": "ENT"
+      },
+      {
+        "text": "The patient reports burning when passing urine and going to the toilet often.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "The patient reports a lower belly ache, burning when passing urine, and going to the toilt often.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "The patient attends for reiew of burning when passing urine and going to the tolet often.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "This follow-up vsit reviewed acne, extra facila hair, and weiht gai.n",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "Endocrinology"
+      },
+      {
+        "text": "The patient sasy she is going to the toilet often and has burnng wehn passng urie.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "The patient says she is ging to the toilet oten and has a lower belly ache.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      },
+      {
+        "text": "The patient retrns for reveiw and rports weight gain, irrgular period,s and acne.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "Endocrinology"
+      },
+      {
+        "text": "The patient coems for a first visit and describes burning when psasing urine, a lower belly ache, and going to the tolet often.",
+        "true": "Obstetrics and Gynecology",
+        "predicted": "General Medicine"
+      }
+    ]
+  }
+}

@@ -2,3 +2,5 @@
 .env.*
 node_modules/
 embed-upload.log
+.venv/
+eval/.cache/

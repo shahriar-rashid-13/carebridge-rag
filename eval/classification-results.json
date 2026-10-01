@@ -1,0 +1,362 @@
+{
+  "data": {
+    "records": 2580,
+    "train": 2064,
+    "test": 516,
+    "classes": 12
+  },
+  "specialization": {
+    "classes": 12,
+    "baseline_accuracy": 0.08333333333333333,
+    "accuracy": 1.0,
+    "stress_accuracy": 0.9844961240310077,
+    "macro_f1": 1.0,
+    "cv5_accuracy_mean": 1.0,
+    "cv5_accuracy_std": 0.0,
+    "per_class": {
+      "General Medicine": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 43.0
+      },
+      "Cardiology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 44.0
+      },
+      "Pulmonology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 42.0
+      },
+      "Gastroenterology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 44.0
+      },
+      "Endocrinology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 42.0
+      },
+      "Dermatology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 43.0
+      },
+      "Orthopedics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 44.0
+      },
+      "Neurology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 42.0
+      },
+      "ENT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 43.0
+      },
+      "Ophthalmology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 43.0
+      },
+      "Obstetrics and Gynecology": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 42.0
+      },
+      "Psychiatry": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 44.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 516.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 516.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        43,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        44,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        43,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        44
+      ]
+    ],
+    "accuracy_by_difficulty": {
+      "confusable": {
+        "n": 25,
+        "accuracy": 1.0
+      },
+      "long": {
+        "n": 19,
+        "accuracy": 1.0
+      },
+      "normal": {
+        "n": 429,
+        "accuracy": 1.0
+      },
+      "rare_presentation": {
+        "n": 43,
+        "accuracy": 1.0
+      }
+    },
+    "errors": [],
+    "outside_test_symptom_faq": {
+      "n": 48,
+      "accuracy": 0.9791666666666666
+    },
+    "outside_test_handwritten": {
+      "n": 48,
+      "accuracy": 0.7916666666666666,
+      "errors": [
+        {
+          "text": "When I rush up the stairs my chest feels heavy and tight, then it goes away after I sit for a bit.",
+          "true": "Cardiology",
+          "predicted": "Pulmonology"
+        },
+        {
+          "text": "I smoked for 30 years and lately I'm much more breathless and coughing up more phlegm.",
+          "true": "Pulmonology",
+          "predicted": "General Medicine"
+        },
+        {
+          "text": "My tummy cramps a lot and I go back and forth between constipation and diarrhoea.",
+          "true": "Gastroenterology",
+          "predicted": "Endocrinology"
+        },
+        {
+          "text": "I hardly go outside, my bones ache all the time and I feel weak.",
+          "true": "Endocrinology",
+          "predicted": "Obstetrics and Gynecology"
+        },
+        {
+          "text": "My knees creak and ache going down stairs and feel stiff for a few minutes after I wake.",
+          "true": "Orthopedics",
+          "predicted": "Obstetrics and Gynecology"
+        },
+        {
+          "text": "It hurts a lot to swallow and my tonsils look swollen with white spots.",
+          "true": "ENT",
+          "predicted": "Obstetrics and Gynecology"
+        },
+        {
+          "text": "It stings when I urinate and I feel like I need to go all the time.",
+          "true": "Obstetrics and Gynecology",
+          "predicted": "Neurology"
+        },
+        {
+          "text": "For over a month I've felt empty and sad and nothing I used to enjoy interests me.",
+          "true": "Psychiatry",
+          "predicted": "Cardiology"
+        },
+        {
+          "text": "I lie awake for hours every night and feel like a zombie the next day.",
+          "true": "Psychiatry",
+          "predicted": "Neurology"
+        },
+        {
+          "text": "Out of nowhere my heart pounds, I can't breathe and I think I'm going to die, then it passes.",
+          "true": "Psychiatry",
+          "predicted": "Endocrinology"
+        }
+      ]
+    }
+  },
+  "diagnosis": {
+    "classes": 48,
+    "baseline_accuracy": 0.044573643410852716,
+    "accuracy": 1.0,
+    "stress_accuracy": 0.9806201550387597,
+    "macro_f1": 1.0,
+    "cv5_accuracy_mean": 1.0,
+    "cv5_accuracy_std": 0.0
+  }
+}
