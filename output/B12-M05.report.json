@@ -1,0 +1,72 @@
+{
+  "slice": "B12-M05",
+  "files": [
+    "B12-M05.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 8,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-002904",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002908",
+      "errors": [],
+      "warnings": [
+        "length is 316 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002915",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002918",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002921",
+      "errors": [],
+      "warnings": [
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002923",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002925",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002942",
+      "errors": [],
+      "warnings": [
+        "length is 329 words, target 350-500"
+      ]
+    }
+  ]
+}

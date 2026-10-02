@@ -1,0 +1,373 @@
+{
+  "slice": "B21-M10",
+  "files": [
+    "B21-M10.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 47,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-007653",
+      "errors": [],
+      "warnings": [
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007654",
+      "errors": [],
+      "warnings": [
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007655",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007656",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007657",
+      "errors": [],
+      "warnings": [
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007658",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007659",
+      "errors": [],
+      "warnings": [
+        "length is 100 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007660",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.8°F\"",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007661",
+      "errors": [],
+      "warnings": [
+        "length is 96 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007662",
+      "errors": [],
+      "warnings": [
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007663",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 15\"",
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007664",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 8.5 g/dL\"",
+        "other vital not found exactly: \"BP 125/77 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 67 kg\"",
+        "length is 152 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007665",
+      "errors": [],
+      "warnings": [
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007666",
+      "errors": [],
+      "warnings": [
+        "length is 94 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007667",
+      "errors": [],
+      "warnings": [
+        "length is 97 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007668",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 14\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007669",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 18\"",
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007670",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 17\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007671",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\"",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007672",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 98 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007673",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007674",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007675",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 13.1 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-007676",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007677",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007678",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007679",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007680",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007681",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007682",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007684",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007685",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007686",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007687",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007688",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007689",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007690",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007691",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007692",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007693",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007694",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 156 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007695",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007696",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007697",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007698",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007699",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007700",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 103 words, target 120-220"
+      ]
+    }
+  ]
+}

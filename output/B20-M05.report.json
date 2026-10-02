@@ -1,0 +1,116 @@
+{
+  "slice": "B20-M05",
+  "files": [
+    "B20-M05.csv",
+    "B20-M05.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 14,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-006912",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006915",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006922",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006923",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006925",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006931",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006934",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 3 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-006937",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006938",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/6 in the left eye\""
+      ]
+    },
+    {
+      "doc_id": "VN-006941",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 3 seconds\"",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006943",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006944",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 3 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-006947",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006950",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 15\""
+      ]
+    }
+  ]
+}

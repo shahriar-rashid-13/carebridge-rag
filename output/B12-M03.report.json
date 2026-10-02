@@ -1,0 +1,81 @@
+{
+  "slice": "B12-M03",
+  "files": [
+    "B12-M03.csv",
+    "B12-M03.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 9,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-002807",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002814",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002820",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002822",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002828",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"weight 61 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-002829",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002837",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002845",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002850",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

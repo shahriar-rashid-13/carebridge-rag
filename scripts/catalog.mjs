@@ -675,6 +675,16 @@ export const NAMES = {
   hinduSurname: ["Das", "Saha", "Roy", "Dey", "Ghosh", "Paul", "Sarkar", "Biswas", "Kundu", "Mitra", "Bose", "Datta"],
 };
 
+// Extra names for the Assessment 3 extension. Kept separate so the original manifest stays identical.
+export const EXTRA_NAMES = {
+  muslimMale: ["Rezaul", "Habib", "Jubayer", "Emon", "Shamim", "Arafat", "Mahfuz", "Tamim", "Saiful", "Rashid", "Zahid", "Kawsar", "Mostafa", "Nurul", "Abul", "Faruk", "Hafiz", "Jewel", "Liton", "Mahbub", "Obaidul", "Parvez", "Riad", "Saad", "Tuhin", "Wasim", "Ziaur", "Ehsan", "Asif", "Sakib"],
+  muslimFemale: ["Mahmuda", "Shamima", "Nazma", "Rozina", "Hafsa", "Marium", "Tasnim", "Fariha", "Ishrat", "Jannatul", "Khadija", "Laila", "Mehnaz", "Nabila", "Orin", "Popy", "Ruma", "Sanjida", "Tamanna", "Shathi", "Zakia", "Arifa", "Bushra", "Champa", "Dalia", "Eva", "Farzana", "Habiba", "Iffat", "Jui"],
+  muslimSurname: ["Sikder", "Molla", "Bepari", "Munshi", "Pramanik", "Shikder", "Dewan", "Gazi", "Matubbar", "Akand"],
+  hinduMale: ["Ashok", "Biplob", "Debashis", "Gautam", "Kanai", "Manik", "Prosenjit", "Ranjit", "Sukumar", "Tushar"],
+  hinduFemale: ["Bithi", "Chandana", "Dipali", "Jhuma", "Krishna", "Mala", "Nupur", "Papiya", "Rekha", "Shampa"],
+  hinduSurname: ["Chakraborty", "Bhattacharya", "Mondol", "Sen", "Nath", "Halder"],
+};
+
 export const PLAN_NOTES = {
   continue: "chronic follow-up: continue current medicines, no new prescription issued",
   tests: (dx) => `tests ordered before starting treatment: ${dx.tests}`,

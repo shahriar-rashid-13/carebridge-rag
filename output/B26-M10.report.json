@@ -1,0 +1,282 @@
+{
+  "slice": "B26-M10",
+  "files": [
+    "B26-M10.csv",
+    "B26-M10.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 33,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-010156",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010158",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010159",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\"",
+        "other vital not found exactly: \"BP 122/75 mmHg\"",
+        "other vital not found exactly: \"pulse 72 bpm\"",
+        "other vital not found exactly: \"weight 78 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-010161",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010162",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 108 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010163",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010166",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010168",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 9 cm across\"",
+        "other vital not found exactly: \"BP 111/85 mmHg\"",
+        "other vital not found exactly: \"pulse 86 bpm\"",
+        "other vital not found exactly: \"weight 85 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010169",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 178/98 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 85 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-010173",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010176",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 11\"",
+        "other vital not found exactly: \"BP 129/85 mmHg\"",
+        "other vital not found exactly: \"pulse 77 bpm\"",
+        "other vital not found exactly: \"weight 66 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010177",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010179",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010180",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010181",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 5.7 mmol/L\"",
+        "other vital not found exactly: \"BP 135/79 mmHg\"",
+        "other vital not found exactly: \"pulse 90 bpm\"",
+        "other vital not found exactly: \"weight 77 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010183",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010184",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010185",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.9\"",
+        "other vital not found exactly: \"BP 129/72 mmHg\"",
+        "other vital not found exactly: \"pulse 77 bpm\"",
+        "other vital not found exactly: \"weight 93 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010186",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010187",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.9\"",
+        "other vital not found exactly: \"BP 134/74 mmHg\"",
+        "other vital not found exactly: \"pulse 82 bpm\"",
+        "other vital not found exactly: \"weight 58 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010188",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010189",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 10 cm across\"",
+        "other vital not found exactly: \"BP 131/83 mmHg\"",
+        "other vital not found exactly: \"pulse 77 bpm\"",
+        "other vital not found exactly: \"weight 65 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010190",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010191",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010192",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010193",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010194",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010195",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010196",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010197",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010198",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010199",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010200",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

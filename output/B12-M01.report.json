@@ -1,0 +1,104 @@
+{
+  "slice": "B12-M01",
+  "files": [
+    "B12-M01.csv",
+    "B12-M01.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 12,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-002708",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002709",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002710",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002711",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002712",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002721",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002723",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002724",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002730",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002732",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002735",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002748",
+      "errors": [],
+      "warnings": [
+        "length is 116 words, target 120-220"
+      ]
+    }
+  ]
+}

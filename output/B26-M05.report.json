@@ -1,0 +1,272 @@
+{
+  "slice": "B26-M05",
+  "files": [
+    "B26-M05.csv",
+    "B26-M05.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 32,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-009902",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 10.0 g/dL\"",
+        "other vital not found exactly: \"BP 129/71 mmHg\"",
+        "other vital not found exactly: \"pulse 81 bpm\"",
+        "other vital not found exactly: \"weight 62 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009904",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 142/89 mmHg\"",
+        "other vital not found exactly: \"pulse 73 bpm\"",
+        "other vital not found exactly: \"weight 63 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009906",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 130/85 mmHg\"",
+        "other vital not found exactly: \"pulse 81 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009908",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.8\"",
+        "other vital not found exactly: \"BP 111/77 mmHg\"",
+        "other vital not found exactly: \"pulse 69 bpm\"",
+        "other vital not found exactly: \"weight 61 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009911",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\"",
+        "other vital not found exactly: \"BP 152/90 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 95 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009914",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009917",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 128/73 mmHg\"",
+        "other vital not found exactly: \"pulse 84 bpm\"",
+        "other vital not found exactly: \"weight 55 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009918",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009922",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 136/95 mmHg\"",
+        "other vital not found exactly: \"pulse 89 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009923",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 119/86 mmHg\"",
+        "other vital not found exactly: \"pulse 84 bpm\"",
+        "other vital not found exactly: \"weight 93 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009926",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"vitamin D level 11 ng/mL\""
+      ]
+    },
+    {
+      "doc_id": "VN-009927",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.2\"",
+        "other vital not found exactly: \"BP 126/81 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009928",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 5.2 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-009929",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 10\""
+      ]
+    },
+    {
+      "doc_id": "VN-009930",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.1\""
+      ]
+    },
+    {
+      "doc_id": "VN-009931",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.8\""
+      ]
+    },
+    {
+      "doc_id": "VN-009932",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 11 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-009933",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.6\""
+      ]
+    },
+    {
+      "doc_id": "VN-009934",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 31.2\""
+      ]
+    },
+    {
+      "doc_id": "VN-009935",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 18\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009936",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 8.2 g/dL\""
+      ]
+    },
+    {
+      "doc_id": "VN-009937",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 3/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-009938",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.9\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009939",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 12.3 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-009940",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 6 seconds\"",
+        "other vital not found exactly: \"BP 111/82 mmHg\"",
+        "other vital not found exactly: \"weight 76 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009941",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.7\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009942",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.7\""
+      ]
+    },
+    {
+      "doc_id": "VN-009943",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"vitamin D level 13 ng/mL\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009944",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-009945",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 8/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-009946",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009947",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.0\""
+      ]
+    }
+  ]
+}

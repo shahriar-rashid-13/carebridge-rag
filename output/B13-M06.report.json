@@ -1,0 +1,279 @@
+{
+  "slice": "B13-M06",
+  "files": [
+    "B13-M06.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 36,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-003454",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003456",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 4/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-003458",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"about 33 inflamed spots on the face\""
+      ]
+    },
+    {
+      "doc_id": "VN-003459",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.4 g/dL\"",
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003460",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.9°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-003461",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"lump about 4 mm on the left upper eyelid\""
+      ]
+    },
+    {
+      "doc_id": "VN-003462",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.9\""
+      ]
+    },
+    {
+      "doc_id": "VN-003463",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 5/10\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003464",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003465",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.7\"",
+        "chief_complaint_hint copied word for word",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003466",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.5\""
+      ]
+    },
+    {
+      "doc_id": "VN-003467",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"lump about 7 mm on the left upper eyelid\""
+      ]
+    },
+    {
+      "doc_id": "VN-003468",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 10\"",
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003469",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003470",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 164/97 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003471",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 89%\""
+      ]
+    },
+    {
+      "doc_id": "VN-003473",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.4\"",
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003474",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/9 in the left eye\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003477",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003479",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003480",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003481",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003482",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003483",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003484",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003487",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003489",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003490",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003491",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003492",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003494",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003495",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003497",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003498",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003499",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003500",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

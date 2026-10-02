@@ -1,0 +1,206 @@
+{
+  "slice": "B12-M04",
+  "files": [
+    "B12-M04.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 26,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-002853",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002858",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002861",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002864",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002869",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002870",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-002871",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002873",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "specialization named in the chief complaint sentence",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-002876",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.9°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-002877",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 92%\""
+      ]
+    },
+    {
+      "doc_id": "VN-002878",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002879",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the right eye\""
+      ]
+    },
+    {
+      "doc_id": "VN-002880",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 8/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-002881",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 6 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-002883",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 146 bpm and irregular\""
+      ]
+    },
+    {
+      "doc_id": "VN-002885",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.2\"",
+        "length is 310 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002886",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.3°F\"",
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002887",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 95%\""
+      ]
+    },
+    {
+      "doc_id": "VN-002888",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 108 bpm\""
+      ]
+    },
+    {
+      "doc_id": "VN-002889",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.9°F\"",
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-002890",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/6 in the left eye\""
+      ]
+    },
+    {
+      "doc_id": "VN-002891",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 96%\""
+      ]
+    },
+    {
+      "doc_id": "VN-002892",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 6.1 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-002893",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 146/103 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-002894",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 8/10\"",
+        "length is 309 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-002900",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 5/10\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "slice": "B19-M09",
+  "files": [
+    "B19-M09.csv",
+    "B19-M09.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 42,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-006601",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 132/85 mmHg\"",
+        "other vital not found exactly: \"pulse 92 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\"",
+        "length is 184 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-006602",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 131/75 mmHg\"",
+        "other vital not found exactly: \"pulse 92 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006604",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 136/82 mmHg\"",
+        "other vital not found exactly: \"pulse 83 bpm\"",
+        "other vital not found exactly: \"weight 67 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006605",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 124/73 mmHg\"",
+        "other vital not found exactly: \"pulse 77 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006606",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 127/84 mmHg\"",
+        "other vital not found exactly: \"pulse 75 bpm\"",
+        "other vital not found exactly: \"weight 95 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006607",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"pulse 80 bpm\"",
+        "other vital not found exactly: \"weight 90 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006608",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 122/83 mmHg\"",
+        "other vital not found exactly: \"pulse 74 bpm\"",
+        "other vital not found exactly: \"weight 57 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006609",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 120/77 mmHg\"",
+        "other vital not found exactly: \"pulse 77 bpm\"",
+        "other vital not found exactly: \"weight 86 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006610",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 132/84 mmHg\"",
+        "other vital not found exactly: \"pulse 90 bpm\"",
+        "other vital not found exactly: \"weight 53 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006611",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 125/81 mmHg\"",
+        "other vital not found exactly: \"pulse 73 bpm\"",
+        "other vital not found exactly: \"weight 67 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006612",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 135/74 mmHg\"",
+        "other vital not found exactly: \"pulse 90 bpm\"",
+        "other vital not found exactly: \"weight 53 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006613",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 132/82 mmHg\"",
+        "other vital not found exactly: \"pulse 88 bpm\"",
+        "other vital not found exactly: \"weight 66 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006614",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 131/84 mmHg\"",
+        "other vital not found exactly: \"pulse 70 bpm\"",
+        "other vital not found exactly: \"weight 93 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006615",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"pulse 76 bpm\"",
+        "other vital not found exactly: \"weight 82 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006616",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 117/73 mmHg\"",
+        "other vital not found exactly: \"weight 68 kg\"",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006617",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 122/84 mmHg\"",
+        "other vital not found exactly: \"pulse 89 bpm\"",
+        "other vital not found exactly: \"weight 49 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006618",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 127/84 mmHg\"",
+        "other vital not found exactly: \"pulse 87 bpm\"",
+        "other vital not found exactly: \"weight 50 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006619",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 126/73 mmHg\"",
+        "other vital not found exactly: \"pulse 88 bpm\"",
+        "other vital not found exactly: \"weight 53 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006620",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 133/85 mmHg\"",
+        "other vital not found exactly: \"pulse 71 bpm\"",
+        "other vital not found exactly: \"weight 79 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006621",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 113/80 mmHg\"",
+        "other vital not found exactly: \"pulse 80 bpm\"",
+        "other vital not found exactly: \"weight 75 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006622",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 113/76 mmHg\"",
+        "other vital not found exactly: \"pulse 88 bpm\"",
+        "other vital not found exactly: \"weight 85 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006623",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 116/78 mmHg\"",
+        "other vital not found exactly: \"pulse 79 bpm\"",
+        "other vital not found exactly: \"weight 80 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006624",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 135/74 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 53 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006625",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 126/79 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 86 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006626",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006633",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006635",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006636",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006637",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006638",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006639",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006640",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006641",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006642",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006643",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006644",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006645",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006646",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006647",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006648",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006649",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006650",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    }
+  ]
+}

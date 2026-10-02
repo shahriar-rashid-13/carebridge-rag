@@ -1,0 +1,265 @@
+{
+  "slice": "B23-M05",
+  "files": [
+    "B23-M05.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 34,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-008402",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008403",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008405",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 134 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-008406",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008407",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008410",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008413",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008414",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008415",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008416",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008420",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008423",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008424",
+      "errors": [],
+      "warnings": [
+        "length is 157 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-008425",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008426",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 9 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-008427",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.0°F\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008430",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008432",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.0\""
+      ]
+    },
+    {
+      "doc_id": "VN-008434",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 3/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-008435",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008436",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 87%\""
+      ]
+    },
+    {
+      "doc_id": "VN-008437",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.6°F\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008438",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 120/81 mmHg\"",
+        "other vital not found exactly: \"pulse 92 bpm\"",
+        "other vital not found exactly: \"weight 58 kg\"",
+        "length is 205 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-008439",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.8°F\"",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008440",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 6 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-008441",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 5.0 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-008442",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 13.3 mmol/L\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008443",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.7\""
+      ]
+    },
+    {
+      "doc_id": "VN-008444",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.9\""
+      ]
+    },
+    {
+      "doc_id": "VN-008445",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 6.8 mmol/L\"",
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008446",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.9°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-008448",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 5.8 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-008449",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"vitamin D level 15 ng/mL\""
+      ]
+    },
+    {
+      "doc_id": "VN-008450",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 103.5°F\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

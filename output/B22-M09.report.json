@@ -1,0 +1,281 @@
+{
+  "slice": "B22-M09",
+  "files": [
+    "B22-M09.csv",
+    "B22-M09.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 32,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-008105",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008106",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008112",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008113",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008114",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008115",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008117",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008119",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008121",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008125",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008128",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the left eye\"",
+        "other vital not found exactly: \"BP 132/70 mmHg\"",
+        "other vital not found exactly: \"pulse 69 bpm\"",
+        "other vital not found exactly: \"weight 69 kg\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008129",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008130",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008131",
+      "errors": [],
+      "warnings": [
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008132",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.9°F\"",
+        "other vital not found exactly: \"BP 114/76 mmHg\"",
+        "other vital not found exactly: \"pulse 106 bpm\"",
+        "other vital not found exactly: \"weight 72 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 178 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-008133",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-008135",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008136",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.2°F\"",
+        "other vital not found exactly: \"BP 151/88 mmHg\"",
+        "other vital not found exactly: \"pulse 102 bpm\"",
+        "other vital not found exactly: \"weight 79 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-008137",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008138",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 113 bpm and irregular\"",
+        "other vital not found exactly: \"BP 111/80 mmHg\"",
+        "other vital not found exactly: \"weight 60 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008139",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008140",
+      "errors": [],
+      "warnings": [
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008141",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008142",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 8.4 g/dL\"",
+        "other vital not found exactly: \"BP 133/82 mmHg\"",
+        "other vital not found exactly: \"pulse 70 bpm\"",
+        "other vital not found exactly: \"weight 89 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008143",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 98.9°F\"",
+        "other vital not found exactly: \"BP 147/89 mmHg\"",
+        "other vital not found exactly: \"pulse 70 bpm\"",
+        "other vital not found exactly: \"SpO2 95%\"",
+        "other vital not found exactly: \"weight 79 kg\"",
+        "length is 175 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-008144",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008145",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\"",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008146",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008147",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008148",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008149",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 137 bpm and irregular\"",
+        "other vital not found exactly: \"BP 136/81 mmHg\"",
+        "other vital not found exactly: \"weight 55 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 105 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-008150",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 110 words, target 120-220"
+      ]
+    }
+  ]
+}

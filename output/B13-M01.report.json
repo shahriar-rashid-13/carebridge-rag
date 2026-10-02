@@ -1,0 +1,209 @@
+{
+  "slice": "B13-M01",
+  "files": [
+    "B13-M01.csv",
+    "B13-M01.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 21,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-003201",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.2 g/dL\"",
+        "other vital not found exactly: \"BP 115/80 mmHg\"",
+        "other vital not found exactly: \"pulse 86 bpm\"",
+        "other vital not found exactly: \"weight 72 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003204",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 134 bpm and irregular\"",
+        "other vital not found exactly: \"BP 115/86 mmHg\"",
+        "other vital not found exactly: \"weight 52 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003205",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 12\"",
+        "other vital not found exactly: \"BP 116/72 mmHg\"",
+        "other vital not found exactly: \"pulse 74 bpm\"",
+        "other vital not found exactly: \"weight 59 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003206",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"pulse 82 bpm\"",
+        "other vital not found exactly: \"weight 68 kg\"",
+        "length is 172 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-003207",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the left eye\"",
+        "other vital not found exactly: \"BP 141/96 mmHg\"",
+        "other vital not found exactly: \"pulse 90 bpm\"",
+        "other vital not found exactly: \"weight 91 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003208",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 159/93 mmHg\"",
+        "other vital not found exactly: \"pulse 71 bpm\"",
+        "other vital not found exactly: \"weight 92 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003209",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 11\""
+      ]
+    },
+    {
+      "doc_id": "VN-003210",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.0°F\"",
+        "other vital not found exactly: \"BP 125/86 mmHg\"",
+        "other vital not found exactly: \"pulse 100 bpm\"",
+        "other vital not found exactly: \"weight 57 kg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003211",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 84000 per microlitre\"",
+        "other vital not found exactly: \"temperature 101.1°F\"",
+        "other vital not found exactly: \"BP 113/79 mmHg\"",
+        "other vital not found exactly: \"pulse 99 bpm\"",
+        "other vital not found exactly: \"weight 82 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003212",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/6 in the left eye\"",
+        "other vital not found exactly: \"BP 115/75 mmHg\"",
+        "other vital not found exactly: \"pulse 81 bpm\"",
+        "other vital not found exactly: \"weight 74 kg\"",
+        "length is 139 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-003213",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 8.9 g/dL\"",
+        "other vital not found exactly: \"BP 124/76 mmHg\"",
+        "other vital not found exactly: \"pulse 87 bpm\"",
+        "other vital not found exactly: \"weight 97 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003214",
+      "errors": [],
+      "warnings": [
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003215",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.8°F\"",
+        "other vital not found exactly: \"BP 128/81 mmHg\"",
+        "other vital not found exactly: \"pulse 104 bpm\"",
+        "other vital not found exactly: \"weight 83 kg\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003216",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.5 g/dL\""
+      ]
+    },
+    {
+      "doc_id": "VN-003217",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 92%\"",
+        "other vital not found exactly: \"BP 115/81 mmHg\"",
+        "other vital not found exactly: \"pulse 92 bpm\"",
+        "other vital not found exactly: \"weight 54 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003219",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003220",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 134/84 mmHg\"",
+        "other vital not found exactly: \"pulse 89 bpm\"",
+        "other vital not found exactly: \"weight 87 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003221",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.0\"",
+        "other vital not found exactly: \"BP 133/72 mmHg\"",
+        "other vital not found exactly: \"pulse 68 bpm\"",
+        "other vital not found exactly: \"weight 58 kg\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003223",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-003224",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 7.3 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-003233",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

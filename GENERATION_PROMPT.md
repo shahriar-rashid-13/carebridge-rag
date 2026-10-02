@@ -15,6 +15,26 @@ How to use:
 
 The manifest rows come from the generator script (see `SPEC.md`). The LLM never invents facts.
 
+### Assessment 3 extension (slices B12 to B43)
+
+The manifest also holds 8,400 extra visit notes (`VN-002701` to `VN-011100`, slices `B12-M01` to
+`B28-M10`) and 7,200 extra prescriptions (slices `B29-M01` to `B43-M04`). The prescriptions are
+rendered by script (`node scripts/render-prescriptions.mjs`), so only the visit-note slices go
+through the chat. The same setup prompt and rules apply.
+
+`scripts/chat-helper.mjs` moves text between the files and the chat through the clipboard:
+
+1. `node scripts/chat-helper.mjs next` copies the next visit-note slice without output, already
+   wrapped in the batch message. When it prints "New batch", start a fresh chat and paste the setup
+   prompt first.
+2. Paste into the chat. When the reply is complete (or cut short), copy the whole reply and run
+   `node scripts/chat-helper.mjs save`. If rows are still missing, reply `CONTINUE`, copy the new
+   reply, and run `save` again; replies are appended.
+3. When every row is present, the slice is validated. If rows fail, run
+   `node scripts/chat-helper.mjs fix`, paste the fix message into the same chat, copy the reply, and
+   run `node scripts/chat-helper.mjs savefix`.
+4. `node scripts/chat-helper.mjs status` shows progress.
+
 ---
 
 ## Setup prompt (paste once per conversation)

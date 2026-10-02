@@ -1,0 +1,170 @@
+{
+  "slice": "B21-M05",
+  "files": [
+    "B21-M05.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 21,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-007405",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 112/81 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007414",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007426",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 3 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-007428",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.8\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007429",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 90%\""
+      ]
+    },
+    {
+      "doc_id": "VN-007430",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-007432",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 146/102 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007433",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.7\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007434",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 109 bpm\"",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007436",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007437",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 132/96 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007438",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.8°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-007439",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.6\""
+      ]
+    },
+    {
+      "doc_id": "VN-007440",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 116 bpm and irregular\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007441",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 10 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-007442",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 10.3 g/dL\""
+      ]
+    },
+    {
+      "doc_id": "VN-007444",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.0 g/dL\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007446",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.7°F\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007447",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 4 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-007448",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 85000 per microlitre\""
+      ]
+    },
+    {
+      "doc_id": "VN-007449",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.2\""
+      ]
+    }
+  ]
+}

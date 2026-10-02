@@ -1,0 +1,191 @@
+{
+  "slice": "B12-M10",
+  "files": [
+    "B12-M10.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 24,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-003157",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 106 bpm\"",
+        "other vital not found exactly: \"BP 120/84 mmHg\"",
+        "other vital not found exactly: \"weight 64 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003158",
+      "errors": [],
+      "warnings": [
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003159",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 4/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-003162",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-003163",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-003164",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 15\""
+      ]
+    },
+    {
+      "doc_id": "VN-003166",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\"",
+        "other vital not found exactly: \"BP 141/89 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 82 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-003167",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 22\""
+      ]
+    },
+    {
+      "doc_id": "VN-003168",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 23\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003169",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 6.3 mmol/L\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003172",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003174",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003175",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-003178",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003180",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003182",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003185",
+      "errors": [],
+      "warnings": [
+        "length is 107 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003187",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-003190",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003191",
+      "errors": [],
+      "warnings": [
+        "length is 125 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-003192",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003193",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003197",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-003198",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    }
+  ]
+}

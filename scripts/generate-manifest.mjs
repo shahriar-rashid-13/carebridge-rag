@@ -1,23 +1,47 @@
 // Builds the deterministic fact manifest for the synthetic RAG corpus (see SPEC.md).
 // Usage (from carebridge-rag/): node scripts/generate-manifest.mjs
+//
+// Two phases share one output:
+//   - Assessment 2 base (seed 20260929): 2,700 visits, 2,300 prescriptions, 250 FAQ, slices B01-B11.
+//     Its output is byte-identical to the original manifest.
+//   - Assessment 3 extension (seed 20261002): 8,400 more visits and 7,200 prescriptions for new
+//     patients, numbered after the base (VN-002701, RX-002701, ...), slices B12 onwards. It avoids
+//     every doctor slot, anchor, and patient name already used by the base.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  COMORBIDITIES, DAY_NAMES, DIAGNOSES, DOCTORS, END_DATE, GENERAL_FAQ, NAMES, OCCUPATIONS,
+  COMORBIDITIES, DAY_NAMES, DIAGNOSES, DOCTORS, END_DATE, EXTRA_NAMES, GENERAL_FAQ, NAMES, OCCUPATIONS,
   PLACES, PLAN_NOTES, SPECIALIZATIONS, START_DATE,
 } from "./catalog.mjs";
 import { toCsv } from "./csv.mjs";
 
 const SEED = 20260929;
+const EXT_SEED = 20261002;
 const RAG_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT_DIR = path.join(RAG_DIR, "manifest");
 
-const VISITS_PER_SPEC = 225;
-const PAIRED_VISITS = 2300;
-const UNPAIRED_PLAN = { continue: 250, tests: 60, lifestyle: 50, referral: 40 };
-const DIFFICULTY_QUOTA = { confusable: 189, rare_presentation: 216, long: 135 };
-const PATIENT_COUNT = 900;
+const BASE = {
+  seed: SEED,
+  visitsPerSpec: 225,
+  pairedVisits: 2300,
+  unpairedPlan: { continue: 250, tests: 60, lifestyle: 50, referral: 40 },
+  difficultyQuota: { confusable: 189, rare_presentation: 216, long: 135 },
+  patientCount: 900,
+  firstPatient: 1,
+  firstNumber: 1,
+};
+const EXT = {
+  seed: EXT_SEED,
+  visitsPerSpec: 700,
+  pairedVisits: 7200,
+  unpairedPlan: { continue: 750, tests: 180, lifestyle: 150, referral: 120 },
+  // Fewer long notes than the base: they cost the most LLM output for little retrieval value.
+  difficultyQuota: { confusable: 588, rare_presentation: 672, long: 168 },
+  patientCount: 2000,
+  firstPatient: 901,
+  firstNumber: 2701,
+};
 const MAX_VISITS_PER_PATIENT = 8;
 const SLICE_SIZE = 50;
 
@@ -32,7 +56,8 @@ function mulberry32(seed) {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
-const rand = mulberry32(SEED);
+// Reassigned when the extension phase starts, so the base phase draws exactly the same numbers as before.
+let rand = mulberry32(SEED);
 const randInt = (lo, hi) => lo + Math.floor(rand() * (hi - lo + 1));
 const randFloat = (lo, hi) => (lo + rand() * (hi - lo)).toFixed(1);
 const pick = (items) => items[Math.floor(rand() * items.length)];
@@ -93,18 +118,17 @@ function occupationFor(age) {
   return pick(pool);
 }
 
-function generatePatients() {
-  const used = new Set();
+function generatePatients(config, names, used) {
   const patients = [];
-  for (let i = 1; i <= PATIENT_COUNT; i++) {
+  for (let i = config.firstPatient; i < config.firstPatient + config.patientCount; i++) {
     const gender = rand() < 0.5 ? "male" : "female";
     let fullName;
     do {
       const hindu = rand() < 0.1;
-      const first = pick(hindu ? NAMES[gender === "male" ? "hinduMale" : "hinduFemale"] : NAMES[gender === "male" ? "muslimMale" : "muslimFemale"]);
+      const first = pick(hindu ? names[gender === "male" ? "hinduMale" : "hinduFemale"] : names[gender === "male" ? "muslimMale" : "muslimFemale"]);
       const surnames = hindu
-        ? NAMES.hinduSurname
-        : NAMES.muslimSurname.filter((s) => gender === "female" || !FEMALE_ONLY_SURNAMES.has(s));
+        ? names.hinduSurname
+        : names.muslimSurname.filter((s) => gender === "female" || !FEMALE_ONLY_SURNAMES.has(s));
       fullName = `${first} ${pick(surnames)}`;
     } while (used.has(fullName));
     used.add(fullName);
@@ -162,12 +186,12 @@ function choosePatient(patients, dx, visits) {
   return pick(pool.filter((p) => p.visitCount <= min + spread));
 }
 
-function buildEpisodes() {
+function buildEpisodes(config) {
   const episodes = [];
   for (const spec of SPECIALIZATIONS) {
     const dxs = DIAGNOSES.filter((d) => d.spec === spec.name);
     assert(dxs.length === 4, `${spec.name} must have 4 diagnoses`);
-    let remaining = VISITS_PER_SPEC;
+    let remaining = config.visitsPerSpec;
     let order = [];
     while (remaining > 0) {
       if (!order.length) order = shuffle(dxs);
@@ -181,8 +205,7 @@ function buildEpisodes() {
   return shuffle(episodes).sort((a, b) => restrictiveness(a.dx) - restrictiveness(b.dx));
 }
 
-function schedule(episodes, patients) {
-  const occupied = new Set();
+function schedule(episodes, patients, occupied = new Set()) {
   const patientDates = new Set();
   const visits = [];
 
@@ -232,7 +255,7 @@ function schedule(episodes, patients) {
 
 // ------------------------------------------------------------------ plans, numbering, difficulty
 
-function assignPlans(visits) {
+function assignPlans(visits, unpairedPlan) {
   const chosen = new Set();
   const take = (candidates, count, planType) => {
     const picked = shuffle(candidates.filter((v) => !chosen.has(v))).slice(0, count);
@@ -242,22 +265,22 @@ function assignPlans(visits) {
       v.planType = planType;
     }
   };
-  take(visits.filter((v) => v.dx.chronic && v.visitIndex > 0), UNPAIRED_PLAN.continue, "continue");
+  take(visits.filter((v) => v.dx.chronic && v.visitIndex > 0), unpairedPlan.continue, "continue");
   const deferrable = visits.filter((v) => v.visitIndex === 0 && v.dx.canDefer);
-  take(deferrable, UNPAIRED_PLAN.tests, "tests");
-  take(deferrable, UNPAIRED_PLAN.lifestyle, "lifestyle");
-  take(deferrable, UNPAIRED_PLAN.referral, "referral");
+  take(deferrable, unpairedPlan.tests, "tests");
+  take(deferrable, unpairedPlan.lifestyle, "lifestyle");
+  take(deferrable, unpairedPlan.referral, "referral");
   for (const v of visits) if (!chosen.has(v)) v.planType = "prescription";
 }
 
-function numberVisits(visits) {
+function numberVisits(visits, config) {
   const order = (a, b) =>
     a.date.localeCompare(b.date) || slotMinutes(a.slot) - slotMinutes(b.slot) || a.doctor.ref.localeCompare(b.doctor.ref);
   const paired = visits.filter((v) => v.planType === "prescription").sort(order);
   const unpaired = visits.filter((v) => v.planType !== "prescription").sort(order);
-  assert(paired.length === PAIRED_VISITS, `expected ${PAIRED_VISITS} paired visits, got ${paired.length}`);
+  assert(paired.length === config.pairedVisits, `expected ${config.pairedVisits} paired visits, got ${paired.length}`);
   [...paired, ...unpaired].forEach((v, i) => {
-    const n = String(i + 1).padStart(6, "0");
+    const n = String(config.firstNumber + i).padStart(6, "0");
     v.docId = `VN-${n}`;
     v.groupId = `VISIT-${n}`;
     v.rxDocId = v.planType === "prescription" ? `RX-${n}` : null;
@@ -265,7 +288,7 @@ function numberVisits(visits) {
   return [...paired, ...unpaired];
 }
 
-function assignDifficulty(visits) {
+function assignDifficulty(visits, quota) {
   const byDx = new Map();
   for (const v of visits) {
     if (!byDx.has(v.dx.id)) byDx.set(v.dx.id, []);
@@ -273,7 +296,7 @@ function assignDifficulty(visits) {
   }
   let confusable = 0;
   for (const b of shuffle(visits)) {
-    if (confusable === DIFFICULTY_QUOTA.confusable) break;
+    if (confusable === quota.confusable) break;
     if (b.difficulty) continue;
     const partner = shuffle(byDx.get(b.dx.id)).find((a) => a !== b && !a.difficulty && a.patient !== b.patient);
     if (!partner) continue;
@@ -283,10 +306,10 @@ function assignDifficulty(visits) {
     partner.confusableWith = b;
     confusable++;
   }
-  assert(confusable === DIFFICULTY_QUOTA.confusable, "not enough confusable pairs");
+  assert(confusable === quota.confusable, "not enough confusable pairs");
   const open = shuffle(visits.filter((v) => !v.difficulty));
   let cursor = 0;
-  for (const [difficulty, count] of [["rare_presentation", DIFFICULTY_QUOTA.rare_presentation], ["long", DIFFICULTY_QUOTA.long]]) {
+  for (const [difficulty, count] of [["rare_presentation", quota.rare_presentation], ["long", quota.long]]) {
     for (let i = 0; i < count; i++) open[cursor++].difficulty = difficulty;
   }
   for (const v of visits) v.difficulty ??= "normal";
@@ -357,8 +380,7 @@ function triggerFits(trigger, patient) {
   return true;
 }
 
-function assignAnchors(visits) {
-  const tuples = new Set();
+function assignAnchors(visits, tuples = new Set()) {
   const assign = (v, context, place) => {
     for (let attempt = 0; attempt < 100; attempt++) {
       const vital = renderVital(v.dx.vital);
@@ -366,7 +388,20 @@ function assignAnchors(visits) {
       if (tuples.has(key)) continue;
       tuples.add(key);
       Object.assign(v, { anchorOccupation: v.patient.occupation, anchorContext: context, anchorPlace: place, anchorVital: vital });
-      return;
+      return true;
+    }
+    return false;
+  };
+  // Vitals with few possible values (for example a left or right Dix-Hallpike test) can run out of
+  // unique tuples for one context. Then a new place and trigger are drawn. The base manifest never
+  // reaches this fallback, so its output is unchanged.
+  const assignOwnContext = (v, people) => {
+    for (let attempt = 0; attempt < 50; attempt++) {
+      const place = pick(PLACES);
+      const fitting = v.dx.triggers.filter((t) => people.every((p) => triggerFits(t, p)));
+      const trigger = pick(fitting.length ? fitting : v.dx.triggers.filter((t) => triggerFits(t, v.patient)));
+      if (!trigger) throw new Error(`no trigger fits ${v.docId} (${v.patient.occupation}, ${v.dx.name})`);
+      if (assign(v, trigger.replace("{place}", place), place)) return;
     }
     throw new Error(`could not find a unique anchor for ${v.docId}`);
   };
@@ -375,15 +410,15 @@ function assignAnchors(visits) {
     partners.set(b.confusableWith, [...(partners.get(b.confusableWith) ?? []), b]);
   }
   for (const v of visits.filter((x) => x.difficulty !== "confusable")) {
-    const place = pick(PLACES);
-    const people = [v, ...(partners.get(v) ?? [])].map((x) => x.patient);
-    const fitting = v.dx.triggers.filter((t) => people.every((p) => triggerFits(t, p)));
-    const trigger = pick(fitting.length ? fitting : v.dx.triggers.filter((t) => triggerFits(t, v.patient)));
-    if (!trigger) throw new Error(`no trigger fits ${v.docId} (${v.patient.occupation}, ${v.dx.name})`);
-    assign(v, trigger.replace("{place}", place), place);
+    assignOwnContext(v, [v, ...(partners.get(v) ?? [])].map((x) => x.patient));
   }
   for (const v of visits.filter((x) => x.difficulty === "confusable")) {
-    assign(v, v.confusableWith.anchorContext, v.confusableWith.anchorPlace);
+    if (assign(v, v.confusableWith.anchorContext, v.confusableWith.anchorPlace)) continue;
+    // No unique tuple left in the partner's context: the pair stops being confusable.
+    v.confusableWith.confusableWith = null;
+    v.confusableWith = null;
+    v.difficulty = "normal";
+    assignOwnContext(v, [v.patient]);
   }
 }
 
@@ -393,7 +428,7 @@ function chiefComplaintHint(dx) {
   return joinList(shuffle(dx.cues).slice(0, randInt(2, Math.min(3, dx.cues.length))));
 }
 
-function buildVisitRows(visits) {
+function buildVisitRows(visits, seed) {
   const dxCountByPatient = new Map();
   for (const v of visits) {
     const key = `${v.patient.ref}|${v.dx.id}`;
@@ -464,7 +499,7 @@ function buildVisitRows(visits) {
       length_words: v.difficulty === "long" ? "350-500" : "120-220",
       answer_facts_vn: [v.patient.name, v.date, v.doctor.name, v.dx.name, v.anchorVital, v.anchorOccupation],
       answer_facts_rx: regimen ? [v.patient.name, v.date, v.dx.name, ...medicineLines.map((l) => l.replace(/^\d+\) /, ""))] : null,
-      generator_seed: SEED,
+      generator_seed: seed,
     };
   });
 }
@@ -571,32 +606,74 @@ function buildSlices(visitRows, faqRows) {
   return slices;
 }
 
+// Extension slices: visit notes in batches B12-B28, then prescriptions in B29-B43 (500 rows per batch).
+function buildExtSlices(visitRows) {
+  const vn = visitRows.map(vnInput);
+  const rx = visitRows.filter((r) => r.has_prescription).map(rxInput);
+  const slices = [];
+  let batch = 12;
+  for (const rows of [vn, rx]) {
+    for (let start = 0; start < rows.length; start += SLICE_SIZE * 10, batch++) {
+      const batchRows = rows.slice(start, start + SLICE_SIZE * 10);
+      for (let i = 0; i < batchRows.length; i += SLICE_SIZE) {
+        slices.push({
+          id: `B${String(batch).padStart(2, "0")}-M${String(i / SLICE_SIZE + 1).padStart(2, "0")}`,
+          rows: batchRows.slice(i, i + SLICE_SIZE),
+        });
+      }
+    }
+  }
+  return slices;
+}
+
 // ------------------------------------------------------------------ main
 
 function writeJsonl(file, rows) {
   fs.writeFileSync(file, rows.map((r) => JSON.stringify(r)).join("\n") + "\n");
 }
 
-function main() {
-  const patients = generatePatients();
-  const visits = schedule(buildEpisodes(), patients);
-  assert(visits.length === VISITS_PER_SPEC * SPECIALIZATIONS.length, `expected 2700 visits, got ${visits.length}`);
-  assignPlans(visits);
-  const numbered = numberVisits(visits);
-  assignDifficulty(numbered);
-  assignAnchors(numbered);
-  const visitRows = buildVisitRows(numbered);
-  const faqRows = buildFaqRows();
-  const slices = buildSlices(visitRows, faqRows);
-
+function buildPhase(config, names, usedNames, occupied, tuples) {
+  const patients = generatePatients(config, names, usedNames);
+  const visits = schedule(buildEpisodes(config), patients, occupied);
+  const expected = config.visitsPerSpec * SPECIALIZATIONS.length;
+  assert(visits.length === expected, `expected ${expected} visits, got ${visits.length}`);
+  assignPlans(visits, config.unpairedPlan);
+  const numbered = numberVisits(visits, config);
+  assignDifficulty(numbered, config.difficultyQuota);
+  assignAnchors(numbered, tuples);
   for (const v of numbered) {
     assert(v.doctor.days.includes(v.weekday), `${v.docId} weekday not in doctor days`);
     assert(v.doctor.slots.includes(v.slot), `${v.docId} slot not in doctor slots`);
     assert(v.age >= v.dx.age[0] && v.age <= v.dx.age[1], `${v.docId} age ${v.age} outside ${v.dx.id} range`);
     assert(v.dx.sex !== "female" || v.patient.gender === "female", `${v.docId} sex rule`);
   }
-  const sliceRows = slices.reduce((sum, s) => sum + s.rows.length, 0);
-  assert(sliceRows === 5250, `expected 5250 slice rows, got ${sliceRows}`);
+  return { patients, numbered, visitRows: buildVisitRows(numbered, config.seed) };
+}
+
+function main() {
+  const base = buildPhase(BASE, NAMES, new Set(), new Set(), new Set());
+  const faqRows = buildFaqRows();
+  const baseSlices = buildSlices(base.visitRows, faqRows);
+  const baseSliceRows = baseSlices.reduce((sum, s) => sum + s.rows.length, 0);
+  assert(baseSliceRows === 5250, `expected 5250 base slice rows, got ${baseSliceRows}`);
+
+  rand = mulberry32(EXT_SEED);
+  const extNames = Object.fromEntries(Object.entries(NAMES).map(([key, list]) => [key, [...list, ...EXTRA_NAMES[key]]]));
+  // Patients never share a name with each other or with a doctor.
+  const usedNames = new Set([...base.patients.map((p) => p.name), ...DOCTORS.map((d) => d.name.replace(/^Dr\. /, ""))]);
+  const occupied = new Set(base.numbered.map((v) => `${v.doctor.ref}|${v.date}|${v.slot}`));
+  const tuples = new Set(base.numbered.map((v) => `${v.anchorOccupation}|${v.anchorContext}|${v.anchorVital}`));
+  const ext = buildPhase(EXT, extNames, usedNames, occupied, tuples);
+  const extSlices = buildExtSlices(ext.visitRows);
+  const extSliceRows = extSlices.reduce((sum, s) => sum + s.rows.length, 0);
+  assert(extSliceRows === 8400 + 7200, `expected 15600 extension slice rows, got ${extSliceRows}`);
+
+  const patients = [...base.patients, ...ext.patients];
+  const visitRows = [...base.visitRows, ...ext.visitRows];
+  const slices = [...baseSlices, ...extSlices];
+  const sliceRows = baseSliceRows + extSliceRows;
+  assert(new Set(visitRows.map((r) => r.doc_id)).size === visitRows.length, "duplicate visit doc_id");
+  assert(new Set(slices.map((s) => s.id)).size === slices.length, "duplicate slice id");
 
   fs.rmSync(OUT_DIR, { recursive: true, force: true });
   fs.mkdirSync(path.join(OUT_DIR, "llm_input"), { recursive: true });
@@ -618,20 +695,28 @@ function main() {
   ));
 
   const countBy = (rows, key) => rows.reduce((acc, r) => ({ ...acc, [r[key]]: (acc[r[key]] ?? 0) + 1 }), {});
-  const visitHistogram = countBy(patients, "visitCount");
+  const phaseSummary = (phasePatients, rows, phaseSlices, seed, extraRecords) => ({
+    generator_seed: seed,
+    visit_notes: rows.length,
+    prescriptions: rows.filter((r) => r.has_prescription).length,
+    total_records: rows.length + rows.filter((r) => r.has_prescription).length + extraRecords,
+    slices: phaseSlices.length,
+    slice_range: [phaseSlices[0].id, phaseSlices.at(-1).id],
+    visits_by_specialization: countBy(rows, "specialization"),
+    visits_by_difficulty: countBy(rows, "difficulty"),
+    visits_by_plan: countBy(rows, "plan_type"),
+    patients_with_visits: phasePatients.filter((p) => p.visitCount > 0).length,
+    visits_per_patient_histogram: countBy(phasePatients, "visitCount"),
+    date_range: [rows.map((r) => r.visit_date).sort()[0], rows.map((r) => r.visit_date).sort().at(-1)],
+  });
   const summary = {
-    generator_seed: SEED,
     visit_notes: visitRows.length,
     prescriptions: visitRows.filter((r) => r.has_prescription).length,
     faq: faqRows.length,
     total_records: sliceRows,
     slices: slices.length,
-    visits_by_specialization: countBy(visitRows, "specialization"),
-    visits_by_difficulty: countBy(visitRows, "difficulty"),
-    visits_by_plan: countBy(visitRows, "plan_type"),
-    patients_with_visits: patients.filter((p) => p.visitCount > 0).length,
-    visits_per_patient_histogram: visitHistogram,
-    date_range: [visitRows.map((r) => r.visit_date).sort()[0], visitRows.map((r) => r.visit_date).sort().at(-1)],
+    base: { ...phaseSummary(base.patients, base.visitRows, baseSlices, SEED, faqRows.length), faq: faqRows.length },
+    extension: phaseSummary(ext.patients, ext.visitRows, extSlices, EXT_SEED, 0),
   };
   fs.writeFileSync(path.join(OUT_DIR, "summary.json"), JSON.stringify(summary, null, 2) + "\n");
   console.log(JSON.stringify(summary, null, 2));

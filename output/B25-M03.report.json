@@ -1,0 +1,323 @@
+{
+  "slice": "B25-M03",
+  "files": [
+    "B25-M03.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 39,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-009303",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-009304",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.5°F\"",
+        "other vital not found exactly: \"BP 129/85 mmHg\"",
+        "other vital not found exactly: \"pulse 106 bpm\"",
+        "other vital not found exactly: \"weight 84 kg\"",
+        "length is 174 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-009305",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/6 in the right eye\""
+      ]
+    },
+    {
+      "doc_id": "VN-009306",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.1°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-009307",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the right eye\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009308",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.5°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-009309",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 108 bpm\"",
+        "other vital not found exactly: \"weight 85 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009310",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the right eye\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009311",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 95%\"",
+        "other vital not found exactly: \"BP 134/73 mmHg\"",
+        "other vital not found exactly: \"pulse 86 bpm\"",
+        "other vital not found exactly: \"weight 80 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009312",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 12\"",
+        "other vital not found exactly: \"BP 136/74 mmHg\"",
+        "other vital not found exactly: \"pulse 72 bpm\"",
+        "other vital not found exactly: \"weight 51 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009313",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.4°F\"",
+        "other vital not found exactly: \"BP 119/83 mmHg\"",
+        "other vital not found exactly: \"pulse 95 bpm\"",
+        "other vital not found exactly: \"weight 45 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009314",
+      "errors": [],
+      "warnings": [
+        "length is 102 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009315",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 99000 per microlitre\""
+      ]
+    },
+    {
+      "doc_id": "VN-009316",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.8°F\"",
+        "other vital not found exactly: \"BP 150/87 mmHg\"",
+        "other vital not found exactly: \"pulse 94 bpm\"",
+        "other vital not found exactly: \"weight 60 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009317",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.6°F\"",
+        "other vital not found exactly: \"BP 116/75 mmHg\"",
+        "other vital not found exactly: \"pulse 99 bpm\"",
+        "other vital not found exactly: \"weight 57 kg\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009318",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.3°F\"",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009320",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 107000 per microlitre\""
+      ]
+    },
+    {
+      "doc_id": "VN-009321",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-009322",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 17\""
+      ]
+    },
+    {
+      "doc_id": "VN-009323",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"lump about 3 mm on the right upper eyelid\""
+      ]
+    },
+    {
+      "doc_id": "VN-009324",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 103.5°F\"",
+        "other vital not found exactly: \"BP 123/78 mmHg\"",
+        "other vital not found exactly: \"pulse 109 bpm\"",
+        "other vital not found exactly: \"SpO2 91%\"",
+        "other vital not found exactly: \"weight 72 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-009325",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 98.9°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-009327",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009328",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009330",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009332",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009335",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009336",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009338",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009339",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009341",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009342",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009344",
+      "errors": [],
+      "warnings": [
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009345",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009346",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-009347",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009348",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009349",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-009350",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    }
+  ]
+}

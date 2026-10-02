@@ -1,0 +1,283 @@
+{
+  "slice": "B20-M08",
+  "files": [
+    "B20-M08.csv",
+    "B20-M08.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 37,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-007052",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007053",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 124 bpm and irregular\""
+      ]
+    },
+    {
+      "doc_id": "VN-007054",
+      "errors": [],
+      "warnings": [
+        "length is 197 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007055",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 127 bpm and irregular\""
+      ]
+    },
+    {
+      "doc_id": "VN-007058",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.8°F\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007059",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 23\""
+      ]
+    },
+    {
+      "doc_id": "VN-007061",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\"",
+        "length is 167 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007062",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 123 bpm\""
+      ]
+    },
+    {
+      "doc_id": "VN-007063",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 18\""
+      ]
+    },
+    {
+      "doc_id": "VN-007064",
+      "errors": [],
+      "warnings": [
+        "specialization named in the chief complaint sentence"
+      ]
+    },
+    {
+      "doc_id": "VN-007065",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007066",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 11\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007067",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 11\""
+      ]
+    },
+    {
+      "doc_id": "VN-007068",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 116 bpm\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007072",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007074",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 115 bpm\"",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007075",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007077",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 16\""
+      ]
+    },
+    {
+      "doc_id": "VN-007079",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 92%\""
+      ]
+    },
+    {
+      "doc_id": "VN-007080",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.9°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-007083",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 10.0 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-007084",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007085",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 99.6°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-007086",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-007087",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 169/106 mmHg\"",
+        "other vital not found exactly: \"pulse 70 bpm\""
+      ]
+    },
+    {
+      "doc_id": "VN-007088",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 6.1 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-007089",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 6 cm across\""
+      ]
+    },
+    {
+      "doc_id": "VN-007090",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007091",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007092",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 5.2 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-007093",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.6°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-007094",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.4\""
+      ]
+    },
+    {
+      "doc_id": "VN-007095",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"about 25 inflamed spots on the face\""
+      ]
+    },
+    {
+      "doc_id": "VN-007096",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.2\""
+      ]
+    },
+    {
+      "doc_id": "VN-007098",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 11\""
+      ]
+    },
+    {
+      "doc_id": "VN-007099",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 163/95 mmHg\"",
+        "other vital not found exactly: \"pulse 71 bpm\""
+      ]
+    },
+    {
+      "doc_id": "VN-007100",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 17.6 mIU/L\""
+      ]
+    }
+  ]
+}

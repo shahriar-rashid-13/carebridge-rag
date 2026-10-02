@@ -1,0 +1,330 @@
+{
+  "slice": "B20-M02",
+  "files": [
+    "B20-M02.csv",
+    "B20-M02.fix1.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 38,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-006751",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006754",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006757",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006758",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006759",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006760",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006761",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006765",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006767",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006770",
+      "errors": [],
+      "warnings": [
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006771",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006772",
+      "errors": [],
+      "warnings": [
+        "length is 169 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-006773",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 7.4 mmol/L\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006774",
+      "errors": [],
+      "warnings": [
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006775",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006776",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 124 bpm\"",
+        "other vital not found exactly: \"BP 124/82 mmHg\"",
+        "other vital not found exactly: \"weight 70 kg\"",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006777",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 8.8 mmol/L\"",
+        "other vital not found exactly: \"BP 112/84 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006778",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/6 in the left eye\"",
+        "other vital not found exactly: \"BP 117/82 mmHg\"",
+        "other vital not found exactly: \"pulse 72 bpm\"",
+        "other vital not found exactly: \"weight 61 kg\"",
+        "length is 138 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-006779",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 29.1\"",
+        "other vital not found exactly: \"BP 115/85 mmHg\"",
+        "other vital not found exactly: \"pulse 79 bpm\"",
+        "other vital not found exactly: \"weight 51 kg\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006780",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 117/74 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006781",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 108 bpm\"",
+        "other vital not found exactly: \"BP 136/77 mmHg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006782",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 10 cm across\"",
+        "other vital not found exactly: \"BP 130/70 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006783",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 125000 per microlitre\"",
+        "other vital not found exactly: \"temperature 101.7°F\"",
+        "other vital not found exactly: \"BP 125/76 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006784",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 123/84 mmHg\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006785",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 111/74 mmHg\"",
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006786",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 31.9\"",
+        "other vital not found exactly: \"BP 110/79 mmHg\"",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006787",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 101.8°F\"",
+        "other vital not found exactly: \"BP 124/86 mmHg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006788",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 87%\"",
+        "other vital not found exactly: \"BP 146/92 mmHg\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006789",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 122/78 mmHg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006790",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 102.8°F\"",
+        "other vital not found exactly: \"BP 134/77 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006791",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 116 bpm\"",
+        "other vital not found exactly: \"BP 110/73 mmHg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 103 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006792",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the left eye\"",
+        "other vital not found exactly: \"BP 115/72 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006793",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\"",
+        "other vital not found exactly: \"BP 132/80 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006794",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-006797",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 31.1\"",
+        "other vital not found exactly: \"BP 125/72 mmHg\"",
+        "chief_complaint_hint copied word for word",
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006798",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 131/83 mmHg\"",
+        "length is 106 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-006799",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 134000 per microlitre\"",
+        "other vital not found exactly: \"temperature 103.3°F\"",
+        "other vital not found exactly: \"BP 122/75 mmHg\""
+      ]
+    },
+    {
+      "doc_id": "VN-006800",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/9 in the right eye\"",
+        "other vital not found exactly: \"BP 149/90 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    }
+  ]
+}

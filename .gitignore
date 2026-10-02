@@ -4,3 +4,4 @@ node_modules/
 embed-upload.log
 .venv/
 eval/.cache/
+output/.chat-current

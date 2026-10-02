@@ -1,0 +1,322 @@
+{
+  "slice": "B26-M08",
+  "files": [
+    "B26-M08.csv",
+    "B26-M08.fix1.csv",
+    "B26-M08.fix2.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 41,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-010051",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010052",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"reduced sensation at 8 of 10 monofilament test sites\""
+      ]
+    },
+    {
+      "doc_id": "VN-010053",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 9.1 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-010054",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010055",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 3 seconds\""
+      ]
+    },
+    {
+      "doc_id": "VN-010057",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.8\"",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010058",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010059",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010060",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.4 g/dL\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010062",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.6\"",
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010063",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 13.4 mmol/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-010064",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010065",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 9/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-010066",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 16\""
+      ]
+    },
+    {
+      "doc_id": "VN-010067",
+      "errors": [],
+      "warnings": [
+        "length is 113 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010069",
+      "errors": [],
+      "warnings": [
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010070",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010072",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.3 g/dL\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010073",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010074",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010075",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 22\""
+      ]
+    },
+    {
+      "doc_id": "VN-010077",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.0\""
+      ]
+    },
+    {
+      "doc_id": "VN-010078",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 13\"",
+        "chief_complaint_hint copied word for word",
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010079",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-010082",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010083",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.7\"",
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010084",
+      "errors": [],
+      "warnings": [
+        "length is 104 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010086",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"vitamin D level 16 ng/mL\"",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010087",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 7/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-010088",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.5 g/dL\"",
+        "length is 115 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010090",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.4 g/dL\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010091",
+      "errors": [],
+      "warnings": [
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010092",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010093",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 28.9\"",
+        "chief_complaint_hint copied word for word",
+        "length is 118 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010094",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010095",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010096",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-010097",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 5/10\"",
+        "chief_complaint_hint copied word for word",
+        "length is 109 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010098",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 22\"",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-010099",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 26.7\""
+      ]
+    },
+    {
+      "doc_id": "VN-010100",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 6 seconds\""
+      ]
+    }
+  ]
+}

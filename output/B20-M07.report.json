@@ -1,0 +1,385 @@
+{
+  "slice": "B20-M07",
+  "files": [
+    "B20-M07.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 45,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "VN-007001",
+      "errors": [],
+      "warnings": [
+        "length is 117 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007002",
+      "errors": [],
+      "warnings": [
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007003",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007005",
+      "errors": [],
+      "warnings": [
+        "length is 111 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007006",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"platelet count 92000 per microlitre\""
+      ]
+    },
+    {
+      "doc_id": "VN-007008",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 7.8 mIU/L\""
+      ]
+    },
+    {
+      "doc_id": "VN-007009",
+      "errors": [],
+      "warnings": [
+        "length is 110 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007010",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 15.1 mIU/L\"",
+        "other vital not found exactly: \"BP 129/83 mmHg\"",
+        "other vital not found exactly: \"pulse 92 bpm\"",
+        "other vital not found exactly: \"weight 93 kg\"",
+        "length is 201 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007012",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 14\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007013",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 165/100 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007014",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 7 seconds\"",
+        "chief_complaint_hint copied word for word",
+        "length is 116 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007015",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007016",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 90%\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007017",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"TSH 15.2 mIU/L\"",
+        "chief_complaint_hint copied word for word",
+        "length is 112 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007018",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/18 in the right eye\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007019",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 96%\"",
+        "chief_complaint_hint copied word for word",
+        "length is 119 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007020",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007021",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"Insomnia Severity Index score 24\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007022",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007023",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 9.4 g/dL\""
+      ]
+    },
+    {
+      "doc_id": "VN-007024",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BP 155/106 mmHg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007025",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"affected area about 5 cm across\"",
+        "length is 114 words, target 120-220"
+      ]
+    },
+    {
+      "doc_id": "VN-007026",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 5/10\""
+      ]
+    },
+    {
+      "doc_id": "VN-007027",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pulse 125 bpm and irregular\""
+      ]
+    },
+    {
+      "doc_id": "VN-007029",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/9 in the right eye\"",
+        "other vital not found exactly: \"BP 126/70 mmHg\"",
+        "other vital not found exactly: \"pulse 88 bpm\"",
+        "other vital not found exactly: \"weight 62 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007030",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"GAD-7 score 10\""
+      ]
+    },
+    {
+      "doc_id": "VN-007031",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"haemoglobin 8.2 g/dL\"",
+        "other vital not found exactly: \"BP 111/73 mmHg\"",
+        "other vital not found exactly: \"pulse 80 bpm\"",
+        "other vital not found exactly: \"weight 50 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007032",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 33.4\""
+      ]
+    },
+    {
+      "doc_id": "VN-007033",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"temperature 100.8°F\""
+      ]
+    },
+    {
+      "doc_id": "VN-007034",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 6 seconds\"",
+        "other vital not found exactly: \"BP 120/77 mmHg\"",
+        "other vital not found exactly: \"pulse 90 bpm\"",
+        "other vital not found exactly: \"weight 82 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007035",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007036",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"pain score 6/10\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007037",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"visual acuity 6/9 in the left eye\"",
+        "other vital not found exactly: \"BP 134/70 mmHg\"",
+        "other vital not found exactly: \"pulse 83 bpm\"",
+        "other vital not found exactly: \"weight 57 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007038",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"SpO2 90%\""
+      ]
+    },
+    {
+      "doc_id": "VN-007039",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"fasting glucose 11.3 mmol/L\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007040",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 32.2\"",
+        "other vital not found exactly: \"BP 124/76 mmHg\"",
+        "other vital not found exactly: \"pulse 69 bpm\"",
+        "other vital not found exactly: \"weight 85 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007042",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 27.6\"",
+        "other vital not found exactly: \"BP 118/76 mmHg\"",
+        "other vital not found exactly: \"pulse 81 bpm\"",
+        "other vital not found exactly: \"weight 51 kg\"",
+        "length is 179 words, target 350-500"
+      ]
+    },
+    {
+      "doc_id": "VN-007043",
+      "errors": [],
+      "warnings": [
+        "other vital not found exactly: \"BP 132/79 mmHg\"",
+        "other vital not found exactly: \"pulse 89 bpm\"",
+        "other vital not found exactly: \"weight 93 kg\""
+      ]
+    },
+    {
+      "doc_id": "VN-007044",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"vitamin D level 15 ng/mL\""
+      ]
+    },
+    {
+      "doc_id": "VN-007045",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"BMI 30.6\"",
+        "other vital not found exactly: \"BP 149/95 mmHg\"",
+        "other vital not found exactly: \"pulse 72 bpm\"",
+        "other vital not found exactly: \"weight 64 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007046",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"random blood glucose 5.5 mmol/L\"",
+        "other vital not found exactly: \"BP 114/74 mmHg\"",
+        "other vital not found exactly: \"pulse 78 bpm\"",
+        "other vital not found exactly: \"weight 65 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007047",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"PHQ-9 score 12\"",
+        "other vital not found exactly: \"BP 119/80 mmHg\"",
+        "other vital not found exactly: \"pulse 91 bpm\"",
+        "other vital not found exactly: \"weight 65 kg\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007048",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"tear break-up time 4 seconds\"",
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007049",
+      "errors": [],
+      "warnings": [
+        "chief_complaint_hint copied word for word"
+      ]
+    },
+    {
+      "doc_id": "VN-007050",
+      "errors": [],
+      "warnings": [
+        "anchor_vital reworded: \"LDL cholesterol 4.2 mmol/L\""
+      ]
+    }
+  ]
+}
