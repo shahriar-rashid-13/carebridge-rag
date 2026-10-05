@@ -8,3 +8,4 @@ embed-upload.log
 eval/.cache/
 output/.chat-current
 __pycache__/
+.ipynb_checkpoints/
