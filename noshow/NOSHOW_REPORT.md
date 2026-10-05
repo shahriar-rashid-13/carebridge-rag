@@ -7,7 +7,7 @@ Two models predict whether a patient will miss an appointment. Both are trained 
 ## Data
 
 - Source: [Medical Appointment No Shows](https://www.kaggle.com/datasets/joniarroba/noshowappointments) on Kaggle (Joni Hoppen, CC BY-NC-SA 4.0). Public clinics in Vitória, Brazil, April to June 2016.
-- The file is not committed. To reproduce, download it to `noshow/data/KaggleV2-May-2016.csv`, then run `python noshow/train.py`.
+- The file is not committed. To reproduce, download it to `noshow/data/KaggleV2-May-2016.csv`, then run `python noshow/train.py`, or run all cells in `noshow/noshow.ipynb` for the same numbers with charts. `noshow/noshow.html` is a saved copy of the executed notebook.
 - The data is used offline for model evaluation only. It is never loaded into the CareBridge database, which stays synthetic.
 - Cleaning: 110,527 raw rows. 6 rows with an age below 0 or above 110 are dropped, plus 5 rows where the appointment is before the booking date. 110,516 rows remain.
 
