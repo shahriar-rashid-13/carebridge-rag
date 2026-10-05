@@ -2,7 +2,9 @@
 .env.*
 node_modules/
 embeddings/
+noshow/data/
 embed-upload.log
 .venv/
 eval/.cache/
 output/.chat-current
+__pycache__/
