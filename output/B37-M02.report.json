@@ -1,0 +1,36 @@
+{
+  "slice": "B37-M02",
+  "files": [
+    "B37-M02.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 3,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-006762",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006769",
+      "errors": [],
+      "warnings": [
+        "length is 54 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006786",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    }
+  ]
+}

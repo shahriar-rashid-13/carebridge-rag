@@ -1,0 +1,57 @@
+{
+  "slice": "B42-M07",
+  "files": [
+    "B42-M07.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 6,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-009502",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-009524",
+      "errors": [],
+      "warnings": [
+        "length is 53 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-009530",
+      "errors": [],
+      "warnings": [
+        "length is 53 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-009531",
+      "errors": [],
+      "warnings": [
+        "length is 54 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-009535",
+      "errors": [],
+      "warnings": [
+        "length is 59 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-009542",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    }
+  ]
+}

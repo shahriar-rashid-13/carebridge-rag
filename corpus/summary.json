@@ -1,32 +1,32 @@
 {
-  "total_records": 5110,
+  "total_records": 20758,
   "by_record_type": {
     "faq": 230,
-    "prescription": 2300,
-    "visit_note": 2580
+    "prescription": 9500,
+    "visit_note": 11028
   },
   "by_generator": {
-    "llm": 4760,
-    "script": 350
+    "llm": 13208,
+    "script": 7550
   },
-  "rag_visible": 4990,
+  "rag_visible": 20638,
   "hidden_doctor_faq": 120,
   "by_specialization": {
     "null": 230,
-    "General Medicine": 409,
-    "Ophthalmology": 415,
-    "Gastroenterology": 400,
-    "Neurology": 401,
-    "Orthopedics": 420,
-    "ENT": 419,
-    "Endocrinology": 399,
-    "Cardiology": 406,
-    "Pulmonology": 412,
-    "Obstetrics and Gynecology": 395,
-    "Dermatology": 402,
-    "Psychiatry": 402
+    "General Medicine": 1752,
+    "Ophthalmology": 1736,
+    "Gastroenterology": 1683,
+    "Neurology": 1668,
+    "Orthopedics": 1739,
+    "ENT": 1762,
+    "Endocrinology": 1694,
+    "Cardiology": 1678,
+    "Pulmonology": 1739,
+    "Obstetrics and Gynecology": 1699,
+    "Dermatology": 1685,
+    "Psychiatry": 1693
   },
-  "excluded_count": 40,
+  "excluded_count": 94,
   "excluded": [
     {
       "doc_id": "VN-000112",
@@ -82,6 +82,266 @@
       "doc_id": "VN-002006",
       "slice": "B05-M01",
       "reason": "validator errors"
+    },
+    {
+      "doc_id": "record_type",
+      "slice": "B05-M02",
+      "reason": "not in manifest"
+    },
+    {
+      "doc_id": "visit_note",
+      "slice": "B05-M02",
+      "reason": "not in manifest"
+    },
+    {
+      "doc_id": "VN-002051",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002052",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002053",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002054",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002055",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002056",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002057",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002058",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002059",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002060",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002061",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002062",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002063",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002064",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002065",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002066",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002067",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002068",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002069",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002070",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002071",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002072",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002073",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002074",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002075",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002076",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002077",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002078",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002079",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002080",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002081",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002082",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002083",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002084",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002085",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002086",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002087",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002088",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002089",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002090",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002091",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002092",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002093",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002094",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002095",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002096",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002097",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002098",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002099",
+      "slice": "B05-M02",
+      "reason": "missing"
+    },
+    {
+      "doc_id": "VN-002100",
+      "slice": "B05-M02",
+      "reason": "missing"
     },
     {
       "doc_id": "VN-002311",
@@ -227,10 +487,17 @@
       "doc_id": "FAQ-000069",
       "slice": "B11-M02",
       "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-004834",
+      "slice": "B16-M03",
+      "reason": "validator errors"
+    },
+    {
+      "doc_id": "VN-007508",
+      "slice": "B21-M07",
+      "reason": "validator errors"
     }
   ],
-  "skipped_slices": [
-    "B02-M02",
-    "B05-M02"
-  ]
+  "skipped_slices": []
 }

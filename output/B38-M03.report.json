@@ -1,0 +1,57 @@
+{
+  "slice": "B38-M03",
+  "files": [
+    "B38-M03.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 6,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-007308",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-007312",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-007321",
+      "errors": [],
+      "warnings": [
+        "length is 58 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-007328",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-007331",
+      "errors": [],
+      "warnings": [
+        "length is 52 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-007344",
+      "errors": [],
+      "warnings": [
+        "length is 58 words, target 60-120"
+      ]
+    }
+  ]
+}

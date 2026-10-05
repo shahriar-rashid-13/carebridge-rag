@@ -1,0 +1,29 @@
+{
+  "slice": "B40-M10",
+  "files": [
+    "B40-M10.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 2,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-008667",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-008699",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slice": "B35-M10",
+  "files": [
+    "B35-M10.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 7,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-006152",
+      "errors": [],
+      "warnings": [
+        "length is 58 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006154",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006170",
+      "errors": [],
+      "warnings": [
+        "length is 53 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006177",
+      "errors": [],
+      "warnings": [
+        "length is 59 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006179",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006181",
+      "errors": [],
+      "warnings": [
+        "length is 56 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-006191",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    }
+  ]
+}

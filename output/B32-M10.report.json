@@ -1,0 +1,36 @@
+{
+  "slice": "B32-M10",
+  "files": [
+    "B32-M10.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 3,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-004651",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-004675",
+      "errors": [],
+      "warnings": [
+        "length is 55 words, target 60-120"
+      ]
+    },
+    {
+      "doc_id": "RX-004691",
+      "errors": [],
+      "warnings": [
+        "length is 51 words, target 60-120"
+      ]
+    }
+  ]
+}

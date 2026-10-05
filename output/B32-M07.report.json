@@ -1,0 +1,22 @@
+{
+  "slice": "B32-M07",
+  "files": [
+    "B32-M07.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 1,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": [
+    {
+      "doc_id": "RX-004535",
+      "errors": [],
+      "warnings": [
+        "length is 57 words, target 60-120"
+      ]
+    }
+  ]
+}

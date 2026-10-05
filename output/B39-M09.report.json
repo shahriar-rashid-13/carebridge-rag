@@ -1,0 +1,14 @@
+{
+  "slice": "B39-M09",
+  "files": [
+    "B39-M09.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 50,
+  "rows_passed": 50,
+  "rows_failed": 0,
+  "rows_with_warnings": 0,
+  "file_problems": [],
+  "extra_doc_ids": [],
+  "results": []
+}

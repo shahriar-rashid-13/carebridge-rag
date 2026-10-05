@@ -1,0 +1,368 @@
+{
+  "slice": "B05-M02",
+  "files": [
+    "B05-M02.csv"
+  ],
+  "rows_expected": 50,
+  "rows_found": 0,
+  "rows_passed": 0,
+  "rows_failed": 50,
+  "rows_with_warnings": 0,
+  "file_problems": [],
+  "extra_doc_ids": [
+    "record_type",
+    "visit_note"
+  ],
+  "results": [
+    {
+      "doc_id": "VN-002051",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002052",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002053",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002054",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002055",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002056",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002057",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002058",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002059",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002060",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002061",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002062",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002063",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002064",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002065",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002066",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002067",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002068",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002069",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002070",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002071",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002072",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002073",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002074",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002075",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002076",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002077",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002078",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002079",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002080",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002081",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002082",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002083",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002084",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002085",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002086",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002087",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002088",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002089",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002090",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002091",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002092",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002093",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002094",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002095",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002096",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002097",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002098",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002099",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    },
+    {
+      "doc_id": "VN-002100",
+      "errors": [
+        "row missing from output"
+      ],
+      "warnings": []
+    }
+  ]
+}
