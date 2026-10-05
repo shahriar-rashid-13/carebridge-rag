@@ -1,0 +1,14 @@
+{
+  "name": "carebridge-rag",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synthetic RAG corpus for the CareBridge clinic app, plus the scripts that embed it and upload it to Supabase. All people, doctors, and records are fictional.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahriar-rashid-13/carebridge-rag.git"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0"
+  }
+}
