@@ -1,0 +1,20 @@
+{
+  "about": "Clinic policy questions for the A3c comparison (RAG only vs the OKF policy files). okf_id is the policy file that answers the question. Questions are paraphrased so they do not copy the file aliases.",
+  "queries": [
+    { "id": "P01", "query": "Is the clinic open on Fridays?", "okf_id": "opening-hours" },
+    { "id": "P02", "query": "What number do I call to reach the front desk?", "okf_id": "opening-hours" },
+    { "id": "P03", "query": "Can I pay with a credit card?", "okf_id": "payment-methods" },
+    { "id": "P04", "query": "Will I be charged if I cancel my visit?", "okf_id": "cancellation-policy" },
+    { "id": "P05", "query": "How late can I change the time of my visit?", "okf_id": "rescheduling-policy" },
+    { "id": "P06", "query": "What happens if I don't turn up for my appointment?", "okf_id": "no-show-policy" },
+    { "id": "P07", "query": "How long do I have to accept a slot offered from the waitlist?", "okf_id": "waitlist" },
+    { "id": "P08", "query": "Do I have to pay before the consultation?", "okf_id": "refund-policy" },
+    { "id": "P09", "query": "How do I get more of the medicine my doctor prescribed?", "okf_id": "prescription-renewal" },
+    { "id": "P10", "query": "Can other patients see my medical information?", "okf_id": "privacy" },
+    { "id": "P11", "query": "Where can I see my blood test results?", "okf_id": "medical-records-access" },
+    { "id": "P12", "query": "Why do some doctors charge more than others?", "okf_id": "consultation-fees" },
+    { "id": "P13", "query": "How do I stop the reminder emails?", "okf_id": "reminder-and-email-preferences" },
+    { "id": "P14", "query": "Can my whole family use one account?", "okf_id": "accounts-and-roles" },
+    { "id": "P15", "query": "Is my appointment confirmed as soon as I book it?", "okf_id": "booking-rules" }
+  ]
+}

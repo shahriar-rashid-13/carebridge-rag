@@ -1,0 +1,2731 @@
+{
+  "run_at": "2026-10-08T07:44:59.055Z",
+  "dense": {
+    "rows": 1960,
+    "summary": [
+      {
+        "model": "gemini-embedding-001",
+        "set": "matching",
+        "queries": 30,
+        "hit_rate": 1,
+        "mrr": 0.95,
+        "p_at_k": 0.46666666666666673
+      },
+      {
+        "model": "gemini-embedding-001",
+        "set": "edge",
+        "queries": 25,
+        "hit_rate": 1,
+        "mrr": 1,
+        "p_at_k": 0.568
+      },
+      {
+        "model": "gemini-embedding-001",
+        "set": "noisy",
+        "queries": 30,
+        "hit_rate": 1,
+        "mrr": 0.9333333333333333,
+        "p_at_k": 0.4800000000000001
+      },
+      {
+        "model": "gte-small",
+        "set": "matching",
+        "queries": 30,
+        "hit_rate": 1,
+        "mrr": 0.9833333333333333,
+        "p_at_k": 0.48000000000000004
+      },
+      {
+        "model": "gte-small",
+        "set": "edge",
+        "queries": 25,
+        "hit_rate": 0.92,
+        "mrr": 0.92,
+        "p_at_k": 0.5039999999999998
+      },
+      {
+        "model": "gte-small",
+        "set": "noisy",
+        "queries": 30,
+        "hit_rate": 0.9,
+        "mrr": 0.8777777777777778,
+        "p_at_k": 0.38000000000000006
+      }
+    ]
+  },
+  "rerank": {
+    "summary": [
+      {
+        "set": "matching",
+        "variant": "A3a fused (20 to 5)",
+        "queries": 30,
+        "hit_rate": 1,
+        "mrr": 0.9333333333333333,
+        "p_at_k": 0.6,
+        "out_of_scope": 0,
+        "correct_empty": 0
+      },
+      {
+        "set": "matching",
+        "variant": "A3b re-ranked (20 to 5)",
+        "queries": 30,
+        "hit_rate": 1,
+        "mrr": 1,
+        "p_at_k": 0.6266666666666667,
+        "out_of_scope": 0,
+        "correct_empty": 0,
+        "rerank_fallbacks": 0
+      },
+      {
+        "set": "edge",
+        "variant": "A3a fused (20 to 5)",
+        "queries": 25,
+        "hit_rate": 0.88,
+        "mrr": 0.88,
+        "p_at_k": 0.616,
+        "out_of_scope": 5,
+        "correct_empty": 5
+      },
+      {
+        "set": "edge",
+        "variant": "A3b re-ranked (20 to 5)",
+        "queries": 25,
+        "hit_rate": 0.92,
+        "mrr": 0.92,
+        "p_at_k": 0.6239999999999999,
+        "out_of_scope": 5,
+        "correct_empty": 5,
+        "rerank_fallbacks": 3
+      },
+      {
+        "set": "noisy",
+        "variant": "A3a fused (20 to 5)",
+        "queries": 30,
+        "hit_rate": 0.8666666666666667,
+        "mrr": 0.8027777777777777,
+        "p_at_k": 0.5066666666666666,
+        "out_of_scope": 0,
+        "correct_empty": 0
+      },
+      {
+        "set": "noisy",
+        "variant": "A3b re-ranked (20 to 5)",
+        "queries": 30,
+        "hit_rate": 0.9,
+        "mrr": 0.9,
+        "p_at_k": 0.5733333333333335,
+        "out_of_scope": 0,
+        "correct_empty": 0,
+        "rerank_fallbacks": 1
+      }
+    ],
+    "details": [
+      {
+        "set": "matching",
+        "id": "M01",
+        "query": "How can I sign up for a new CareBridge account?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000001*",
+          "FAQ-000003",
+          "FAQ-000017",
+          "FAQ-000033"
+        ],
+        "reranked": [
+          "FAQ-000001*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M02",
+        "query": "Is it possible to log in using my Google account?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000002*",
+          "FAQ-000001",
+          "FAQ-000003"
+        ],
+        "reranked": [
+          "FAQ-000002*",
+          "FAQ-000001"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M03",
+        "query": "What are the steps to book a doctor appointment?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000009*",
+          "FAQ-000010",
+          "FAQ-000116",
+          "FAQ-000024",
+          "FAQ-000118"
+        ],
+        "reranked": [
+          "FAQ-000009*",
+          "FAQ-000010",
+          "FAQ-000011",
+          "FAQ-000056",
+          "FAQ-000012"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M04",
+        "query": "What does it mean when my appointment says requested?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000013*",
+          "FAQ-000009",
+          "FAQ-000022",
+          "FAQ-000025",
+          "FAQ-000014"
+        ],
+        "reranked": [
+          "FAQ-000013*",
+          "FAQ-000009",
+          "FAQ-000022",
+          "FAQ-000025",
+          "FAQ-000021"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M05",
+        "query": "How do I cancel my booking?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000021*",
+          "FAQ-000022*",
+          "FAQ-000016",
+          "FAQ-000026",
+          "FAQ-000012"
+        ],
+        "reranked": [
+          "FAQ-000021*",
+          "FAQ-000066",
+          "FAQ-000022*",
+          "FAQ-000026",
+          "FAQ-000024"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M06",
+        "query": "Can I move my appointment to another day?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000026",
+          "FAQ-000024*",
+          "FAQ-000025*",
+          "FAQ-000021",
+          "FAQ-000012"
+        ],
+        "reranked": [
+          "FAQ-000024*",
+          "FAQ-000025*",
+          "FAQ-000026",
+          "FAQ-000021",
+          "FAQ-000022"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M07",
+        "query": "What happens if I miss my appointment?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000028*",
+          "FAQ-000021",
+          "FAQ-000026",
+          "FAQ-000022",
+          "FAQ-000024"
+        ],
+        "reranked": [
+          "FAQ-000028*",
+          "FAQ-000027*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M08",
+        "query": "How does the clinic waitlist work?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000033",
+          "FAQ-000029*",
+          "FAQ-000030*",
+          "FAQ-000032",
+          "FAQ-000016"
+        ],
+        "reranked": [
+          "FAQ-000029*",
+          "FAQ-000032",
+          "FAQ-000030*",
+          "FAQ-000039",
+          "FAQ-000031"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M09",
+        "query": "How much time do I get to accept a waitlist slot offer?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000032*",
+          "FAQ-000033",
+          "FAQ-000039",
+          "FAQ-000029",
+          "FAQ-000030"
+        ],
+        "reranked": [
+          "FAQ-000032*",
+          "FAQ-000039",
+          "FAQ-000033"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M10",
+        "query": "Do I get a reminder before my visit?",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000035*"
+        ],
+        "reranked": [
+          "FAQ-000035*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M11",
+        "query": "How can I pay my bill at the clinic?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000049*",
+          "FAQ-000005",
+          "FAQ-000053"
+        ],
+        "reranked": [
+          "FAQ-000049*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M12",
+        "query": "Can I get my money back if I paid in advance?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000053",
+          "FAQ-000057*"
+        ],
+        "reranked": [
+          "FAQ-000057*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M13",
+        "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000067*",
+          "FAQ-000011",
+          "FAQ-000046",
+          "FAQ-000066",
+          "FAQ-000073"
+        ],
+        "reranked": [
+          "FAQ-000067*",
+          "FAQ-000046",
+          "FAQ-000011",
+          "FAQ-000073",
+          "FAQ-000115"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M14",
+        "query": "What should I do if there is a medical emergency?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000065*",
+          "VN-001712",
+          "VN-005097",
+          "VN-003895",
+          "RX-007230"
+        ],
+        "reranked": [
+          "FAQ-000065*",
+          "VN-002444"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M15",
+        "query": "How do I prepare for a cardiology visit?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000240*",
+          "VN-007022",
+          "VN-006131",
+          "VN-006437",
+          "VN-006440"
+        ],
+        "reranked": [
+          "FAQ-000240*",
+          "FAQ-000019",
+          "FAQ-000077",
+          "FAQ-000010",
+          "VN-007022"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M16",
+        "query": "I keep getting heartburn after eating and acid comes up my throat",
+        "mode": "reranked",
+        "fused": [
+          "VN-002136",
+          "VN-002963*",
+          "VN-009356*",
+          "VN-002222",
+          "VN-003909*"
+        ],
+        "reranked": [
+          "VN-002963*",
+          "VN-009356*",
+          "VN-008875*",
+          "VN-005491*",
+          "VN-006099*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M17",
+        "query": "Itchy red ring-shaped rash spreading on my arm",
+        "mode": "reranked",
+        "fused": [
+          "VN-009633*",
+          "VN-003691*",
+          "VN-005843*",
+          "VN-005789*",
+          "VN-004821*"
+        ],
+        "reranked": [
+          "VN-005843*",
+          "VN-008761*",
+          "VN-009597*",
+          "VN-009331*",
+          "VN-005975*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M18",
+        "query": "Wheezing and coughing at night, which specialist should I see?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000079*",
+          "VN-002366*",
+          "VN-010781*",
+          "VN-007966*",
+          "VN-006146*"
+        ],
+        "reranked": [
+          "FAQ-000079*",
+          "VN-002366*",
+          "VN-010781*",
+          "VN-007966*",
+          "VN-006146*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M19",
+        "query": "I am very thirsty all the time and urinate a lot",
+        "mode": "reranked",
+        "fused": [
+          "VN-007880*",
+          "VN-010041*",
+          "VN-005122*",
+          "VN-009144*",
+          "VN-005564"
+        ],
+        "reranked": [
+          "VN-010041*",
+          "VN-005122*",
+          "VN-000228*",
+          "VN-007880*",
+          "VN-005781*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M20",
+        "query": "One-sided throbbing headache with sensitivity to light",
+        "mode": "reranked",
+        "fused": [
+          "VN-007770*",
+          "VN-005043*",
+          "VN-002474*",
+          "VN-003043*",
+          "VN-006908*"
+        ],
+        "reranked": [
+          "VN-004984*",
+          "VN-008004*",
+          "VN-005752*",
+          "VN-008961*",
+          "VN-007533*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M21",
+        "query": "Painful periods with bad cramps every month",
+        "mode": "reranked",
+        "fused": [
+          "VN-002414*",
+          "VN-001441*",
+          "VN-000338*",
+          "VN-002716*",
+          "VN-002571*"
+        ],
+        "reranked": [
+          "VN-000338*",
+          "VN-002716*",
+          "VN-004393*",
+          "VN-004193*",
+          "VN-001523*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M22",
+        "query": "Swollen ankle after twisting it while playing football",
+        "mode": "reranked",
+        "fused": [
+          "VN-009741*",
+          "VN-000343*",
+          "VN-003981*",
+          "VN-001863*",
+          "VN-002703*"
+        ],
+        "reranked": [
+          "VN-009368*",
+          "VN-009741*",
+          "VN-001863*",
+          "VN-002703*",
+          "VN-005455*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M23",
+        "query": "Sore throat that hurts when I swallow, with fever",
+        "mode": "reranked",
+        "fused": [
+          "VN-008230*",
+          "VN-009239*",
+          "VN-005915*",
+          "VN-003902*",
+          "VN-004461*"
+        ],
+        "reranked": [
+          "FAQ-000106*",
+          "VN-004461*",
+          "VN-006485*",
+          "VN-005915*",
+          "VN-002767*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M24",
+        "query": "I can't fall asleep at night and wake up exhausted",
+        "mode": "reranked",
+        "fused": [
+          "VN-002317*",
+          "VN-000259*",
+          "VN-009380*",
+          "VN-005114*",
+          "VN-009910*"
+        ],
+        "reranked": [
+          "VN-009910*",
+          "VN-002859*",
+          "VN-000357*",
+          "VN-000939*",
+          "VN-009488*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M25",
+        "query": "Burning when I pee and I need to go often",
+        "mode": "reranked",
+        "fused": [
+          "VN-000225*",
+          "VN-002188*",
+          "VN-003227*",
+          "VN-008840*",
+          "VN-008255*"
+        ],
+        "reranked": [
+          "VN-008369*",
+          "VN-002033*",
+          "VN-003884*",
+          "VN-007994*",
+          "VN-002201*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M26",
+        "query": "What medicines are usually prescribed for typhoid fever?",
+        "mode": "reranked",
+        "fused": [
+          "RX-008136*",
+          "RX-007476*",
+          "RX-006706*",
+          "RX-007346*",
+          "RX-008063*"
+        ],
+        "reranked": [
+          "RX-008136*",
+          "RX-007476*",
+          "RX-006706*",
+          "RX-007346*",
+          "RX-008063*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M27",
+        "query": "Common treatment for dengue fever",
+        "mode": "reranked",
+        "fused": [
+          "RX-007684*",
+          "RX-004406*",
+          "RX-007310*",
+          "RX-003018*",
+          "RX-004350*"
+        ],
+        "reranked": [
+          "RX-007684*",
+          "RX-004406*",
+          "RX-007310*",
+          "RX-003018*",
+          "RX-004350*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M28",
+        "query": "What is prescribed for hypothyroidism?",
+        "mode": "reranked",
+        "fused": [
+          "RX-005360*",
+          "RX-009426*",
+          "RX-004300*",
+          "RX-009556*",
+          "RX-008638*"
+        ],
+        "reranked": [
+          "RX-005360*",
+          "RX-009426*",
+          "RX-004300*",
+          "RX-009556*",
+          "RX-008638*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M29",
+        "query": "Medicine for allergic rhinitis and sneezing",
+        "mode": "reranked",
+        "fused": [
+          "RX-000305*",
+          "RX-000453*",
+          "RX-001222*",
+          "RX-001203*",
+          "RX-001800*"
+        ],
+        "reranked": [
+          "RX-000305*",
+          "RX-000453*",
+          "RX-001222*",
+          "RX-001203*",
+          "RX-001800*"
+        ]
+      },
+      {
+        "set": "matching",
+        "id": "M30",
+        "query": "What do doctors give for iron deficiency anaemia?",
+        "mode": "reranked",
+        "fused": [
+          "RX-007460*",
+          "RX-004442*",
+          "RX-007246*",
+          "RX-003814*",
+          "RX-007250*"
+        ],
+        "reranked": [
+          "RX-005936*",
+          "RX-003135*",
+          "RX-007460*",
+          "RX-004442*",
+          "RX-007246*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E01",
+        "query": "refund",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000057*"
+        ],
+        "reranked": [
+          "FAQ-000057*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E02",
+        "query": "waitlist",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000030*",
+          "FAQ-000029*",
+          "FAQ-000033*",
+          "FAQ-000016",
+          "FAQ-000039*"
+        ],
+        "reranked": [
+          "FAQ-000029*",
+          "FAQ-000030*",
+          "FAQ-000016",
+          "FAQ-000039*",
+          "FAQ-000032*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E03",
+        "query": "SMS",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000038*"
+        ],
+        "reranked": [
+          "FAQ-000038*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E04",
+        "query": "insomnia",
+        "mode": "reranked",
+        "fused": [
+          "VN-009592*",
+          "VN-010350*",
+          "VN-009432*",
+          "VN-009322*",
+          "VN-007764*"
+        ],
+        "reranked": [
+          "VN-009592*",
+          "VN-010350*",
+          "VN-009432*",
+          "VN-009322*",
+          "VN-007764*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E05",
+        "query": "BPPV",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "edge",
+        "id": "E06",
+        "query": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+        "mode": "reranked",
+        "fused": [
+          "VN-000217*",
+          "VN-002120*",
+          "VN-009435*",
+          "VN-008391*",
+          "VN-003127*"
+        ],
+        "reranked": [
+          "VN-006170*",
+          "VN-002045*",
+          "VN-000217*",
+          "VN-002120*",
+          "VN-009435*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E07",
+        "query": "I booked an appointment last week through the app but I never received any notification or reminder, and now I am not sure if it was confirmed or not. How do I know whether it is confirmed and how long does that usually take?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000014*",
+          "FAQ-000035",
+          "FAQ-000037*",
+          "FAQ-000009",
+          "FAQ-000015*"
+        ],
+        "reranked": [
+          "FAQ-000014*",
+          "FAQ-000013",
+          "FAQ-000015*",
+          "FAQ-000037*",
+          "FAQ-000035"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E08",
+        "query": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000053*",
+          "FAQ-000054*"
+        ],
+        "reranked": [
+          "FAQ-000053*",
+          "FAQ-000054*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E09",
+        "query": "chest pain",
+        "mode": "reranked",
+        "fused": [
+          "VN-004247",
+          "VN-006297",
+          "VN-009119",
+          "VN-008522",
+          "VN-007020"
+        ],
+        "reranked": [
+          "VN-011095",
+          "VN-010894"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E10",
+        "query": "my eyes are red",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000107*",
+          "VN-000332*",
+          "FAQ-000108*",
+          "VN-009004*",
+          "VN-001987*"
+        ],
+        "reranked": [
+          "FAQ-000107*",
+          "FAQ-000108*",
+          "VN-000332*",
+          "VN-001987*",
+          "VN-002225*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E11",
+        "query": "headache",
+        "mode": "reranked",
+        "fused": [
+          "VN-009424*",
+          "VN-010933*",
+          "VN-002960*",
+          "VN-006075*",
+          "VN-002511*"
+        ],
+        "reranked": [
+          "VN-001675*",
+          "VN-009424*",
+          "VN-010933*",
+          "VN-002960*",
+          "VN-006075*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E12",
+        "query": "breathless",
+        "mode": "fused",
+        "fused": [
+          "VN-002592*",
+          "VN-002544*",
+          "VN-000178*",
+          "VN-002574*",
+          "VN-003664*"
+        ],
+        "reranked": [
+          "VN-002592*",
+          "VN-002544*",
+          "VN-000178*",
+          "VN-002574*",
+          "VN-003664*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E13",
+        "query": "Can I book for my mother and also cancel my own appointment?",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000022*",
+          "FAQ-000021*",
+          "FAQ-000026",
+          "FAQ-000009",
+          "FAQ-000066"
+        ],
+        "reranked": [
+          "FAQ-000022*",
+          "FAQ-000021*",
+          "FAQ-000026",
+          "FAQ-000009",
+          "FAQ-000066"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E14",
+        "query": "fever",
+        "mode": "reranked",
+        "fused": [
+          "VN-001333*",
+          "VN-003266*",
+          "VN-002967*",
+          "VN-009308*",
+          "VN-005142*"
+        ],
+        "reranked": [
+          "VN-001333*",
+          "VN-006790*",
+          "VN-008370*",
+          "VN-009588*",
+          "VN-003078*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E15",
+        "query": "low vitamin D and aching bones",
+        "mode": "reranked",
+        "fused": [
+          "VN-003035*",
+          "VN-003614*",
+          "VN-010949*",
+          "VN-009676*",
+          "VN-000435*"
+        ],
+        "reranked": [
+          "VN-000435*",
+          "VN-001769*",
+          "VN-002637*",
+          "VN-006173*",
+          "VN-002470*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E16",
+        "query": "frozen shoulder, can't lift my arm",
+        "mode": "reranked",
+        "fused": [
+          "VN-006636*",
+          "VN-010633*",
+          "VN-007060*",
+          "VN-002603*",
+          "VN-007056*"
+        ],
+        "reranked": [
+          "VN-007060*",
+          "VN-007072*",
+          "VN-000922*",
+          "VN-002786*",
+          "VN-010769*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E17",
+        "query": "painful lump on the edge of my eyelid",
+        "mode": "reranked",
+        "fused": [
+          "VN-005389*",
+          "VN-002864*",
+          "VN-009745*",
+          "VN-002128*",
+          "VN-006867*"
+        ],
+        "reranked": [
+          "VN-002864*",
+          "VN-002128*",
+          "VN-006867*",
+          "VN-003058*",
+          "VN-001052*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E18",
+        "query": "irregular heartbeat with fluttering",
+        "mode": "reranked",
+        "fused": [
+          "VN-004372*",
+          "VN-004405*",
+          "VN-003097*",
+          "VN-007121*",
+          "VN-005107*"
+        ],
+        "reranked": [
+          "VN-005107*",
+          "VN-006167*",
+          "VN-004044*",
+          "VN-007132*",
+          "VN-008945*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E19",
+        "query": "thick white vaginal discharge with itching",
+        "mode": "fused",
+        "fused": [
+          "VN-009089*",
+          "VN-004980*",
+          "VN-001372*",
+          "VN-005996*",
+          "VN-008414*"
+        ],
+        "reranked": [
+          "VN-009089*",
+          "VN-004980*",
+          "VN-001372*",
+          "VN-005996*",
+          "VN-008414*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E20",
+        "query": "high cholesterol and family history of heart attack",
+        "mode": "reranked",
+        "fused": [
+          "VN-010331*",
+          "VN-004167*",
+          "VN-007413*",
+          "VN-000975*",
+          "VN-003048*"
+        ],
+        "reranked": [
+          "VN-004167*",
+          "VN-000583*",
+          "VN-006093*",
+          "VN-010471*",
+          "VN-000199*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E21",
+        "query": "Can the chatbot change the dose of my medicine?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000046*",
+          "RX-008014",
+          "RX-003850",
+          "RX-009896"
+        ],
+        "reranked": [
+          "FAQ-000046*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E22",
+        "query": "Who decides if someone becomes a doctor or receptionist in the app?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000007*",
+          "FAQ-000011",
+          "FAQ-000056",
+          "FAQ-000009",
+          "FAQ-000016"
+        ],
+        "reranked": [
+          "FAQ-000007*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E23",
+        "query": "Can I edit a visit that is already completed?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000026*",
+          "FAQ-000057",
+          "FAQ-000014",
+          "FAQ-000017",
+          "FAQ-000028"
+        ],
+        "reranked": [
+          "FAQ-000026*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E24",
+        "query": "Is there a way to delete my account permanently?",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000008*"
+        ],
+        "reranked": [
+          "FAQ-000008*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E25",
+        "query": "Do you take patients without an appointment?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000017",
+          "FAQ-000010",
+          "FAQ-000028",
+          "FAQ-000009",
+          "FAQ-000005"
+        ],
+        "reranked": [
+          "FAQ-000018*"
+        ]
+      },
+      {
+        "set": "edge",
+        "id": "E26",
+        "query": "What is the capital of France?",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "edge",
+        "id": "E27",
+        "query": "Best cricket bat for beginners",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "edge",
+        "id": "E28",
+        "query": "How do I change the oil in my car?",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "edge",
+        "id": "E29",
+        "query": "Write me a poem about the ocean",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "edge",
+        "id": "E30",
+        "query": "What is the bitcoin price today?",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "noisy",
+        "id": "N01",
+        "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000001*",
+          "FAQ-000002",
+          "FAQ-000006",
+          "FAQ-000007",
+          "FAQ-000003"
+        ],
+        "reranked": [
+          "FAQ-000001*",
+          "FAQ-000007"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N02",
+        "query": "Is it poossible to ... log in using my Google plz accoun?t",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000002*",
+          "FAQ-000001"
+        ],
+        "reranked": [
+          "FAQ-000002*",
+          "FAQ-000001"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N03",
+        "query": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+        "mode": "reranked",
+        "fused": [
+          "RX-001538",
+          "RX-002973",
+          "FAQ-000116",
+          "RX-005243",
+          "RX-009126"
+        ],
+        "reranked": [
+          "FAQ-000116",
+          "FAQ-000118",
+          "FAQ-000073",
+          "FAQ-000074",
+          "FAQ-000072"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N04",
+        "query": "What dors it mean when my ### appointment qwe!! sasy requeste?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000013*",
+          "FAQ-000022",
+          "FAQ-000021",
+          "FAQ-000053",
+          "FAQ-000026"
+        ],
+        "reranked": [
+          "FAQ-000013*",
+          "FAQ-000015",
+          "FAQ-000009",
+          "FAQ-000014",
+          "FAQ-000037"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N05",
+        "query": "How do I cancel ... my xD booking?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000021*",
+          "FAQ-000022*",
+          "FAQ-000016",
+          "FAQ-000012",
+          "FAQ-000026"
+        ],
+        "reranked": [
+          "FAQ-000021*",
+          "FAQ-000022*",
+          "FAQ-000026"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N06",
+        "query": "qwe!! Can I moev my appointment plz to anothher dayy?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000009",
+          "FAQ-000021",
+          "FAQ-000026",
+          "FAQ-000022",
+          "FAQ-000014"
+        ],
+        "reranked": [
+          "FAQ-000024*",
+          "FAQ-000025*",
+          "FAQ-000026",
+          "FAQ-000022",
+          "FAQ-000021"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N07",
+        "query": "lol What happesn if I miss my lol appointmrnt?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000028*",
+          "FAQ-000016",
+          "FAQ-000014",
+          "FAQ-000021",
+          "FAQ-000012"
+        ],
+        "reranked": [
+          "FAQ-000028*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N08",
+        "query": "How qwe!! @@ des the clinic waitlist wrok?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000030*",
+          "FAQ-000029*",
+          "FAQ-000033",
+          "FAQ-000032",
+          "FAQ-000039"
+        ],
+        "reranked": [
+          "FAQ-000029*",
+          "FAQ-000030*",
+          "FAQ-000016",
+          "FAQ-000032",
+          "FAQ-000039"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N09",
+        "query": "hmm?? How much time asdf do I get to accept a waitlist skot offre?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000032*",
+          "FAQ-000039",
+          "FAQ-000033",
+          "FAQ-000029",
+          "FAQ-000030"
+        ],
+        "reranked": [
+          "FAQ-000032*",
+          "FAQ-000039",
+          "FAQ-000033"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N10",
+        "query": "Do ### I get a reminder before my ### visit?",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000035*"
+        ],
+        "reranked": [
+          "FAQ-000035*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N11",
+        "query": "How can 1234 I pay my bil at the climic? ...",
+        "mode": "fused",
+        "fused": [
+          "FAQ-000049*",
+          "RX-008380",
+          "FAQ-000057",
+          "RX-007614"
+        ],
+        "reranked": [
+          "FAQ-000049*",
+          "RX-008380",
+          "FAQ-000057",
+          "RX-007614"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N12",
+        "query": "Can I get my money asdf bakc if I paid in hmm?? advance?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000053",
+          "FAQ-000057*"
+        ],
+        "reranked": [
+          "FAQ-000057*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N13",
+        "query": "Is the AI asssistant a replacement hmm?? for medical advice from xD a docto?r",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000067*",
+          "RX-001214"
+        ],
+        "reranked": [
+          "FAQ-000067*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N14",
+        "query": "Whhat should I do if xD hmm?? there is a medical emergency?",
+        "mode": "reranked",
+        "fused": [
+          "FAQ-000065*",
+          "VN-002444",
+          "VN-009503",
+          "VN-005909",
+          "VN-005915"
+        ],
+        "reranked": [
+          "FAQ-000065*",
+          "VN-002444"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N15",
+        "query": "How do I pepare for a caardiology xD viit? 1234",
+        "mode": "reranked",
+        "fused": [
+          "RX-006465",
+          "RX-006862",
+          "RX-006666",
+          "RX-008674",
+          "RX-009683"
+        ],
+        "reranked": [
+          "RX-004902",
+          "RX-007160",
+          "RX-009152",
+          "RX-000150",
+          "RX-002259"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N16",
+        "query": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+        "mode": "reranked",
+        "fused": [
+          "RX-002276",
+          "RX-008738",
+          "RX-004510",
+          "RX-003722*",
+          "RX-005876*"
+        ],
+        "reranked": [
+          "RX-008993*",
+          "RX-003143*",
+          "RX-003722*",
+          "RX-005876*",
+          "RX-002142*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N17",
+        "query": "qwe!! Itchy red ring-shaped rash ... spreading on my arm",
+        "mode": "reranked",
+        "fused": [
+          "VN-005908*",
+          "VN-005843*",
+          "VN-008761*",
+          "VN-007761*",
+          "VN-001081*"
+        ],
+        "reranked": [
+          "VN-005843*",
+          "VN-008761*",
+          "VN-009331*",
+          "VN-004592*",
+          "VN-003691*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N18",
+        "query": "Wheezing qwe!! and coughing at night, @@ which specialist shoud I see?",
+        "mode": "reranked",
+        "fused": [
+          "VN-002366*",
+          "VN-007966*",
+          "VN-006146*",
+          "VN-008382*",
+          "VN-008184*"
+        ],
+        "reranked": [
+          "FAQ-000079*",
+          "VN-009056*",
+          "VN-008388*",
+          "VN-003317*",
+          "VN-004013*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N19",
+        "query": "I am vey zzkx thirsty all the time and urinate a ~~ lot",
+        "mode": "reranked",
+        "fused": [
+          "VN-007880*",
+          "VN-005122*",
+          "VN-010041*",
+          "VN-009964*",
+          "VN-000356"
+        ],
+        "reranked": [
+          "VN-007880*",
+          "VN-005122*",
+          "VN-010041*",
+          "VN-009964*",
+          "VN-005781*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N20",
+        "query": "One-sided throbibng hedaache with hmm?? senistivity to 1234 light",
+        "mode": "fused",
+        "fused": [],
+        "reranked": []
+      },
+      {
+        "set": "noisy",
+        "id": "N21",
+        "query": "Painful periods with qwe!! bad cramps lol every month",
+        "mode": "reranked",
+        "fused": [
+          "VN-002414*",
+          "VN-001441*",
+          "VN-000338*",
+          "VN-002571*",
+          "VN-001533*"
+        ],
+        "reranked": [
+          "VN-008363*",
+          "VN-005832*",
+          "VN-002905*",
+          "VN-002716*",
+          "VN-009208*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N22",
+        "query": "Swollen anke adter twisting it ... xD while playing football",
+        "mode": "reranked",
+        "fused": [
+          "VN-009368*",
+          "VN-002703*",
+          "VN-005455*",
+          "VN-003131*",
+          "VN-005575*"
+        ],
+        "reranked": [
+          "VN-009368*",
+          "VN-002703*",
+          "VN-005455*",
+          "VN-003131*",
+          "VN-005575*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N23",
+        "query": "xD Soore thrroat that hrts hmm?? when I swallow, wiht feber",
+        "mode": "reranked",
+        "fused": [
+          "RX-000035",
+          "RX-000372",
+          "VN-005497*",
+          "RX-001094",
+          "RX-003629"
+        ],
+        "reranked": [
+          "VN-009484*",
+          "VN-009728*",
+          "VN-009787*",
+          "VN-005497*",
+          "VN-009575*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N24",
+        "query": "I ca'nt fal asleeep at nighht and wake asdf zzkx up exhaustd",
+        "mode": "reranked",
+        "fused": [
+          "VN-010012*",
+          "VN-009910*",
+          "VN-009380*",
+          "VN-010866*",
+          "VN-006512*"
+        ],
+        "reranked": [
+          "VN-010012*",
+          "VN-009910*",
+          "VN-009380*",
+          "VN-010866*",
+          "VN-006512*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N25",
+        "query": "Burning when I pee and I ned ... to qwe!! go often",
+        "mode": "reranked",
+        "fused": [
+          "VN-000225*",
+          "VN-008840*",
+          "VN-002188*",
+          "VN-003529*",
+          "VN-003884*"
+        ],
+        "reranked": [
+          "VN-008369*",
+          "VN-002178*",
+          "VN-002250*",
+          "VN-009611*",
+          "VN-000870*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N26",
+        "query": "xD What mediciines are usually prrescribed @@ for typhoid fever?",
+        "mode": "reranked",
+        "fused": [
+          "RX-001510*",
+          "RX-001911*",
+          "RX-001928*",
+          "RX-000399*",
+          "RX-001718*"
+        ],
+        "reranked": [
+          "RX-001510*",
+          "RX-001911*",
+          "RX-001928*",
+          "RX-000399*",
+          "RX-001718*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N27",
+        "query": "hmm?? Commmon treatment for dengue fecer zzkx",
+        "mode": "reranked",
+        "fused": [
+          "RX-004096*",
+          "RX-002996*",
+          "RX-003534*",
+          "RX-006718*",
+          "RX-009806*"
+        ],
+        "reranked": [
+          "RX-001807*",
+          "RX-009762*",
+          "RX-004096*",
+          "RX-002996*",
+          "RX-003534*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N28",
+        "query": "Wat is prescribed plz for @@ hypothyroidism?",
+        "mode": "reranked",
+        "fused": [
+          "RX-002754*",
+          "RX-004647*",
+          "RX-003980*",
+          "RX-005360*",
+          "RX-004671*"
+        ],
+        "reranked": [
+          "RX-002754*",
+          "RX-004647*",
+          "RX-003980*",
+          "RX-005360*",
+          "RX-004671*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N29",
+        "query": "Medixine for allergic ~~ rhinits qwe!! and sneezing",
+        "mode": "reranked",
+        "fused": [
+          "VN-008926*",
+          "RX-003214*",
+          "VN-008189*",
+          "RX-006135*",
+          "RX-005581*"
+        ],
+        "reranked": [
+          "RX-003214*",
+          "RX-006135*",
+          "RX-005581*",
+          "RX-006410*",
+          "RX-003787*"
+        ]
+      },
+      {
+        "set": "noisy",
+        "id": "N30",
+        "query": "qwe!! What do doctors give for ... ion deficiency anaemia?",
+        "mode": "reranked",
+        "fused": [
+          "RX-005880*",
+          "RX-006626*",
+          "RX-004000*",
+          "RX-007460*",
+          "RX-004914*"
+        ],
+        "reranked": [
+          "RX-005880*",
+          "RX-006626*",
+          "RX-004000*",
+          "RX-007460*",
+          "RX-004914*"
+        ]
+      }
+    ]
+  },
+  "judged": {
+    "summary": [
+      {
+        "variant": "A2",
+        "judged": 30,
+        "faithfulness": 5,
+        "relevance": 5
+      },
+      {
+        "variant": "A3b",
+        "judged": 30,
+        "faithfulness": 5,
+        "relevance": 5
+      }
+    ],
+    "rows": [
+      {
+        "id": "M01",
+        "variant": "A2",
+        "query": "How can I sign up for a new CareBridge account?",
+        "answer": "To sign up for a new CareBridge account, you can use the CareBridge app by registering with your email and password, or by using Google [FAQ-000001]. Please note that all new sign-ups are automatically created as patient accounts [FAQ-000001, FAQ-000007]. Additionally, each person must have their own individual account, as accounts cannot be shared [FAQ-000006].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly explains how to sign up for a new account."
+      },
+      {
+        "id": "M01",
+        "variant": "A3b",
+        "query": "How can I sign up for a new CareBridge account?",
+        "answer": "To sign up for a new CareBridge account, you can use the CareBridge app [FAQ-000001]. You may register using your email and password, or by using Google [FAQ-000001]. Please note that new accounts created through these methods are patient accounts [FAQ-000001].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passage and completely explains how to sign up for a new account."
+      },
+      {
+        "id": "M02",
+        "variant": "A2",
+        "query": "Is it possible to log in using my Google account?",
+        "answer": "Yes, you can sign in using your Google account by selecting the \"Sign in with Google\" button on the login page [FAQ-000002]. You may also use your Google account to sign up for a new patient account within the CareBridge app [FAQ-000001].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly answers the user's question about logging in with a Google account."
+      },
+      {
+        "id": "M02",
+        "variant": "A3b",
+        "query": "Is it possible to log in using my Google account?",
+        "answer": "Yes, you can log in using your Google account by selecting the \"Sign in with Google\" button on the login page [FAQ-000002]. You may also use your Google account to sign up for a new patient account within the CareBridge app [FAQ-000001].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly answers the user's question about logging in with a Google account."
+      },
+      {
+        "id": "M03",
+        "variant": "A2",
+        "query": "What are the steps to book a doctor appointment?",
+        "answer": "To book an appointment, open the \"Book Appointment\" section in the app [FAQ-000009]. Select a doctor, a date, and an available time slot [FAQ-000009]. You can view doctor specializations, fees, and working days in the doctor list to help you choose [FAQ-000011, FAQ-000056]. Only listed slots that are not already booked can be selected [FAQ-000012]. Finally, enter the reason for your visit to initiate the booking, which will begin with a \"requested\" status [FAQ-000009].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer accurately and comprehensively outlines the steps to book an appointment based entirely on the provided passages."
+      },
+      {
+        "id": "M03",
+        "variant": "A3b",
+        "query": "What are the steps to book a doctor appointment?",
+        "answer": "To book an appointment, open the \"Book Appointment\" section in the app [FAQ-000009]. You must select a doctor, a date, and an available time slot [FAQ-000009, FAQ-000012]. Finally, enter a short reason for your visit [FAQ-000009, FAQ-000010]. Once these steps are completed, the booking status will be set to \"requested\" [FAQ-000009].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer accurately and completely outlines the steps to book an appointment based on the provided passages."
+      },
+      {
+        "id": "M04",
+        "variant": "A2",
+        "query": "What does it mean when my appointment says requested?",
+        "answer": "When your appointment status is \"requested,\" it means that reception has not yet confirmed your booking [FAQ-000013]. Reception will confirm the appointment within the same working day [FAQ-000013]. You can still cancel your appointment while it is in this requested status [FAQ-000021, FAQ-000022]. Once confirmed, the status in \"My Appointments\" will update to \"confirmed\" [FAQ-000014].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and comprehensively explains what the 'requested' status means."
+      },
+      {
+        "id": "M04",
+        "variant": "A3b",
+        "query": "What does it mean when my appointment says requested?",
+        "answer": "When your appointment status is \"requested,\" it means that reception has not yet confirmed your booking [FAQ-000013]. Reception will confirm the appointment within the same working day [FAQ-000013]. While in this status, you are still able to cancel or reschedule the appointment [FAQ-000022, FAQ-000025].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and comprehensively explains what the 'requested' status means."
+      },
+      {
+        "id": "M05",
+        "variant": "A2",
+        "query": "How do I cancel my booking?",
+        "answer": "To cancel your booking, open the \"My Appointments\" section and select the option to cancel [FAQ-000021]. You are only able to cancel appointments that have a status of \"requested\" or \"confirmed\" [FAQ-000021, FAQ-000022]. Completed appointments cannot be cancelled [FAQ-000022, FAQ-000026].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly explains how to cancel a booking, including the conditions under which it is allowed."
+      },
+      {
+        "id": "M05",
+        "variant": "A3b",
+        "query": "How do I cancel my booking?",
+        "answer": "To cancel an appointment, open \"My Appointments\" and select the cancel option [FAQ-000021]. You may only cancel appointments that have a status of requested or confirmed [FAQ-000021, FAQ-000022]. Completed appointments cannot be cancelled [FAQ-000022]. Additionally, the AI assistant can prepare cancellation proposal cards for you [FAQ-000066].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly explains how to cancel a booking, including the conditions and alternative methods."
+      },
+      {
+        "id": "M06",
+        "variant": "A2",
+        "query": "Can I move my appointment to another day?",
+        "answer": "Yes, you can reschedule an appointment by opening \"My Appointments\" and selecting the reschedule option [FAQ-000024]. You must choose a new date in the future that corresponds to one of the doctor's available slots on a working day [FAQ-000024, FAQ-000025]. Please note that only requested or confirmed appointments are eligible for rescheduling [FAQ-000025]. Completed appointments cannot be rescheduled; you must book a new follow-up appointment instead [FAQ-000026].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and completely explains how and when the user can reschedule their appointment."
+      },
+      {
+        "id": "M06",
+        "variant": "A3b",
+        "query": "Can I move my appointment to another day?",
+        "answer": "Yes, you can reschedule an appointment by opening \"My Appointments\" and selecting the reschedule option [FAQ-000024]. You must choose a new date in the future that corresponds to one of the doctor's available slots on a working day [FAQ-000024, FAQ-000025]. Please note that only requested or confirmed appointments are eligible for rescheduling [FAQ-000025]. Completed appointments cannot be rescheduled; you must book a new follow-up appointment instead [FAQ-000026].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and completely explains how to reschedule an appointment, including the rules and limitations."
+      },
+      {
+        "id": "M07",
+        "variant": "A2",
+        "query": "What happens if I miss my appointment?",
+        "answer": "If you miss an appointment, reception will review the no-show and may contact you to rebook [FAQ-000028].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly answers the user's question."
+      },
+      {
+        "id": "M07",
+        "variant": "A3b",
+        "query": "What happens if I miss my appointment?",
+        "answer": "If you miss your appointment, reception will review the possible no-show and may contact you to rebook [FAQ-000028]. An appointment is flagged as a possible no-show if it is confirmed but not completed within one hour of its start time [FAQ-000027].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and completely answers the question about what happens when an appointment is missed."
+      },
+      {
+        "id": "M08",
+        "variant": "A2",
+        "query": "How does the clinic waitlist work?",
+        "answer": "You can join the waitlist when your preferred slot or day with a doctor is full [FAQ-000030]. You are limited to one open waitlist entry per doctor and day [FAQ-000030]. When a slot becomes available, the next patient on the list receives an offer via a notification under the bell icon and in \"My Appointments\" [FAQ-000029, FAQ-000031]. You have 120 minutes to accept the offer in \"My Appointments\" [FAQ-000032]. If you do not accept within this timeframe, the offer expires and the slot is offered to the next patient on the waitlist [FAQ-000032, FAQ-000033]. You may join the waitlist again if your offer expires [FAQ-000033].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully faithful to the provided passages and completely explains how the clinic waitlist works."
+      },
+      {
+        "id": "M08",
+        "variant": "A3b",
+        "query": "How does the clinic waitlist work?",
+        "answer": "You can join the waitlist when your preferred day or doctor's slot is full, with a limit of one open entry per doctor and day [FAQ-000030]. When a slot becomes available, the next patient on the list receives an offer [FAQ-000029]. You will be notified of this offer via the bell icon and within the \"My Appointments\" section [FAQ-000031, FAQ-000039]. You have 120 minutes to accept the offer in \"My Appointments\" [FAQ-000032, FAQ-000039]. If you fail to accept it within this timeframe, the offer expires and passes to the next patient on the waitlist [FAQ-000032].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and completely explains how the clinic waitlist works."
+      },
+      {
+        "id": "M09",
+        "variant": "A2",
+        "query": "How much time do I get to accept a waitlist slot offer?",
+        "answer": "You have 120 minutes to accept a waitlist slot offer [FAQ-000032, FAQ-000039]. You can accept the offer through the My Appointments section [FAQ-000032]. If you do not accept the offer within this timeframe, it will expire and be passed to the next patient on the waitlist [FAQ-000032, FAQ-000033].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer directly and accurately answers the question using only information supported by the provided passages."
+      },
+      {
+        "id": "M09",
+        "variant": "A3b",
+        "query": "How much time do I get to accept a waitlist slot offer?",
+        "answer": "You have 120 minutes to accept a waitlist slot offer [FAQ-000032, FAQ-000039]. You must accept the offer through My Appointments [FAQ-000032]. If you do not accept the offer within this timeframe, it will expire and be passed to the next patient on the waitlist [FAQ-000032, FAQ-000033].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer directly and accurately states the 120-minute timeframe to accept a waitlist slot offer, fully supported by the provided passages."
+      },
+      {
+        "id": "M10",
+        "variant": "A2",
+        "query": "Do I get a reminder before my visit?",
+        "answer": "Yes, you will receive a reminder within 24 hours before a confirmed appointment [FAQ-000035, FAQ-000014]. These reminders are sent as in-app notifications and can be found under the bell icon in the app [FAQ-000035, FAQ-000038]. The clinic does not send SMS reminders [FAQ-000038]. Please note that reminders are only sent for appointments with a confirmed status [FAQ-000037].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and comprehensively answers the user's question."
+      },
+      {
+        "id": "M10",
+        "variant": "A3b",
+        "query": "Do I get a reminder before my visit?",
+        "answer": "Yes, you will receive a reminder within 24 hours before your confirmed appointment [FAQ-000035]. These reminders can be found under the bell icon in the app [FAQ-000035].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passage and directly answers the user's question."
+      },
+      {
+        "id": "M11",
+        "variant": "A2",
+        "query": "How can I pay my bill at the clinic?",
+        "answer": "You can pay your bill at the reception desk after your visit [FAQ-000049, FAQ-000057]. Currently, you must pay in cash, as card and mobile banking options are not available [FAQ-000049].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly explains how, when, and where to pay the bill."
+      },
+      {
+        "id": "M11",
+        "variant": "A3b",
+        "query": "How can I pay my bill at the clinic?",
+        "answer": "You can pay your bill at the clinic's reception after your visit [FAQ-000049]. Currently, you must pay in cash, as card and mobile banking options are not available [FAQ-000049].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passage and completely addresses how to pay the bill at the clinic."
+      },
+      {
+        "id": "M12",
+        "variant": "A2",
+        "query": "Can I get my money back if I paid in advance?",
+        "answer": "No, you cannot get a refund because there is no advance payment process; all payments are made after your visit [FAQ-000057].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by FAQ-000057 and directly addresses the user's question about refunds and advance payments."
+      },
+      {
+        "id": "M12",
+        "variant": "A3b",
+        "query": "Can I get my money back if I paid in advance?",
+        "answer": "No, you cannot get your money back because the clinic does not accept advance payments. Payment is made only after your visit, and there is no refund process [FAQ-000057].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passage and directly answers the user's question about advance payments and refunds."
+      },
+      {
+        "id": "M13",
+        "variant": "A2",
+        "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+        "answer": "No, the AI assistant is not a replacement for medical advice from a doctor [FAQ-000067, FAQ-000011]. The assistant provides only general information and specialization guidance [FAQ-000067, FAQ-000088, FAQ-000089]. It does not diagnose conditions or change prescriptions, as only a doctor can perform these tasks [FAQ-000067, FAQ-000046]. A doctor must assess you during a visit [FAQ-000088, FAQ-000089].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and comprehensively answers the question."
+      },
+      {
+        "id": "M13",
+        "variant": "A3b",
+        "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+        "answer": "No, the AI assistant is not a replacement for medical advice from a doctor. It provides only general information and specialization guidance, and explicitly states it does not give medical advice or diagnose [FAQ-000067]. The assistant cannot change medications or prescriptions; only a doctor can do that [FAQ-000046]. While it can suggest which specialization to consult, this is general guidance, not medical advice, and the doctor will assess you during the visit [FAQ-000011][FAQ-000073][FAQ-000115].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly addresses the question by explaining why the AI assistant is not a replacement for a doctor's medical advice."
+      },
+      {
+        "id": "M14",
+        "variant": "A2",
+        "query": "What should I do if there is a medical emergency?",
+        "answer": "In the event of a medical emergency, you should call 999 or go to the nearest hospital emergency department [FAQ-000065, FAQ-000047, FAQ-000078, FAQ-000077]. The clinic is not an emergency service [FAQ-000065].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and completely answers the question."
+      },
+      {
+        "id": "M14",
+        "variant": "A3b",
+        "query": "What should I do if there is a medical emergency?",
+        "answer": "If you are experiencing a medical emergency, you should call 999 or go to the nearest hospital emergency department [FAQ-000065]. The clinic is not an emergency service [FAQ-000065].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly and completely answers the question about what to do in a medical emergency."
+      },
+      {
+        "id": "M15",
+        "variant": "A2",
+        "query": "How do I prepare for a cardiology visit?",
+        "answer": "To prepare for your cardiology appointment, please bring your photo ID, previous prescriptions, and any recent test reports [FAQ-000240]. Additionally, you should bring a list of your blood pressure readings and any previous ECG reports [FAQ-000240].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passage and completely addresses how to prepare for a cardiology visit."
+      },
+      {
+        "id": "M15",
+        "variant": "A3b",
+        "query": "How do I prepare for a cardiology visit?",
+        "answer": "To prepare for a cardiology appointment, you should bring your photo ID, a list of your previous prescriptions, and any recent test reports [FAQ-000019, FAQ-000240]. Additionally, you should bring any previous ECG reports and a list of your blood pressure readings [FAQ-000240].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and completely answers the question about preparing for a cardiology visit."
+      },
+      {
+        "id": "M16",
+        "variant": "A2",
+        "query": "I keep getting heartburn after eating and acid comes up my throat",
+        "answer": "Symptoms such as a burning feeling behind the breastbone after meals and a sour taste in the mouth are typically addressed by our Gastroenterology team [FAQ-000083]. You can book an appointment with Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan through the app [FAQ-000083]. Please note that this is general guidance, and a doctor will assess you during your visit [FAQ-000083].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ-000083 and directly addresses the user's symptoms of heartburn and acid reflux by recommending the Gastroenterology team and specific doctors."
+      },
+      {
+        "id": "M16",
+        "variant": "A3b",
+        "query": "I keep getting heartburn after eating and acid comes up my throat",
+        "answer": "To manage symptoms of acid reflux and heartburn after meals, it is recommended to eat smaller meals and avoid oily and spicy food late at night [VN-009356, VN-008875, VN-005491, VN-006099]. Additionally, you should raise the head of your bed to help alleviate symptoms, particularly those that worsen when lying down [VN-009356, VN-008875, VN-005491, VN-006099]. Please consult with a healthcare provider for a formal assessment and treatment plan.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully faithful to the provided medical notes and directly addresses the user's symptoms with appropriate lifestyle recommendations found in the text."
+      },
+      {
+        "id": "M17",
+        "variant": "A2",
+        "query": "Itchy red ring-shaped rash spreading on my arm",
+        "answer": "For a ring-shaped itchy red rash with spreading edges, you should see our Dermatology team [FAQ-000093]. You can book an appointment with Dr. Tahmina Begum, Dr. Asif Mahmud, or Dr. Sadia Islam through the app [FAQ-000093]. Please note that this is general guidance and not medical advice; a doctor will assess you during your visit [FAQ-000093].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly addresses the user's symptoms by recommending the correct medical team and doctors."
+      },
+      {
+        "id": "M17",
+        "variant": "A3b",
+        "query": "Itchy red ring-shaped rash spreading on my arm",
+        "answer": "A ring-shaped, itchy red rash with spreading edges is assessed as Tinea corporis [VN-005843, VN-008761, VN-009597, VN-009331, VN-005975]. To manage this condition, you should keep the affected skin dry, avoid sharing towels with others, and wash your clothes in hot water [VN-005843, VN-008761, VN-009597, VN-009331, VN-005975]. It is recommended that you consult a doctor for a prescription and follow-up in two weeks [VN-005843, VN-008761, VN-009597, VN-009331, VN-005975].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by all the provided visit notes and directly addresses the user's symptoms with the correct assessment, management advice, and follow-up recommendations."
+      },
+      {
+        "id": "M18",
+        "variant": "A2",
+        "query": "Wheezing and coughing at night, which specialist should I see?",
+        "answer": "For symptoms of wheezing and coughing at night, you should see our Pulmonology team [FAQ-000079]. You can book an appointment with Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan through the app [FAQ-000079]. Please note that this is general guidance and not medical advice; the doctor will assess you during your visit [FAQ-000079]. If your symptoms are severe or sudden, please call 999 [FAQ-000079].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly and completely answers the user's question."
+      },
+      {
+        "id": "M18",
+        "variant": "A3b",
+        "query": "Wheezing and coughing at night, which specialist should I see?",
+        "answer": "For symptoms of wheezing and coughing at night, you should see the Pulmonology team [FAQ-000079]. You may book an appointment with Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan through the app [FAQ-000079]. Please note that this is general guidance and not medical advice; a doctor will assess you during your visit [FAQ-000079]. If your symptoms are severe or sudden, please call 999 [FAQ-000079].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly answers the user's question about which specialist to see."
+      },
+      {
+        "id": "M19",
+        "variant": "A2",
+        "query": "I am very thirsty all the time and urinate a lot",
+        "answer": "Symptoms of constant thirst and frequent urination are usually seen by our Endocrinology team [FAQ-000087]. You can book an appointment with Dr. Rumana Haque, Dr. Saiful Alam, or Dr. Lubna Rahman in the app [FAQ-000087]. Please note that this is general guidance and not medical advice; the doctor will assess you at your visit [FAQ-000087].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully faithful to the provided passages and completely addresses the user's symptoms by recommending the correct medical team and doctors."
+      },
+      {
+        "id": "M19",
+        "variant": "A3b",
+        "query": "I am very thirsty all the time and urinate a lot",
+        "answer": "Feeling thirsty and urinating frequently are symptoms associated with Type 2 diabetes mellitus [VN-010041, VN-005122, VN-000228, VN-007880, VN-005781]. If you are experiencing these symptoms, you should consult a doctor for an evaluation, which may include tests such as fasting glucose and HbA1c [VN-010041, VN-005122, VN-000228, VN-007880, VN-005781]. \n\nGeneral management advice provided to patients with these symptoms includes reducing rice portions and sweets, engaging in 30 minutes of brisk walking five days a week, checking fasting sugar twice weekly, and inspecting the feet daily [VN-010041, VN-005122, VN-000228, VN-007880, VN-005781]. Please schedule an appointment with a healthcare provider for a proper diagnosis and personalized treatment plan.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided clinical notes and directly addresses the user's symptoms with relevant medical context and advice."
+      },
+      {
+        "id": "M20",
+        "variant": "A2",
+        "query": "One-sided throbbing headache with sensitivity to light",
+        "answer": "Symptoms of a one-sided throbbing headache with sensitivity to light are typically addressed by the Neurology team [FAQ-000099]. You may book an appointment with Dr. Selina Parvin, Dr. Rezaul Karim, or Dr. Moinul Haque through the app [FAQ-000099]. Please note that this is general guidance and not medical advice; a doctor will assess you during your visit [FAQ-000099]. If your symptoms are sudden or severe, you should call 999 [FAQ-000099].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly addresses the user's query about who to see for these symptoms."
+      },
+      {
+        "id": "M20",
+        "variant": "A3b",
+        "query": "One-sided throbbing headache with sensitivity to light",
+        "answer": "A one-sided throbbing headache accompanied by light sensitivity is assessed as a migraine [VN-004984, VN-008004, VN-005752, VN-008961, VN-007533]. Patients presenting with these symptoms often report needing to lie in a dark room [VN-004984, VN-008004, VN-005752, VN-008961, VN-007533]. Some patients also experience flashing zigzag lights and tingling in one hand before attacks [VN-004984, VN-005752, VN-008961, VN-007533]. Management plans for these patients include keeping a headache diary, maintaining regular sleep and meal times, and limiting screen time [VN-004984, VN-005752, VN-008961, VN-007533].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided clinical notes, accurately identifying the symptoms as migraine and detailing the typical patient experiences and management plans."
+      },
+      {
+        "id": "M21",
+        "variant": "A2",
+        "query": "Painful periods with bad cramps every month",
+        "answer": "For painful periods and cramps that interfere with your daily activities, you should consult the Obstetrics and Gynecology team [FAQ-000113]. You can book an appointment with Dr. Rokeya Khatun, Dr. Sharmin Akter, or Dr. Nazma Begum through the app [FAQ-000113]. A doctor will assess your symptoms during your visit [FAQ-000113].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly addresses the user's query by recommending the appropriate medical team and doctors."
+      },
+      {
+        "id": "M21",
+        "variant": "A3b",
+        "query": "Painful periods with bad cramps every month",
+        "answer": "Patients experiencing painful cramps during the first days of their periods are often diagnosed with primary dysmenorrhoea [VN-002716, VN-004393, VN-004193, VN-001523]. Symptoms may include nausea and the severity of pain can lead to missed work or classes [VN-002716, VN-004393, VN-004193, VN-001523]. Stressful life events, such as family moves, have been reported to worsen these symptoms [VN-000338, VN-002716, VN-004393, VN-004193].\n\nRecommended management strategies include using a hot water bottle, performing light exercise, and maintaining a period diary [VN-002716, VN-004393, VN-004193, VN-001523]. Medical providers may also issue prescriptions for pain management [VN-002716, VN-004393, VN-004193, VN-001523].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided visit notes and directly addresses the query about painful periods and cramps with relevant medical insights and management strategies."
+      },
+      {
+        "id": "M22",
+        "variant": "A2",
+        "query": "Swollen ankle after twisting it while playing football",
+        "answer": "For a swollen ankle caused by twisting it, you should see a doctor from the Orthopedics team [FAQ-000097]. You can book an appointment with Dr. Mostafizur Rahman, Dr. Jannatul Ferdous, or Dr. Habibur Rahman through the app [FAQ-000097]. Please note that this is general guidance and not medical advice; a doctor will assess your condition during your visit [FAQ-000097].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided FAQ passage and directly addresses the user's query by recommending the Orthopedics team and specific doctors to book."
+      },
+      {
+        "id": "M22",
+        "variant": "A3b",
+        "query": "Swollen ankle after twisting it while playing football",
+        "answer": "For a swollen ankle caused by a football injury, the recommended management is to rest, apply ice, use compression, and elevate the area for 48 hours [VN-009368, VN-009741, VN-001863, VN-002703, VN-005455]. Additionally, you should use a crepe bandage and follow up with your doctor in one week [VN-009368, VN-009741, VN-001863, VN-002703, VN-005455]. A prescription may also be issued by your healthcare provider [VN-009368, VN-009741, VN-001863, VN-002703, VN-005455].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by all the provided passages and directly addresses the management of a swollen, twisted ankle from a football injury."
+      },
+      {
+        "id": "M23",
+        "variant": "A2",
+        "query": "Sore throat that hurts when I swallow, with fever",
+        "answer": "For a sore throat that hurts when you swallow, you should book an appointment with our ENT team, such as Dr. Fahmida Yasmin, Dr. Shahadat Hossain, or Dr. Towhid Alam [FAQ-000106]. Please note that this is general guidance and not medical advice; the doctor will assess you at the visit [FAQ-000106]. The provided passages do not specify which doctor to see for the combination of a sore throat and fever.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The assistant accurately addresses the sore throat symptoms using the ENT passage and correctly notes that the passages do not specify a doctor for the combination of sore throat and fever."
+      },
+      {
+        "id": "M23",
+        "variant": "A3b",
+        "query": "Sore throat that hurts when I swallow, with fever",
+        "answer": "If you have a sore throat and painful swallowing, these symptoms are typically addressed by our ENT team [FAQ-000106]. You may book an appointment with Dr. Fahmida Yasmin, Dr. Shahadat Hossain, or Dr. Towhid Alam [FAQ-000106]. \n\nClinical assessments for these symptoms often result in a diagnosis of acute tonsillitis [VN-004461, VN-006485, VN-005915, VN-002767]. Recommended supportive care includes gargling with warm salt water, consuming soft foods, and drinking plenty of fluids [VN-004461, VN-006485, VN-005915, VN-002767]. Please note that a doctor must assess you at your visit to provide a formal diagnosis and treatment plan [FAQ-000106].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully faithful to the provided passages and perfectly addresses the user's symptoms by recommending the appropriate specialists, explaining potential diagnoses, and offering supportive care advice."
+      },
+      {
+        "id": "M24",
+        "variant": "A2",
+        "query": "I can't fall asleep at night and wake up exhausted",
+        "answer": "Symptoms of trouble falling asleep and waking up exhausted are usually seen by our Psychiatry team [FAQ-000117]. You can book an appointment with Dr. Ishrat Jahan, Dr. Faisal Karim, or Dr. Mahbuba Rahman through the app [FAQ-000117]. Please note that this is general guidance rather than medical advice, and the doctor will assess you during your visit [FAQ-000117].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly addresses the user's symptoms with the correct medical team and doctor recommendations."
+      },
+      {
+        "id": "M24",
+        "variant": "A3b",
+        "query": "I can't fall asleep at night and wake up exhausted",
+        "answer": "To manage difficulty falling asleep and waking up exhausted, it is recommended to maintain fixed sleep and wake times [VN-009910, VN-002859, VN-000357, VN-000939, VN-009488]. You should also avoid using screens for one hour before going to bed and refrain from consuming tea after 4 PM [VN-009910, VN-002859, VN-000357, VN-000939, VN-009488]. Keeping a sleep diary may also be helpful for your follow-up assessment [VN-002859, VN-000357, VN-000939, VN-009488].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided visit notes and directly addresses the user's sleep issues with relevant lifestyle advice and recommendations."
+      },
+      {
+        "id": "M25",
+        "variant": "A2",
+        "query": "Burning when I pee and I need to go often",
+        "answer": "These symptoms are usually seen by our Obstetrics and Gynecology team [FAQ-000111]. You can book an appointment with Dr. Rokeya Khatun, Dr. Sharmin Akter, or Dr. Nazma Begum through the app [FAQ-000111]. Please note that this is general guidance and not medical advice; a doctor will assess you during your visit [FAQ-000111].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided passages and directly addresses the user's symptoms by recommending the appropriate medical team and doctors."
+      },
+      {
+        "id": "M25",
+        "variant": "A3b",
+        "query": "Burning when I pee and I need to go often",
+        "answer": "Burning during urination and frequent urges to use the toilet are symptoms associated with an uncomplicated urinary tract infection [VN-008369, VN-002033, VN-003884, VN-007994, VN-002201]. \n\nTo manage these symptoms, it is advised to drink at least two litres of water daily and avoid holding urine for long periods [VN-008369, VN-002033, VN-003884, VN-007994, VN-002201]. If symptoms persist, you should follow up with a healthcare provider in one week [VN-008369, VN-002033, VN-003884, VN-007994, VN-002201]. Please consult a doctor for a formal assessment and prescription.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully faithful to the provided medical notes and directly addresses the user's symptoms with accurate advice and next steps."
+      },
+      {
+        "id": "M26",
+        "variant": "A2",
+        "query": "What medicines are usually prescribed for typhoid fever?",
+        "answer": "For typhoid fever, the medicines usually prescribed are azithromycin and paracetamol [RX-001064, RX-001718, RX-001084, RX-000937, RX-001641].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer accurately identifies azithromycin and paracetamol as the prescribed medicines for typhoid fever based on all the provided prescriptions."
+      },
+      {
+        "id": "M26",
+        "variant": "A3b",
+        "query": "What medicines are usually prescribed for typhoid fever?",
+        "answer": "For the treatment of typhoid fever, the medicines usually prescribed are azithromycin and paracetamol [RX-008136, RX-007476, RX-006706, RX-007346, RX-008063].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and directly names the medicines prescribed for typhoid fever."
+      },
+      {
+        "id": "M27",
+        "variant": "A2",
+        "query": "Common treatment for dengue fever",
+        "answer": "Common treatment for dengue fever includes the use of paracetamol for fever and pain [RX-000398, RX-001452, RX-000107, RX-001490, RX-001491]. Patients are also advised to use oral rehydration salts mixed in clean water [RX-000398, RX-001452, RX-000107, RX-001490, RX-001491]. It is important to avoid taking ibuprofen or aspirin [RX-000398, RX-001452, RX-000107, RX-001490, RX-001491]. Additionally, a follow-up appointment with a repeat platelet count is required after 48 hours [RX-000398, RX-001452, RX-000107, RX-001490, RX-001491].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and directly addresses the common treatment for dengue fever, including medications, advice, and follow-up instructions."
+      },
+      {
+        "id": "M27",
+        "variant": "A3b",
+        "query": "Common treatment for dengue fever",
+        "answer": "Common treatment for dengue fever includes paracetamol for fever and pain, oral rehydration salts (ORS) for hydration, and avoiding ibuprofen or aspirin. Patients are advised to mix each ORS sachet in 500 ml clean water and follow up in 48 hours for a repeat platelet count [RX-007684][RX-004406][RX-007310][RX-003018][RX-004350].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and directly addresses the common treatment for dengue fever, including medications, advice, and follow-up instructions."
+      },
+      {
+        "id": "M28",
+        "variant": "A2",
+        "query": "What is prescribed for hypothyroidism?",
+        "answer": "Levothyroxine is prescribed for hypothyroidism [RX-000035, RX-000146, RX-000131, RX-000372, RX-000526]. It should be taken on an empty stomach 30 minutes before breakfast [RX-000035, RX-000146, RX-000131, RX-000372, RX-000526]. Patients are advised not to take it with calcium or iron tablets [RX-000035, RX-000146, RX-000131, RX-000372, RX-000526].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by all the provided passages and directly answers the question with accurate details about the prescription and instructions."
+      },
+      {
+        "id": "M28",
+        "variant": "A3b",
+        "query": "What is prescribed for hypothyroidism?",
+        "answer": "Levothyroxine is prescribed for the treatment of hypothyroidism [RX-005360, RX-009426, RX-004300, RX-009556, RX-008638]. It should be taken on an empty stomach 30 minutes before breakfast and should not be taken with calcium or iron tablets [RX-005360, RX-009426, RX-004300, RX-009556, RX-008638].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by all the provided prescriptions and directly answers the question with accurate details about the medication and its administration instructions."
+      },
+      {
+        "id": "M29",
+        "variant": "A2",
+        "query": "Medicine for allergic rhinitis and sneezing",
+        "answer": "For the treatment of allergic rhinitis, the prescribed medications are Fluticasone nasal spray and Cetirizine [RX-000683, RX-000093, RX-000132, RX-000275, RX-000028]. When using the nasal spray, it should be aimed away from the center of the nose and used daily, even when feeling well [RX-000683, RX-000093, RX-000132, RX-000275, RX-000028].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer accurately identifies the prescribed medications and usage instructions for allergic rhinitis from the provided passages, fully addressing the user's query."
+      },
+      {
+        "id": "M29",
+        "variant": "A3b",
+        "query": "Medicine for allergic rhinitis and sneezing",
+        "answer": "Based on the prescriptions, allergic rhinitis is commonly treated with a combination of **fluticasone nasal spray** and **cetirizine** [RX-000305][RX-000453][RX-001222][RX-001203][RX-001800]. The nasal spray is used daily, and the antihistamine is taken for a short course. Advice includes aiming the spray away from the nasal centre and using it consistently even when symptoms improve. Follow-up is typically scheduled for one month.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and completely answers the question regarding medicines for allergic rhinitis."
+      },
+      {
+        "id": "M30",
+        "variant": "A2",
+        "query": "What do doctors give for iron deficiency anaemia?",
+        "answer": "Doctors typically prescribe ferrous sulfate and folic acid for iron deficiency anaemia [RX-000902] [RX-000754] [RX-001029] [RX-000893] [RX-000907]. They advise taking iron with water or orange juice, not with tea or milk, and note that dark stools are expected. Follow-up with repeat haemoglobin is recommended at 6 weeks.",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and directly answers the question about what doctors prescribe for iron deficiency anaemia."
+      },
+      {
+        "id": "M30",
+        "variant": "A3b",
+        "query": "What do doctors give for iron deficiency anaemia?",
+        "answer": "For iron deficiency anaemia, doctors prescribe ferrous sulfate and folic acid [RX-005936, RX-003135, RX-007460, RX-004442, RX-007246]. Patients are advised to take the iron tablet with water or orange juice, avoiding tea or milk [RX-005936, RX-003135, RX-007460, RX-004442, RX-007246].",
+        "faithfulness": 5,
+        "relevance": 5,
+        "reason": "The answer is fully supported by the provided prescriptions and directly answers the question by identifying the prescribed medications and administration advice."
+      }
+    ]
+  },
+  "policy": {
+    "summary": [
+      {
+        "variant": "RAG only",
+        "judged": 14,
+        "correctness": 3.142857142857143,
+        "fully_correct": 6,
+        "contradictions": 5
+      },
+      {
+        "variant": "OKF",
+        "judged": 15,
+        "correctness": 4.733333333333333,
+        "fully_correct": 14,
+        "contradictions": 1
+      }
+    ],
+    "keyword_router_hits": 1,
+    "rows": [
+      {
+        "id": "P01",
+        "variant": "RAG only",
+        "query": "Is the clinic open on Fridays?",
+        "okf_id": "opening-hours",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000065",
+          "FAQ-000012"
+        ],
+        "answer": "I do not know. The provided passages do not state the clinic's operating hours or whether it is open on Fridays.",
+        "correctness": 1,
+        "contradicts": true,
+        "reason": "The answer incorrectly claims the policy does not state the clinic's hours, whereas the policy explicitly states that the clinic is closed on Fridays."
+      },
+      {
+        "id": "P01",
+        "variant": "OKF",
+        "query": "Is the clinic open on Fridays?",
+        "okf_id": "opening-hours",
+        "keyword_match": null,
+        "sources": [
+          "OKF:opening-hours"
+        ],
+        "answer": "No, the clinic is closed on Fridays [OKF:opening-hours].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer correctly states that the clinic is closed on Fridays, which perfectly matches the policy text."
+      },
+      {
+        "id": "P02",
+        "variant": "RAG only",
+        "query": "What number do I call to reach the front desk?",
+        "okf_id": "opening-hours",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000003",
+          "FAQ-000008"
+        ],
+        "answer": "To reach the front desk, please call +880 1711-000000 [FAQ-000003, FAQ-000008].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer correctly provides the phone number for the reception/front desk as stated in the policy."
+      },
+      {
+        "id": "P02",
+        "variant": "OKF",
+        "query": "What number do I call to reach the front desk?",
+        "okf_id": "opening-hours",
+        "keyword_match": null,
+        "sources": [
+          "OKF:opening-hours"
+        ],
+        "answer": "To reach the front desk, you can call +880 1711-000000 during opening hours [OKF:opening-hours].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer correctly provides the phone number for the front desk (reception) and specifies that it should be called during opening hours, matching the policy text."
+      },
+      {
+        "id": "P03",
+        "variant": "RAG only",
+        "query": "Can I pay with a credit card?",
+        "okf_id": "payment-methods",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000049",
+          "FAQ-000057"
+        ],
+        "answer": "Currently, you cannot pay with a credit card. Although card payments are listed as a potential method, they are not available at this time, and you must pay in cash at reception after your visit [FAQ-000049].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately reflects the policy by stating that credit cards are not currently accepted and that payment must be made in cash at reception."
+      },
+      {
+        "id": "P03",
+        "variant": "OKF",
+        "query": "Can I pay with a credit card?",
+        "okf_id": "payment-methods",
+        "keyword_match": null,
+        "sources": [
+          "OKF:payment-methods"
+        ],
+        "answer": "No, you cannot pay with a credit card. Card payments are not available at present, and you must pay in cash [OKF:payment-methods].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy, correctly stating that card payments are not currently accepted and that payment must be made in cash."
+      },
+      {
+        "id": "P04",
+        "variant": "RAG only",
+        "query": "Will I be charged if I cancel my visit?",
+        "okf_id": "cancellation-policy",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000021",
+          "FAQ-000022",
+          "FAQ-000057",
+          "FAQ-000026",
+          "FAQ-000028"
+        ],
+        "answer": "I do not know. The provided passages do not state whether you will be charged if you cancel your visit.",
+        "correctness": null,
+        "contradicts": false,
+        "reason": "The operation was aborted due to timeout"
+      },
+      {
+        "id": "P04",
+        "variant": "OKF",
+        "query": "Will I be charged if I cancel my visit?",
+        "okf_id": "cancellation-policy",
+        "keyword_match": null,
+        "sources": [
+          "OKF:cancellation-policy"
+        ],
+        "answer": "There is no cancellation fee for cancelling your visit [OKF:cancellation-policy]. You may cancel at any time before the visit, and there is no minimum notice period required [OKF:cancellation-policy].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately states that there is no cancellation fee and that you can cancel at any time before the visit, which perfectly aligns with the policy."
+      },
+      {
+        "id": "P05",
+        "variant": "RAG only",
+        "query": "How late can I change the time of my visit?",
+        "okf_id": "rescheduling-policy",
+        "keyword_match": null,
+        "sources": [],
+        "answer": "I do not know.",
+        "correctness": 3,
+        "contradicts": false,
+        "reason": "The answer is vague and fails to clarify that appointments can be rescheduled as long as they are not completed and the new date is not in the past."
+      },
+      {
+        "id": "P05",
+        "variant": "OKF",
+        "query": "How late can I change the time of my visit?",
+        "okf_id": "rescheduling-policy",
+        "keyword_match": null,
+        "sources": [
+          "OKF:rescheduling-policy"
+        ],
+        "answer": "You can reschedule an appointment by selecting the reschedule option in \"My Appointments\" or by asking the assistant [OKF:rescheduling-policy]. The provided passages do not specify a deadline or how late you can change the time of your visit [OKF:rescheduling-policy].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer correctly explains how to reschedule and accurately notes that the policy text does not specify a deadline or how late a visit can be rescheduled."
+      },
+      {
+        "id": "P06",
+        "variant": "RAG only",
+        "query": "What happens if I don't turn up for my appointment?",
+        "okf_id": "no-show-policy",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000028",
+          "FAQ-000027",
+          "FAQ-000026",
+          "FAQ-000021",
+          "FAQ-000022"
+        ],
+        "answer": "If you miss an appointment, reception will review the situation and may contact you to rebook [FAQ-000028]. An appointment is flagged as a possible no-show if it is not completed within one hour of its scheduled start time [FAQ-000027].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately reflects the policy regarding the review process, potential contact for rebooking, and the one-hour threshold for flagging a no-show."
+      },
+      {
+        "id": "P06",
+        "variant": "OKF",
+        "query": "What happens if I don't turn up for my appointment?",
+        "okf_id": "no-show-policy",
+        "keyword_match": null,
+        "sources": [
+          "OKF:no-show-policy"
+        ],
+        "answer": "If you do not attend your appointment, it is flagged as a possible no-show if it remains incomplete one hour after the start time [OKF:no-show-policy]. Following this, reception will review the appointment, record a note, and may contact you to rebook [OKF:no-show-policy]. You may also receive an email invitation to book again, provided you have not opted out of campaign emails [OKF:no-show-policy].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately and fully explains what happens if an appointment is missed, matching the policy text perfectly without any contradictions."
+      },
+      {
+        "id": "P07",
+        "variant": "RAG only",
+        "query": "How long do I have to accept a slot offered from the waitlist?",
+        "okf_id": "waitlist",
+        "keyword_match": "waitlist",
+        "sources": [
+          "FAQ-000032",
+          "FAQ-000039",
+          "FAQ-000033",
+          "FAQ-000029",
+          "FAQ-000031"
+        ],
+        "answer": "You have 120 minutes to accept a waitlist offer [FAQ-000032, FAQ-000039]. You must accept the offer through My Appointments [FAQ-000032]. If you do not accept the offer within this timeframe, it will expire and the slot will be passed to the next patient on the waitlist [FAQ-000032, FAQ-000033].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately states the 120-minute timeframe to accept a waitlist offer and correctly explains the consequences of not accepting in time, fully aligning with the policy."
+      },
+      {
+        "id": "P07",
+        "variant": "OKF",
+        "query": "How long do I have to accept a slot offered from the waitlist?",
+        "okf_id": "waitlist",
+        "keyword_match": "waitlist",
+        "sources": [
+          "OKF:waitlist"
+        ],
+        "answer": "You have 120 minutes to accept an offer from the waitlist [OKF:waitlist].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy text, which states that patients have 120 minutes to accept a waitlist offer."
+      },
+      {
+        "id": "P08",
+        "variant": "RAG only",
+        "query": "Do I have to pay before the consultation?",
+        "okf_id": "refund-policy",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000049"
+        ],
+        "answer": "No, you do not have to pay before the consultation. You should pay at the reception after your visit [FAQ-000049]. Please note that you must pay in cash, as card and mobile banking are currently unavailable [FAQ-000049].",
+        "correctness": 3,
+        "contradicts": false,
+        "reason": "The answer correctly states that payment is made after the visit, but it includes unsupported information claiming that card and mobile banking are unavailable."
+      },
+      {
+        "id": "P08",
+        "variant": "OKF",
+        "query": "Do I have to pay before the consultation?",
+        "okf_id": "refund-policy",
+        "keyword_match": null,
+        "sources": [
+          "OKF:refund-policy"
+        ],
+        "answer": "No, you do not have to pay before your consultation. Payment is made at the reception after your visit once your bill has been created [OKF:refund-policy].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy, stating that payment is made at reception after the visit and not in advance."
+      },
+      {
+        "id": "P09",
+        "variant": "RAG only",
+        "query": "How do I get more of the medicine my doctor prescribed?",
+        "okf_id": "prescription-renewal",
+        "keyword_match": null,
+        "sources": [
+          "RX-007242",
+          "RX-004014",
+          "RX-005846",
+          "RX-004714",
+          "RX-002702"
+        ],
+        "answer": "I do not know. The provided passages do not contain information on how to obtain refills for your prescribed medicine.",
+        "correctness": 1,
+        "contradicts": true,
+        "reason": "The assistant incorrectly claims the text lacks information on obtaining refills, directly contradicting the policy which states that patients must book a follow-up appointment to renew a prescription."
+      },
+      {
+        "id": "P09",
+        "variant": "OKF",
+        "query": "How do I get more of the medicine my doctor prescribed?",
+        "okf_id": "prescription-renewal",
+        "keyword_match": null,
+        "sources": [
+          "OKF:prescription-renewal"
+        ],
+        "answer": "To get a refill for your prescribed medicine, you must book a follow-up appointment with your doctor [OKF:prescription-renewal]. Prescriptions are only written during a consultation, so a doctor cannot renew one without a visit [OKF:prescription-renewal]. Once your appointment is completed, the prescription will appear in the **My Prescriptions** section of the app [OKF:prescription-renewal].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy text, explaining that a follow-up appointment is required for a refill and where to find the prescription in the app."
+      },
+      {
+        "id": "P10",
+        "variant": "RAG only",
+        "query": "Can other patients see my medical information?",
+        "okf_id": "privacy",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000005"
+        ],
+        "answer": "No, other patients cannot see your medical information. Patients are only able to view their own appointments, prescriptions, and bills [FAQ-000005].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately reflects the policy, which states that patients can only see their own appointments, prescriptions, bills, and profile, meaning other patients cannot see your information."
+      },
+      {
+        "id": "P10",
+        "variant": "OKF",
+        "query": "Can other patients see my medical information?",
+        "okf_id": "privacy",
+        "keyword_match": null,
+        "sources": [
+          "OKF:privacy"
+        ],
+        "answer": "No, other patients cannot see your medical information. You are the only patient who can view your own appointments, prescriptions, bills, and profile [OKF:privacy]. Furthermore, when viewing available booking slots, the app displays which times are taken but never reveals the identity of the person who booked them [OKF:privacy].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately states that other patients cannot see your medical information and correctly references the policy regarding profile visibility and booking privacy."
+      },
+      {
+        "id": "P11",
+        "variant": "RAG only",
+        "query": "Where can I see my blood test results?",
+        "okf_id": "medical-records-access",
+        "keyword_match": null,
+        "sources": [],
+        "answer": "I do not know.",
+        "correctness": 1,
+        "contradicts": false,
+        "reason": "The assistant claims not to know, whereas the policy clearly states that test results must be collected from the lab that performed the test."
+      },
+      {
+        "id": "P11",
+        "variant": "OKF",
+        "query": "Where can I see my blood test results?",
+        "okf_id": "medical-records-access",
+        "keyword_match": null,
+        "sources": [
+          "OKF:medical-records-access"
+        ],
+        "answer": "You cannot see your blood test results in the app, as it does not store test results or lab reports [OKF:medical-records-access]. You must collect your reports directly from the lab that performed the test and bring them to your next visit for your doctor to review [OKF:medical-records-access].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy, correctly stating that test results are not stored in the app and must be collected from the lab."
+      },
+      {
+        "id": "P12",
+        "variant": "RAG only",
+        "query": "Why do some doctors charge more than others?",
+        "okf_id": "consultation-fees",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000056",
+          "FAQ-000011",
+          "FAQ-000005"
+        ],
+        "answer": "I do not know. The provided passages do not explain why some doctors charge more than others.",
+        "correctness": 1,
+        "contradicts": true,
+        "reason": "The assistant incorrectly states that the policy does not explain the fee difference, whereas the policy explicitly states that senior consultants charge more."
+      },
+      {
+        "id": "P12",
+        "variant": "OKF",
+        "query": "Why do some doctors charge more than others?",
+        "okf_id": "consultation-fees",
+        "keyword_match": null,
+        "sources": [
+          "OKF:consultation-fees"
+        ],
+        "answer": "Each doctor sets their own consultation fee [OKF:consultation-fees]. Senior consultants charge more than other doctors [OKF:consultation-fees].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy text, explaining that each doctor has their own fee and senior consultants charge more."
+      },
+      {
+        "id": "P13",
+        "variant": "RAG only",
+        "query": "How do I stop the reminder emails?",
+        "okf_id": "reminder-and-email-preferences",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000035",
+          "FAQ-000038",
+          "FAQ-000037"
+        ],
+        "answer": "I do not know. The provided passages do not contain information on how to stop reminder emails.",
+        "correctness": 1,
+        "contradicts": true,
+        "reason": "The assistant incorrectly states that the policy does not contain information on how to stop reminder emails, which is directly addressed in the 'Stopping emails' section."
+      },
+      {
+        "id": "P13",
+        "variant": "OKF",
+        "query": "How do I stop the reminder emails?",
+        "okf_id": "reminder-and-email-preferences",
+        "keyword_match": null,
+        "sources": [
+          "OKF:reminder-and-email-preferences"
+        ],
+        "answer": "To stop campaign emails, you can use the **Unsubscribe** link included in every campaign email [OKF:reminder-and-email-preferences]. The provided passages do not specify how to stop appointment reminder emails.",
+        "correctness": 1,
+        "contradicts": true,
+        "reason": "The answer incorrectly claims that the policy does not specify how to stop appointment reminder emails, which directly contradicts the text's instructions to tick the checkbox on the unsubscribe page or contact reception."
+      },
+      {
+        "id": "P14",
+        "variant": "RAG only",
+        "query": "Can my whole family use one account?",
+        "okf_id": "accounts-and-roles",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000006",
+          "FAQ-000017"
+        ],
+        "answer": "No, your whole family cannot use one account. Each person is required to have their own individual account [FAQ-000006]. Family members are not permitted to share accounts, and every patient must book their own appointments from their own account [FAQ-000017].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly aligns with the policy, stating that family members cannot share an account and each person must have their own."
+      },
+      {
+        "id": "P14",
+        "variant": "OKF",
+        "query": "Can my whole family use one account?",
+        "okf_id": "accounts-and-roles",
+        "keyword_match": null,
+        "sources": [
+          "OKF:accounts-and-roles"
+        ],
+        "answer": "No, your whole family cannot use one account. Each person is required to have their own individual account [OKF:accounts-and-roles].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer perfectly matches the policy, which states that family members cannot share one account and each person needs their own."
+      },
+      {
+        "id": "P15",
+        "variant": "RAG only",
+        "query": "Is my appointment confirmed as soon as I book it?",
+        "okf_id": "booking-rules",
+        "keyword_match": null,
+        "sources": [
+          "FAQ-000014",
+          "FAQ-000009",
+          "FAQ-000037",
+          "FAQ-000026",
+          "FAQ-000015"
+        ],
+        "answer": "No, your appointment is not confirmed immediately upon booking. When you first book an appointment, the status begins as \"requested\" [FAQ-000009]. Reception confirms these requests within the same working day, which are Saturday through Thursday [FAQ-000015]. You will know your appointment is confirmed when the status changes to \"confirmed\" in the My Appointments section of the app [FAQ-000014].",
+        "correctness": 3,
+        "contradicts": true,
+        "reason": "The answer contradicts the policy by stating reception confirms bookings within the same working day (omitting 'or the next') and by inventing working days (Saturday through Thursday) not mentioned in the text."
+      },
+      {
+        "id": "P15",
+        "variant": "OKF",
+        "query": "Is my appointment confirmed as soon as I book it?",
+        "okf_id": "booking-rules",
+        "keyword_match": null,
+        "sources": [
+          "OKF:booking-rules"
+        ],
+        "answer": "No, your appointment is not confirmed as soon as you book it. After you press **Confirm**, the status will initially be **Requested**, meaning reception has not yet confirmed the booking [OKF:booking-rules]. Reception typically confirms the appointment on the same or the next working day [OKF:booking-rules]. You will know your appointment is confirmed once it appears in \"My Appointments\" [OKF:booking-rules].",
+        "correctness": 5,
+        "contradicts": false,
+        "reason": "The answer accurately explains that the appointment is initially 'Requested' and only 'Confirmed' once reception approves it, which perfectly matches the policy text."
+      }
+    ]
+  }
+}

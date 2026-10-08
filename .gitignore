@@ -6,6 +6,7 @@ noshow/data/
 embed-upload.log
 .venv/
 eval/.cache/
+eval/*.log
 output/.chat-current
 __pycache__/
 .ipynb_checkpoints/
