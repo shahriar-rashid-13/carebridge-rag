@@ -9,7 +9,7 @@ Assessment 3 results: [`eval/SEARCH_EVAL_V3_REPORT.md`](eval/SEARCH_EVAL_V3_REPO
 A3a vs A3b, judged answers, policy questions) and
 [`noshow/NOSHOW_REPORT.md`](noshow/NOSHOW_REPORT.md) (precision, recall, F1).
 
-Whole-system overview: `../PROJECT_OVERVIEW.md`. Search and the AI tool live in
+Whole-project report and system overview: `../FINAL_REPORT.md` and `../docs/PROJECT_OVERVIEW.md`. Search and the AI tool live in
 `carebridge-clinic-flow` (table `rag_documents`, RPC `match_rag_documents`, tool
 `search_knowledge`).
 
@@ -31,9 +31,9 @@ records; that column is kept for the A2 comparison.
 
 | Path | What it is |
 |---|---|
-| `SPEC.md` | Corpus specification: clinic facts, doctors, diagnoses, record rules, batch plan, validator checks |
-| `GENERATION_PROMPT.md` | Prompt and message templates used to have an LLM write the record text |
-| `RAG_PLAN.md` | Agreed RAG design, build order, and progress |
+| `docs/SPEC.md` | Corpus specification: clinic facts, doctors, diagnoses, record rules, batch plan, validator checks |
+| `docs/GENERATION_PROMPT.md` | Prompt and message templates used to have an LLM write the record text (read by `scripts/generate-llm.mjs`) |
+| `docs/RAG_PLAN.md` | Assessment 2 RAG design, build order, and progress |
 | `scripts/catalog.mjs` | Controlled vocabulary (specializations, doctors, diagnoses, medicines, FAQ facts) |
 | `scripts/generate-manifest.mjs` | Deterministic fact manifest (seed 20260929) |
 | `scripts/validate-batch.mjs` | Checks LLM output against the manifest and writes fix messages |

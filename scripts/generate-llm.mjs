@@ -56,7 +56,7 @@ function parseArgs(argv) {
 
 // The setup prompt is the first ````text block in GENERATION_PROMPT.md, minus its READY handshake.
 function setupPrompt() {
-  const doc = fs.readFileSync(path.join(RAG_DIR, "GENERATION_PROMPT.md"), "utf8").replace(/\r\n/g, "\n");
+  const doc = fs.readFileSync(path.join(RAG_DIR, "docs", "GENERATION_PROMPT.md"), "utf8").replace(/\r\n/g, "\n");
   const match = doc.match(/## Setup prompt[^\n]*\n+````text\n([\s\S]*?)\n````/);
   if (!match) throw new Error("Setup prompt not found in GENERATION_PROMPT.md");
   return match[1].replace(/\n*If you understand, reply only with: READY\s*$/, "").trim();
