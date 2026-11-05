@@ -1,0 +1,971 @@
+{
+  "about": "Assessment 4 Option 1 — Step 3 golden eval set for RAGAS. Synthetic CareBridge clinic Q&A only. Reuses A3 matching/edge/noisy/policy families from carebridge-rag/eval plus refusal and multi-hop cases for agentic RAG. Step 4 harness should score faithfulness, answer_relevance, context_precision, and context_recall (0–1) against ground_truth / reference_contexts; treat expect_refuse items as correct only when the system refuses without inventing facts.",
+  "schema_version": 1,
+  "assessment": "A4-Option1-Step3",
+  "a3_baseline_lock": "A3b",
+  "a3_baseline_doc": "docs/a3-rag-baseline.md (project store)",
+  "metrics_for_step4": [
+    "faithfulness",
+    "answer_relevance",
+    "context_precision",
+    "context_recall"
+  ],
+  "size": 38,
+  "counts_by_category": {
+    "matching": 10,
+    "edge": 6,
+    "noisy": 6,
+    "policy": 6,
+    "refusal": 5,
+    "multi_hop": 5
+  },
+  "field_guide": {
+    "id": "Stable golden item id (G-<family><nn>).",
+    "category": "matching | edge | noisy | policy | refusal | multi_hop",
+    "a3_fixture": "Id in rag-queries.json / policy-queries.json / noisy_queries (nullable for new multi-hop/refusal demos).",
+    "question": "User question (synthetic).",
+    "ground_truth": "Reference answer for RAGAS answer metrics; refusal text when expect_refuse.",
+    "reference_contexts": "Gold context strings (FAQ content and/or OKF policy body) for context_* metrics / offline mode.",
+    "expected.faq": "Relevant FAQ doc_ids (A3 relevance rule).",
+    "expected.diagnosis": "Relevant diagnosis labels (any RX/VN with that diagnosis counts).",
+    "expected.okf_id / okf_ids": "OKF policy file id(s) under carebridge-ai-v3/knowledge/.",
+    "expect_refuse": "True → system must refuse; empty retrieval / no invented answer.",
+    "multi_hop": "True → needs ≥2 knowledge facets (agentic plan / multi-query)."
+  },
+  "items": [
+    {
+      "id": "G-M01",
+      "category": "matching",
+      "a3_fixture": "M01",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How can I sign up for a new CareBridge account?",
+      "ground_truth": "Sign up in the CareBridge app with email and password or with Google. New accounts created this way are patient accounts.",
+      "expected": {
+        "faq": [
+          "FAQ-000001"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M03",
+      "category": "matching",
+      "a3_fixture": "M03",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "What are the steps to book a doctor appointment?",
+      "ground_truth": "Open Book Appointment in the app, choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+      "expected": {
+        "faq": [
+          "FAQ-000009"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M05",
+      "category": "matching",
+      "a3_fixture": "M05",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How do I cancel my booking?",
+      "ground_truth": "Open My Appointments and cancel the appointment while its status is requested or confirmed. Completed appointments cannot be cancelled.",
+      "expected": {
+        "faq": [
+          "FAQ-000021",
+          "FAQ-000022"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M08",
+      "category": "matching",
+      "a3_fixture": "M08",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How does the clinic waitlist work?",
+      "ground_truth": "Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day. When a slot is freed, the next patient on the waitlist gets an offer.",
+      "expected": {
+        "faq": [
+          "FAQ-000029",
+          "FAQ-000030"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M09",
+      "category": "matching",
+      "a3_fixture": "M09",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How much time do I get to accept a waitlist slot offer?",
+      "ground_truth": "You have 120 minutes to accept a waitlist offer in My Appointments. If you do not accept in time, the offer expires and the slot passes to the next patient.",
+      "expected": {
+        "faq": [
+          "FAQ-000032"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M11",
+      "category": "matching",
+      "a3_fixture": "M11",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How can I pay my bill at the clinic?",
+      "ground_truth": "Pay at reception after the visit. Cash is accepted; card and mobile banking are listed but not available at present, so please pay in cash.",
+      "expected": {
+        "faq": [
+          "FAQ-000049"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M13",
+      "category": "matching",
+      "a3_fixture": "M13",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "ground_truth": "No. The assistant gives general information and specialization guidance only. It is not medical advice and does not diagnose.",
+      "expected": {
+        "faq": [
+          "FAQ-000067"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: Is the AI assistant giving medical advice? A: No, the assistant gives general information and specialization guidance only. It is not medical advice and does not diagnose."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M14",
+      "category": "matching",
+      "a3_fixture": "M14",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "What should I do if there is a medical emergency?",
+      "ground_truth": "The clinic is not an emergency service. Call 999 or go to the nearest hospital emergency department.",
+      "expected": {
+        "faq": [
+          "FAQ-000065"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: What should I do in an emergency? A: The clinic is not an emergency service. Call 999 or go to the nearest hospital emergency department."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M16",
+      "category": "matching",
+      "a3_fixture": "M16",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "I keep getting heartburn after eating and acid comes up my throat",
+      "ground_truth": "These symptoms are usually seen by the Gastroenterology team (for example Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan). This is general guidance, not medical advice.",
+      "expected": {
+        "faq": [
+          "FAQ-000083"
+        ],
+        "diagnosis": [
+          "Gastro-oesophageal reflux disease"
+        ],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: I get a burning feeling behind the breastbone after meals and a sour taste in my mouth. Which doctor should I see? A: These symptoms are usually seen by our Gastroenterology team. You can book Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-M18",
+      "category": "matching",
+      "a3_fixture": "M18",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "Wheezing and coughing at night, which specialist should I see?",
+      "ground_truth": "These symptoms are usually seen by the Pulmonology team (for example Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan). This is general guidance, not medical advice.",
+      "expected": {
+        "faq": [
+          "FAQ-000079"
+        ],
+        "diagnosis": [
+          "Bronchial asthma"
+        ],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: I have wheezing and a cough at night. Which doctor should I see? A: These symptoms are usually seen by our Pulmonology team. You can book Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit. For severe or sudden symptoms, call 999."
+      ],
+      "tags": [
+        "a3-matching"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-E01",
+      "category": "edge",
+      "a3_fixture": "E01",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "refund",
+      "ground_truth": "Payment is made after the visit. There is no advance payment and no refund process.",
+      "expected": {
+        "faq": [
+          "FAQ-000057"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process."
+      ],
+      "tags": [
+        "a3-edge",
+        "very short"
+      ],
+      "multi_hop": false,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-E02",
+      "category": "edge",
+      "a3_fixture": "E02",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "waitlist",
+      "ground_truth": "The waitlist lets you wait for a full day or slot with a doctor. Join when the day or slot is full (one open entry per doctor and day). When a slot frees, you get an offer and have 120 minutes to accept it in My Appointments.",
+      "expected": {
+        "faq": [
+          "FAQ-000029",
+          "FAQ-000030",
+          "FAQ-000032"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist."
+      ],
+      "tags": [
+        "a3-edge",
+        "very short"
+      ],
+      "multi_hop": false,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-E06",
+      "category": "edge",
+      "a3_fixture": "E06",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "ground_truth": "Brief spinning when turning in bed or looking up is usually seen by the Neurology team (for example Dr. Selina Parvin, Dr. Rezaul Karim, or Dr. Moinul Haque). This is general guidance, not medical advice; the doctor will assess her.",
+      "expected": {
+        "faq": [
+          "FAQ-000102"
+        ],
+        "diagnosis": [
+          "Benign paroxysmal positional vertigo"
+        ],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: I get brief spinning when I turn over in bed and dizziness when I look up. Which doctor should I book? A: These symptoms are usually seen by our Neurology team. You can book Dr. Selina Parvin, Dr. Rezaul Karim, or Dr. Moinul Haque in the app. This is general guidance, not medical advice; the doctor will assess you at the visit. For severe or sudden symptoms call 999."
+      ],
+      "tags": [
+        "a3-edge",
+        "long"
+      ],
+      "multi_hop": false,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-E08",
+      "category": "edge",
+      "a3_fixture": "E08",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "ground_truth": "Unpaid means the bill has not been paid yet; paid means payment has been recorded. Ask reception for your invoice; the AI assistant can also show your bills.",
+      "expected": {
+        "faq": [
+          "FAQ-000053",
+          "FAQ-000054"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: What do unpaid and paid mean on my bill? A: Unpaid means the bill has not been paid yet. Paid means the payment has been recorded.",
+        "Q: How do I get an invoice? A: Ask reception for your invoice. The AI assistant can also show your bills."
+      ],
+      "tags": [
+        "a3-edge",
+        "long"
+      ],
+      "multi_hop": false,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-E13",
+      "category": "edge",
+      "a3_fixture": "E13",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "Can I book for my mother and also cancel my own appointment?",
+      "ground_truth": "Each patient books from their own account, so your mother needs her own account. You can cancel your own appointment from My Appointments while it is requested or confirmed; completed appointments cannot be cancelled.",
+      "expected": {
+        "faq": [
+          "FAQ-000017",
+          "FAQ-000021",
+          "FAQ-000022"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: Can I book an appointment for someone else? A: No, each patient books from their own account. Family members need their own accounts.",
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "tags": [
+        "a3-edge",
+        "multi-intent"
+      ],
+      "multi_hop": true,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-E21",
+      "category": "edge",
+      "a3_fixture": "E21",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "Can the chatbot change the dose of my medicine?",
+      "ground_truth": "No. The assistant cannot change medicines. Only your doctor can change a prescription.",
+      "expected": {
+        "faq": [
+          "FAQ-000046"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: Can the AI assistant change my medicines? A: No, the assistant cannot change medicines. Only your doctor can change a prescription."
+      ],
+      "tags": [
+        "a3-edge",
+        "policy nuance"
+      ],
+      "multi_hop": false,
+      "expect_refuse": false
+    },
+    {
+      "id": "G-N01",
+      "category": "noisy",
+      "a3_fixture": "N01",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M01",
+      "question": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "ground_truth": "Sign up in the CareBridge app with email and password or with Google. New accounts created this way are patient accounts.",
+      "expected": {
+        "faq": [
+          "FAQ-000001"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M01"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-N03",
+      "category": "noisy",
+      "a3_fixture": "N03",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M03",
+      "question": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "ground_truth": "Open Book Appointment in the app, choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+      "expected": {
+        "faq": [
+          "FAQ-000009"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M03"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-N05",
+      "category": "noisy",
+      "a3_fixture": "N05",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M05",
+      "question": "How do I cancel ... my xD booking?",
+      "ground_truth": "Open My Appointments and cancel the appointment while its status is requested or confirmed. Completed appointments cannot be cancelled.",
+      "expected": {
+        "faq": [
+          "FAQ-000021",
+          "FAQ-000022"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M05"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-N08",
+      "category": "noisy",
+      "a3_fixture": "N08",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M08",
+      "question": "How qwe!! @@ des the clinic waitlist wrok?",
+      "ground_truth": "Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day. When a slot is freed, the next patient on the waitlist gets an offer.",
+      "expected": {
+        "faq": [
+          "FAQ-000029",
+          "FAQ-000030"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M08"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-N11",
+      "category": "noisy",
+      "a3_fixture": "N11",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M11",
+      "question": "How can 1234 I pay my bil at the climic? ...",
+      "ground_truth": "Pay at reception after the visit. Cash is accepted; card and mobile banking are not available at present, so please pay in cash.",
+      "expected": {
+        "faq": [
+          "FAQ-000049"
+        ],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M11"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-N16",
+      "category": "noisy",
+      "a3_fixture": "N16",
+      "a3_source_file": "eval/rag-eval-results.json#noisy_queries",
+      "a3_matching_fixture": "M16",
+      "question": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "ground_truth": "These symptoms are usually seen by the Gastroenterology team (for example Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan). This is general guidance, not medical advice.",
+      "expected": {
+        "faq": [
+          "FAQ-000083"
+        ],
+        "diagnosis": [
+          "Gastro-oesophageal reflux disease"
+        ],
+        "okf_id": null
+      },
+      "reference_contexts": [
+        "Q: I get a burning feeling behind the breastbone after meals and a sour taste in my mouth. Which doctor should I see? A: These symptoms are usually seen by our Gastroenterology team. You can book Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit."
+      ],
+      "tags": [
+        "a3-noisy",
+        "from-M16"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P01",
+      "category": "policy",
+      "a3_fixture": "P01",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "Is the clinic open on Fridays?",
+      "ground_truth": "No. The clinic is closed on Fridays and public holidays. Opening hours are Saturday to Thursday, 9:00 AM to 5:00 PM (Dhaka time).",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "opening-hours"
+      },
+      "reference_contexts": [
+        "# Opening hours and contact\n\n## Hours\n\n- **Saturday to Thursday:** 9:00 AM to 5:00 PM (Dhaka time).\n- **Friday and public holidays:** closed.\n\nEach doctor works on set days and times within these hours. The doctor list in **Book Appointment** shows each doctor's working days, and only their listed slots can be booked.\n\n## Contact\n\n- **Phone:** +880 1711-000000 (reception, during opening hours)\n- **Address:** House 27, Road 9/A, Dhanmondi, Dhaka 1209\n\nReception staff speak Bangla and English.\n\n## Getting here\n\n- Only limited street parking is available.\n- There is a wheelchair ramp and a lift at the entrance.\n\n## Outside opening hours\n\nYou can still book, cancel, and reschedule in the app at any time. Reception confirms new bookings on the next working day. For emergencies, call 999 or go to the nearest hospital emergency department.\n\nHours can change around public holidays and during Ramadan. Call reception to check before you travel."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P03",
+      "category": "policy",
+      "a3_fixture": "P03",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "Can I pay with a credit card?",
+      "ground_truth": "No. Card payments are not available at present. Pay in cash at reception after the visit.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "payment-methods"
+      },
+      "reference_contexts": [
+        "# Payment methods\n\n## When you pay\n\nYou pay after your visit, not in advance. Reception creates your bill once the consultation is completed. There is one bill per appointment.\n\n## Where you pay\n\nPay at reception after the visit. You cannot pay inside the app.\n\n## Accepted methods\n\n- **Cash**: available.\n- **Card**: not available at present.\n- **Mobile banking**: not available at present.\n\nPlease pay in cash until card and mobile banking payments become available.\n\n## Bill status\n\n- **Unpaid**: the bill has not been paid yet.\n- **Paid**: reception has recorded your payment.\n\nYou can see your bills in the app, and the assistant can show them to you. Ask reception for a printed invoice.\n\n## Insurance\n\nThe clinic does not accept insurance at present. Pay the bill in cash and ask reception for a printed invoice if your insurer needs one."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P04",
+      "category": "policy",
+      "a3_fixture": "P04",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "Will I be charged if I cancel my visit?",
+      "ground_truth": "No. There is no cancellation fee and no minimum notice period. Cancel from My Appointments (requested or confirmed) as early as you can so the slot can go to the waitlist.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "cancellation-policy"
+      },
+      "reference_contexts": [
+        "# Cancellation policy\n\n## How to cancel\n\nOpen **My Appointments** in the app and cancel the appointment. You can also ask the assistant. It prepares a cancellation card, and nothing changes until you press **Confirm** on that card.\n\n## Which appointments can be cancelled\n\n- Only appointments with status **requested** or **confirmed** can be cancelled.\n- Completed appointments cannot be cancelled. Book a new follow-up appointment instead.\n- Once cancelled, an appointment cannot be restored. Book again if you change your mind.\n\n## Fees\n\nThere is no cancellation fee, and there is no minimum notice period. You can cancel at any time before the visit. Please cancel as early as you can so the slot can go to another patient.\n\n## What happens to the freed slot\n\nWhen you cancel, the slot is offered automatically to the next patient on the waitlist for that doctor and day.\n\n## Cancelling for someone else\n\nEach patient cancels from their own account. Reception staff can also cancel an appointment for you. Call +880 1711-000000 during opening hours."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P07",
+      "category": "policy",
+      "a3_fixture": "P07",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "How long do I have to accept a slot offered from the waitlist?",
+      "ground_truth": "You have 120 minutes to accept a waitlist offer. The offer appears in My Appointments and under the bell icon; if you do not accept in time it expires.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "waitlist"
+      },
+      "reference_contexts": [
+        "# Waitlist\n\n## When to use it\n\nJoin the waitlist when the day or slot you want with a doctor is fully booked. If the slot you want is free, book it directly instead.\n\n## Rules for joining\n\n- Choose today or a future date on one of the doctor's working days.\n- You can name one taken slot, or leave the slot open to accept any time that day.\n- You can have one open waitlist entry per doctor and day.\n\n## Offers\n\nWhen a matching appointment is cancelled or moved, the slot is offered to the next waiting patient. Patients who asked for that exact slot come first, then the earliest to join.\n\n- You get a notification under the bell icon, and the offer appears in **My Appointments**.\n- You have **120 minutes** to accept the offer.\n- An accepted offer becomes a booking with status **requested**, which reception then confirms.\n- If you decline, or do not accept in time, the slot passes to the next patient. You stay on the waitlist for other slots that day.\n\n## Leaving\n\nYou can leave the waitlist at any time from My Appointments. Entries for dates that have passed close automatically."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P12",
+      "category": "policy",
+      "a3_fixture": "P12",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "Why do some doctors charge more than others?",
+      "ground_truth": "Each doctor sets their own consultation fee; senior consultants charge more. Check the current fee on the doctor list in Book Appointment.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "consultation-fees"
+      },
+      "reference_contexts": [
+        "# Consultation fees\n\n## How fees are set\n\nEach doctor has their own consultation fee. Senior consultants charge more.\n\n## Where to see a fee\n\n- The doctor list in **Book Appointment** shows each doctor's fee, specialization, and working days.\n- The booking summary shows the fee before you confirm.\n- The assistant can look up a doctor's current fee for you.\n\nAlways check the current fee in the app. The fee shown there is the one that applies.\n\n## Your bill\n\n- Reception creates your bill after the visit.\n- The bill total is built from the items on it, so it may include more than the consultation fee. Reception explains any extra item on request.\n- You pay in cash at reception after the visit. Nothing is paid in advance."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-P15",
+      "category": "policy",
+      "a3_fixture": "P15",
+      "a3_source_file": "eval/policy-queries.json",
+      "question": "Is my appointment confirmed as soon as I book it?",
+      "ground_truth": "No. A new booking starts as requested until reception confirms it (usually the same or next working day). Confirmed status appears in My Appointments.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": "booking-rules"
+      },
+      "reference_contexts": [
+        "# Booking rules\n\n## How to book\n\nOpen **Book Appointment** in the app. Choose a doctor, a date, and a time slot, and enter a short reason for the visit. The assistant can also prepare a booking card. Nothing is booked until you press **Confirm**.\n\n## Rules\n\n- You can only book one of the doctor's working days and one of their listed time slots.\n- A slot that is already booked cannot be chosen. You can join the waitlist instead.\n- Each patient books from their own account. Family members need their own accounts.\n- You can book any future working day. There is no limit on how far ahead you book.\n\n## Status\n\n- **Requested**: reception has not confirmed the booking yet. Reception usually confirms it on the same or the next working day.\n- **Confirmed**: shown in My Appointments. You get a reminder within the 24 hours before the visit.\n- **Completed**: the consultation has taken place.\n\n## Walk-ins\n\nWalk-in patients are seen only if a slot is free. Booking in the app is preferred.\n\n## On the day\n\n- Bring photo ID, previous prescriptions, and recent test reports.\n- If you arrive more than 15 minutes late, you may need to reschedule."
+      ],
+      "tags": [
+        "a3-policy",
+        "okf"
+      ],
+      "expect_refuse": false,
+      "multi_hop": false
+    },
+    {
+      "id": "G-R01",
+      "category": "refusal",
+      "a3_fixture": "E26",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "What is the capital of France?",
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [],
+      "expect_refuse": true,
+      "tags": [
+        "refuse-when-unsupported",
+        "a3-out-of-scope"
+      ],
+      "multi_hop": false
+    },
+    {
+      "id": "G-R02",
+      "category": "refusal",
+      "a3_fixture": "E27",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "Best cricket bat for beginners",
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [],
+      "expect_refuse": true,
+      "tags": [
+        "refuse-when-unsupported",
+        "a3-out-of-scope"
+      ],
+      "multi_hop": false
+    },
+    {
+      "id": "G-R03",
+      "category": "refusal",
+      "a3_fixture": "E28",
+      "a3_source_file": "eval/rag-queries.json",
+      "question": "How do I change the oil in my car?",
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [],
+      "expect_refuse": true,
+      "tags": [
+        "refuse-when-unsupported",
+        "a3-out-of-scope"
+      ],
+      "multi_hop": false
+    },
+    {
+      "id": "G-R04",
+      "category": "refusal",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "What is the clinic teleportation policy?",
+      "ground_truth": "I do not have supported information for that in CareBridge clinic knowledge. Please contact reception if you need help with clinic policies.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [],
+      "expect_refuse": true,
+      "tags": [
+        "refuse-when-unsupported",
+        "agentic-refuse-demo"
+      ],
+      "multi_hop": false
+    },
+    {
+      "id": "G-R05",
+      "category": "refusal",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "Which stocks should I buy this week based on my medical record?",
+      "ground_truth": "I cannot answer that. CareBridge does not provide investment advice, and that request is outside clinic knowledge. Ask a clinic-related question or contact reception.",
+      "expected": {
+        "faq": [],
+        "diagnosis": [],
+        "okf_id": null
+      },
+      "reference_contexts": [],
+      "expect_refuse": true,
+      "tags": [
+        "refuse-when-unsupported",
+        "agentic-refuse-demo"
+      ],
+      "multi_hop": false
+    },
+    {
+      "id": "G-H01",
+      "category": "multi_hop",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "What is a typical Cardiology consultation fee setup and how do I join the waitlist if the day is full?",
+      "ground_truth": "Each doctor has their own consultation fee (senior consultants charge more); check the fee on the Book Appointment doctor list. If the day or slot is full, join the waitlist for that doctor and day (one open entry per doctor and day); when a slot frees you get an offer.",
+      "expected": {
+        "faq": [
+          "FAQ-000030"
+        ],
+        "diagnosis": [],
+        "okf_id": "consultation-fees",
+        "okf_ids": [
+          "consultation-fees",
+          "waitlist"
+        ]
+      },
+      "reference_contexts": [
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "# Consultation fees\n\n## How fees are set\n\nEach doctor has their own consultation fee. Senior consultants charge more.\n\n## Where to see a fee\n\n- The doctor list in **Book Appointment** shows each doctor's fee, specialization, and working days.\n- The booking summary shows the fee before you confirm.\n- The assistant can look up a doctor's current fee for you.\n\nAlways check the current fee in the app. The fee shown there is the one that applies.\n\n## Your bill\n\n- Reception creates your bill after the visit.\n- The bill total is built from the items on it, so it may include more than the consultation fee. Reception explains any extra item on request.\n- You pay in cash at reception after the visit. Nothing is paid in advance.",
+        "# Waitlist\n\n## When to use it\n\nJoin the waitlist when the day or slot you want with a doctor is fully booked. If the slot you want is free, book it directly instead.\n\n## Rules for joining\n\n- Choose today or a future date on one of the doctor's working days.\n- You can name one taken slot, or leave the slot open to accept any time that day.\n- You can have one open waitlist entry per doctor and day.\n\n## Offers\n\nWhen a matching appointment is cancelled or moved, the slot is offered to the next waiting patient. Patients who asked for that exact slot come first, then the earliest to join.\n\n- You get a notification under the bell icon, and the offer appears in **My Appointments**.\n- You have **120 minutes** to accept the offer.\n- An accepted offer becomes a booking with status **requested**, which reception then confirms.\n- If you decline, or do not accept in time, the slot passes to the next patient. You stay on the waitlist for other slots that day.\n\n## Leaving\n\nYou can leave the waitlist at any time from My Appointments. Entries for dates that have passed close automatically."
+      ],
+      "multi_hop": true,
+      "tags": [
+        "multi-hop",
+        "agentic-plan"
+      ],
+      "expect_refuse": false
+    },
+    {
+      "id": "G-H02",
+      "category": "multi_hop",
+      "a3_fixture": "E13-related",
+      "a3_source_file": null,
+      "question": "How do I cancel a confirmed appointment, and what are the rules if I instead want to reschedule it to another day?",
+      "ground_truth": "Cancel from My Appointments while status is requested or confirmed (completed cannot be cancelled). To reschedule, open My Appointments, choose reschedule, and pick a future date on the doctor's working day and an available slot; only requested or confirmed appointments can be rescheduled.",
+      "expected": {
+        "faq": [
+          "FAQ-000021",
+          "FAQ-000022",
+          "FAQ-000024",
+          "FAQ-000025"
+        ],
+        "diagnosis": [],
+        "okf_id": null,
+        "okf_ids": []
+      },
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled.",
+        "Q: How do I reschedule an appointment? A: Open My Appointments and choose reschedule. Then pick a new future date on the doctor's working day and slot.",
+        "Q: What are the rules for rescheduling? A: Only requested or confirmed appointments can be rescheduled. The new date must be in the future, and the new slot must be one of the doctor's slots on a working day."
+      ],
+      "multi_hop": true,
+      "tags": [
+        "multi-hop",
+        "agentic-plan"
+      ],
+      "expect_refuse": false
+    },
+    {
+      "id": "G-H03",
+      "category": "multi_hop",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "After I book, how do I know the appointment is confirmed, and will I get a reminder before the visit?",
+      "ground_truth": "Requested means reception has not confirmed yet; confirmation usually happens the same working day and status becomes confirmed in My Appointments. A reminder is sent within the 24 hours before a confirmed appointment and appears under the bell icon.",
+      "expected": {
+        "faq": [
+          "FAQ-000013",
+          "FAQ-000014",
+          "FAQ-000035"
+        ],
+        "diagnosis": [],
+        "okf_id": "booking-rules",
+        "okf_ids": [
+          "booking-rules"
+        ]
+      },
+      "reference_contexts": [
+        "Q: What does requested status mean? A: Requested means reception has not confirmed the booking yet. Reception confirms it within the same working day.",
+        "Q: How will I know my appointment is confirmed? A: The status changes to confirmed in My Appointments. You also receive a reminder within the 24 hours before the visit.",
+        "Q: Will I get a reminder before my appointment? A: Yes, a reminder is sent within the 24 hours before a confirmed appointment. Reminders appear under the bell icon in the app.",
+        "# Booking rules\n\n## How to book\n\nOpen **Book Appointment** in the app. Choose a doctor, a date, and a time slot, and enter a short reason for the visit. The assistant can also prepare a booking card. Nothing is booked until you press **Confirm**.\n\n## Rules\n\n- You can only book one of the doctor's working days and one of their listed time slots.\n- A slot that is already booked cannot be chosen. You can join the waitlist instead.\n- Each patient books from their own account. Family members need their own accounts.\n- You can book any future working day. There is no limit on how far ahead you book.\n\n## Status\n\n- **Requested**: reception has not confirmed the booking yet. Reception usually confirms it on the same or the next working day.\n- **Confirmed**: shown in My Appointments. You get a reminder within the 24 hours before the visit.\n- **Completed**: the consultation has taken place.\n\n## Walk-ins\n\nWalk-in patients are seen only if a slot is free. Booking in the app is preferred.\n\n## On the day\n\n- Bring photo ID, previous prescriptions, and recent test reports.\n- If you arrive more than 15 minutes late, you may need to reschedule."
+      ],
+      "multi_hop": true,
+      "tags": [
+        "multi-hop",
+        "agentic-plan"
+      ],
+      "expect_refuse": false
+    },
+    {
+      "id": "G-H04",
+      "category": "multi_hop",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "I am always thirsty and urinate a lot — which specialist should I see, and what should I bring if I book Cardiology instead for blood pressure and ECG follow-up?",
+      "ground_truth": "Always thirsty with frequent urination is usually seen by Endocrinology (for example Dr. Rumana Haque, Dr. Saiful Alam, or Dr. Lubna Rahman); this is general guidance, not medical advice. For a Cardiology visit, bring photo ID, previous prescriptions, recent test reports, previous ECG reports, and a list of blood pressure readings.",
+      "expected": {
+        "faq": [
+          "FAQ-000087",
+          "FAQ-000240"
+        ],
+        "diagnosis": [
+          "Type 2 diabetes mellitus"
+        ],
+        "okf_id": null,
+        "okf_ids": []
+      },
+      "reference_contexts": [
+        "Q: I always feel thirsty and pass urine often. Which doctor should I see? A: These symptoms are usually seen by our Endocrinology team. You can book Dr. Rumana Haque, Dr. Saiful Alam, or Dr. Lubna Rahman in the app. This is general guidance, not medical advice; the doctor will assess you at the visit.",
+        "Q: How should I prepare for a Cardiology appointment? A: Please bring photo ID, previous prescriptions, and recent test reports. Also bring any previous ECG reports and a list of your blood pressure readings."
+      ],
+      "multi_hop": true,
+      "tags": [
+        "multi-hop",
+        "agentic-plan"
+      ],
+      "expect_refuse": false
+    },
+    {
+      "id": "G-H05",
+      "category": "multi_hop",
+      "a3_fixture": null,
+      "a3_source_file": null,
+      "question": "Do I pay before the consultation, and can I get money back if I already paid?",
+      "ground_truth": "You do not pay in advance; payment is at reception after the visit in cash (card/mobile banking not available at present). Because nothing is paid in advance there is no general refund process for completed consultations; contact reception if a bill looks wrong.",
+      "expected": {
+        "faq": [
+          "FAQ-000057"
+        ],
+        "diagnosis": [],
+        "okf_id": "refund-policy",
+        "okf_ids": [
+          "refund-policy",
+          "payment-methods"
+        ]
+      },
+      "reference_contexts": [
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process.",
+        "# Refund policy\n\n## No advance payment\n\nYou do not pay when you book. Payment is made at reception after your visit, once your bill has been created. Because nothing is paid in advance, cancelling or rescheduling never costs you anything and there is nothing to refund.\n\n## No refund process\n\nThe clinic does not have a refund process for completed consultations.\n\n## If you think your bill is wrong\n\n- Check your bill in the app. The assistant can show it to you.\n- Contact reception on +880 1711-000000 during opening hours, or ask at the front desk on your next visit.\n- Do not pay a bill you believe is wrong until reception has checked it.\n- If you paid twice or were charged in error, reception checks the bill and returns the extra amount in cash.",
+        "# Payment methods\n\n## When you pay\n\nYou pay after your visit, not in advance. Reception creates your bill once the consultation is completed. There is one bill per appointment.\n\n## Where you pay\n\nPay at reception after the visit. You cannot pay inside the app.\n\n## Accepted methods\n\n- **Cash**: available.\n- **Card**: not available at present.\n- **Mobile banking**: not available at present.\n\nPlease pay in cash until card and mobile banking payments become available.\n\n## Bill status\n\n- **Unpaid**: the bill has not been paid yet.\n- **Paid**: reception has recorded your payment.\n\nYou can see your bills in the app, and the assistant can show them to you. Ask reception for a printed invoice.\n\n## Insurance\n\nThe clinic does not accept insurance at present. Pay the bill in cash and ask reception for a printed invoice if your insurer needs one."
+      ],
+      "multi_hop": true,
+      "tags": [
+        "multi-hop",
+        "agentic-plan"
+      ],
+      "expect_refuse": false
+    }
+  ]
+}

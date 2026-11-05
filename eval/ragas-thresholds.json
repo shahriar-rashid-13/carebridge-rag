@@ -1,0 +1,18 @@
+{
+  "about": "Planned hard CI floors for Assessment 4 RAGAS gate. Soft-skip today when secrets/results are missing or offline. Re-derive after the first live RAGAS run vs locked A3b — these drafts are not final gospel.",
+  "schema_version": 1,
+  "enforced_today": false,
+  "hard_gate_tomorrow": true,
+  "metrics": {
+    "faithfulness": 0.7,
+    "answer_relevance": 0.7,
+    "context_precision": 0.55,
+    "context_recall": 0.55
+  },
+  "notes": [
+    "Do not invent final floors from offline lexical proxies.",
+    "A3 faithfulness/relevance were 1–5 judge scores — not RAGAS 0–1.",
+    "Allow flake tolerance for free-tier re-rank timeouts (see A3b).",
+    "Refusal items should not force non-empty answers into faithfulness."
+  ]
+}

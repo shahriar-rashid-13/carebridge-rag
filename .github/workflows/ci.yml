@@ -30,3 +30,33 @@ jobs:
       # so the reported precision, recall and F1 can be reproduced from the repo.
       - name: Classifier evaluation
         run: python scripts/classify-eval.py
+
+  ragas-gate:
+    name: RAGAS quality gate (soft skeleton)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Soft today: missing LITELLM_MASTER_KEY → warning + pass.
+    # Tomorrow: add the secret, produce real_ragas results, then set
+    # RAGAS_GATE_HARD=1 (or pass --hard) to enforce eval/ragas-thresholds.json.
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Offline RAGAS harness (no secrets)
+        run: node scripts/ragas-eval.mjs --mode offline
+      - name: Soft RAGAS gate
+        env:
+          # Intentionally unset for soft-skip path when repo secret absent.
+          LITELLM_MASTER_KEY: ${{ secrets.LITELLM_MASTER_KEY }}
+          LITELLM_BASE_URL: ${{ secrets.LITELLM_BASE_URL }}
+          # Keep hard mode off until live scores + calibrated floors exist.
+          RAGAS_GATE_HARD: "0"
+        run: node scripts/ragas-gate.mjs
+      - name: Document tomorrow hard thresholds
+        run: |
+          echo "Planned hard floors (eval/ragas-thresholds.json):"
+          cat eval/ragas-thresholds.json
+          echo ""
+          echo "Tomorrow: set repo secrets LITELLM_MASTER_KEY (+ BASE_URL),"
+          echo "wire live RAGAS, write real_ragas=true results, then RAGAS_GATE_HARD=1."
