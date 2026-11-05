@@ -1,0 +1,10 @@
+# Optional deps for tomorrow's live RAGAS run (not required for offline CI).
+# Install: pip install -r requirements-ragas.txt
+#
+# Pin loosely for now; tighten after the first successful live run.
+
+ragas>=0.2.0,<0.4
+datasets>=2.14.0
+langchain-openai>=0.1.0
+openai>=1.0.0
+pandas>=2.0.0

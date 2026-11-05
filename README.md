@@ -236,12 +236,23 @@ node scripts/rag-eval.mjs --model gte --sweep 0.78,0.80,0.82,0.84
 node scripts/rag-eval.mjs --model gte --dry-run
 node scripts/search-eval-v3.mjs --pace 4000
 
+# Assessment 4 — RAGAS harness skeleton (offline, no LiteLLM secret)
+node scripts/ragas-eval.mjs --mode offline
+node scripts/ragas-gate.mjs
+
 .\.venv\Scripts\python scripts\classify-eval.py
 node scripts/classify-llm.mjs --per-class 10
 .\.venv\Scripts\python scripts\classify-eval.py
 
 .\noshow\.venv\Scripts\python noshow\train.py
 ```
+
+Assessment 4 Option 1 adds a RAGAS harness over `eval/ragas-golden-set.json`. Offline mode
+writes lexical-proxy placeholder scores to `eval/ragas-results.json` and
+`eval/RAGAS_EVAL_REPORT.md` without `LITELLM_MASTER_KEY`. Live RAGAS (`--mode live` /
+`scripts/ragas-eval-live.py`) is documented for the next day once office secrets are available.
+The CI `ragas-gate` job soft-skips or warns when secrets/results are missing; planned hard floors
+live in `eval/ragas-thresholds.json`. Langfuse is out of scope for this skeleton.
 
 `rag-eval.mjs` defaults to Gemini; default cutoffs are 0.55 for Gemini and 0.80 for gte-small.
 The production-aligned v3 report uses 0.82. `--seed-noise` creates 100 typo duplicates, 100 junk
