@@ -2,20 +2,18 @@
 /**
  * Assessment 4 Option 1 — RAGAS CI gate skeleton.
  *
- * Today (soft gate):
- *   - If LITELLM_MASTER_KEY is missing → soft-skip / pass with warning (exit 0).
- *   - If results are offline/placeholder (real_ragas=false) → pass with warning.
- *   - Never hard-fail on thresholds until tomorrow's live run + calibrated floors.
+ * Soft gate (default / no LITELLM_MASTER_KEY):
+ *   - Missing key → soft-skip / pass with warning (exit 0) so forks stay green.
+ *   - Offline/placeholder results → pass with warning unless --hard.
  *
- * Tomorrow (hard gate, documented here):
- *   - Require live results (real_ragas=true).
- *   - Fail if any aggregate metric falls below PLANNED_THRESHOLDS
- *     (re-derived after first live RAGAS run).
+ * Hard gate (--hard or RAGAS_GATE_HARD=1) when secrets + live results exist:
+ *   - Require real_ragas=true.
+ *   - Fail if aggregate metrics fall below eval/ragas-thresholds.json floors.
  *
  * Usage:
  *   node scripts/ragas-gate.mjs
  *   node scripts/ragas-gate.mjs --results eval/ragas-results.json
- *   RAGAS_GATE_HARD=1 node scripts/ragas-gate.mjs   # opt-in hard mode (tomorrow)
+ *   RAGAS_GATE_HARD=1 node scripts/ragas-gate.mjs --hard
  */
 
 import fs from "node:fs";

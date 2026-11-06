@@ -1,18 +1,24 @@
 {
-  "about": "Planned hard CI floors for Assessment 4 RAGAS gate. Soft-skip today when secrets/results are missing or offline. Re-derive after the first live RAGAS run vs locked A3b — these drafts are not final gospel.",
+  "about": "Hard CI floors for Assessment 4 RAGAS gate, calibrated from live run a4-live-2026-11-06 (faith 1.00, rel 0.96, prec 0.84, recall 0.99). Floors keep headroom for free-tier flake without inventing offline-proxy numbers.",
   "schema_version": 1,
-  "enforced_today": false,
-  "hard_gate_tomorrow": true,
+  "enforced_today": true,
+  "calibrated_from": "a4-live-2026-11-06",
+  "live_aggregate": {
+    "faithfulness": 1.0,
+    "answer_relevance": 0.9579,
+    "context_precision": 0.8376,
+    "context_recall": 0.9853
+  },
   "metrics": {
-    "faithfulness": 0.7,
-    "answer_relevance": 0.7,
-    "context_precision": 0.55,
-    "context_recall": 0.55
+    "faithfulness": 0.85,
+    "answer_relevance": 0.8,
+    "context_precision": 0.65,
+    "context_recall": 0.75
   },
   "notes": [
-    "Do not invent final floors from offline lexical proxies.",
+    "Derived after live agentic RAG + LiteLLM judge run on 38 golden items.",
     "A3 faithfulness/relevance were 1–5 judge scores — not RAGAS 0–1.",
     "Allow flake tolerance for free-tier re-rank timeouts (see A3b).",
-    "Refusal items should not force non-empty answers into faithfulness."
+    "Refusal items scored separately; correct refuse rate was 5/5 on the live run."
   ]
 }

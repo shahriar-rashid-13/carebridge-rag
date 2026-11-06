@@ -32,31 +32,27 @@ jobs:
         run: python scripts/classify-eval.py
 
   ragas-gate:
-    name: RAGAS quality gate (soft skeleton)
+    name: RAGAS quality gate
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # Soft today: missing LITELLM_MASTER_KEY → warning + pass.
-    # Tomorrow: add the secret, produce real_ragas results, then set
-    # RAGAS_GATE_HARD=1 (or pass --hard) to enforce eval/ragas-thresholds.json.
+    # Hard when LITELLM_MASTER_KEY repo secret is present (committed real_ragas
+    # results + calibrated floors). Soft-skip warning when secret absent (forks).
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Offline RAGAS harness (no secrets)
-        run: node scripts/ragas-eval.mjs --mode offline
-      - name: Soft RAGAS gate
+      - name: Offline RAGAS harness (syntax / pipeline smoke)
+        run: node scripts/ragas-eval.mjs --mode offline --limit 3
+      - name: Restore committed live results for gate
+        # Offline --limit overwrites results; restore the live artifact for hard gate.
+        run: git checkout -- eval/ragas-results.json eval/RAGAS_EVAL_REPORT.md
+      - name: RAGAS gate (hard when secrets present)
         env:
-          # Intentionally unset for soft-skip path when repo secret absent.
           LITELLM_MASTER_KEY: ${{ secrets.LITELLM_MASTER_KEY }}
           LITELLM_BASE_URL: ${{ secrets.LITELLM_BASE_URL }}
-          # Keep hard mode off until live scores + calibrated floors exist.
-          RAGAS_GATE_HARD: "0"
-        run: node scripts/ragas-gate.mjs
-      - name: Document tomorrow hard thresholds
-        run: |
-          echo "Planned hard floors (eval/ragas-thresholds.json):"
-          cat eval/ragas-thresholds.json
-          echo ""
-          echo "Tomorrow: set repo secrets LITELLM_MASTER_KEY (+ BASE_URL),"
-          echo "wire live RAGAS, write real_ragas=true results, then RAGAS_GATE_HARD=1."
+          # Hard when the secret exists; gate script still soft-skips if key empty.
+          RAGAS_GATE_HARD: ${{ secrets.LITELLM_MASTER_KEY != '' && '1' || '0' }}
+        run: node scripts/ragas-gate.mjs --hard
+      - name: Show calibrated thresholds
+        run: cat eval/ragas-thresholds.json

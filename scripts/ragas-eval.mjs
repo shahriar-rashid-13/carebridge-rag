@@ -36,14 +36,14 @@ const GOLDEN_PATH = path.join(EVAL_DIR, "ragas-golden-set.json");
 const RESULTS_PATH = path.join(EVAL_DIR, "ragas-results.json");
 const REPORT_PATH = path.join(EVAL_DIR, "RAGAS_EVAL_REPORT.md");
 
-/** Planned hard CI floors for tomorrow (live RAGAS). Not enforced offline. */
+/** Hard CI floors calibrated from live run a4-live-2026-11-06. */
 export const PLANNED_THRESHOLDS = {
-  faithfulness: 0.7,
-  answer_relevance: 0.7,
-  context_precision: 0.55,
-  context_recall: 0.55,
+  faithfulness: 0.85,
+  answer_relevance: 0.8,
+  context_precision: 0.65,
+  context_recall: 0.75,
   note:
-    "Draft floors for tomorrow's hard gate. Re-derive from the first live RAGAS run vs locked A3b — do not invent final numbers from offline proxies.",
+    "Calibrated from a4-live-2026-11-06 (faith 1.00, rel 0.96, prec 0.84, recall 0.99). See eval/ragas-thresholds.json.",
 };
 
 const METRICS = [
@@ -300,12 +300,10 @@ function runOffline(golden, limit) {
   };
 }
 
-function runLiveSkeleton() {
+async function runLive(limit) {
   const fileEnv = loadEnvFile();
   const key =
     process.env.LITELLM_MASTER_KEY || fileEnv.LITELLM_MASTER_KEY || "";
-  const base =
-    process.env.LITELLM_BASE_URL || fileEnv.LITELLM_BASE_URL || "";
 
   if (!key) {
     const err = new Error(
@@ -315,16 +313,21 @@ function runLiveSkeleton() {
     throw err;
   }
 
-  // Skeleton only — real RAGAS + live RAG wiring is tomorrow's work.
-  throw new Error(
-    [
-      "Live RAGAS mode is scaffolded but not wired yet.",
-      `Found LITELLM_MASTER_KEY (${key.slice(0, 4)}…) and LITELLM_BASE_URL=${base || "(unset)"}.`,
-      "Tomorrow: call live agentic RAG per golden item, then score with ragas",
-      "(see scripts/ragas-eval-live.py) via LiteLLM OpenAI-compatible endpoint.",
-      "Langfuse is explicitly out of scope for this skeleton.",
-    ].join(" "),
-  );
+  const { spawn } = await import("node:child_process");
+  const args = ["scripts/ragas-eval-live.mjs"];
+  if (limit) args.push("--limit", String(limit));
+  await new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, args, {
+      cwd: ROOT,
+      stdio: "inherit",
+      env: process.env,
+    });
+    child.on("exit", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error(`ragas-eval-live.mjs exited ${code}`));
+    });
+    child.on("error", reject);
+  });
 }
 
 function printHelp() {
@@ -334,11 +337,11 @@ Usage:
   node scripts/ragas-eval.mjs [--mode offline|live] [--limit N]
 
 Offline (default): no LITELLM_MASTER_KEY; lexical proxy scores → eval/ragas-results.json
-Live:              requires secrets; stub until tomorrow's wiring
+Live:              requires secrets; runs scripts/ragas-eval-live.mjs (agentic retrieve + judge)
 `);
 }
 
-function main() {
+async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (args.help) {
     printHelp();
@@ -351,7 +354,7 @@ function main() {
   const golden = JSON.parse(fs.readFileSync(GOLDEN_PATH, "utf8"));
 
   if (args.mode === "live") {
-    runLiveSkeleton();
+    await runLive(args.limit);
     return;
   }
 
@@ -367,7 +370,7 @@ function main() {
   );
   console.log(`Report: ${path.relative(ROOT, REPORT_PATH)}`);
   console.log(
-    "NOTE: scores are offline lexical proxies, not real RAGAS. Live mode tomorrow.",
+    "NOTE: scores are offline lexical proxies, not real RAGAS. Use --mode live for production scores.",
   );
 }
 
@@ -376,10 +379,8 @@ const isDirectRun =
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 
 if (isDirectRun) {
-  try {
-    main();
-  } catch (err) {
+  main().catch((err) => {
     console.error(err.message || err);
     process.exit(err.code === "MISSING_SECRETS" ? 2 : 1);
-  }
+  });
 }
