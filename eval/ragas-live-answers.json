@@ -1,0 +1,1649 @@
+{
+  "about": "Live agentic RAG answers for A4 RAGAS scoring",
+  "schema_version": 1,
+  "run_at": "2026-11-06T06:25:17.701Z",
+  "n_items": 38,
+  "items": [
+    {
+      "id": "G-M01",
+      "category": "matching",
+      "question": "How can I sign up for a new CareBridge account?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You can sign up for a new CareBridge account by using the CareBridge app with your email and password, or by using Google [FAQ-000001]. New accounts created through this process are patient accounts [FAQ-000001].",
+      "contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts.",
+        "Q: I cannot sign in to my account. What should I do? A: Please contact reception at +880 1711-000000. Reception is open Saturday to Thursday, 9:00 AM to 5:00 PM.",
+        "Q: Can I book an appointment for someone else? A: No, each patient books from their own account. Family members need their own accounts.",
+        "Q: My waitlist offer expired. What now? A: An offer not accepted within 120 minutes expires, and the slot passes to the next patient on the waitlist. You can join the waitlist again."
+      ],
+      "ground_truth": "Sign up in the CareBridge app with email and password or with Google. New accounts created this way are patient accounts.",
+      "reference_contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How can I sign up for a new CareBridge account?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How can I sign up for a new CareBridge account?",
+            "ranking": "fused",
+            "candidates": 4,
+            "results": 4,
+            "error": "The operation was aborted due to timeout"
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] explicitly explains that you can sign up for a new account in the CareBridge app using your email and password, or with Google.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M03",
+      "category": "matching",
+      "question": "What are the steps to book a doctor appointment?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "To book an appointment, open the \"Book Appointment\" section in the app [FAQ-000009]. You must select a doctor, a date, and an available time slot [FAQ-000009, FAQ-000010]. You can only choose from a doctor's listed working days and available slots [FAQ-000012]. Finally, enter the reason for your visit [FAQ-000009]. Once these steps are completed, the booking status will begin as \"requested\" [FAQ-000009].",
+      "contexts": [
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+        "Q: What information do I need to book an appointment? A: You need the doctor, the date, the time slot, and a short reason for the visit.",
+        "Q: Where can I see a doctor's fee? A: Each doctor's fee is shown in the doctor list when booking.",
+        "Q: How do I choose a time slot? A: Only the doctor's working days and listed slots can be booked. A slot that is already booked cannot be chosen.",
+        "Q: How do I choose the right doctor? A: The doctor list shows each doctor's specialization, fee, and working days. The assistant can suggest a specialization, but it is not medical advice."
+      ],
+      "ground_truth": "Open Book Appointment in the app, choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+      "reference_contexts": [
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "What are the steps to book a doctor appointment?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "What are the steps to book a doctor appointment?",
+            "ranking": "reranked",
+            "candidates": 20,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] provides the specific steps to book an appointment: open the app, choose a doctor, select a date and time slot, and enter the reason for the visit.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M05",
+      "category": "matching",
+      "question": "How do I cancel my booking?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Open My Appointments and cancel the appointment while its status is requested or confirmed. Completed appointments cannot be cancelled.",
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How do I cancel my booking?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How do I cancel my booking?",
+            "ranking": "reranked",
+            "candidates": 19,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "The operation was aborted due to timeout",
+          "source": "fallback"
+        }
+      }
+    },
+    {
+      "id": "G-M08",
+      "category": "matching",
+      "question": "How does the clinic waitlist work?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "The waitlist allows you to wait for a full day or slot with a doctor [FAQ-000029]. You can join the waitlist when your desired slot or day is full, with a limit of one open entry per doctor and day [FAQ-000030]. When a slot becomes available, the next patient on the list receives an offer [FAQ-000029]. You will be notified of an offer via the bell icon and in \"My Appointments\" [FAQ-000031, FAQ-000039]. You have 120 minutes to accept the offer in \"My Appointments\" [FAQ-000032, FAQ-000039]. If you do not accept within this time, the offer expires and passes to the next patient [FAQ-000032].",
+      "contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist.",
+        "Q: How will I know I got a waitlist offer? A: You get a notification under the bell icon. The offer also appears in My Appointments.",
+        "Q: Will I be notified about waitlist offers? A: Yes, you get a notification when a waitlist slot is offered. You have 120 minutes to accept it."
+      ],
+      "ground_truth": "Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day. When a slot is freed, the next patient on the waitlist gets an offer.",
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How does the clinic waitlist work?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How does the clinic waitlist work?",
+            "ranking": "reranked",
+            "candidates": 19,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passages collectively explain that the waitlist allows patients to wait for a full day or slot, how to join it, how offers are communicated, and the process for accepting those offers.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M09",
+      "category": "matching",
+      "question": "How much time do I get to accept a waitlist slot offer?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You have 120 minutes to accept a waitlist slot offer [FAQ-000032, FAQ-000039]. You must accept the offer through My Appointments [FAQ-000032]. If you do not accept the offer within this timeframe, it will expire and pass to the next patient on the waitlist [FAQ-000032, FAQ-000033].",
+      "contexts": [
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist.",
+        "Q: Will I be notified about waitlist offers? A: Yes, you get a notification when a waitlist slot is offered. You have 120 minutes to accept it.",
+        "Q: My waitlist offer expired. What now? A: An offer not accepted within 120 minutes expires, and the slot passes to the next patient on the waitlist. You can join the waitlist again."
+      ],
+      "ground_truth": "You have 120 minutes to accept a waitlist offer in My Appointments. If you do not accept in time, the offer expires and the slot passes to the next patient.",
+      "reference_contexts": [
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How much time do I get to accept a waitlist slot offer?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How much time do I get to accept a waitlist slot offer?",
+            "ranking": "reranked",
+            "candidates": 17,
+            "results": 3
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passages explicitly state that you have 120 minutes to accept a waitlist offer.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M11",
+      "category": "matching",
+      "question": "How can I pay my bill at the clinic?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You can pay your bill at the clinic's reception after your visit [FAQ-000049]. Currently, you must pay in cash, as card and mobile banking options are not available [FAQ-000049].",
+      "contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "ground_truth": "Pay at reception after the visit. Cash is accepted; card and mobile banking are listed but not available at present, so please pay in cash.",
+      "reference_contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How can I pay my bill at the clinic?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How can I pay my bill at the clinic?",
+            "ranking": "reranked",
+            "candidates": 3,
+            "results": 1
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "the passage explicitly states that payment should be made at reception using cash.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M13",
+      "category": "matching",
+      "question": "Is the AI assistant a replacement for medical advice from a doctor?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "No, the AI assistant is not a replacement for medical advice from a doctor. The assistant provides only general information and specialization guidance [FAQ-000067, FAQ-000115, FAQ-000073]. It does not diagnose conditions [FAQ-000067]. Furthermore, the assistant cannot change prescriptions, as only your doctor has the authority to do so [FAQ-000046]. Any guidance provided is not medical advice, and a doctor will perform a formal assessment during your visit [FAQ-000115, FAQ-000073].",
+      "contexts": [
+        "Q: Is the AI assistant giving medical advice? A: No, the assistant gives general information and specialization guidance only. It is not medical advice and does not diagnose.",
+        "Q: Can the AI assistant change my medicines? A: No, the assistant cannot change medicines. Only your doctor can change a prescription.",
+        "Q: How do I choose the right doctor? A: The doctor list shows each doctor's specialization, fee, and working days. The assistant can suggest a specialization, but it is not medical advice.",
+        "Q: I have been worrying constantly for months and feel restless. Which doctor should I see? A: These symptoms are usually seen by our Psychiatry team. You can book Dr. Ishrat Jahan, Dr. Faisal Karim, or Dr. Mahbuba Rahman in the app. This is general guidance, not medical advice; the doctor will assess you at the visit.",
+        "Q: I have a sudden high fever and pain behind my eyes. Which doctor should I see? A: These symptoms are usually seen by our General Medicine team. You can book Dr. Farhana Kabir, Dr. Tanvir Ahmed, or Dr. Nusrat Jahan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit."
+      ],
+      "ground_truth": "No. The assistant gives general information and specialization guidance only. It is not medical advice and does not diagnose.",
+      "reference_contexts": [
+        "Q: Is the AI assistant giving medical advice? A: No, the assistant gives general information and specialization guidance only. It is not medical advice and does not diagnose."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Is the AI assistant a replacement for medical advice from a doctor?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Is the AI assistant a replacement for medical advice from a doctor?",
+            "ranking": "reranked",
+            "candidates": 20,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] explicitly states that the assistant does not provide medical advice and does not diagnose, implying it is not a replacement for a doctor.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M14",
+      "category": "matching",
+      "question": "What should I do if there is a medical emergency?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "If you are experiencing a medical emergency, you should call 999 or go to the nearest hospital emergency department [FAQ-000065]. The clinic is not an emergency service [FAQ-000065].",
+      "contexts": [
+        "Q: What should I do in an emergency? A: The clinic is not an emergency service. Call 999 or go to the nearest hospital emergency department.",
+        "Visit note | 2025-06-30 04:30 PM | Dr. Mahbuba Rahman, Psychiatry | Patient: Mamun Kabir, 63, male. Mr. Kabir attends for review and reports no interest in usual activities, poor sleep, and low energy. He is a tailor and this began after moving away from family to Tejgaon. He has no other medical conditions. The patient denies thoughts of self-harm, and a safety plan with the emergency number 999 was discussed. On examination: PHQ-9 score 12, BP 112/78 mmHg, pulse 83 bpm, weight 66 kg. Physical examination is normal. Assessment: Depressive episode. Plan: continue current medicines; no new medicine was prescribed and no new prescription was issued today. He was advised to keep a daily routine, walk outdoors daily, and start counselling sessions, and to call 999 or come to the clinic at once if thoughts of self-harm appear. Follow-up in 2 weeks."
+      ],
+      "ground_truth": "The clinic is not an emergency service. Call 999 or go to the nearest hospital emergency department.",
+      "reference_contexts": [
+        "Q: What should I do in an emergency? A: The clinic is not an emergency service. Call 999 or go to the nearest hospital emergency department."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "What should I do if there is a medical emergency?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "What should I do if there is a medical emergency?",
+            "ranking": "reranked",
+            "candidates": 10,
+            "results": 2
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] explicitly states that in an emergency, one should call 999 or go to the nearest hospital emergency department.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-M16",
+      "category": "matching",
+      "question": "I keep getting heartburn after eating and acid comes up my throat",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "These symptoms are usually seen by the Gastroenterology team (for example Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan). This is general guidance, not medical advice.",
+      "reference_contexts": [
+        "Q: I get a burning feeling behind the breastbone after meals and a sour taste in my mouth. Which doctor should I see? A: These symptoms are usually seen by our Gastroenterology team. You can book Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "causes of heartburn after eating and acid reflux"
+          ],
+          "reason": "asks for the cause of specific symptoms",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "causes of heartburn after eating and acid reflux",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-M18",
+      "category": "matching",
+      "question": "Wheezing and coughing at night, which specialist should I see?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "These symptoms are usually seen by the Pulmonology team (for example Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan). This is general guidance, not medical advice.",
+      "reference_contexts": [
+        "Q: I have wheezing and a cough at night. Which doctor should I see? A: These symptoms are usually seen by our Pulmonology team. You can book Dr. Shirin Akter, Dr. Arif Hossain, or Dr. Kamrul Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit. For severe or sudden symptoms, call 999."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "causes of wheezing and coughing at night",
+            "specialist for nocturnal wheezing and cough"
+          ],
+          "reason": "asks for both the potential cause and the appropriate medical specialist",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "causes of wheezing and coughing at night",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "specialist for nocturnal wheezing and cough",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-E01",
+      "category": "edge",
+      "question": "refund",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "Payment is made after your visit, so there is no advance payment required [FAQ-000057]. Consequently, there is no refund process [FAQ-000057].",
+      "contexts": [
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process."
+      ],
+      "ground_truth": "Payment is made after the visit. There is no advance payment and no refund process.",
+      "reference_contexts": [
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "refund"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "refund",
+            "ranking": "fused",
+            "candidates": 1,
+            "results": 1
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passage explicitly states that there is no refund process.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-E02",
+      "category": "edge",
+      "question": "waitlist",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You can join the waitlist when your preferred slot or day is full [FAQ-000030]. You are limited to one open waitlist entry per doctor and day [FAQ-000030]. When a slot becomes available, you will receive a notification [FAQ-000039]. You must accept the offer within 120 minutes via My Appointments [FAQ-000032]. If you fail to accept the offer within this timeframe, it will expire and be offered to the next patient on the waitlist [FAQ-000032].",
+      "contexts": [
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: Will I be notified about waitlist offers? A: Yes, you get a notification when a waitlist slot is offered. You have 120 minutes to accept it.",
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist.",
+        "Q: The slot I want is already booked. What can I do? A: A booked slot cannot be chosen. You can join the waitlist for that doctor and day."
+      ],
+      "ground_truth": "The waitlist lets you wait for a full day or slot with a doctor. Join when the day or slot is full (one open entry per doctor and day). When a slot frees, you get an offer and have 120 minutes to accept it in My Appointments.",
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "waitlist"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "waitlist",
+            "ranking": "reranked",
+            "candidates": 7,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passages provide a comprehensive definition of the waitlist, how to join it, and how the notification and acceptance process works.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-E06",
+      "category": "edge",
+      "question": "My grandmother is 70 and for the past few weeks whenever she turns over in bed at night the whole room starts spinning for a few seconds, and she also feels dizzy when she looks up at a high shelf. She has no other big health problems. Who should she see and what do they usually do for this?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Brief spinning when turning in bed or looking up is usually seen by the Neurology team (for example Dr. Selina Parvin, Dr. Rezaul Karim, or Dr. Moinul Haque). This is general guidance, not medical advice; the doctor will assess her.",
+      "reference_contexts": [
+        "Q: I get brief spinning when I turn over in bed and dizziness when I look up. Which doctor should I book? A: These symptoms are usually seen by our Neurology team. You can book Dr. Selina Parvin, Dr. Rezaul Karim, or Dr. Moinul Haque in the app. This is general guidance, not medical advice; the doctor will assess you at the visit. For severe or sudden symptoms call 999."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "causes of room spinning when turning in bed and looking up",
+            "specialist for BPPV and diagnostic procedures"
+          ],
+          "reason": "asks for potential causes of symptoms and the appropriate specialist/treatment process",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "causes of room spinning when turning in bed and looking up",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "specialist for BPPV and diagnostic procedures",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-E08",
+      "category": "edge",
+      "question": "After my visit the receptionist said a bill would be created, but I don't understand what unpaid means on it, and I also need an invoice for my office reimbursement. Where do I get it?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Unpaid means the bill has not been paid yet; paid means payment has been recorded. Ask reception for your invoice; the AI assistant can also show your bills.",
+      "reference_contexts": [
+        "Q: What do unpaid and paid mean on my bill? A: Unpaid means the bill has not been paid yet. Paid means the payment has been recorded.",
+        "Q: How do I get an invoice? A: Ask reception for your invoice. The AI assistant can also show your bills."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "what does unpaid mean on a clinic bill",
+            "how to request an invoice for reimbursement"
+          ],
+          "reason": "asks for clarification of billing terminology and instructions for obtaining an invoice",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "what does unpaid mean on a clinic bill",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "how to request an invoice for reimbursement",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-E13",
+      "category": "edge",
+      "question": "Can I book for my mother and also cancel my own appointment?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Each patient books from their own account, so your mother needs her own account. You can cancel your own appointment from My Appointments while it is requested or confirmed; completed appointments cannot be cancelled.",
+      "reference_contexts": [
+        "Q: Can I book an appointment for someone else? A: No, each patient books from their own account. Family members need their own accounts.",
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "how to book appointment for someone else",
+            "how to cancel my appointment"
+          ],
+          "reason": "asks about booking for another person and cancelling own appointment",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "how to book appointment for someone else",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "how to cancel my appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-E21",
+      "category": "edge",
+      "question": "Can the chatbot change the dose of my medicine?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "No, the chatbot cannot change the dose of your medicine. Only your doctor has the authority to change a prescription [FAQ-000046].",
+      "contexts": [
+        "Q: Can the AI assistant change my medicines? A: No, the assistant cannot change medicines. Only your doctor can change a prescription."
+      ],
+      "ground_truth": "No. The assistant cannot change medicines. Only your doctor can change a prescription.",
+      "reference_contexts": [
+        "Q: Can the AI assistant change my medicines? A: No, the assistant cannot change medicines. Only your doctor can change a prescription."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Can the chatbot change the dose of my medicine?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Can the chatbot change the dose of my medicine?",
+            "ranking": "reranked",
+            "candidates": 4,
+            "results": 1
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passage explicitly states that the assistant cannot change medicines and that only a doctor can change a prescription.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-N01",
+      "category": "noisy",
+      "question": "qwe!! How can ### I sign up for a new CareBridge account?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You can sign up for a new CareBridge account by using the CareBridge app with your email and password, or by using your Google account [FAQ-000001]. New accounts created through these methods are patient accounts [FAQ-000001, FAQ-000007]. Please note that each person must have their own individual account [FAQ-000006].",
+      "contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts.",
+        "Q: Can I sign in with Google? A: Yes, you can sign in with your Google account. Use the Sign in with Google button on the login page.",
+        "Q: Can my family share one account? A: No, each person needs their own account. Family members cannot share one account.",
+        "Q: Can I book an appointment for someone else? A: No, each patient books from their own account. Family members need their own accounts.",
+        "Q: How are doctor and receptionist roles assigned? A: New sign-ups are patient accounts. Doctor and receptionist roles are assigned by reception."
+      ],
+      "ground_truth": "Sign up in the CareBridge app with email and password or with Google. New accounts created this way are patient accounts.",
+      "reference_contexts": [
+        "Q: How do I create an account? A: You can sign up in the CareBridge app with your email and password, or with Google. New accounts created this way are patient accounts."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "qwe!! How can ### I sign up for a new CareBridge account?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "qwe!! How can ### I sign up for a new CareBridge account?",
+            "ranking": "reranked",
+            "candidates": 9,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] explicitly states that you can sign up in the CareBridge app using your email and password, or with Google.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-N03",
+      "category": "noisy",
+      "question": "Wht are the steps to bok hmm?? a doctor ~~ apopintment?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Open Book Appointment in the app, choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+      "reference_contexts": [
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "how to book a doctor appointment"
+          ],
+          "reason": "asks for the process of booking an appointment",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "how to book a doctor appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-N05",
+      "category": "noisy",
+      "question": "How do I cancel ... my xD booking?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "To cancel your xD booking, open \"My Appointments\" and select the option to cancel [FAQ-000021]. You can only cancel appointments that have a status of requested or confirmed [FAQ-000021, FAQ-000022]. Completed appointments cannot be cancelled [FAQ-000022].",
+      "contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled.",
+        "Q: Can I change a completed appointment? A: No, completed appointments cannot be cancelled or rescheduled. Please book a new follow-up appointment instead."
+      ],
+      "ground_truth": "Open My Appointments and cancel the appointment while its status is requested or confirmed. Completed appointments cannot be cancelled.",
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How do I cancel ... my xD booking?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How do I cancel ... my xD booking?",
+            "ranking": "reranked",
+            "candidates": 13,
+            "results": 3
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] provides the direct instructions for cancelling an appointment by navigating to 'My Appointments'.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-N08",
+      "category": "noisy",
+      "question": "How qwe!! @@ des the clinic waitlist wrok?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "The waitlist allows you to wait for a full day or slot with a doctor [FAQ-000029]. You can join the waitlist when your desired slot or day is full, with a limit of one open entry per doctor and day [FAQ-000030, FAQ-000016]. When a slot becomes available, the next patient on the list receives an offer [FAQ-000029]. You will be notified of this offer and have 120 minutes to accept it via My Appointments [FAQ-000039, FAQ-000032]. If you do not accept within this timeframe, the offer expires and passes to the next patient [FAQ-000032].",
+      "contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "Q: The slot I want is already booked. What can I do? A: A booked slot cannot be chosen. You can join the waitlist for that doctor and day.",
+        "Q: Will I be notified about waitlist offers? A: Yes, you get a notification when a waitlist slot is offered. You have 120 minutes to accept it.",
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist."
+      ],
+      "ground_truth": "Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day. When a slot is freed, the next patient on the waitlist gets an offer.",
+      "reference_contexts": [
+        "Q: What is the waitlist? A: The waitlist lets you wait for a full day or slot with a doctor. When a slot is freed, the next patient on the waitlist gets an offer.",
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How qwe!! @@ des the clinic waitlist wrok?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How qwe!! @@ des the clinic waitlist wrok?",
+            "ranking": "reranked",
+            "candidates": 7,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passages explain that the waitlist allows patients to wait for a full slot, how to join it, and the process for receiving and accepting notifications when a slot becomes available.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-N11",
+      "category": "noisy",
+      "question": "How can 1234 I pay my bil at the climic? ...",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You can pay your bill at the clinic reception after your visit [FAQ-000049, FAQ-000057]. Currently, you must pay in cash, as card and mobile banking options are not available [FAQ-000049]. Please note that there is no advance payment or refund process [FAQ-000057].",
+      "contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash.",
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process."
+      ],
+      "ground_truth": "Pay at reception after the visit. Cash is accepted; card and mobile banking are not available at present, so please pay in cash.",
+      "reference_contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How can 1234 I pay my bil at the climic? ..."
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How can 1234 I pay my bil at the climic? ...",
+            "ranking": "reranked",
+            "candidates": 4,
+            "results": 2
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] explicitly states that payment is made at reception after the visit and specifies that only cash is accepted at this time.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-N16",
+      "category": "noisy",
+      "question": "zzkx I kep geetting heartburn affter eatibg and acid comes plz up my throta",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "These symptoms are usually seen by the Gastroenterology team (for example Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan). This is general guidance, not medical advice.",
+      "reference_contexts": [
+        "Q: I get a burning feeling behind the breastbone after meals and a sour taste in my mouth. Which doctor should I see? A: These symptoms are usually seen by our Gastroenterology team. You can book Dr. Nasrin Sultana, Dr. Imran Kabir, or Dr. Zahid Hasan in the app. This is general guidance, not medical advice; the doctor will assess you at the visit."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "causes of heartburn after eating and acid reflux"
+          ],
+          "reason": "the user is describing symptoms of acid reflux/GERD and asking for an explanation",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "causes of heartburn after eating and acid reflux",
+            "ranking": "reranked",
+            "candidates": 20,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "The passages provide clinical notes for various patients experiencing acid reflux symptoms, but they do not contain information regarding the specific individual asking the question or provide a diagn",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P01",
+      "category": "policy",
+      "question": "Is the clinic open on Fridays?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "No. The clinic is closed on Fridays and public holidays. Opening hours are Saturday to Thursday, 9:00 AM to 5:00 PM (Dhaka time).",
+      "reference_contexts": [
+        "# Opening hours and contact\n\n## Hours\n\n- **Saturday to Thursday:** 9:00 AM to 5:00 PM (Dhaka time).\n- **Friday and public holidays:** closed.\n\nEach doctor works on set days and times within these hours. The doctor list in **Book Appointment** shows each doctor's working days, and only their listed slots can be booked.\n\n## Contact\n\n- **Phone:** +880 1711-000000 (reception, during opening hours)\n- **Address:** House 27, Road 9/A, Dhanmondi, Dhaka 1209\n\nReception staff speak Bangla and English.\n\n## Getting here\n\n- Only limited street parking is available.\n- There is a wheelchair ramp and a lift at the entrance.\n\n## Outside opening hours\n\nYou can still book, cancel, and reschedule in the app at any time. Reception confirms new bookings on the next working day. For emergencies, call 999 or go to the nearest hospital emergency department.\n\nHours can change around public holidays and during Ramadan. Call reception to check before you travel."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Is the clinic open on Fridays?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Is the clinic open on Fridays?",
+            "ranking": "fused",
+            "candidates": 2,
+            "results": 2,
+            "error": "invalid ranking"
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "the passages discuss emergency procedures and booking slots, but do not provide the clinic's operating hours or days.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P03",
+      "category": "policy",
+      "question": "Can I pay with a credit card?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "Currently, you cannot pay with a credit card. Although the clinic accepts cash, card, and mobile banking, both card and mobile banking options are not available at this time. Please pay in cash at reception after your visit [FAQ-000049].",
+      "contexts": [
+        "Q: How do I pay my bill? A: Pay at reception after the visit. Payment methods are cash, card, or mobile banking, but card and mobile banking are not available at present, so please pay in cash."
+      ],
+      "ground_truth": "No. Card payments are not available at present. Pay in cash at reception after the visit.",
+      "reference_contexts": [
+        "# Payment methods\n\n## When you pay\n\nYou pay after your visit, not in advance. Reception creates your bill once the consultation is completed. There is one bill per appointment.\n\n## Where you pay\n\nPay at reception after the visit. You cannot pay inside the app.\n\n## Accepted methods\n\n- **Cash**: available.\n- **Card**: not available at present.\n- **Mobile banking**: not available at present.\n\nPlease pay in cash until card and mobile banking payments become available.\n\n## Bill status\n\n- **Unpaid**: the bill has not been paid yet.\n- **Paid**: reception has recorded your payment.\n\nYou can see your bills in the app, and the assistant can show them to you. Ask reception for a printed invoice.\n\n## Insurance\n\nThe clinic does not accept insurance at present. Pay the bill in cash and ask reception for a printed invoice if your insurer needs one."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Can I pay with a credit card?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Can I pay with a credit card?",
+            "ranking": "reranked",
+            "candidates": 2,
+            "results": 1
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "The passage explicitly states that card payments are not available at present.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P04",
+      "category": "policy",
+      "question": "Will I be charged if I cancel my visit?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "No. There is no cancellation fee and no minimum notice period. Cancel from My Appointments (requested or confirmed) as early as you can so the slot can go to the waitlist.",
+      "reference_contexts": [
+        "# Cancellation policy\n\n## How to cancel\n\nOpen **My Appointments** in the app and cancel the appointment. You can also ask the assistant. It prepares a cancellation card, and nothing changes until you press **Confirm** on that card.\n\n## Which appointments can be cancelled\n\n- Only appointments with status **requested** or **confirmed** can be cancelled.\n- Completed appointments cannot be cancelled. Book a new follow-up appointment instead.\n- Once cancelled, an appointment cannot be restored. Book again if you change your mind.\n\n## Fees\n\nThere is no cancellation fee, and there is no minimum notice period. You can cancel at any time before the visit. Please cancel as early as you can so the slot can go to another patient.\n\n## What happens to the freed slot\n\nWhen you cancel, the slot is offered automatically to the next patient on the waitlist for that doctor and day.\n\n## Cancelling for someone else\n\nEach patient cancels from their own account. Reception staff can also cancel an appointment for you. Call +880 1711-000000 during opening hours."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Will I be charged if I cancel my visit?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Will I be charged if I cancel my visit?",
+            "ranking": "reranked",
+            "candidates": 6,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [1] states that payment is made after the visit and there is no advance payment or refund process, implying that there is no charge for cancelling a visit.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P07",
+      "category": "policy",
+      "question": "How long do I have to accept a slot offered from the waitlist?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "You have 120 minutes to accept a waitlist offer [FAQ-000032, FAQ-000039]. You must accept the offer through My Appointments [FAQ-000032]. If you do not accept the offer within this timeframe, it will expire and the slot will be offered to the next patient on the waitlist [FAQ-000032, FAQ-000033].",
+      "contexts": [
+        "Q: How long do I have to accept a waitlist offer? A: You have 120 minutes to accept the offer. Accept it in My Appointments. If you do not accept it in time, the offer expires and the slot then passes to the next patient on the waitlist.",
+        "Q: Will I be notified about waitlist offers? A: Yes, you get a notification when a waitlist slot is offered. You have 120 minutes to accept it.",
+        "Q: My waitlist offer expired. What now? A: An offer not accepted within 120 minutes expires, and the slot passes to the next patient on the waitlist. You can join the waitlist again."
+      ],
+      "ground_truth": "You have 120 minutes to accept a waitlist offer. The offer appears in My Appointments and under the bell icon; if you do not accept in time it expires.",
+      "reference_contexts": [
+        "# Waitlist\n\n## When to use it\n\nJoin the waitlist when the day or slot you want with a doctor is fully booked. If the slot you want is free, book it directly instead.\n\n## Rules for joining\n\n- Choose today or a future date on one of the doctor's working days.\n- You can name one taken slot, or leave the slot open to accept any time that day.\n- You can have one open waitlist entry per doctor and day.\n\n## Offers\n\nWhen a matching appointment is cancelled or moved, the slot is offered to the next waiting patient. Patients who asked for that exact slot come first, then the earliest to join.\n\n- You get a notification under the bell icon, and the offer appears in **My Appointments**.\n- You have **120 minutes** to accept the offer.\n- An accepted offer becomes a booking with status **requested**, which reception then confirms.\n- If you decline, or do not accept in time, the slot passes to the next patient. You stay on the waitlist for other slots that day.\n\n## Leaving\n\nYou can leave the waitlist at any time from My Appointments. Entries for dates that have passed close automatically."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How long do I have to accept a slot offered from the waitlist?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How long do I have to accept a slot offered from the waitlist?",
+            "ranking": "reranked",
+            "candidates": 20,
+            "results": 3
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passages [1], [2], and [3] all explicitly state that you have 120 minutes to accept a waitlist offer.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P12",
+      "category": "policy",
+      "question": "Why do some doctors charge more than others?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Each doctor sets their own consultation fee; senior consultants charge more. Check the current fee on the doctor list in Book Appointment.",
+      "reference_contexts": [
+        "# Consultation fees\n\n## How fees are set\n\nEach doctor has their own consultation fee. Senior consultants charge more.\n\n## Where to see a fee\n\n- The doctor list in **Book Appointment** shows each doctor's fee, specialization, and working days.\n- The booking summary shows the fee before you confirm.\n- The assistant can look up a doctor's current fee for you.\n\nAlways check the current fee in the app. The fee shown there is the one that applies.\n\n## Your bill\n\n- Reception creates your bill after the visit.\n- The bill total is built from the items on it, so it may include more than the consultation fee. Reception explains any extra item on request.\n- You pay in cash at reception after the visit. Nothing is paid in advance."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Why do some doctors charge more than others?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Why do some doctors charge more than others?",
+            "ranking": "fused",
+            "candidates": 3,
+            "results": 3,
+            "error": "invalid ranking"
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "the passages mention that doctors have fees, but they do not explain the reasons why some doctors charge more than others.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-P15",
+      "category": "policy",
+      "question": "Is my appointment confirmed as soon as I book it?",
+      "expect_refuse": false,
+      "multi_hop": false,
+      "refused": false,
+      "supported": true,
+      "answer": "No, your appointment is not confirmed immediately upon booking. When you first book an appointment, it begins with a \"requested\" status, meaning reception has not yet confirmed it [FAQ-000009, FAQ-000013]. Reception confirms requested bookings within the same working day, which are Saturday through Thursday [FAQ-000015]. You will know your appointment is confirmed when the status changes to \"confirmed\" in the My Appointments section of the app [FAQ-000014].",
+      "contexts": [
+        "Q: How will I know my appointment is confirmed? A: The status changes to confirmed in My Appointments. You also receive a reminder within the 24 hours before the visit.",
+        "Q: How long does confirmation take? A: Reception confirms requested bookings within the same working day. Working days are Saturday to Thursday.",
+        "Q: Will I get a reminder before my appointment? A: Yes, a reminder is sent within the 24 hours before a confirmed appointment. Reminders appear under the bell icon in the app.",
+        "Q: How do I book an appointment? A: Open Book Appointment in the app. Choose a doctor, a date, and a time slot, then enter the reason for the visit. The booking starts with status requested.",
+        "Q: What does requested status mean? A: Requested means reception has not confirmed the booking yet. Reception confirms it within the same working day."
+      ],
+      "ground_truth": "No. A new booking starts as requested until reception confirms it (usually the same or next working day). Confirmed status appears in My Appointments.",
+      "reference_contexts": [
+        "# Booking rules\n\n## How to book\n\nOpen **Book Appointment** in the app. Choose a doctor, a date, and a time slot, and enter a short reason for the visit. The assistant can also prepare a booking card. Nothing is booked until you press **Confirm**.\n\n## Rules\n\n- You can only book one of the doctor's working days and one of their listed time slots.\n- A slot that is already booked cannot be chosen. You can join the waitlist instead.\n- Each patient books from their own account. Family members need their own accounts.\n- You can book any future working day. There is no limit on how far ahead you book.\n\n## Status\n\n- **Requested**: reception has not confirmed the booking yet. Reception usually confirms it on the same or the next working day.\n- **Confirmed**: shown in My Appointments. You get a reminder within the 24 hours before the visit.\n- **Completed**: the consultation has taken place.\n\n## Walk-ins\n\nWalk-in patients are seen only if a slot is free. Booking in the app is preferred.\n\n## On the day\n\n- Bring photo ID, previous prescriptions, and recent test reports.\n- If you arrive more than 15 minutes late, you may need to reschedule."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Is my appointment confirmed as soon as I book it?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Is my appointment confirmed as soon as I book it?",
+            "ranking": "reranked",
+            "candidates": 20,
+            "results": 5
+          }
+        ],
+        "support": {
+          "supported": true,
+          "reason": "Passage [4] states that a booking starts with a 'requested' status, and passage [5] clarifies that 'requested' means reception has not confirmed it yet, confirming that the appointment is not confirme",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-R01",
+      "category": "refusal",
+      "question": "What is the capital of France?",
+      "expect_refuse": true,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "reference_contexts": [],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "What is the capital of France?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "What is the capital of France?",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-R02",
+      "category": "refusal",
+      "question": "Best cricket bat for beginners",
+      "expect_refuse": true,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "reference_contexts": [],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Best cricket bat for beginners"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Best cricket bat for beginners",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-R03",
+      "category": "refusal",
+      "question": "How do I change the oil in my car?",
+      "expect_refuse": true,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "I do not have that information in CareBridge clinic knowledge. Please ask a clinic-related question, or contact reception.",
+      "reference_contexts": [],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "How do I change the oil in my car?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "How do I change the oil in my car?",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-R04",
+      "category": "refusal",
+      "question": "What is the clinic teleportation policy?",
+      "expect_refuse": true,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "I do not have supported information for that in CareBridge clinic knowledge. Please contact reception if you need help with clinic policies.",
+      "reference_contexts": [],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "What is the clinic teleportation policy?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "What is the clinic teleportation policy?",
+            "ranking": "fused",
+            "candidates": 2,
+            "results": 2,
+            "error": "invalid ranking"
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "the passages discuss emergency procedures and walk-in policies, but do not mention a teleportation policy.",
+          "source": "model"
+        }
+      }
+    },
+    {
+      "id": "G-R05",
+      "category": "refusal",
+      "question": "Which stocks should I buy this week based on my medical record?",
+      "expect_refuse": true,
+      "multi_hop": false,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "I cannot answer that. CareBridge does not provide investment advice, and that request is outside clinic knowledge. Ask a clinic-related question or contact reception.",
+      "reference_contexts": [],
+      "agentic": {
+        "plan": {
+          "complex": false,
+          "queries": [
+            "Which stocks should I buy this week based on my medical record?"
+          ],
+          "reason": "single-topic question",
+          "source": "heuristic"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "Which stocks should I buy this week based on my medical record?",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-H01",
+      "category": "multi_hop",
+      "question": "What is a typical Cardiology consultation fee setup and how do I join the waitlist if the day is full?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Each doctor has their own consultation fee (senior consultants charge more); check the fee on the Book Appointment doctor list. If the day or slot is full, join the waitlist for that doctor and day (one open entry per doctor and day); when a slot frees you get an offer.",
+      "reference_contexts": [
+        "Q: How do I join the waitlist? A: Join the waitlist when the slot or day you want is full. You can have one open waitlist entry per doctor and day.",
+        "# Consultation fees\n\n## How fees are set\n\nEach doctor has their own consultation fee. Senior consultants charge more.\n\n## Where to see a fee\n\n- The doctor list in **Book Appointment** shows each doctor's fee, specialization, and working days.\n- The booking summary shows the fee before you confirm.\n- The assistant can look up a doctor's current fee for you.\n\nAlways check the current fee in the app. The fee shown there is the one that applies.\n\n## Your bill\n\n- Reception creates your bill after the visit.\n- The bill total is built from the items on it, so it may include more than the consultation fee. Reception explains any extra item on request.\n- You pay in cash at reception after the visit. Nothing is paid in advance.",
+        "# Waitlist\n\n## When to use it\n\nJoin the waitlist when the day or slot you want with a doctor is fully booked. If the slot you want is free, book it directly instead.\n\n## Rules for joining\n\n- Choose today or a future date on one of the doctor's working days.\n- You can name one taken slot, or leave the slot open to accept any time that day.\n- You can have one open waitlist entry per doctor and day.\n\n## Offers\n\nWhen a matching appointment is cancelled or moved, the slot is offered to the next waiting patient. Patients who asked for that exact slot come first, then the earliest to join.\n\n- You get a notification under the bell icon, and the offer appears in **My Appointments**.\n- You have **120 minutes** to accept the offer.\n- An accepted offer becomes a booking with status **requested**, which reception then confirms.\n- If you decline, or do not accept in time, the slot passes to the next patient. You stay on the waitlist for other slots that day.\n\n## Leaving\n\nYou can leave the waitlist at any time from My Appointments. Entries for dates that have passed close automatically."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "cardiology consultation fee structure",
+            "how to join cardiology clinic waitlist"
+          ],
+          "reason": "asks about fee structure and waitlist procedure",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "cardiology consultation fee structure",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "how to join cardiology clinic waitlist",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-H02",
+      "category": "multi_hop",
+      "question": "How do I cancel a confirmed appointment, and what are the rules if I instead want to reschedule it to another day?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Cancel from My Appointments while status is requested or confirmed (completed cannot be cancelled). To reschedule, open My Appointments, choose reschedule, and pick a future date on the doctor's working day and an available slot; only requested or confirmed appointments can be rescheduled.",
+      "reference_contexts": [
+        "Q: How do I cancel an appointment? A: Open My Appointments and cancel the appointment. You can cancel while the status is requested or confirmed.",
+        "Q: Which appointments can I cancel? A: Only requested or confirmed appointments can be cancelled. Completed appointments cannot be cancelled.",
+        "Q: How do I reschedule an appointment? A: Open My Appointments and choose reschedule. Then pick a new future date on the doctor's working day and slot.",
+        "Q: What are the rules for rescheduling? A: Only requested or confirmed appointments can be rescheduled. The new date must be in the future, and the new slot must be one of the doctor's slots on a working day."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "how to cancel a confirmed appointment",
+            "rules for rescheduling an appointment"
+          ],
+          "reason": "asks for two distinct processes: cancellation and rescheduling",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "how to cancel a confirmed appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "rules for rescheduling an appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-H03",
+      "category": "multi_hop",
+      "question": "After I book, how do I know the appointment is confirmed, and will I get a reminder before the visit?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Requested means reception has not confirmed yet; confirmation usually happens the same working day and status becomes confirmed in My Appointments. A reminder is sent within the 24 hours before a confirmed appointment and appears under the bell icon.",
+      "reference_contexts": [
+        "Q: What does requested status mean? A: Requested means reception has not confirmed the booking yet. Reception confirms it within the same working day.",
+        "Q: How will I know my appointment is confirmed? A: The status changes to confirmed in My Appointments. You also receive a reminder within the 24 hours before the visit.",
+        "Q: Will I get a reminder before my appointment? A: Yes, a reminder is sent within the 24 hours before a confirmed appointment. Reminders appear under the bell icon in the app.",
+        "# Booking rules\n\n## How to book\n\nOpen **Book Appointment** in the app. Choose a doctor, a date, and a time slot, and enter a short reason for the visit. The assistant can also prepare a booking card. Nothing is booked until you press **Confirm**.\n\n## Rules\n\n- You can only book one of the doctor's working days and one of their listed time slots.\n- A slot that is already booked cannot be chosen. You can join the waitlist instead.\n- Each patient books from their own account. Family members need their own accounts.\n- You can book any future working day. There is no limit on how far ahead you book.\n\n## Status\n\n- **Requested**: reception has not confirmed the booking yet. Reception usually confirms it on the same or the next working day.\n- **Confirmed**: shown in My Appointments. You get a reminder within the 24 hours before the visit.\n- **Completed**: the consultation has taken place.\n\n## Walk-ins\n\nWalk-in patients are seen only if a slot is free. Booking in the app is preferred.\n\n## On the day\n\n- Bring photo ID, previous prescriptions, and recent test reports.\n- If you arrive more than 15 minutes late, you may need to reschedule."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "how to confirm clinic appointment",
+            "clinic appointment reminder policy"
+          ],
+          "reason": "asks about confirmation process and reminder notifications",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "how to confirm clinic appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "clinic appointment reminder policy",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-H04",
+      "category": "multi_hop",
+      "question": "I am always thirsty and urinate a lot — which specialist should I see, and what should I bring if I book Cardiology instead for blood pressure and ECG follow-up?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "Always thirsty with frequent urination is usually seen by Endocrinology (for example Dr. Rumana Haque, Dr. Saiful Alam, or Dr. Lubna Rahman); this is general guidance, not medical advice. For a Cardiology visit, bring photo ID, previous prescriptions, recent test reports, previous ECG reports, and a list of blood pressure readings.",
+      "reference_contexts": [
+        "Q: I always feel thirsty and pass urine often. Which doctor should I see? A: These symptoms are usually seen by our Endocrinology team. You can book Dr. Rumana Haque, Dr. Saiful Alam, or Dr. Lubna Rahman in the app. This is general guidance, not medical advice; the doctor will assess you at the visit.",
+        "Q: How should I prepare for a Cardiology appointment? A: Please bring photo ID, previous prescriptions, and recent test reports. Also bring any previous ECG reports and a list of your blood pressure readings."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "specialist for excessive thirst and frequent urination",
+            "what to bring to cardiology follow-up appointment"
+          ],
+          "reason": "asks for a specialist referral for specific symptoms and preparation requirements for a separate cardiology visit",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "specialist for excessive thirst and frequent urination",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "what to bring to cardiology follow-up appointment",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    },
+    {
+      "id": "G-H05",
+      "category": "multi_hop",
+      "question": "Do I pay before the consultation, and can I get money back if I already paid?",
+      "expect_refuse": false,
+      "multi_hop": true,
+      "refused": true,
+      "supported": false,
+      "answer": "I could not find clinic knowledge that answers this. I do not know, and I will not guess. Please ask the clinic or a doctor.",
+      "contexts": [],
+      "ground_truth": "You do not pay in advance; payment is at reception after the visit in cash (card/mobile banking not available at present). Because nothing is paid in advance there is no general refund process for completed consultations; contact reception if a bill looks wrong.",
+      "reference_contexts": [
+        "Q: Do I pay in advance and can I get a refund? A: No, payment is made after the visit. There is no advance payment and no refund process.",
+        "# Refund policy\n\n## No advance payment\n\nYou do not pay when you book. Payment is made at reception after your visit, once your bill has been created. Because nothing is paid in advance, cancelling or rescheduling never costs you anything and there is nothing to refund.\n\n## No refund process\n\nThe clinic does not have a refund process for completed consultations.\n\n## If you think your bill is wrong\n\n- Check your bill in the app. The assistant can show it to you.\n- Contact reception on +880 1711-000000 during opening hours, or ask at the front desk on your next visit.\n- Do not pay a bill you believe is wrong until reception has checked it.\n- If you paid twice or were charged in error, reception checks the bill and returns the extra amount in cash.",
+        "# Payment methods\n\n## When you pay\n\nYou pay after your visit, not in advance. Reception creates your bill once the consultation is completed. There is one bill per appointment.\n\n## Where you pay\n\nPay at reception after the visit. You cannot pay inside the app.\n\n## Accepted methods\n\n- **Cash**: available.\n- **Card**: not available at present.\n- **Mobile banking**: not available at present.\n\nPlease pay in cash until card and mobile banking payments become available.\n\n## Bill status\n\n- **Unpaid**: the bill has not been paid yet.\n- **Paid**: reception has recorded your payment.\n\nYou can see your bills in the app, and the assistant can show them to you. Ask reception for a printed invoice.\n\n## Insurance\n\nThe clinic does not accept insurance at present. Pay the bill in cash and ask reception for a printed invoice if your insurer needs one."
+      ],
+      "agentic": {
+        "plan": {
+          "complex": true,
+          "queries": [
+            "when to pay for consultation",
+            "refund policy for consultation fees"
+          ],
+          "reason": "asks about payment timing and refund eligibility",
+          "source": "model"
+        },
+        "hops": [
+          {
+            "hop": 1,
+            "query": "when to pay for consultation",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          },
+          {
+            "hop": 1,
+            "query": "refund policy for consultation fees",
+            "ranking": "fused",
+            "candidates": 0,
+            "results": 0
+          }
+        ],
+        "support": {
+          "supported": false,
+          "reason": "no matching passages",
+          "source": "empty"
+        }
+      }
+    }
+  ]
+}

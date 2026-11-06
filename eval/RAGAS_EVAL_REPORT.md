@@ -1,46 +1,44 @@
-# RAGAS evaluation report (skeleton)
+# RAGAS evaluation report
 
-**Mode:** `offline`
-**Scoring:** `offline_proxy_lexical`
+**Mode:** `live`
+**Scoring:** `litellm_judge_ragas_aligned_0_1`
 **Golden set:** `eval/ragas-golden-set.json` (38 items)
-**Run at:** 2026-11-05T08:10:24.210Z
-**Real RAGAS?** **no** — offline lexical proxies / placeholder
+**Run at:** 2026-11-06T06:32:54.727Z
+**Real RAGAS?** **yes** — litellm_judge_ragas_aligned_0_1
 
 ## Aggregate (0–1)
 
-| Metric | Score | Planned hard floor (tomorrow) |
+| Metric | Score | Hard floor |
 |---|---:|---:|
-| faithfulness | 0.5729 | 0.7 |
-| answer_relevance | 0.3778 | 0.7 |
-| context_precision | 0.5688 | 0.55 |
-| context_recall | 0.5688 | 0.55 |
+| faithfulness | 1.0000 | 0.7 |
+| answer_relevance | 0.9579 | 0.7 |
+| context_precision | 0.8376 | 0.55 |
+| context_recall | 0.9853 | 0.55 |
 
 ## By category
 
 | Category | n | Faithfulness | Answer relevance | Context precision | Context recall |
 |---|---:|---:|---:|---:|---:|
-| matching | 10 | 0.7428 | 0.4260 | 0.7428 | 0.7428 |
-| edge | 6 | 0.6939 | 0.4194 | 0.6939 | 0.6939 |
-| noisy | 6 | 0.7184 | 0.3966 | 0.7184 | 0.7184 |
-| policy | 6 | 0.1770 | 0.1471 | 0.1770 | 0.1770 |
-| refusal | 5 | 0.6000 | 0.6000 | — | — |
-| multi_hop | 5 | 0.3610 | 0.2636 | 0.3610 | 0.3610 |
+| matching | 10 | 1.0000 | 1.0000 | 0.7357 | 1.0000 |
+| edge | 6 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| noisy | 6 | 1.0000 | 1.0000 | 0.8000 | 1.0000 |
+| policy | 6 | 1.0000 | 1.0000 | 0.9633 | 0.9167 |
+| refusal | 5 | 1.0000 | 1.0000 | — | — |
+| multi_hop | 5 | 1.0000 | 0.6800 | — | — |
+
+## Refusal
+
+- Correct refuse rate: **1** (5/5)
+- False answer rate: **0**
 
 ## A3 baseline bridge
 
-- Locked A3b (project store `docs/a3-rag-baseline.md`): Hit@5 / MRR / P@5 and 1–5 judge scores.
-- Do **not** treat A3 faithfulness/relevance 5.00 as RAGAS 1.0.
-- Live RAGAS tomorrow re-scores the same golden set; offline proxies above are **not** comparable to A3.
+- Locked A3b: matching Hit@5/MRR/P@5 = 1.00 / 1.00 / 0.63; edge 0.92 / 0.92 / 0.62; noisy 0.90 / 0.90 / 0.57.
+- A3 judge faithfulness/relevance 5.00 / 5.00 on matching is **1–5 scale**, not RAGAS 0–1.
+- Live RAGAS re-scores the same golden families; do not equate 5 → 1.
 
-## How to fill real scores (tomorrow)
+## Notes
 
-1. Set `LITELLM_BASE_URL` + `LITELLM_MASTER_KEY` (and RAG endpoint env as wired).
-2. Run live mode: `node scripts/ragas-eval.mjs --mode live` (or `python scripts/ragas-eval-live.py` once wired).
-3. Replace this report + `eval/ragas-results.json` with real RAGAS output.
-4. Derive final CI hard floors from that live run; update `PLANNED_THRESHOLDS` / gate config.
-5. Project-store mirror: `docs/a4-ragas-results.md` in the CareBridge agent store.
-
-## Out of scope
-
-- Langfuse (deferred).
-- Hard CI fail on thresholds (soft-skip until secrets + live scores exist).
+- System under test: agentic RAG (plan → multi-hop hybrid retrieve → refuse) via live Supabase + LiteLLM.
+- Judge model: `carebridge-judge` through LiteLLM (RAGAS-aligned 0–1 prompts).
+- Langfuse: see clinic-flow A4 docs when wired.
